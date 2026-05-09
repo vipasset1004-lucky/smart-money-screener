@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Data / Logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+*.csv.cache
+data/cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build / Distribution
+dist/
+build/
+*.zip
+
+# Project-specific
+server.log
+*.cache.json
