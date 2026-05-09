@@ -86,7 +86,8 @@ def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
                         score: dict | None = None,
                         marcap: int | None = None,
                         weekly_pack: dict | None = None,
-                        min_accum_days: int = 180) -> dict:
+                        min_accum_days: int = 180,
+                        max_marcap: int = 500_000_000_000) -> dict:
     """💎 텐버거 출발 신호 — 주봉 매집 + 일봉 출발 통합 (v4).
 
     weekly_pack: weekly.py가 만든 dict
@@ -202,7 +203,15 @@ def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
     rs_pp = metrics.get("rs_120d_pp")
     if rs_pp and rs_pp > 0: reasons.append(f"RS +{rs_pp}%p")
 
-    triggered = (accum_ok and departure_ok and sm_pos
+    # 시총 cap — 진짜 텐버거(10배)는 작은 시총에서 시작
+    marcap_ok = marcap is not None and marcap < max_marcap
+    if not marcap_ok:
+        if marcap:
+            fail.append(f"시총 {marcap/1e8:.0f}억 (텐버거 cap 5000억 초과)")
+        else:
+            fail.append("시총 데이터 없음")
+
+    triggered = (accum_ok and departure_ok and sm_pos and marcap_ok
                  and supply_passed >= 3 and chart_passed >= 2)
 
     return {

@@ -25,7 +25,10 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
     st = short_term_signal or {}
     tb = tenbagger_signal or {}
     all_reasons = (st.get("reasons", []) or []) + (tb.get("reasons", []) or [])
-    all_fails = (st.get("fail", []) or []) + (tb.get("fail", []) or [])
+    all_fails_raw = (st.get("fail", []) or []) + (tb.get("fail", []) or [])
+    # 폭발임박 카운트엔 텐버거 전용 시총 cap fail 제외
+    # (수급매매 임박 판단엔 시총 무관 — 큰 시총도 박스 돌파 임박 가능)
+    all_fails = [f for f in all_fails_raw if "시총" not in f]
     duration = int(accumulation.get("duration", 0) or 0)
 
     if st.get("triggered"):

@@ -30,8 +30,8 @@ NAVER_HEADERS = {
 
 # ── Universe ─────────────────────────────────────────────
 
-def get_universe(min_mktcap: int = 100_000_000_000,
-                 min_amount: int = 3_000_000_000) -> list[dict]:
+def get_universe(min_mktcap: int = 50_000_000_000,
+                 min_amount: int = 1_000_000_000) -> list[dict]:
     """KRX 보통주 중 시총·거래대금 필터 통과 종목."""
     import FinanceDataReader as fdr
     df = fdr.StockListing("KRX")
