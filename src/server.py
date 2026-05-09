@@ -1,9 +1,10 @@
 """Flask 서버 — 결과 JSON 캐시 + HTML 서빙 + APScheduler.
 
 엔드포인트:
-  GET /         → frontend/index.html
-  GET /api/results → 최근 분석 결과 (JSON)
-  POST /api/refresh → 수동 재분석 트리거 (백그라운드)
+  GET /              → frontend/index.html
+  GET /api/results   → 최근 분석 결과 (JSON)
+  GET /api/status    → 분석 진행 상태 (running/idle)
+  POST /api/refresh  → 수동 재분석 트리거 (백그라운드)
 """
 
 from __future__ import annotations
@@ -12,6 +13,7 @@ import json
 import logging
 import os
 import threading
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -27,14 +29,49 @@ logger = logging.getLogger(__name__)
 ROOT = Path(__file__).resolve().parent.parent
 RESULTS_PATH = ROOT / "results.json"
 FRONTEND_DIR = ROOT / "frontend"
+LOCK_PATH = ROOT / ".analysis.lock"
 
 app = Flask(__name__)
-_run_lock = threading.Lock()
+
+
+def _is_running() -> dict:
+    """파일 기반 lock — gunicorn worker 간 공유."""
+    if not LOCK_PATH.exists():
+        return {"running": False}
+    try:
+        info = json.loads(LOCK_PATH.read_text(encoding="utf-8"))
+        # stale lock (1시간 이상 = 죽은 프로세스로 판단)
+        if time.time() - info.get("started_at", 0) > 3600:
+            LOCK_PATH.unlink(missing_ok=True)
+            return {"running": False}
+        return {"running": True, **info}
+    except Exception:
+        LOCK_PATH.unlink(missing_ok=True)
+        return {"running": False}
+
+
+def _acquire_lock() -> bool:
+    """O_EXCL 원자 생성으로 worker 간 안전 lock."""
+    try:
+        # Python: open with 'x' = exclusive
+        with LOCK_PATH.open("x", encoding="utf-8") as f:
+            f.write(json.dumps({
+                "started_at": time.time(),
+                "started_iso": datetime.now().isoformat(),
+                "pid": os.getpid(),
+            }))
+        return True
+    except FileExistsError:
+        return False
+
+
+def _release_lock():
+    LOCK_PATH.unlink(missing_ok=True)
 
 
 def _refresh_in_background(limit: int | None = None,
                            archive: bool = False):
-    if not _run_lock.acquire(blocking=False):
+    if not _acquire_lock():
         logger.info("이미 분석 실행 중 — skip")
         return
     try:
@@ -45,7 +82,7 @@ def _refresh_in_background(limit: int | None = None,
     except Exception as e:
         logger.exception(f"백그라운드 분석 오류: {e}")
     finally:
-        _run_lock.release()
+        _release_lock()
 
 
 @app.route("/")
@@ -68,6 +105,14 @@ def api_results():
 
 @app.route("/api/refresh", methods=["POST"])
 def api_refresh():
+    # 이미 분석 중이면 새 분석 시작하지 않음 (worker 간 file lock)
+    state = _is_running()
+    if state.get("running"):
+        return jsonify({
+            "status": "already_running",
+            "started_iso": state.get("started_iso"),
+            "at": datetime.now().isoformat(),
+        }), 409
     limit_env = os.environ.get("ANALYZE_LIMIT")
     limit = int(limit_env) if limit_env else None
     threading.Thread(
@@ -79,6 +124,12 @@ def api_refresh():
 @app.route("/api/health")
 def health():
     return jsonify({"ok": True, "at": datetime.now().isoformat()})
+
+
+@app.route("/api/status")
+def api_status():
+    """현재 분석 진행 상태 (running/idle)."""
+    return jsonify(_is_running())
 
 
 # 추적 데이터 캐시 (1시간)

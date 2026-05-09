@@ -241,13 +241,55 @@ async function refresh() {
 
 async function rerun() {
   const btn = document.getElementById("rerun-btn");
+  // 분석 중이면 즉시 차단
+  try {
+    const sres = await fetch("/api/status", { cache: "no-store" });
+    const state = await sres.json();
+    if (state.running) {
+      const since = state.started_iso
+        ? new Date(state.started_iso).toLocaleString("ko-KR")
+        : "?";
+      alert(`이미 분석 중입니다 (시작: ${since}).\n결과 나올 때까지 기다리세요.`);
+      return;
+    }
+  } catch {}
   btn.disabled = true; btn.textContent = "재분석 중…";
   try {
-    await fetch("/api/refresh", { method: "POST" });
-    setTimeout(() => { btn.disabled = false; btn.textContent = "재분석"; refresh(); }, 5000);
+    const r = await fetch("/api/refresh", { method: "POST" });
+    if (r.status === 409) {
+      const j = await r.json();
+      alert(`이미 분석 중입니다 (다른 worker).\n시작: ${j.started_iso || "?"}`);
+      btn.disabled = false; btn.textContent = "재분석";
+      return;
+    }
   } catch (e) {
     btn.disabled = false; btn.textContent = "재분석";
+    return;
   }
+  startStatusPolling();
+}
+
+let _statusPoll = null;
+function startStatusPolling() {
+  if (_statusPoll) return;
+  const btn = document.getElementById("rerun-btn");
+  _statusPoll = setInterval(async () => {
+    try {
+      const r = await fetch("/api/status", { cache: "no-store" });
+      const s = await r.json();
+      if (!s.running) {
+        clearInterval(_statusPoll); _statusPoll = null;
+        btn.disabled = false; btn.textContent = "재분석";
+        refresh();
+      } else {
+        const since = s.started_iso
+          ? new Date(s.started_iso).toLocaleTimeString("ko-KR", {hour: "2-digit", minute: "2-digit"})
+          : "";
+        btn.disabled = true;
+        btn.textContent = `분석 중… (${since}~)`;
+      }
+    } catch {}
+  }, 8000);
 }
 
 function fmtMcap(m) {
@@ -670,6 +712,10 @@ document.querySelectorAll(".tab").forEach(t => {
 refresh();
 setInterval(updateSchedule, 1000);
 updateSchedule();
+// 페이지 로드 시 분석 중이면 자동 폴링 (캐시는 그대로 보여줌)
+fetch("/api/status", { cache: "no-store" }).then(r => r.json()).then(s => {
+  if (s && s.running) startStatusPolling();
+}).catch(() => {});
 </script>
 </body>
 </html>
