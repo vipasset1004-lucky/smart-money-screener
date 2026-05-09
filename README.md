@@ -2,6 +2,10 @@
 
 스마트머니(외국인·기관)의 매집과 출발을 추적하여, **단타**와 **텐버거** 후보 종목을 동시에 발굴하는 수급 매매 스크리너.
 
+## 🚀 원클릭 배포
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vipasset1004-lucky/smart-money-screener)
+
 ## 핵심 철학
 
 > 스마트머니가 매집을 끝내고 **출발**한 종목을 잡는다.
