@@ -235,17 +235,19 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     }
 
 
-def save_results(payload: dict, path: str = "results.json") -> None:
+def save_results(payload: dict, path: str = "results.json",
+                 archive: bool = False) -> None:
     Path(path).write_text(
         json.dumps(payload, ensure_ascii=False, indent=2, default=str),
         encoding="utf-8",
     )
-    # 포워드 추적용 archive
-    try:
-        from src.tracking import archive_current_results
-        archive_current_results(path)
-    except Exception as e:
-        logger.debug(f"[archive] err: {e}")
+    # 포워드 추적용 archive (21:00 evening_refresh에서만 True로 호출)
+    if archive:
+        try:
+            from src.tracking import archive_current_results
+            archive_current_results(path)
+        except Exception as e:
+            logger.debug(f"[archive] err: {e}")
 
 
 if __name__ == "__main__":

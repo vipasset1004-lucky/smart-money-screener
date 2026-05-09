@@ -32,14 +32,15 @@ app = Flask(__name__)
 _run_lock = threading.Lock()
 
 
-def _refresh_in_background(limit: int | None = None):
+def _refresh_in_background(limit: int | None = None,
+                           archive: bool = False):
     if not _run_lock.acquire(blocking=False):
         logger.info("이미 분석 실행 중 — skip")
         return
     try:
-        logger.info("백그라운드 분석 시작")
+        logger.info(f"백그라운드 분석 시작 (archive={archive})")
         payload = run_pipeline(limit=limit)
-        save_results(payload, str(RESULTS_PATH))
+        save_results(payload, str(RESULTS_PATH), archive=archive)
         logger.info(f"백그라운드 분석 완료: {payload['passed_count']}종목")
     except Exception as e:
         logger.exception(f"백그라운드 분석 오류: {e}")
@@ -107,14 +108,16 @@ def init_scheduler():
         from apscheduler.schedulers.background import BackgroundScheduler
         from pytz import timezone
         sched = BackgroundScheduler(timezone=timezone("Asia/Seoul"))
-        # 16:00: 장 마감(15:30) + 30분 — 가장 빠른 1차 결과
+        # 16:00: 장 마감(15:30) + 30분 — 가장 빠른 1차 결과 (archive X)
         sched.add_job(_refresh_in_background, "cron",
                       day_of_week="mon-fri",
-                      hour=16, minute=0, id="afternoon_refresh")
-        # 21:00: KRX 외국인/기관 매매 정정 데이터까지 반영된 2차 결과
+                      hour=16, minute=0, id="afternoon_refresh",
+                      kwargs={"archive": False})
+        # 21:00: KRX 외국인/기관 정정 반영 + 추적용 archive 저장
         sched.add_job(_refresh_in_background, "cron",
                       day_of_week="mon-fri",
-                      hour=21, minute=0, id="evening_refresh")
+                      hour=21, minute=0, id="evening_refresh",
+                      kwargs={"archive": True})
         sched.start()
         logger.info("스케줄러 시작 (KST 평일 16:00 + 21:00)")
     except Exception as e:
