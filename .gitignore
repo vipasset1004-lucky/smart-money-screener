@@ -42,3 +42,7 @@ build/
 server.log
 *.cache.json
 results.json
+backtest/*.csv
+backtest/*.log
+backtest/short_term/
+backtest/tenbagger/

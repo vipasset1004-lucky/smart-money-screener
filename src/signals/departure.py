@@ -22,16 +22,16 @@ def short_term_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
     reasons = []
     fail = []
 
-    # 거래대금 폭발
+    # 거래대금 폭발 (백테스트 후 완화: 3.0 → 2.0)
     amt_mult = metrics.get("amount_mult")
-    if amt_mult and amt_mult >= 3.0:
+    if amt_mult and amt_mult >= 2.0:
         reasons.append(f"거래대금 {amt_mult:.1f}배")
     else:
         fail.append("거래대금 부족")
 
-    # rvol
+    # rvol (백테스트 후 완화: 2.0 → 1.5)
     rvol = metrics.get("rvol", 0)
-    if rvol >= 2.0:
+    if rvol >= 1.5:
         reasons.append(f"rvol {rvol}")
     else:
         fail.append("rvol 부족")
@@ -62,8 +62,8 @@ def short_term_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
         fail.append("박스 미돌파")
 
     triggered = (
-        amt_mult and amt_mult >= 3.0
-        and rvol >= 2.0
+        amt_mult and amt_mult >= 2.0
+        and rvol >= 1.5
         and metrics.get("strong_close")
         and today_supply_ok
         and breakout
@@ -78,7 +78,7 @@ def short_term_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
 
 def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
                         metrics: dict, accumulation: dict,
-                        min_accum_days: int = 250) -> dict:
+                        min_accum_days: int = 180) -> dict:
     """💎 텐버거 출발 신호 (Stage 1 → Stage 2 전환).
 
     조건:
@@ -107,9 +107,9 @@ def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
     else:
         fail.append("박스 미돌파")
 
-    # 거래량 폭발 (텐버거는 단타보다 약하게: 2배)
+    # 거래량 폭발 (백테스트 후 완화: 2.0 → 1.5)
     rvol = metrics.get("rvol", 0)
-    if rvol >= 2.0:
+    if rvol >= 1.5:
         reasons.append(f"거래량 폭발 rvol {rvol}")
     else:
         fail.append("거래량 부족")
@@ -138,7 +138,7 @@ def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
     triggered = (
         duration >= min_accum_days
         and breakout
-        and rvol >= 2.0
+        and rvol >= 1.5
         and metrics.get("ma60_above_ma240")
         and metrics.get("is_52w_high")
         and foreign_ok
