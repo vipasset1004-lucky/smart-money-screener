@@ -70,8 +70,8 @@
   .label-tenbagger { color: var(--tenbagger); border-color: var(--tenbagger); }
   .label-gold { color: var(--gold); border-color: var(--gold);
     background: rgba(250,204,21,0.1); }
-  .label-target { color: #06b6d4; border-color: #06b6d4;
-    background: rgba(6,182,212,0.1); }
+  .label-stable { color: #22d3ee; border-color: #22d3ee;
+    background: rgba(34,211,238,0.10); }
   .label-watch { color: var(--watch); border-color: var(--watch); }
   .badges {
     display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
@@ -188,6 +188,7 @@
     <h1>💰 Smart Money Screener</h1>
     <div class="meta" id="meta">로딩 중…</div>
     <div class="meta" id="schedule" style="margin-top:2px"></div>
+    <div class="meta" id="regime" style="margin-top:2px"></div>
   </div>
   <div class="controls">
     <button id="refresh-btn" onclick="refresh()">새로고침</button>
@@ -200,6 +201,7 @@
   <span class="tab" data-filter="⭐황금자리">⭐ 황금자리 <b class="cnt" data-cnt="⭐황금자리">0</b></span>
   <span class="tab" data-filter="⚡단타">⚡ 단타 <b class="cnt" data-cnt="⚡단타">0</b></span>
   <span class="tab" data-filter="💎텐버거">💎 텐버거 <b class="cnt" data-cnt="💎텐버거">0</b></span>
+  <span class="tab" data-filter="🛡️안정형">🛡️ 안정형 <b class="cnt" data-cnt="🛡️안정형">0</b></span>
   <span class="tab" data-filter="🔍매집중">🔍 매집중 <b class="cnt" data-cnt="🔍매집중">0</b></span>
   <span class="tab" data-filter="unlabeled">📋 관찰 <b class="cnt" data-cnt="unlabeled">0</b></span>
 </div>
@@ -249,6 +251,7 @@ function labelClass(l) {
   if (l === "⭐황금자리") return "label-gold";
   if (l === "⚡단타") return "label-short";
   if (l === "💎텐버거") return "label-tenbagger";
+  if (l === "🛡️안정형") return "label-stable";
   if (l === "🔍매집중") return "label-watch";
   return "";
 }
@@ -281,6 +284,7 @@ function cardHtml(r) {
       <span>매집 <b>${r.accumulation.duration}일</b></span>
       <span>시총 <b>${fmtMcap(r.marcap)}</b></span>
       <span>RVOL <b>${r.metrics.rvol ?? "—"}</b></span>
+      ${r.confluence?.labeled_peers > 0 ? `<span title="동조 그룹 내 라벨 동시포착">🌐 동조 <b>${r.confluence.labeled_peers}</b>/${r.confluence.peer_count}</span>` : ""}
     </div>
     ${uniqReasons.length ? `
       <div class="reasons">
@@ -363,6 +367,15 @@ function render() {
   } else {
     meta.textContent = DATA.message || "—";
   }
+  // 시장 모드
+  const regEl = document.getElementById("regime");
+  const reg = DATA.regime;
+  if (reg && regEl) {
+    const c = reg.components || {};
+    regEl.innerHTML = `🏛 시장모드 <b style="color:var(--${POS_CLASS[reg.color]?.replace('pos-','')||'muted'})">${reg.label}</b> · 점수 <b>${reg.score}</b> · KOSPI ${c.kospi}/25 · KOSDAQ ${c.kosdaq}/15 · 거래대금 ${c.amount}/25 · 신고가폭 ${c.breadth}/35 · <span style="color:var(--muted)">${reg.advice}</span>`;
+  } else if (regEl) {
+    regEl.textContent = "";
+  }
   updateSchedule();
   // 라벨별 카운트
   const all = DATA.results || [];
@@ -371,7 +384,8 @@ function render() {
   const counts = {
     labeled: labeled.length,
     unlabeled: unlabeled.length,
-    "⭐황금자리": 0, "⚡단타": 0, "💎텐버거": 0, "🔍매집중": 0,
+    "⭐황금자리": 0, "⚡단타": 0, "💎텐버거": 0,
+    "🛡️안정형": 0, "🔍매집중": 0,
   };
   all.forEach(r => (r.labels || []).forEach(l => {
     if (counts[l] != null) counts[l] += 1;

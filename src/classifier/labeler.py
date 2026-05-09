@@ -18,6 +18,11 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
     if "⚡단타" in labels and "💎텐버거" in labels:
         labels.append("⭐황금자리")
 
+    # 🛡️ 안정형 — 백테스트 검증 (60일 보유 승률 86%, 손실폭 -6.59%)
+    # 조건: 매집 단계 ON + 수급 점수 60 이상
+    if accumulation.get("in_accumulation") and score_total >= 60.0:
+        labels.append("🛡️안정형")
+
     # 출발은 안 했지만 매집 진행 중 OR 점수 양호
     if not labels and (
         (accumulation.get("in_accumulation") and score_total >= 40)

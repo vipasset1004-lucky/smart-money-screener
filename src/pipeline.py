@@ -16,7 +16,9 @@ from pathlib import Path
 from src.data.fetcher import (
     get_universe, fetch_ohlcv, fetch_supply_demand, fetch_market_cap,
 )
-from src.data.bulk_fetcher import bulk_fetch_universe, fetch_kospi_history
+from src.data.bulk_fetcher import (
+    bulk_fetch_universe, fetch_kospi_history, fetch_kosdaq_history,
+)
 from src.analysis.prefilter import run_prefilter
 from src.analysis.score import (
     supply_demand_score, detect_accumulation, chart_metrics,
@@ -24,6 +26,8 @@ from src.analysis.score import (
 from src.analysis.risk import detect_risk_signals
 from src.analysis.position import classify_position
 from src.analysis.masters import evaluate_all
+from src.analysis.regime import market_regime
+from src.analysis.sector import build_correlation_clusters, confluence_count
 from src.signals.departure import short_term_departure, tenbagger_departure
 from src.classifier.labeler import classify
 
@@ -104,6 +108,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     logger.info(f"[pipeline] Stage 1 시작: {universe_size}종목 OHLCV bulk")
     s1_start = time.time()
     kospi = fetch_kospi_history(days=30)
+    kosdaq = fetch_kosdaq_history(days=30)
     ohlcv_map = bulk_fetch_universe(universe, days=30, max_workers=24)
     prefiltered = run_prefilter(ohlcv_map, kospi,
                                 threshold=stage1_threshold,
@@ -111,6 +116,14 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     s1_elapsed = time.time() - s1_start
     logger.info(f"[pipeline] Stage 1 완료: "
                 f"{len(prefiltered)}종목 통과 ({s1_elapsed:.0f}s)")
+
+    # ── 시장 모드 + 섹터 클러스터 (Stage 1 결과 기반) ─
+    regime = market_regime(kospi, kosdaq, ohlcv_map)
+    logger.info(f"[regime] {regime['label']} 점수 {regime['score']}")
+    # 섹터 클러스터: Stage 1 통과 종목들끼리만 (계산 부담 ↓)
+    s1_tickers = {t for t, _ in prefiltered}
+    s1_ohlcv = {t: ohlcv_map[t] for t in s1_tickers if t in ohlcv_map}
+    clusters = build_correlation_clusters(s1_ohlcv, days=30, threshold=0.65)
 
     # ── Stage 2: 정밀 분석 ─────────────────────────
     by_ticker = {s["ticker"]: s for s in universe}
@@ -136,6 +149,11 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     logger.info(f"[pipeline] Stage 2 완료: "
                 f"{len(results)}종목 라벨 ({s2_elapsed:.0f}s)")
 
+    # 섹터 동조도 부여 (라벨 부여 종목 기준)
+    labels_map = {r["ticker"]: r.get("labels", []) for r in results}
+    for r in results:
+        r["confluence"] = confluence_count(r["ticker"], labels_map, clusters)
+
     # 정렬: 라벨 우선순위 → 리스크 페널티 적용 점수
     # 위험·경고 종목은 같은 점수여도 아래로
     def sort_key(r):
@@ -144,6 +162,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
         if "⭐황금자리" in labels: priority = 100
         elif "💎텐버거" in labels: priority = 80
         elif "⚡단타" in labels: priority = 60
+        elif "🛡️안정형" in labels: priority = 50  # 백테스트 검증 60d 승률 86%
         elif "🔍매집중" in labels: priority = 40
         sev = (r.get("risk") or {}).get("severity", "safe")
         penalty = {"safe": 0, "watch": -3, "warning": -15,
@@ -162,6 +181,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
         "stage1_passed": len(prefiltered),
         "stage2_passed": len(results),
         "passed_count": len(results),
+        "regime": regime,
         "results": results,
     }
 

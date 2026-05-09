@@ -61,18 +61,23 @@ def short_term_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
     else:
         fail.append("박스 미돌파")
 
-    triggered = (
-        amt_mult and amt_mult >= 2.0
-        and rvol >= 1.5
-        and metrics.get("strong_close")
-        and today_supply_ok
-        and breakout
-    )
+    # 5조건 중 4개 만족이면 통과 (백테스트 0건 → 완화)
+    # 단, '거래대금 또는 rvol' 둘 중 하나는 반드시 만족 (모멘텀 필수)
+    checks = [
+        bool(amt_mult and amt_mult >= 2.0),  # 거래대금
+        rvol >= 1.5,                          # rvol
+        bool(metrics.get("strong_close")),    # 종가 강세
+        today_supply_ok,                       # 당일 수급
+        breakout,                              # 박스 돌파
+    ]
+    momentum_ok = checks[0] or checks[1]
+    triggered = momentum_ok and sum(checks) >= 4
 
     return {
         "triggered": bool(triggered),
         "reasons": reasons,
         "fail": fail,
+        "checks_passed": sum(checks),
     }
 
 
@@ -135,14 +140,17 @@ def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
     if not foreign_ok:
         fail.append("외인 누적 부진")
 
-    triggered = (
-        duration >= min_accum_days
-        and breakout
-        and rvol >= 1.5
-        and metrics.get("ma60_above_ma240")
-        and metrics.get("is_52w_high")
-        and foreign_ok
-    )
+    # 6조건 중 5개 만족 + 매집기간/박스돌파는 필수
+    checks = [
+        duration >= min_accum_days,                         # 매집 (필수)
+        breakout,                                             # 돌파 (필수)
+        rvol >= 1.5,                                          # 거래량
+        bool(metrics.get("ma60_above_ma240")),               # 정배열
+        bool(metrics.get("is_52w_high")),                     # 신고가
+        foreign_ok,                                            # 외인
+    ]
+    must_pass = checks[0] and checks[1]
+    triggered = must_pass and sum(checks) >= 5
 
     return {
         "triggered": bool(triggered),
