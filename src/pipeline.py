@@ -33,7 +33,7 @@ logger = logging.getLogger(__name__)
 # ── Stage 2 ──────────────────────────────────────────────
 
 def analyze_stage2(stock: dict, prefilter_score: dict,
-                   ohlcv_light=None) -> dict | None:
+                   ohlcv_light=None, supply_pages: int = 5) -> dict | None:
     """Stage 2 정밀 분석 (1종목)."""
     ticker = stock["ticker"]
     try:
@@ -46,7 +46,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
                 return None
 
         # 네이버 수급 (느림)
-        supply = fetch_supply_demand(ticker, max_pages=6)
+        supply = fetch_supply_demand(ticker, max_pages=supply_pages)
         mcap = stock.get("marcap") or fetch_market_cap(ticker)
 
         score = supply_demand_score(supply, ohlcv, mcap)
@@ -88,9 +88,10 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
 
 # ── 파이프라인 ───────────────────────────────────────────
 
-def run_pipeline(limit: int | None = None, max_workers_s2: int = 4,
+def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
                  stage1_threshold: float = 60.0,
-                 stage1_max_passed: int = 300) -> dict:
+                 stage1_max_passed: int = 200,
+                 supply_pages: int = 5) -> dict:
     started = time.time()
 
     # Universe
@@ -120,7 +121,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 4,
     s2_start = time.time()
     results = []
     with ThreadPoolExecutor(max_workers=max_workers_s2) as ex:
-        futs = {ex.submit(analyze_stage2, st, sc, ol): st["ticker"]
+        futs = {ex.submit(analyze_stage2, st, sc, ol, supply_pages): st["ticker"]
                 for (st, sc, ol) in s2_input}
         done = 0
         for f in as_completed(futs):
