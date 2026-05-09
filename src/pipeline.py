@@ -139,7 +139,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
 
 def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
                  stage1_threshold: float = 60.0,
-                 stage1_max_passed: int = 200,
+                 stage1_max_passed: int = 500,
                  supply_pages: int = 5) -> dict:
     started = time.time()
 
