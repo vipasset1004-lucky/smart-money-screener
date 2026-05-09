@@ -10,6 +10,7 @@
     --text: #e6edf7; --muted: #6b7a99; --accent: #38bdf8;
     --short: #fbbf24; --tenbagger: #a78bfa; --gold: #facc15;
     --watch: #34d399;
+    --safe: #22c55e; --warn: #f59e0b; --danger: #ef4444;
   }
   * { box-sizing: border-box; }
   body {
@@ -24,19 +25,16 @@
   }
   h1 { font-size: 18px; margin: 0; color: var(--accent); }
   .meta { color: var(--muted); font-size: 12px; }
-  .controls {
-    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;
-  }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
   button {
     background: var(--card); color: var(--text); border: 1px solid var(--border);
     padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 14px;
     font-weight: 500;
   }
   button:hover { border-color: var(--accent); }
+  button:disabled { opacity: 0.5; cursor: wait; }
   button.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
-  .tabs {
-    display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;
-  }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
   .tab {
     background: var(--card); color: var(--muted); border: 1px solid var(--border);
     padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 13px;
@@ -45,7 +43,7 @@
   .tab.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
   .grid {
     display: grid; gap: 8px;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   }
   .card {
     background: var(--card); border: 1px solid var(--border); border-radius: 8px;
@@ -68,6 +66,23 @@
   .label-gold { color: var(--gold); border-color: var(--gold);
     background: rgba(250,204,21,0.1); }
   .label-watch { color: var(--watch); border-color: var(--watch); }
+  .badges {
+    display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
+    font-size: 11px;
+  }
+  .badge {
+    padding: 2px 7px; border-radius: 4px; border: 1px solid var(--border);
+  }
+  .pos-good   { color: var(--safe);  border-color: var(--safe); }
+  .pos-alert  { color: var(--gold);  border-color: var(--gold); }
+  .pos-warn   { color: var(--warn);  border-color: var(--warn); }
+  .pos-watch  { color: var(--watch); border-color: var(--watch); }
+  .pos-danger { color: var(--danger);border-color: var(--danger); }
+  .pos-muted  { color: var(--muted); border-color: var(--border); }
+  .risk-safe    { color: var(--safe);  border-color: var(--safe); }
+  .risk-watch   { color: var(--watch); border-color: var(--watch); }
+  .risk-warning { color: var(--warn);  border-color: var(--warn); }
+  .risk-danger  { color: var(--danger);border-color: var(--danger); }
   .row {
     display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--muted);
     margin-top: 4px;
@@ -82,11 +97,80 @@
     padding: 1px 5px; background: rgba(56,189,248,0.08); border-radius: 3px;
     color: var(--accent);
   }
+  .actions { display: flex; gap: 6px; margin-top: 8px; }
+  .actions button {
+    flex: 1; padding: 6px 8px; font-size: 12px;
+  }
   .empty { text-align: center; color: var(--muted); padding: 40px; }
   .err { color: #f87171; }
+
+  /* Modal */
+  .modal-bg {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 20px 12px; overflow-y: auto; z-index: 100;
+  }
+  .modal {
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    width: min(900px, 100%); padding: 16px;
+  }
+  .modal-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 12px;
+    gap: 12px; flex-wrap: wrap;
+  }
+  .modal-head h2 { margin: 0; font-size: 17px; }
+  .modal-head h2 a { color: var(--text); text-decoration: none; }
+  .modal-head h2 a:hover { color: var(--accent); }
+  .close-btn {
+    background: transparent; border: 1px solid var(--border); color: var(--muted);
+    padding: 4px 10px; border-radius: 4px; font-size: 13px;
+  }
+  .section {
+    margin-bottom: 14px;
+  }
+  .section h3 {
+    font-size: 13px; color: var(--accent); margin: 0 0 8px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .score-bars { display: grid; gap: 6px; }
+  .score-bar {
+    display: grid; grid-template-columns: 90px 1fr 50px; gap: 8px; align-items: center;
+    font-size: 12px;
+  }
+  .score-bar .bar {
+    background: rgba(255,255,255,0.06); border-radius: 4px; height: 14px;
+    overflow: hidden;
+  }
+  .score-bar .fill {
+    background: linear-gradient(90deg, var(--accent), #6366f1);
+    height: 100%;
+  }
+  .masters-grid {
+    display: grid; gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+  .master {
+    background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+    border-radius: 6px; padding: 10px;
+  }
+  .master-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 6px;
+  }
+  .master-name { font-size: 13px; font-weight: 600; }
+  .master-pct { font-size: 16px; font-weight: 700; color: var(--accent); }
+  .master-sub { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+  .master-items { display: grid; gap: 3px; font-size: 11px; }
+  .master-items .item.ok { color: var(--text); }
+  .master-items .item.no { color: var(--muted); }
+  .master-items .item .check { display: inline-block; width: 14px; }
+  .risks ul { margin: 0; padding-left: 18px; font-size: 12px; }
+  .risks li { color: var(--warn); }
   @media (max-width: 600px) {
     .grid { grid-template-columns: 1fr; }
     h1 { font-size: 16px; }
+    .modal { padding: 12px; }
   }
 </style>
 </head>
@@ -112,10 +196,15 @@
 </div>
 
 <div id="content"><div class="empty">로딩 중…</div></div>
+<div id="modal-root"></div>
 
 <script>
 let DATA = null;
 let CURRENT_FILTER = "all";
+const POS_CLASS = {
+  good: "pos-good", alert: "pos-alert", warn: "pos-warn",
+  watch: "pos-watch", danger: "pos-danger", muted: "pos-muted",
+};
 
 async function refresh() {
   document.getElementById("content").innerHTML = '<div class="empty">불러오는 중…</div>';
@@ -160,7 +249,8 @@ function cardHtml(r) {
     ...(r.short_term?.reasons || []),
     ...(r.tenbagger?.reasons || []),
   ];
-  const uniqReasons = [...new Set(reasons)].slice(0, 6);
+  const uniqReasons = [...new Set(reasons)].slice(0, 5);
+  const posCls = POS_CLASS[r.position?.color] || "pos-muted";
   return `
   <div class="card">
     <div class="card-head">
@@ -173,6 +263,10 @@ function cardHtml(r) {
           `<span class="label ${labelClass(l)}">${l}</span>`).join("")}
       </div>
     </div>
+    <div class="badges">
+      <span class="badge ${posCls}">📍 ${r.position?.label ?? "—"}</span>
+      <span class="badge risk-${r.risk?.severity ?? "safe"}">⚠ ${r.risk?.severity ?? "safe"}${r.risk?.signals?.length ? ` (${r.risk.signals.length})` : ""}</span>
+    </div>
     <div class="row">
       <span>점수 <b>${r.score.total}</b></span>
       <span>매집 <b>${r.accumulation.duration}일</b></span>
@@ -183,6 +277,10 @@ function cardHtml(r) {
       <div class="reasons">
         ${uniqReasons.map(x => `<span class="r">${x}</span>`).join("")}
       </div>` : ""}
+    <div class="actions">
+      <button onclick='openDetail(${JSON.stringify(r.ticker)})'>📊 상세</button>
+      <button onclick='window.open(${JSON.stringify(r.naver_url)}, "_blank")'>🔗 네이버</button>
+    </div>
   </div>`;
 }
 
@@ -191,14 +289,14 @@ function render() {
   const meta = document.getElementById("meta");
   if (DATA.generated_at) {
     const dt = new Date(DATA.generated_at).toLocaleString("ko-KR");
-    meta.textContent = `생성 ${dt} · 분석 ${DATA.universe_size}종목 · 통과 ${DATA.passed_count}종목`;
+    const s1 = DATA.stage1_passed ?? "?";
+    const s2 = DATA.stage2_passed ?? DATA.passed_count ?? "?";
+    meta.textContent = `생성 ${dt} · 분석 ${DATA.universe_size} · S1 통과 ${s1} · S2 라벨 ${s2}`;
   } else {
     meta.textContent = DATA.message || "—";
   }
-
   const items = (DATA.results || []).filter(r =>
     CURRENT_FILTER === "all" ? true : r.labels.includes(CURRENT_FILTER));
-
   const root = document.getElementById("content");
   if (items.length === 0) {
     root.innerHTML = '<div class="empty">조건 통과 종목 없음</div>';
@@ -206,6 +304,130 @@ function render() {
   }
   root.innerHTML = `<div class="grid">${items.map(cardHtml).join("")}</div>`;
 }
+
+// ── Detail Modal ─────────────────────────────────────
+
+function masterCardHtml(m) {
+  const items = (m.items || [])
+    .map(it => `<div class="item ${it.ok ? "ok" : "no"}">
+      <span class="check">${it.ok ? "✅" : "▫️"}</span>${it.label}</div>`)
+    .join("");
+  const sub = m.phase || m.stage || m.type || "";
+  return `
+    <div class="master">
+      <div class="master-head">
+        <div class="master-name">${m.name}</div>
+        <div class="master-pct">${m.percent ?? "—"}%</div>
+      </div>
+      ${sub ? `<div class="master-sub">${sub}</div>` : ""}
+      <div class="master-items">${items}</div>
+    </div>`;
+}
+
+function scoreBar(label, val, max) {
+  const pct = Math.min(100, (val / max) * 100);
+  return `
+    <div class="score-bar">
+      <span>${label}</span>
+      <div class="bar"><div class="fill" style="width:${pct}%"></div></div>
+      <span><b>${val}</b>/${max}</span>
+    </div>`;
+}
+
+function openDetail(ticker) {
+  const r = (DATA.results || []).find(x => x.ticker === ticker);
+  if (!r) return;
+  const m = r.masters || {};
+  const masterOrder = ["wyckoff", "oneil", "minervini", "weinstein", "livermore"];
+  const masterCards = masterOrder
+    .filter(k => m[k]).map(k => masterCardHtml(m[k])).join("");
+
+  const risks = (r.risk?.signals || []);
+  const riskHtml = risks.length
+    ? `<ul>${risks.map(s => `<li>${s}</li>`).join("")}</ul>`
+    : `<div style="color:var(--safe)">신호 없음</div>`;
+
+  const reasons = [
+    ...(r.short_term?.reasons || []),
+    ...(r.tenbagger?.reasons || []),
+  ];
+  const fails = [
+    ...(r.short_term?.fail || []),
+    ...(r.tenbagger?.fail || []),
+  ];
+
+  document.getElementById("modal-root").innerHTML = `
+    <div class="modal-bg" onclick="if(event.target===this) closeDetail()">
+      <div class="modal">
+        <div class="modal-head">
+          <h2><a href="${r.naver_url}" target="_blank">${r.name} <span class="ticker">${r.ticker}</span></a>
+            ${r.labels.map(l => `<span class="label ${labelClass(l)}" style="margin-left:6px">${l}</span>`).join("")}
+          </h2>
+          <button class="close-btn" onclick="closeDetail()">닫기</button>
+        </div>
+
+        <div class="section">
+          <h3>핵심 지표</h3>
+          <div class="row" style="font-size:13px">
+            <span>위치 <b>${r.position?.label ?? "—"}</b> <span style="color:var(--muted)">— ${r.position?.desc ?? ""}</span></span>
+            <span>리스크 <b style="color:var(--${r.risk?.severity === "danger" ? "danger" : r.risk?.severity === "warning" ? "warn" : r.risk?.severity === "watch" ? "watch" : "safe"})">${r.risk?.severity ?? "safe"}</b></span>
+            <span>시총 <b>${fmtMcap(r.marcap)}</b></span>
+            <span>매집 <b>${r.accumulation.duration}일</b></span>
+            <span>박스 <b>${r.accumulation.range_pct}%</b></span>
+            <span>RVOL <b>${r.metrics.rvol}</b></span>
+            <span>52주H <b>${r.metrics.is_52w_high ? "✓" : "—"}</b></span>
+            <span>S1 <b>${r.stage1_score ?? "—"}</b></span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>수급 점수 (총 ${r.score.total} / 100)</h3>
+          <div class="score-bars">
+            ${scoreBar("일치도", r.score.confluence, 30)}
+            ${scoreBar("강도", r.score.intensity, 25)}
+            ${scoreBar("지속성", r.score.persistence, 25)}
+            ${scoreBar("보조", r.score.aux, 20)}
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>대가별 진단</h3>
+          <div class="masters-grid">${masterCards}</div>
+        </div>
+
+        ${reasons.length ? `
+        <div class="section">
+          <h3>출발 신호 통과 사유</h3>
+          <div class="reasons">${[...new Set(reasons)].map(x => `<span class="r">${x}</span>`).join("")}</div>
+        </div>` : ""}
+
+        ${fails.length ? `
+        <div class="section">
+          <h3>출발 신호 미충족</h3>
+          <div class="reasons" style="opacity:0.7">${[...new Set(fails)].map(x => `<span class="r" style="background:rgba(239,68,68,0.08);color:var(--danger)">${x}</span>`).join("")}</div>
+        </div>` : ""}
+
+        <div class="section risks">
+          <h3>리스크 신호</h3>
+          ${riskHtml}
+        </div>
+
+        <div class="actions">
+          <button onclick='window.open(${JSON.stringify(r.naver_url)}, "_blank")'>🔗 네이버에서 차트 보기</button>
+        </div>
+      </div>
+    </div>`;
+  document.body.style.overflow = "hidden";
+}
+
+function closeDetail() {
+  document.getElementById("modal-root").innerHTML = "";
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeDetail();
+});
 
 document.querySelectorAll(".tab").forEach(t => {
   t.onclick = () => {

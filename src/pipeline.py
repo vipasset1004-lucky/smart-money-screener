@@ -1,4 +1,8 @@
-"""전체 파이프라인 — universe → analyze → label → 결과."""
+"""파이프라인 — 2-Stage.
+
+Stage 1: 1500종목 → ~300 (가벼운 OHLCV만, 30~60s)
+Stage 2: 300 종목 → 분석/라벨 (네이버 수급 포함, 5~7min)
+"""
 
 from __future__ import annotations
 
@@ -12,23 +16,36 @@ from pathlib import Path
 from src.data.fetcher import (
     get_universe, fetch_ohlcv, fetch_supply_demand, fetch_market_cap,
 )
+from src.data.bulk_fetcher import bulk_fetch_universe, fetch_kospi_history
+from src.analysis.prefilter import run_prefilter
 from src.analysis.score import (
     supply_demand_score, detect_accumulation, chart_metrics,
 )
+from src.analysis.risk import detect_risk_signals
+from src.analysis.position import classify_position
+from src.analysis.masters import evaluate_all
 from src.signals.departure import short_term_departure, tenbagger_departure
 from src.classifier.labeler import classify
 
 logger = logging.getLogger(__name__)
 
 
-def analyze_one(stock: dict) -> dict | None:
-    """한 종목 분석."""
+# ── Stage 2 ──────────────────────────────────────────────
+
+def analyze_stage2(stock: dict, prefilter_score: dict,
+                   ohlcv_light=None) -> dict | None:
+    """Stage 2 정밀 분석 (1종목)."""
     ticker = stock["ticker"]
     try:
+        # OHLCV 풀 (400일) — masters/accumulation에 필요
         ohlcv = fetch_ohlcv(ticker, days=400)
         if ohlcv is None or len(ohlcv) < 60:
-            return None
-        # 약 6페이지 ≈ 90일 (네이버 한 페이지당 ~15행)
+            # fallback: stage1의 30일 데이터로라도
+            ohlcv = ohlcv_light
+            if ohlcv is None or len(ohlcv) < 30:
+                return None
+
+        # 네이버 수급 (느림)
         supply = fetch_supply_demand(ticker, max_pages=6)
         mcap = stock.get("marcap") or fetch_market_cap(ticker)
 
@@ -39,9 +56,13 @@ def analyze_one(stock: dict) -> dict | None:
         st_sig = short_term_departure(ohlcv, supply, metrics, accum)
         tb_sig = tenbagger_departure(ohlcv, supply, metrics, accum)
 
+        risk = detect_risk_signals(ohlcv, supply, accum, metrics)
+        position = classify_position(
+            ohlcv, supply, accum, metrics, score["total"],
+            st_sig["triggered"], tb_sig["triggered"], risk,
+        )
+        masters = evaluate_all(ohlcv, supply, score, accum, metrics)
         labels = classify(st_sig, tb_sig, accum, score["total"])
-        if not labels:
-            return None  # 아무 라벨도 없으면 결과에서 제외
 
         return {
             "ticker": ticker,
@@ -49,44 +70,92 @@ def analyze_one(stock: dict) -> dict | None:
             "market": stock.get("market"),
             "marcap": mcap,
             "labels": labels,
+            "position": position,
+            "risk": risk,
             "score": score,
+            "stage1_score": prefilter_score.get("total"),
             "accumulation": accum,
             "metrics": {k: v for k, v in metrics.items() if k != "ma240"},
             "short_term": st_sig,
             "tenbagger": tb_sig,
+            "masters": masters,
             "naver_url": f"https://finance.naver.com/item/main.naver?code={ticker}",
         }
     except Exception as e:
-        logger.warning(f"[analyze] {ticker}: {e}")
+        logger.warning(f"[stage2] {ticker}: {e}")
         return None
 
 
-def run_pipeline(limit: int | None = None, max_workers: int = 4) -> dict:
-    """전체 파이프라인 실행."""
+# ── 파이프라인 ───────────────────────────────────────────
+
+def run_pipeline(limit: int | None = None, max_workers_s2: int = 4,
+                 stage1_threshold: float = 60.0,
+                 stage1_max_passed: int = 300) -> dict:
     started = time.time()
+
+    # Universe
     universe = get_universe()
     if limit:
         universe = universe[:limit]
-    logger.info(f"[pipeline] {len(universe)} 종목 분석 시작")
+    universe_size = len(universe)
 
+    # ── Stage 1: 가벼운 OHLCV bulk ─────────────────
+    logger.info(f"[pipeline] Stage 1 시작: {universe_size}종목 OHLCV bulk")
+    s1_start = time.time()
+    kospi = fetch_kospi_history(days=30)
+    ohlcv_map = bulk_fetch_universe(universe, days=30, max_workers=24)
+    prefiltered = run_prefilter(ohlcv_map, kospi,
+                                threshold=stage1_threshold,
+                                max_passed=stage1_max_passed)
+    s1_elapsed = time.time() - s1_start
+    logger.info(f"[pipeline] Stage 1 완료: "
+                f"{len(prefiltered)}종목 통과 ({s1_elapsed:.0f}s)")
+
+    # ── Stage 2: 정밀 분석 ─────────────────────────
+    by_ticker = {s["ticker"]: s for s in universe}
+    s2_input = [(by_ticker[t], score, ohlcv_map.get(t))
+                for t, score in prefiltered if t in by_ticker]
+
+    logger.info(f"[pipeline] Stage 2 시작: {len(s2_input)}종목 정밀 분석")
+    s2_start = time.time()
     results = []
-    with ThreadPoolExecutor(max_workers=max_workers) as ex:
-        futures = {ex.submit(analyze_one, s): s for s in universe}
-        for i, fut in enumerate(as_completed(futures), 1):
-            r = fut.result()
+    with ThreadPoolExecutor(max_workers=max_workers_s2) as ex:
+        futs = {ex.submit(analyze_stage2, st, sc, ol): st["ticker"]
+                for (st, sc, ol) in s2_input}
+        done = 0
+        for f in as_completed(futs):
+            r = f.result()
             if r:
                 results.append(r)
-            if i % 50 == 0:
-                logger.info(f"[pipeline] 진행 {i}/{len(universe)}, 통과 {len(results)}")
+            done += 1
+            if done % 50 == 0:
+                logger.info(f"[pipeline] Stage 2 진행 {done}/{len(s2_input)}, "
+                            f"라벨 {len(results)}")
+    s2_elapsed = time.time() - s2_start
+    logger.info(f"[pipeline] Stage 2 완료: "
+                f"{len(results)}종목 라벨 ({s2_elapsed:.0f}s)")
 
-    # 점수 내림차순 정렬
-    results.sort(key=lambda r: r["score"]["total"], reverse=True)
+    # 정렬: 라벨 있는 종목은 점수 내림차순, 없는 건 prefilter 점수
+    def sort_key(r):
+        labels = r.get("labels", [])
+        priority = 0
+        if "⭐황금자리" in labels: priority = 100
+        elif "💎텐버거" in labels: priority = 80
+        elif "⚡단타" in labels: priority = 60
+        elif "🔍매집중" in labels: priority = 40
+        return (priority, r["score"]["total"])
+
+    results.sort(key=sort_key, reverse=True)
 
     elapsed = time.time() - started
     return {
         "generated_at": datetime.now().isoformat(),
         "elapsed_sec": round(elapsed, 1),
-        "universe_size": len(universe),
+        "stage1_elapsed": round(s1_elapsed, 1),
+        "stage2_elapsed": round(s2_elapsed, 1),
+        "universe_size": universe_size,
+        "stage1_passed": len(prefiltered),
+        "stage2_passed": len(results),
         "passed_count": len(results),
         "results": results,
     }
@@ -104,8 +173,8 @@ if __name__ == "__main__":
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s",
     )
-    import sys, io
-    # Windows cp949 콘솔에서도 이모지 출력 가능하도록 UTF-8 강제
+    import sys
+    import io
     if hasattr(sys.stdout, "buffer"):
         sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8",
                                       errors="replace")
@@ -114,10 +183,13 @@ if __name__ == "__main__":
     save_results(payload)
     print(f"\n=== 결과 ===")
     print(f"전체 유니버스: {payload['universe_size']}")
-    print(f"라벨 부여 종목: {payload['passed_count']}")
-    print(f"소요시간: {payload['elapsed_sec']}초")
+    print(f"Stage1 통과:   {payload['stage1_passed']} ({payload['stage1_elapsed']}s)")
+    print(f"Stage2 라벨:   {payload['stage2_passed']} ({payload['stage2_elapsed']}s)")
+    print(f"총 소요시간:   {payload['elapsed_sec']}s")
     print(f"\n상위 10개:")
     for r in payload["results"][:10]:
-        labels = " ".join(r["labels"])
-        print(f"  {r['ticker']} {r['name']:10s} {labels} "
-              f"점수 {r['score']['total']} 매집 {r['accumulation']['duration']}일")
+        labels = " ".join(r["labels"]) or "-"
+        pos = r["position"]["label"]
+        sev = r["risk"]["severity"]
+        print(f"  {r['ticker']} {r['name']:14s} {labels:20s} "
+              f"점수 {r['score']['total']:4.1f}  위치 {pos:6s}  리스크 {sev}")
