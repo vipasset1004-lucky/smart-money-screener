@@ -51,8 +51,8 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
     """Stage 2 정밀 분석 (1종목)."""
     ticker = stock["ticker"]
     try:
-        # OHLCV 풀 (400일) — masters/accumulation에 필요
-        ohlcv = fetch_ohlcv(ticker, days=400)
+        # OHLCV 풀 (300일) — MA240 + 여유 17일. Starter 메모리 핏 위해 축소.
+        ohlcv = fetch_ohlcv(ticker, days=300)
         if ohlcv is None or len(ohlcv) < 60:
             # fallback: stage1의 30일 데이터로라도
             ohlcv = ohlcv_light
@@ -137,7 +137,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
 
 # ── 파이프라인 ───────────────────────────────────────────
 
-def run_pipeline(limit: int | None = None, max_workers_s2: int = 4,
+def run_pipeline(limit: int | None = None, max_workers_s2: int = 2,
                  stage1_threshold: float = 60.0,
                  stage1_max_passed: int = 500,
                  supply_pages: int = 5) -> dict:
