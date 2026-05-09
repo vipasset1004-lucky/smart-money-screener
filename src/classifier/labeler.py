@@ -21,10 +21,17 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
     vcp = vcp_pack or {}
     vcp_detected = bool(vcp.get("vcp_detected"))
 
-    if short_term_signal.get("triggered"):
+    # 단타 + 텐버거 게이트의 통과/미충족 통합
+    st = short_term_signal or {}
+    tb = tenbagger_signal or {}
+    all_reasons = (st.get("reasons", []) or []) + (tb.get("reasons", []) or [])
+    all_fails = (st.get("fail", []) or []) + (tb.get("fail", []) or [])
+    duration = int(accumulation.get("duration", 0) or 0)
+
+    if st.get("triggered"):
         labels.append("⚡단타")
 
-    if tenbagger_signal.get("triggered"):
+    if tb.get("triggered"):
         labels.append("💎텐버거")
 
     # ⭐ 황금자리 — 4명+ 80점 OR 단타+텐버거 동시
@@ -35,12 +42,17 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
     if m65 >= 3 and en_score >= 50 and "⭐황금자리" not in labels:
         labels.append("🏛대가합의")
 
-    # 🎯 VCP — 백테스트 검증된 강력 알파
-    # 5d: 67% +4.4%, 20d: 64% +12%, 60d: 75% +23% / 손실 -7.56%
+    # 🌅 폭발임박 — 모든 매집 조건 끝나고 박스 돌파만 대기
+    # (통과 사유 8+ AND 미충족 ≤ 2 AND 매집 180일+)
+    if (len(all_reasons) >= 8 and len(all_fails) <= 2
+            and duration >= 180):
+        labels.append("🌅폭발임박")
+
+    # 🎯 VCP — 백테스트 검증 (60d 75%/+23%/-7.6%)
     if vcp_detected:
         labels.append("🎯VCP")
 
-    # 🛡️ 안정형 — 백테스트 검증 매집 ON + 수급 60+ (60d 76% 승률)
+    # 🛡️ 안정형 — 백테스트 검증 (60d 76%)
     if accumulation.get("in_accumulation") and score_total >= 60.0:
         labels.append("🛡️안정형")
 

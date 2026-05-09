@@ -209,7 +209,8 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
         if "⭐황금자리" in labels: priority = 100
         elif "💎텐버거" in labels: priority = 80
         elif "🏛대가합의" in labels: priority = 75
-        elif "🎯VCP" in labels: priority = 65  # 백테스트 검증 60d 승률 75%
+        elif "🌅폭발임박" in labels: priority = 70  # 출발 직전 (사용자 통찰)
+        elif "🎯VCP" in labels: priority = 65  # 백테스트 검증 60d 75%
         elif "⚡단타" in labels: priority = 60
         elif "🛡️안정형" in labels: priority = 50  # 백테스트 60d 승률 76%
         elif "🔍매집중" in labels: priority = 40

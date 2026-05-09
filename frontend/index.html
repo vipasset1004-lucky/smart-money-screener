@@ -76,6 +76,8 @@
     background: rgba(236,72,153,0.10); }
   .label-vcp { color: #10b981; border-color: #10b981;
     background: rgba(16,185,129,0.12); }
+  .label-imminent { color: #fb923c; border-color: #fb923c;
+    background: rgba(251,146,60,0.15); font-weight: 700; }
   .label-watch { color: var(--watch); border-color: var(--watch); }
   .badges {
     display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
@@ -207,6 +209,7 @@
   <span class="tab" data-filter="⚡단타">⚡ 단타 <b class="cnt" data-cnt="⚡단타">0</b></span>
   <span class="tab" data-filter="💎텐버거">💎 텐버거 <b class="cnt" data-cnt="💎텐버거">0</b></span>
   <span class="tab" data-filter="🏛대가합의">🏛 대가합의 <b class="cnt" data-cnt="🏛대가합의">0</b></span>
+  <span class="tab" data-filter="🌅폭발임박">🌅 폭발임박 <b class="cnt" data-cnt="🌅폭발임박">0</b></span>
   <span class="tab" data-filter="🎯VCP">🎯 VCP <b class="cnt" data-cnt="🎯VCP">0</b></span>
   <span class="tab" data-filter="🛡️안정형">🛡️ 안정형 <b class="cnt" data-cnt="🛡️안정형">0</b></span>
   <span class="tab" data-filter="🔍매집중">🔍 매집중 <b class="cnt" data-cnt="🔍매집중">0</b></span>
@@ -259,6 +262,7 @@ function labelClass(l) {
   if (l === "⚡단타") return "label-short";
   if (l === "💎텐버거") return "label-tenbagger";
   if (l === "🏛대가합의") return "label-master";
+  if (l === "🌅폭발임박") return "label-imminent";
   if (l === "🎯VCP") return "label-vcp";
   if (l === "🛡️안정형") return "label-stable";
   if (l === "🔍매집중") return "label-watch";
@@ -395,7 +399,8 @@ function render() {
     labeled: labeled.length,
     unlabeled: unlabeled.length,
     "⭐황금자리": 0, "⚡단타": 0, "💎텐버거": 0,
-    "🏛대가합의": 0, "🎯VCP": 0, "🛡️안정형": 0, "🔍매집중": 0,
+    "🏛대가합의": 0, "🌅폭발임박": 0, "🎯VCP": 0,
+    "🛡️안정형": 0, "🔍매집중": 0,
   };
   all.forEach(r => (r.labels || []).forEach(l => {
     if (counts[l] != null) counts[l] += 1;

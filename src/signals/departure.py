@@ -86,7 +86,7 @@ def tenbagger_departure(ohlcv: pd.DataFrame, supply: pd.DataFrame,
                         score: dict | None = None,
                         marcap: int | None = None,
                         weekly_pack: dict | None = None,
-                        min_accum_days: int = 250) -> dict:
+                        min_accum_days: int = 180) -> dict:
     """💎 텐버거 출발 신호 — 주봉 매집 + 일봉 출발 통합 (v4).
 
     weekly_pack: weekly.py가 만든 dict
