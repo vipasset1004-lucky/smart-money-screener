@@ -28,7 +28,8 @@ def analyze_one(stock: dict) -> dict | None:
         ohlcv = fetch_ohlcv(ticker, days=400)
         if ohlcv is None or len(ohlcv) < 60:
             return None
-        supply = fetch_supply_demand(ticker, days=120)
+        # 약 6페이지 ≈ 90일 (네이버 한 페이지당 ~15행)
+        supply = fetch_supply_demand(ticker, max_pages=6)
         mcap = stock.get("marcap") or fetch_market_cap(ticker)
 
         score = supply_demand_score(supply, ohlcv, mcap)
@@ -103,7 +104,11 @@ if __name__ == "__main__":
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s",
     )
-    import sys
+    import sys, io
+    # Windows cp949 콘솔에서도 이모지 출력 가능하도록 UTF-8 강제
+    if hasattr(sys.stdout, "buffer"):
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8",
+                                      errors="replace")
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else None
     payload = run_pipeline(limit=limit)
     save_results(payload)

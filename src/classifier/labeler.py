@@ -18,9 +18,11 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
     if "⚡단타" in labels and "💎텐버거" in labels:
         labels.append("⭐황금자리")
 
-    # 출발은 안 했지만 매집 진행 중 + 수급 점수 양호
-    if not labels and accumulation.get("in_accumulation") \
-            and score_total >= score_threshold:
+    # 출발은 안 했지만 매집 진행 중 OR 수급 점수 양호
+    if not labels and (
+        (accumulation.get("in_accumulation") and score_total >= 40)
+        or score_total >= score_threshold
+    ):
         labels.append("🔍매집중")
 
     return labels

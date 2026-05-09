@@ -1,20 +1,34 @@
-"""데이터 수집 — pykrx + FinanceDataReader 하이브리드.
+"""데이터 수집 — pykrx (OHLCV/유니버스) + Naver 스크래핑 (수급).
 
-수급(외인/기관)은 pykrx로, 종목 유니버스는 FDR로 가져온다.
-네이버는 결과 화면에서 종목 링크아웃에만 사용.
+pykrx의 투자자별 매매 endpoint는 현재 KRX 응답이 불안정해서,
+수급 데이터는 네이버 금융 HTML 스크래핑으로 가져온다.
 """
 
 from __future__ import annotations
 
-import time
+import io
 import logging
+import re
+import time
 from datetime import datetime, timedelta
 from typing import Optional
 
 import pandas as pd
+import requests
 
 logger = logging.getLogger(__name__)
 
+NAVER_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8",
+}
+
+
+# ── Universe ─────────────────────────────────────────────
 
 def get_universe(min_mktcap: int = 100_000_000_000,
                  min_amount: int = 3_000_000_000) -> list[dict]:
@@ -22,7 +36,7 @@ def get_universe(min_mktcap: int = 100_000_000_000,
     import FinanceDataReader as fdr
     df = fdr.StockListing("KRX")
     df = df[df["MarketId"].isin(["STK", "KSQ"])]
-    df = df[df["Code"].str.endswith("0")]  # 보통주만
+    df = df[df["Code"].str.endswith("0")]
     df = df[(df["Marcap"] >= min_mktcap) &
             (df["Amount"] >= min_amount) &
             (df["Amount"] > 0)]
@@ -38,8 +52,10 @@ def get_universe(min_mktcap: int = 100_000_000_000,
     return out
 
 
+# ── OHLCV (pykrx) ────────────────────────────────────────
+
 def fetch_ohlcv(ticker: str, days: int = 400) -> Optional[pd.DataFrame]:
-    """OHLCV 일봉 (pykrx)."""
+    """OHLCV 일봉 (pykrx). 거래대금은 volume×close로 근사."""
     from pykrx import stock
     end = datetime.now().strftime("%Y%m%d")
     start = (datetime.now() - timedelta(days=days + 60)).strftime("%Y%m%d")
@@ -47,44 +63,130 @@ def fetch_ohlcv(ticker: str, days: int = 400) -> Optional[pd.DataFrame]:
         df = stock.get_market_ohlcv(start, end, ticker)
         if df is None or df.empty:
             return None
-        df = df.rename(columns={
-            "시가": "open", "고가": "high", "저가": "low",
-            "종가": "close", "거래량": "volume", "거래대금": "amount",
-        })
+        # pykrx OHLCV columns: 시가, 고가, 저가, 종가, 거래량, 등락률
+        rename = {"시가": "open", "고가": "high", "저가": "low",
+                  "종가": "close", "거래량": "volume"}
+        df = df.rename(columns=rename)
+        # 거래대금 근사: volume × close. int64로 먼저 캐스팅해야 오버플로우 방지.
+        df["amount"] = (df["volume"].astype("int64")
+                        * df["close"].astype("int64"))
         return df[["open", "high", "low", "close", "volume", "amount"]]
     except Exception as e:
         logger.warning(f"[ohlcv] {ticker}: {e}")
         return None
 
 
-def fetch_supply_demand(ticker: str, days: int = 120) -> Optional[pd.DataFrame]:
-    """투자자별 순매수 (외인/기관/개인 등) — pykrx.
+# ── 수급 (Naver 스크래핑) ────────────────────────────────
 
-    Returns DataFrame with columns:
-        외국인, 기관합계, 개인, 기타법인, 금융투자, 투신, 연기금, 사모, 보험, 은행
-    """
-    from pykrx import stock
-    end = datetime.now().strftime("%Y%m%d")
-    start = (datetime.now() - timedelta(days=days + 30)).strftime("%Y%m%d")
-    try:
-        df = stock.get_market_trading_value_by_date(start, end, ticker)
-        if df is None or df.empty:
+_FRGN_NUM_RE = re.compile(r"-?\d[\d,]*")
+
+
+def _parse_naver_int(s) -> Optional[int]:
+    """네이버 표의 셀 값을 int로. float/숫자 문자열/콤마 모두 대응."""
+    if s is None:
+        return None
+    if isinstance(s, (int, float)):
+        if pd.isna(s):
             return None
-        keep = [c for c in ["외국인합계", "기관합계", "개인", "기타법인",
-                            "금융투자", "투신", "연기금", "사모", "보험", "은행",
-                            "외국인"]
-                if c in df.columns]
-        df = df[keep].copy()
-        if "외국인합계" in df.columns and "외국인" not in df.columns:
-            df = df.rename(columns={"외국인합계": "외국인"})
-        return df
-    except Exception as e:
-        logger.warning(f"[supply] {ticker}: {e}")
+        return int(s)
+    txt = str(s).replace(",", "").strip()
+    if txt in ("", "-", "—", "nan"):
+        return None
+    try:
+        return int(float(txt))
+    except (ValueError, TypeError):
         return None
 
 
+def fetch_supply_demand(ticker: str, max_pages: int = 6) -> Optional[pd.DataFrame]:
+    """네이버 금융에서 외인/기관 일별 순매수 수량(주) 가져오기.
+
+    URL: https://finance.naver.com/item/frgn.naver?code={ticker}&page=N
+    각 페이지당 ~15일치, max_pages=6이면 약 90일.
+
+    Returns DataFrame indexed by date with columns:
+        외국인, 기관합계, 개인 (개인은 추정 — 네이버는 외인/기관만 직접 제공)
+    값 단위: 주 (수량). 비어있으면 None.
+    """
+    rows = []
+    for page in range(1, max_pages + 1):
+        url = f"https://finance.naver.com/item/frgn.naver?code={ticker}&page={page}"
+        try:
+            resp = requests.get(url, headers=NAVER_HEADERS, timeout=8)
+            resp.encoding = "euc-kr"
+            if resp.status_code != 200:
+                break
+            tables = pd.read_html(io.StringIO(resp.text))
+        except Exception as e:
+            logger.debug(f"[naver supply] {ticker} p{page}: {e}")
+            break
+
+        # 네이버 frgn 페이지의 데이터 표는 보통 인덱스 2 근처. 가장 행 많은 표 사용.
+        candidates = [t for t in tables if t.shape[0] >= 5 and t.shape[1] >= 6]
+        if not candidates:
+            break
+        df = max(candidates, key=lambda t: t.shape[0])
+
+        # MultiIndex라면 두 레벨을 "_"로 결합. 단일이면 그대로.
+        if isinstance(df.columns, pd.MultiIndex):
+            df.columns = ["_".join(str(p) for p in c).strip()
+                          for c in df.columns]
+        df.columns = [str(c).strip() for c in df.columns]
+
+        # 날짜 컬럼: '날짜_날짜' 또는 '날짜' (반복 접미 제거)
+        date_col = next((c for c in df.columns
+                         if c.startswith("날짜")), df.columns[0])
+        foreign_col = next((c for c in df.columns
+                            if "외국인_순매매" in c or
+                               (c == "외국인_순매매수")), None)
+        inst_col = next((c for c in df.columns
+                         if "기관_순매매" in c or
+                            (c == "기관_순매매수")), None)
+        if foreign_col is None:
+            foreign_col = next((c for c in df.columns
+                                if "외국인" in c and "순매" in c), None)
+        if inst_col is None:
+            inst_col = next((c for c in df.columns
+                             if "기관" in c and "순매" in c), None)
+        if foreign_col is None or inst_col is None:
+            logger.debug(f"[naver supply] {ticker} p{page}: cols={df.columns.tolist()}")
+            break
+
+        for _, r in df.iterrows():
+            d_raw = str(r[date_col]).strip()
+            if not re.match(r"\d{4}\.\d{2}\.\d{2}", d_raw):
+                continue
+            try:
+                d = datetime.strptime(d_raw, "%Y.%m.%d").date()
+            except ValueError:
+                continue
+            f_val = _parse_naver_int(r[foreign_col])
+            i_val = _parse_naver_int(r[inst_col])
+            if f_val is None and i_val is None:
+                continue
+            rows.append({
+                "date": d,
+                "외국인": f_val if f_val is not None else 0,
+                "기관합계": i_val if i_val is not None else 0,
+            })
+
+        time.sleep(0.1)
+
+    if not rows:
+        return None
+
+    out = pd.DataFrame(rows).drop_duplicates(subset=["date"]).sort_values("date")
+    out["date"] = pd.to_datetime(out["date"])
+    out = out.set_index("date")
+    # 개인은 -(외인+기관) 로 근사 — 거래대금 보존이 정확치 않지만 부호만 보면 충분
+    out["개인"] = -(out["외국인"] + out["기관합계"])
+    return out
+
+
+# ── 시가총액 ────────────────────────────────────────────
+
 def fetch_market_cap(ticker: str) -> Optional[int]:
-    """가장 최근 시가총액."""
+    """가장 최근 시가총액 (pykrx). 실패 시 None."""
     from pykrx import stock
     today = datetime.now().strftime("%Y%m%d")
     try:
@@ -93,18 +195,18 @@ def fetch_market_cap(ticker: str) -> Optional[int]:
             today, ticker)
         if df is None or df.empty:
             return None
-        return int(df["시가총액"].iloc[-1])
+        col = "시가총액" if "시가총액" in df.columns else df.columns[0]
+        return int(df[col].iloc[-1])
     except Exception as e:
-        logger.warning(f"[mcap] {ticker}: {e}")
+        logger.debug(f"[mcap] {ticker}: {e}")
         return None
 
 
-def fetch_all(ticker: str, ohlcv_days: int = 400, supply_days: int = 120,
+def fetch_all(ticker: str, ohlcv_days: int = 400, supply_pages: int = 6,
               sleep: float = 0.15) -> Optional[dict]:
-    """한 종목의 OHLCV + 수급을 한 번에. 호출 사이에 sleep."""
     ohlcv = fetch_ohlcv(ticker, days=ohlcv_days)
     time.sleep(sleep)
-    supply = fetch_supply_demand(ticker, days=supply_days)
+    supply = fetch_supply_demand(ticker, max_pages=supply_pages)
     if ohlcv is None:
         return None
     return {"ticker": ticker, "ohlcv": ohlcv, "supply": supply}

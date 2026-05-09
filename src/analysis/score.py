@@ -25,26 +25,32 @@ def confluence_score(supply: pd.DataFrame, window: int = 5) -> float:
 
 def intensity_score(supply: pd.DataFrame, marcap: int | None,
                     ohlcv: pd.DataFrame, window: int = 5) -> float:
-    """B. 수급 강도 — 시총 대비 / 거래대금 대비 — 25점."""
-    if supply is None or supply.empty or not marcap:
+    """B. 수급 강도 — 시총 대비 / 거래대금 대비 — 25점.
+
+    네이버 수급은 '주(수량)' 단위. 금액으로 변환해야 marcap·amount와 비교 가능.
+    금액 환산: 수량 × 해당 일자 종가 (근사).
+    """
+    if supply is None or supply.empty or ohlcv is None or len(ohlcv) < window:
         return 0.0
     recent = supply.tail(window)
-    foreign = recent.get("외국인", pd.Series(dtype=float)).sum()
-    inst = recent.get("기관합계", pd.Series(dtype=float)).sum()
-    net = foreign + inst
+    if recent.empty:
+        return 0.0
+    # 같은 날짜에 종가 매핑 (없으면 마지막 종가로 근사)
+    last_close = float(ohlcv["close"].iloc[-1])
+    foreign_qty = recent.get("외국인", pd.Series(dtype=float)).sum()
+    inst_qty = recent.get("기관합계", pd.Series(dtype=float)).sum()
+    net_qty = foreign_qty + inst_qty
+    net_value = net_qty * last_close  # 원 단위
 
-    # 시총 대비 비율 (%)
-    ratio_mcap = (net / marcap) * 100
-    # 거래대금 대비 비율
-    if ohlcv is not None and "amount" in ohlcv.columns and len(ohlcv) >= window:
-        amount_sum = ohlcv["amount"].tail(window).sum()
-        ratio_amt = (net / amount_sum) * 100 if amount_sum > 0 else 0
-    else:
-        ratio_amt = 0
+    # 시총 대비 (%)
+    ratio_mcap = (net_value / marcap) * 100 if marcap else 0
+    # 거래대금 대비 (%)
+    amount_sum = float(ohlcv["amount"].tail(window).sum())
+    ratio_amt = (net_value / amount_sum) * 100 if amount_sum > 0 else 0
 
-    # 정규화: 시총 대비 0.5%면 만점, 거래대금 대비 10%면 만점
-    s1 = max(0, min(15, ratio_mcap / 0.5 * 15))
-    s2 = max(0, min(10, ratio_amt / 10 * 10))
+    # 정규화: 시총 대비 0.3% 이상이면 시총 만점, 거래대금 대비 15% 이상이면 만점
+    s1 = max(0, min(15, ratio_mcap / 0.3 * 15))
+    s2 = max(0, min(10, ratio_amt / 15 * 10))
     return s1 + s2
 
 
@@ -121,38 +127,77 @@ def supply_demand_score(supply: pd.DataFrame, ohlcv: pd.DataFrame,
 # ── 매집 단계 분석 (Wyckoff / Weinstein) ─────────────────
 
 def detect_accumulation(ohlcv: pd.DataFrame, lookback: int = 250,
-                        max_range_pct: float = 25.0) -> dict:
+                        max_range_pct: float = 40.0) -> dict:
     """매집 단계 판별.
 
-    매집 = 가격 범위가 좁고(±max_range_pct% 이내), 60일선 평탄.
-    매집 기간 = 박스권이 시작된 이후 일수.
+    가장 긴 "박스 안에서 머문 연속 구간"을 매집 기간으로 본다.
+    여러 lookback (60/120/250/500일)을 시도해 가장 합리적인 박스를 선택.
     """
     if ohlcv is None or len(ohlcv) < 60:
-        return {"in_accumulation": False, "duration": 0, "range_pct": None}
+        return {"in_accumulation": False, "duration": 0, "range_pct": None,
+                "box_high": None, "box_low": None, "ma60_slope_pct": 0}
 
-    # 최근 lookback 일 (없으면 전체)
-    win = ohlcv.tail(min(lookback, len(ohlcv)))
-    high = win["high"].max()
-    low = win["low"].min()
-    mid = (high + low) / 2
-    range_pct = (high - low) / mid * 100 if mid > 0 else 999
+    close = ohlcv["close"]
+    high_s = ohlcv["high"]
+    low_s = ohlcv["low"]
+    n = len(ohlcv)
 
-    # 60일선 기울기 (최근 30일)
-    ma60 = ohlcv["close"].rolling(60).mean()
+    # 60일선 기울기 (최근 30일 변화율)
+    ma60 = close.rolling(60).mean()
     if len(ma60.dropna()) >= 30:
         slope = (ma60.iloc[-1] - ma60.iloc[-30]) / ma60.iloc[-30] * 100
     else:
-        slope = 0
+        slope = 0.0
 
-    # 매집 판정: 박스폭 좁고 + MA 거의 평탄
-    in_accum = range_pct <= max_range_pct and abs(slope) < 10
+    # 여러 lookback 후보 중 박스폭이 좁은 것 선택
+    candidates = [60, 120, 250, 500]
+    best = None
+    for L in candidates:
+        if L > n:
+            continue
+        win_high = high_s.iloc[-L:].max()
+        win_low = low_s.iloc[-L:].min()
+        mid = (win_high + win_low) / 2
+        rng_pct = (win_high - win_low) / mid * 100 if mid > 0 else 999
+        if rng_pct <= max_range_pct:
+            best = (L, win_high, win_low, rng_pct)
+            # 가장 긴 lookback에서도 박스가 통과하면 그게 진짜 매집
+            # 계속 looping (가장 긴 lookback 우선)
 
-    # 매집 기간 측정: 현재 박스권에 머문 일수
-    # 단순화: 종가가 [low*0.95, high*1.05] 범위에 머문 연속 일수
+    if best is None:
+        # 박스가 안 잡혀도 박스 돌파 판단용으로 60일 박스를 사용
+        h60 = float(high_s.iloc[-60:].max())
+        l60 = float(low_s.iloc[-60:].min())
+        rng60 = (h60 - l60) / ((h60 + l60) / 2) * 100 if h60 + l60 > 0 else 999
+        # 60일 박스 안에 머문 연속 일수
+        upper60, lower60 = h60 * 1.05, l60 * 0.95
+        dur60 = 0
+        for i in range(n - 1, -1, -1):
+            c = close.iloc[i]
+            if lower60 <= c <= upper60:
+                dur60 += 1
+            else:
+                break
+        return {
+            "in_accumulation": False,
+            "duration": dur60,
+            "range_pct": round(rng60, 2),
+            "ma60_slope_pct": round(slope, 2),
+            "box_high": h60,
+            "box_low": l60,
+            "lookback_used": 60,
+        }
+
+    L, box_high, box_low, range_pct = best
+    in_accum = abs(slope) < 15  # MA가 너무 가파르면 매집 아님
+
+    # 매집 기간: 종가가 박스 ±5% 안에 머문 연속 일수 (역순)
     duration = 0
-    for i in range(len(ohlcv) - 1, -1, -1):
-        c = ohlcv["close"].iloc[i]
-        if low * 0.93 <= c <= high * 1.07:
+    upper = box_high * 1.05
+    lower = box_low * 0.95
+    for i in range(n - 1, -1, -1):
+        c = close.iloc[i]
+        if lower <= c <= upper:
             duration += 1
         else:
             break
@@ -162,8 +207,9 @@ def detect_accumulation(ohlcv: pd.DataFrame, lookback: int = 250,
         "duration": duration,
         "range_pct": round(range_pct, 2),
         "ma60_slope_pct": round(slope, 2),
-        "box_high": float(high),
-        "box_low": float(low),
+        "box_high": float(box_high),
+        "box_low": float(box_low),
+        "lookback_used": L,
     }
 
 
