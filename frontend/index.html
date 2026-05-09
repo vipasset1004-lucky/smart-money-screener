@@ -197,6 +197,7 @@
   <div class="controls">
     <button id="refresh-btn" onclick="refresh()">새로고침</button>
     <button id="rerun-btn" onclick="rerun()">재분석</button>
+    <button onclick="openTracking()">📈 추적</button>
   </div>
 </header>
 
@@ -554,6 +555,98 @@ function openDetail(ticker) {
 function closeDetail() {
   document.getElementById("modal-root").innerHTML = "";
   document.body.style.overflow = "";
+}
+
+// ── 추적 모달 ─────────────────────────────────────
+async function openTracking() {
+  document.getElementById("modal-root").innerHTML =
+    `<div class="modal-bg"><div class="modal"><div class="empty">불러오는 중…</div></div></div>`;
+  document.body.style.overflow = "hidden";
+  try {
+    const res = await fetch("/api/tracking", {cache: "no-store"});
+    const data = await res.json();
+    renderTracking(data);
+  } catch (e) {
+    document.getElementById("modal-root").innerHTML =
+      `<div class="modal-bg" onclick="closeDetail()"><div class="modal"><div class="empty err">로드 실패: ${e.message}</div></div></div>`;
+  }
+}
+
+function renderTracking(data) {
+  if (data.message) {
+    document.getElementById("modal-root").innerHTML = `
+      <div class="modal-bg" onclick="if(event.target===this) closeDetail()">
+        <div class="modal">
+          <div class="modal-head">
+            <h2>📈 포워드 추적</h2>
+            <button class="close-btn" onclick="closeDetail()">닫기</button>
+          </div>
+          <div class="empty">${data.message}</div>
+        </div>
+      </div>`;
+    return;
+  }
+
+  const summary = data.summary_by_label || {};
+  const summaryRows = Object.entries(summary).map(([l, s]) => {
+    const winColor = s.win_rate >= 60 ? "var(--safe)" : s.win_rate >= 40 ? "var(--warn)" : "var(--danger)";
+    const retColor = s.avg_ret_pct >= 0 ? "var(--safe)" : "var(--danger)";
+    return `<tr>
+      <td><span class="label ${labelClass(l)}">${l}</span></td>
+      <td style="text-align:right"><b>${s.count}</b></td>
+      <td style="text-align:right;color:${winColor}"><b>${s.win_rate}%</b></td>
+      <td style="text-align:right;color:${retColor}"><b>${s.avg_ret_pct >= 0 ? '+' : ''}${s.avg_ret_pct}%</b></td>
+    </tr>`;
+  }).join("");
+
+  const dateBlocks = (data.by_date || []).map(d => {
+    if (!d.items || d.items.length === 0) return "";
+    const items = d.items.map(it => {
+      const retColor = it.ret_pct >= 0 ? "var(--safe)" : "var(--danger)";
+      return `<div class="card" style="padding:8px 10px">
+        <div class="card-head">
+          <div class="name">
+            <a href="${it.naver_url}" target="_blank" rel="noopener">${it.name}</a>
+            <span class="ticker">${it.ticker}</span>
+          </div>
+          <div class="labels">${it.labels.map(l => `<span class="label ${labelClass(l)}">${l}</span>`).join("")}</div>
+        </div>
+        <div class="row" style="font-size:11px">
+          <span>진입 <b>${it.entry_close.toLocaleString()}</b></span>
+          <span>현재 <b>${it.current_close.toLocaleString()}</b></span>
+          <span style="color:${retColor}"><b>${it.ret_pct >= 0 ? '+' : ''}${it.ret_pct}%</b></span>
+          <span>${it.days_held}일 보유</span>
+        </div>
+      </div>`;
+    }).join("");
+    return `<div class="section">
+      <h3>📅 ${d.date} <span style="color:var(--muted);font-weight:400;font-size:11px">${d.regime || ""} · ${d.days_held}일 경과 · ${d.items.length}종목</span></h3>
+      <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">${items}</div>
+    </div>`;
+  }).join("");
+
+  document.getElementById("modal-root").innerHTML = `
+    <div class="modal-bg" onclick="if(event.target===this) closeDetail()">
+      <div class="modal" style="max-width:1100px">
+        <div class="modal-head">
+          <h2>📈 포워드 추적 <span style="color:var(--muted);font-size:12px">(${data.archives_count}개 스캔 누적)</span></h2>
+          <button class="close-btn" onclick="closeDetail()">닫기</button>
+        </div>
+        <div class="section">
+          <h3>라벨별 누적 성과</h3>
+          <table style="width:100%;font-size:13px;border-collapse:collapse">
+            <thead><tr style="border-bottom:1px solid var(--border);color:var(--muted)">
+              <th style="text-align:left;padding:6px">라벨</th>
+              <th style="text-align:right;padding:6px">건수</th>
+              <th style="text-align:right;padding:6px">승률</th>
+              <th style="text-align:right;padding:6px">평균수익</th>
+            </tr></thead>
+            <tbody>${summaryRows || `<tr><td colspan="4" style="text-align:center;color:var(--muted);padding:12px">데이터 없음</td></tr>`}</tbody>
+          </table>
+        </div>
+        ${dateBlocks}
+      </div>
+    </div>`;
 }
 
 document.addEventListener("keydown", e => {

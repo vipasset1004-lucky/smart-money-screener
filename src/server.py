@@ -18,6 +18,7 @@ from pathlib import Path
 from flask import Flask, jsonify, send_from_directory
 
 from src.pipeline import run_pipeline, save_results
+from src.tracking import build_tracking
 
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s [%(levelname)s] %(message)s")
@@ -77,6 +78,27 @@ def api_refresh():
 @app.route("/api/health")
 def health():
     return jsonify({"ok": True, "at": datetime.now().isoformat()})
+
+
+# 추적 데이터 캐시 (1시간)
+_tracking_cache = {"at": 0, "data": None}
+_TRACKING_TTL = 3600
+
+
+@app.route("/api/tracking")
+def api_tracking():
+    import time
+    now = time.time()
+    if _tracking_cache["data"] and now - _tracking_cache["at"] < _TRACKING_TTL:
+        return jsonify(_tracking_cache["data"])
+    try:
+        data = build_tracking()
+        _tracking_cache["data"] = data
+        _tracking_cache["at"] = now
+        return jsonify(data)
+    except Exception as e:
+        logger.exception(f"[tracking] err: {e}")
+        return jsonify({"error": str(e)}), 500
 
 
 def init_scheduler():

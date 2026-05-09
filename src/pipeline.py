@@ -240,6 +240,12 @@ def save_results(payload: dict, path: str = "results.json") -> None:
         json.dumps(payload, ensure_ascii=False, indent=2, default=str),
         encoding="utf-8",
     )
+    # 포워드 추적용 archive
+    try:
+        from src.tracking import archive_current_results
+        archive_current_results(path)
+    except Exception as e:
+        logger.debug(f"[archive] err: {e}")
 
 
 if __name__ == "__main__":
