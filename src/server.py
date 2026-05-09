@@ -80,15 +80,21 @@ def health():
 
 
 def init_scheduler():
-    """장 마감 후 자동 분석 (KST 16:00)."""
+    """장 마감 후 자동 분석 — 16:00 (장 직후), 21:00 (KRX 정정 반영 후)."""
     try:
         from apscheduler.schedulers.background import BackgroundScheduler
         from pytz import timezone
         sched = BackgroundScheduler(timezone=timezone("Asia/Seoul"))
+        # 16:00: 장 마감(15:30) + 30분 — 가장 빠른 1차 결과
         sched.add_job(_refresh_in_background, "cron",
-                      hour=16, minute=0, id="daily_refresh")
+                      day_of_week="mon-fri",
+                      hour=16, minute=0, id="afternoon_refresh")
+        # 21:00: KRX 외국인/기관 매매 정정 데이터까지 반영된 2차 결과
+        sched.add_job(_refresh_in_background, "cron",
+                      day_of_week="mon-fri",
+                      hour=21, minute=0, id="evening_refresh")
         sched.start()
-        logger.info("스케줄러 시작 (KST 16:00 매일)")
+        logger.info("스케줄러 시작 (KST 평일 16:00 + 21:00)")
     except Exception as e:
         logger.warning(f"스케줄러 비활성: {e}")
 
