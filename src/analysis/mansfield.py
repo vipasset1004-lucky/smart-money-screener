@@ -16,10 +16,10 @@ import pandas as pd
 
 
 def mansfield_rs(close: pd.Series, market_close: pd.Series,
-                 ma_weeks: int = 52) -> dict:
-    """Mansfield RS + 양수 전환 검출.
+                 ma_weeks: int = 26) -> dict:
+    """Mansfield RS + 양수 전환 검출 (26주로 완화 — 한국 시장).
 
-    daily 기준이라 ma_weeks * 5 = 260일 이평 사용.
+    daily 기준이라 ma_weeks * 5 = 130일 이평 사용.
     """
     if close is None or market_close is None:
         return {"available": False}

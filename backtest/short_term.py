@@ -38,6 +38,11 @@ from src.analysis.weekly import (
     detect_vcp, detect_volume_dry_explode, smart_money_weekly,
     weekly_breakout,
 )
+from src.analysis.wyckoff import wyckoff_pack as wyckoff_diagnose
+from src.analysis.vcp import detect_vcp_precise
+from src.analysis.mansfield import mansfield_rs
+from src.analysis.ensemble import evaluate_ensemble
+from src.classifier.labeler import classify
 from src.signals.departure import short_term_departure, tenbagger_departure
 
 logger = logging.getLogger(__name__)
@@ -102,6 +107,17 @@ def backtest_one_stock(stock: dict, history_days: int = 60,
             tb_sig = tenbagger_departure(ohlcv_slice, supply_slice, metrics,
                                           accum, score=score, marcap=mcap,
                                           weekly_pack=weekly_pack)
+            # v5 추가: wyckoff + vcp + mansfield + ensemble + labels
+            wyckoff = wyckoff_diagnose(ohlcv_slice, accum)
+            vcp_pack = detect_vcp_precise(ohlcv_slice)
+            mansfield = mansfield_rs(ohlcv_slice["close"], mkt_slice) \
+                if mkt_slice is not None else {"available": False}
+            ensemble = evaluate_ensemble(
+                ohlcv_slice, supply_slice, score, accum, metrics,
+                weekly_pack, wyckoff, vcp_pack, mansfield,
+            )
+            labels = classify(st_sig, tb_sig, accum, score["total"],
+                               marcap=mcap, ensemble=ensemble)
         except Exception as e:
             logger.debug(f"[bt] {ticker} {as_of_date}: {e}")
             continue
@@ -136,6 +152,23 @@ def backtest_one_stock(stock: dict, history_days: int = 60,
             "rvol": metrics.get("rvol"),
             "amount_mult": metrics.get("amount_mult"),
             "is_52w_high": metrics.get("is_52w_high"),
+            # v5
+            "ensemble": ensemble.get("ensemble"),
+            "masters_70plus": ensemble.get("masters_70plus"),
+            "masters_80plus": ensemble.get("masters_80plus"),
+            "wyckoff_score": ensemble["scores"].get("wyckoff"),
+            "minervini_score": ensemble["scores"].get("minervini"),
+            "weinstein_score": ensemble["scores"].get("weinstein"),
+            "oneil_score": ensemble["scores"].get("oneil"),
+            "livermore_score": ensemble["scores"].get("livermore"),
+            "korean_score": ensemble["scores"].get("korean"),
+            "vcp_detected": vcp_pack.get("vcp_detected"),
+            "spring_detected": (wyckoff.get("spring") or {}).get("spring", False),
+            "sos_detected": (wyckoff.get("sos") or {}).get("sos", False),
+            "mansfield_buy": (mansfield or {}).get("mansfield_buy", False),
+            "stable_label": "🛡️안정형" in labels,
+            "master_consensus": "🏛대가합의" in labels,
+            # outcome
             "entry_open": entry_open,
             "exit_close": exit_close,
             "ret_pct": round(ret_pct, 2),
@@ -212,6 +245,32 @@ def summarize(df: pd.DataFrame, forward_days: int = 5) -> str:
     # 매집 단계
     out.append(stats("📦 매집 단계 ON  ", df[df["in_accumulation"] == True]))
     out.append(stats("📦 매집 단계 OFF ", df[df["in_accumulation"] == False]))
+    out.append("")
+    # v5: 새 라벨/모듈
+    if "stable_label" in df.columns:
+        out.append("=== v5 신규 라벨 ===")
+        out.append(stats("🛡️ 안정형 ON      ", df[df["stable_label"] == True]))
+        out.append(stats("🏛 대가합의 ON     ", df[df["master_consensus"] == True]))
+        out.append("")
+    if "ensemble" in df.columns:
+        out.append("앙상블 점수대별:")
+        for lo, hi in [(0, 30), (30, 45), (45, 55), (55, 70), (70, 100)]:
+            sub = df[(df["ensemble"] >= lo) & (df["ensemble"] < hi)]
+            out.append(stats(f"  앙상블 {lo:>2}~{hi:>2}", sub))
+        out.append("")
+    if "masters_70plus" in df.columns:
+        out.append("70+ 대가 수별:")
+        for n in [0, 1, 2, 3, 4]:
+            sub = df[df["masters_70plus"] == n]
+            out.append(stats(f"  대가 {n}명 70+", sub))
+        out.append("")
+    if "vcp_detected" in df.columns:
+        out.append("개별 모듈:")
+        out.append(stats("  VCP 검출 ON   ", df[df["vcp_detected"] == True]))
+        out.append(stats("  VCP 검출 OFF  ", df[df["vcp_detected"] == False]))
+        out.append(stats("  Spring 검출   ", df[df["spring_detected"] == True]))
+        out.append(stats("  SOS 검출      ", df[df["sos_detected"] == True]))
+        out.append(stats("  Mansfield Buy ", df[df["mansfield_buy"] == True]))
 
     return "\n".join(out)
 

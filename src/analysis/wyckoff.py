@@ -35,8 +35,8 @@ def detect_spring(daily: pd.DataFrame, accumulation: dict,
     volume = win["volume"]
     avg_vol = volume.mean()
 
-    # 박스 하단 이탈 후보 일자 (저가 < box_low * 0.97)
-    breaches = win[low < box_low * 0.97]
+    # 박스 하단 이탈 후보 일자 (저가 < box_low * 0.99 — 완화)
+    breaches = win[low < box_low * 0.99]
     if breaches.empty:
         return {"spring": False}
 

@@ -106,7 +106,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
         )
         masters = evaluate_all(ohlcv, supply, score, accum, metrics)
         labels = classify(st_sig, tb_sig, accum, score["total"],
-                          marcap=mcap, ensemble=ensemble)
+                          marcap=mcap, ensemble=ensemble, vcp_pack=vcp_pack)
 
         return {
             "ticker": ticker,
@@ -208,9 +208,10 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
         priority = 0
         if "⭐황금자리" in labels: priority = 100
         elif "💎텐버거" in labels: priority = 80
-        elif "🏛대가합의" in labels: priority = 70  # 4명+ 대가 합의
+        elif "🏛대가합의" in labels: priority = 75
+        elif "🎯VCP" in labels: priority = 65  # 백테스트 검증 60d 승률 75%
         elif "⚡단타" in labels: priority = 60
-        elif "🛡️안정형" in labels: priority = 50  # 백테스트 검증 60d 승률 86%
+        elif "🛡️안정형" in labels: priority = 50  # 백테스트 60d 승률 76%
         elif "🔍매집중" in labels: priority = 40
         sev = (r.get("risk") or {}).get("severity", "safe")
         penalty = {"safe": 0, "watch": -3, "warning": -15,
