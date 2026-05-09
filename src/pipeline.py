@@ -136,7 +136,8 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     logger.info(f"[pipeline] Stage 2 완료: "
                 f"{len(results)}종목 라벨 ({s2_elapsed:.0f}s)")
 
-    # 정렬: 라벨 있는 종목은 점수 내림차순, 없는 건 prefilter 점수
+    # 정렬: 라벨 우선순위 → 리스크 페널티 적용 점수
+    # 위험·경고 종목은 같은 점수여도 아래로
     def sort_key(r):
         labels = r.get("labels", [])
         priority = 0
@@ -144,7 +145,10 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
         elif "💎텐버거" in labels: priority = 80
         elif "⚡단타" in labels: priority = 60
         elif "🔍매집중" in labels: priority = 40
-        return (priority, r["score"]["total"])
+        sev = (r.get("risk") or {}).get("severity", "safe")
+        penalty = {"safe": 0, "watch": -3, "warning": -15,
+                   "danger": -40, "unknown": -5}.get(sev, 0)
+        return (priority, r["score"]["total"] + penalty)
 
     results.sort(key=sort_key, reverse=True)
 
