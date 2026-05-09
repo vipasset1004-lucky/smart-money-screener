@@ -215,8 +215,9 @@ def detect_accumulation(ohlcv: pd.DataFrame, lookback: int = 250,
 
 # ── 차트 지표 ────────────────────────────────────────────
 
-def chart_metrics(ohlcv: pd.DataFrame) -> dict:
-    """차트 보조 지표 (이평선, RVOL, 신고가 등)."""
+def chart_metrics(ohlcv: pd.DataFrame,
+                  market_close: pd.Series | None = None) -> dict:
+    """차트 보조 지표 (이평선, RVOL, 신고가, RS, 거래대금 체급)."""
     if ohlcv is None or len(ohlcv) < 60:
         return {}
     close = ohlcv["close"]
@@ -238,6 +239,21 @@ def chart_metrics(ohlcv: pd.DataFrame) -> dict:
         avg_amt = amount.rolling(20).mean().iloc[-1]
         amt_mult = float(amount.iloc[-1] / avg_amt) if avg_amt > 0 else 0
 
+    # 거래대금 체급 상승 (60일 평균 / 240일 평균)
+    # 1.3 이상이면 매집기 → 출발기 거래량 체급 변화 (Wyckoff)
+    amt_trend = None
+    if amount is not None and len(amount) >= 240:
+        avg60 = amount.iloc[-60:].mean()
+        avg240 = amount.iloc[-240:].mean()
+        amt_trend = float(avg60 / avg240) if avg240 > 0 else None
+
+    # 장기 RS (시장 대비 120일 수익률 차이)
+    rs_120d = None
+    if market_close is not None and len(close) >= 120 and len(market_close) >= 120:
+        s_ret = (close.iloc[-1] / close.iloc[-120]) - 1
+        m_ret = (market_close.iloc[-1] / market_close.iloc[-120]) - 1
+        rs_120d = round((s_ret - m_ret) * 100, 2)
+
     # 신고가 여부
     is_52w_high = bool(close.iloc[-1] >= close.tail(min(252, len(close))).max())
 
@@ -250,6 +266,8 @@ def chart_metrics(ohlcv: pd.DataFrame) -> dict:
         "ma240": float(ma240) if ma240 is not None else None,
         "rvol": round(float(rvol), 2),
         "amount_mult": round(amt_mult, 2) if amt_mult is not None else None,
+        "amount_trend": round(amt_trend, 2) if amt_trend is not None else None,
+        "rs_120d_pp": rs_120d,
         "is_52w_high": is_52w_high,
         "strong_close": bool(strong_close),
         "ma60_above_ma240": bool(ma240 is not None and ma60 > ma240),

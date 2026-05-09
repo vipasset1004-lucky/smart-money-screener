@@ -29,8 +29,14 @@ import pandas as pd
 from src.data.fetcher import (
     fetch_ohlcv, fetch_supply_demand, get_universe,
 )
+from src.data.bulk_fetcher import fetch_kospi_history
 from src.analysis.score import (
     supply_demand_score, detect_accumulation, chart_metrics,
+)
+from src.analysis.weekly import (
+    to_weekly, to_weekly_supply, detect_weekly_accumulation,
+    detect_vcp, detect_volume_dry_explode, smart_money_weekly,
+    weekly_breakout,
 )
 from src.signals.departure import short_term_departure, tenbagger_departure
 
@@ -38,7 +44,8 @@ logger = logging.getLogger(__name__)
 
 
 def backtest_one_stock(stock: dict, history_days: int = 60,
-                       forward_days: int = 5) -> Optional[list[dict]]:
+                       forward_days: int = 5,
+                       market_close=None) -> Optional[list[dict]]:
     """한 종목에 대해 history_days 만큼 시점을 walk-forward 백테스트."""
     ticker = stock["ticker"]
     name = stock.get("name", ticker)
@@ -70,11 +77,31 @@ def backtest_one_stock(stock: dict, history_days: int = 60,
 
         # 알고리즘 실행
         try:
+            mkt_slice = None
+            if market_close is not None:
+                mkt_slice = market_close.loc[:as_of_date]
+                if len(mkt_slice) < 5:
+                    mkt_slice = None
             score = supply_demand_score(supply_slice, ohlcv_slice, mcap)
             accum = detect_accumulation(ohlcv_slice)
-            metrics = chart_metrics(ohlcv_slice)
+            metrics = chart_metrics(ohlcv_slice, market_close=mkt_slice)
+            # 주봉 통합
+            weekly = to_weekly(ohlcv_slice)
+            weekly_supply = to_weekly_supply(supply_slice)
+            weekly_pack = None
+            if weekly is not None and len(weekly) >= 26:
+                w_accum = detect_weekly_accumulation(weekly)
+                weekly_pack = {
+                    "accum": w_accum,
+                    "vcp": detect_vcp(weekly),
+                    "dry_explode": detect_volume_dry_explode(weekly),
+                    "smart_money_w": smart_money_weekly(weekly_supply),
+                    "breakout_w": weekly_breakout(weekly, w_accum),
+                }
             st_sig = short_term_departure(ohlcv_slice, supply_slice, metrics, accum)
-            tb_sig = tenbagger_departure(ohlcv_slice, supply_slice, metrics, accum)
+            tb_sig = tenbagger_departure(ohlcv_slice, supply_slice, metrics,
+                                          accum, score=score, marcap=mcap,
+                                          weekly_pack=weekly_pack)
         except Exception as e:
             logger.debug(f"[bt] {ticker} {as_of_date}: {e}")
             continue
@@ -122,9 +149,13 @@ def backtest_one_stock(stock: dict, history_days: int = 60,
 def run_backtest(tickers: list[dict], history_days: int = 60,
                  forward_days: int = 5, max_workers: int = 6) -> pd.DataFrame:
     started = time.time()
+    market_close = fetch_kospi_history(days=400)
+    if market_close is not None:
+        logger.info(f"[bt] kospi {len(market_close)} pts loaded")
     all_rows = []
     with ThreadPoolExecutor(max_workers=max_workers) as ex:
-        futs = {ex.submit(backtest_one_stock, s, history_days, forward_days): s
+        futs = {ex.submit(backtest_one_stock, s, history_days, forward_days,
+                           market_close): s
                 for s in tickers}
         for f in as_completed(futs):
             r = f.result()

@@ -28,6 +28,15 @@ from src.analysis.position import classify_position
 from src.analysis.masters import evaluate_all
 from src.analysis.regime import market_regime
 from src.analysis.sector import build_correlation_clusters, confluence_count
+from src.analysis.weekly import (
+    to_weekly, to_weekly_supply, detect_weekly_accumulation,
+    detect_vcp, detect_volume_dry_explode, smart_money_weekly,
+    weekly_breakout,
+)
+from src.analysis.wyckoff import wyckoff_pack as wyckoff_diagnose
+from src.analysis.vcp import detect_vcp_precise
+from src.analysis.mansfield import mansfield_rs
+from src.analysis.ensemble import evaluate_ensemble
 from src.signals.departure import short_term_departure, tenbagger_departure
 from src.classifier.labeler import classify
 
@@ -37,7 +46,8 @@ logger = logging.getLogger(__name__)
 # ── Stage 2 ──────────────────────────────────────────────
 
 def analyze_stage2(stock: dict, prefilter_score: dict,
-                   ohlcv_light=None, supply_pages: int = 5) -> dict | None:
+                   ohlcv_light=None, supply_pages: int = 5,
+                   market_close=None) -> dict | None:
     """Stage 2 정밀 분석 (1종목)."""
     ticker = stock["ticker"]
     try:
@@ -55,10 +65,39 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
 
         score = supply_demand_score(supply, ohlcv, mcap)
         accum = detect_accumulation(ohlcv)
-        metrics = chart_metrics(ohlcv)
+        metrics = chart_metrics(ohlcv, market_close=market_close)
 
+        # 주봉 변환 + 텐버거용 weekly_pack
+        weekly = to_weekly(ohlcv)
+        weekly_supply = to_weekly_supply(supply)
+        weekly_pack = None
+        if weekly is not None and len(weekly) >= 26:
+            w_accum = detect_weekly_accumulation(weekly)
+            weekly_pack = {
+                "accum": w_accum,
+                "vcp": detect_vcp(weekly),
+                "dry_explode": detect_volume_dry_explode(weekly),
+                "smart_money_w": smart_money_weekly(weekly_supply),
+                "breakout_w": weekly_breakout(weekly, w_accum),
+            }
+
+        # Wyckoff Spring/SOS/VSA + VCP 정밀 + Mansfield RS
+        wyckoff = wyckoff_diagnose(ohlcv, accum)
+        vcp_pack = detect_vcp_precise(ohlcv)
+        mansfield = mansfield_rs(ohlcv["close"], market_close) \
+            if market_close is not None else {"available": False}
+
+        # 출발 시그널 (기존 로직, weekly_pack 활용)
         st_sig = short_term_departure(ohlcv, supply, metrics, accum)
-        tb_sig = tenbagger_departure(ohlcv, supply, metrics, accum)
+        tb_sig = tenbagger_departure(ohlcv, supply, metrics, accum,
+                                      score=score, marcap=mcap,
+                                      weekly_pack=weekly_pack)
+
+        # 6명 대가 앙상블
+        ensemble = evaluate_ensemble(
+            ohlcv, supply, score, accum, metrics,
+            weekly_pack, wyckoff, vcp_pack, mansfield,
+        )
 
         risk = detect_risk_signals(ohlcv, supply, accum, metrics)
         position = classify_position(
@@ -66,7 +105,8 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
             st_sig["triggered"], tb_sig["triggered"], risk,
         )
         masters = evaluate_all(ohlcv, supply, score, accum, metrics)
-        labels = classify(st_sig, tb_sig, accum, score["total"])
+        labels = classify(st_sig, tb_sig, accum, score["total"],
+                          marcap=mcap, ensemble=ensemble)
 
         return {
             "ticker": ticker,
@@ -80,6 +120,11 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
             "stage1_score": prefilter_score.get("total"),
             "accumulation": accum,
             "metrics": {k: v for k, v in metrics.items() if k != "ma240"},
+            "weekly_pack": weekly_pack,
+            "wyckoff": wyckoff,
+            "vcp": vcp_pack,
+            "mansfield": mansfield,
+            "ensemble": ensemble,
             "short_term": st_sig,
             "tenbagger": tb_sig,
             "masters": masters,
@@ -107,7 +152,8 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     # ── Stage 1: 가벼운 OHLCV bulk ─────────────────
     logger.info(f"[pipeline] Stage 1 시작: {universe_size}종목 OHLCV bulk")
     s1_start = time.time()
-    kospi = fetch_kospi_history(days=30)
+    # 250일 코스피: chart_metrics RS 120d 계산용
+    kospi = fetch_kospi_history(days=250)
     kosdaq = fetch_kosdaq_history(days=30)
     ohlcv_map = bulk_fetch_universe(universe, days=30, max_workers=24)
     prefiltered = run_prefilter(ohlcv_map, kospi,
@@ -134,7 +180,8 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     s2_start = time.time()
     results = []
     with ThreadPoolExecutor(max_workers=max_workers_s2) as ex:
-        futs = {ex.submit(analyze_stage2, st, sc, ol, supply_pages): st["ticker"]
+        futs = {ex.submit(analyze_stage2, st, sc, ol, supply_pages, kospi):
+                st["ticker"]
                 for (st, sc, ol) in s2_input}
         done = 0
         for f in as_completed(futs):
@@ -161,6 +208,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
         priority = 0
         if "⭐황금자리" in labels: priority = 100
         elif "💎텐버거" in labels: priority = 80
+        elif "🏛대가합의" in labels: priority = 70  # 4명+ 대가 합의
         elif "⚡단타" in labels: priority = 60
         elif "🛡️안정형" in labels: priority = 50  # 백테스트 검증 60d 승률 86%
         elif "🔍매집중" in labels: priority = 40

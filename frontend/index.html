@@ -72,6 +72,8 @@
     background: rgba(250,204,21,0.1); }
   .label-stable { color: #22d3ee; border-color: #22d3ee;
     background: rgba(34,211,238,0.10); }
+  .label-master { color: #ec4899; border-color: #ec4899;
+    background: rgba(236,72,153,0.10); }
   .label-watch { color: var(--watch); border-color: var(--watch); }
   .badges {
     display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
@@ -201,6 +203,7 @@
   <span class="tab" data-filter="⭐황금자리">⭐ 황금자리 <b class="cnt" data-cnt="⭐황금자리">0</b></span>
   <span class="tab" data-filter="⚡단타">⚡ 단타 <b class="cnt" data-cnt="⚡단타">0</b></span>
   <span class="tab" data-filter="💎텐버거">💎 텐버거 <b class="cnt" data-cnt="💎텐버거">0</b></span>
+  <span class="tab" data-filter="🏛대가합의">🏛 대가합의 <b class="cnt" data-cnt="🏛대가합의">0</b></span>
   <span class="tab" data-filter="🛡️안정형">🛡️ 안정형 <b class="cnt" data-cnt="🛡️안정형">0</b></span>
   <span class="tab" data-filter="🔍매집중">🔍 매집중 <b class="cnt" data-cnt="🔍매집중">0</b></span>
   <span class="tab" data-filter="unlabeled">📋 관찰 <b class="cnt" data-cnt="unlabeled">0</b></span>
@@ -251,6 +254,7 @@ function labelClass(l) {
   if (l === "⭐황금자리") return "label-gold";
   if (l === "⚡단타") return "label-short";
   if (l === "💎텐버거") return "label-tenbagger";
+  if (l === "🏛대가합의") return "label-master";
   if (l === "🛡️안정형") return "label-stable";
   if (l === "🔍매집중") return "label-watch";
   return "";
@@ -281,10 +285,11 @@ function cardHtml(r) {
     </div>
     <div class="row">
       <span>점수 <b>${r.score.total}</b></span>
+      ${r.ensemble ? `<span title="대가 앙상블 가중점수">🏛 <b>${r.ensemble.ensemble}</b> (${r.ensemble.masters_70plus}/6)</span>` : ""}
       <span>매집 <b>${r.accumulation.duration}일</b></span>
       <span>시총 <b>${fmtMcap(r.marcap)}</b></span>
       <span>RVOL <b>${r.metrics.rvol ?? "—"}</b></span>
-      ${r.confluence?.labeled_peers > 0 ? `<span title="동조 그룹 내 라벨 동시포착">🌐 동조 <b>${r.confluence.labeled_peers}</b>/${r.confluence.peer_count}</span>` : ""}
+      ${r.confluence?.labeled_peers > 0 ? `<span title="동조 그룹 내 라벨 동시포착">🌐 <b>${r.confluence.labeled_peers}</b>/${r.confluence.peer_count}</span>` : ""}
     </div>
     ${uniqReasons.length ? `
       <div class="reasons">
@@ -385,7 +390,7 @@ function render() {
     labeled: labeled.length,
     unlabeled: unlabeled.length,
     "⭐황금자리": 0, "⚡단타": 0, "💎텐버거": 0,
-    "🛡️안정형": 0, "🔍매집중": 0,
+    "🏛대가합의": 0, "🛡️안정형": 0, "🔍매집중": 0,
   };
   all.forEach(r => (r.labels || []).forEach(l => {
     if (counts[l] != null) counts[l] += 1;
@@ -496,6 +501,26 @@ function openDetail(ticker) {
           <h3>대가별 진단</h3>
           <div class="masters-grid">${masterCards}</div>
         </div>
+
+        ${r.ensemble ? `
+        <div class="section">
+          <h3>🏛 대가 앙상블 (가중점수 ${r.ensemble.ensemble} / 100)</h3>
+          <div class="row" style="font-size:12px;flex-wrap:wrap">
+            <span>대가 80+: <b>${r.ensemble.masters_80plus}/6</b></span>
+            <span>대가 70+: <b>${r.ensemble.masters_70plus}/6</b></span>
+          </div>
+          <div class="masters-grid" style="margin-top:8px">
+            ${["wyckoff","minervini","weinstein","oneil","livermore","korean"].map(k => {
+              const sc = r.ensemble.scores?.[k] ?? 0;
+              const items = (r.ensemble.items?.[k] || []).slice(0, 6);
+              const nameMap = {wyckoff:"Wyckoff", minervini:"Minervini", weinstein:"Weinstein", oneil:"O'Neil", livermore:"Livermore", korean:"Korean"};
+              return `<div class="master">
+                <div class="master-head"><div class="master-name">${nameMap[k]}</div><div class="master-pct">${sc}</div></div>
+                <div class="master-items">${items.map(x => `<div class="item ok"><span class="check">·</span>${x}</div>`).join("")}</div>
+              </div>`;
+            }).join("")}
+          </div>
+        </div>` : ""}
 
         ${reasons.length ? `
         <div class="section">
