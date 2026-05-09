@@ -225,3 +225,18 @@ def build_tracking() -> dict:
         "by_date": by_date,
         "summary_by_label": summary,
     }
+
+
+if __name__ == "__main__":
+    """Standalone 실행: tracking.json 생성 (GitHub Actions에서 호출)."""
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
+    data = build_tracking()
+    Path("tracking.json").write_text(
+        json.dumps(data, ensure_ascii=False, indent=2, default=str),
+        encoding="utf-8",
+    )
+    print(f"tracking.json 생성 완료 — archives: {data.get('archives_count', 0)}, "
+          f"라벨 종류: {len(data.get('summary_by_label', {}))}")

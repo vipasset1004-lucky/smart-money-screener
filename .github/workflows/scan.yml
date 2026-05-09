@@ -1,0 +1,83 @@
+name: Smart Money Scan
+
+on:
+  # KST 16:00 = UTC 07:00, KST 21:00 = UTC 12:00 (장 마감 + 30분, 외인/기관 정정분 반영)
+  schedule:
+    - cron: '0 7 * * 1-5'   # 평일 KST 16:00
+    - cron: '0 12 * * 1-5'  # 평일 KST 21:00
+  workflow_dispatch:        # 수동 트리거 (관리자: GitHub Actions UI에서 "Run workflow")
+
+permissions:
+  contents: write           # gh-pages 브랜치 push 권한
+
+concurrency:
+  group: smart-money-scan
+  cancel-in-progress: false # 동시 실행 방지
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Restore archives from gh-pages (포워드 추적 누적)
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages-prev
+
+      - name: Copy existing archives to working dir
+        run: |
+          if [ -d gh-pages-prev/archives ]; then
+            mkdir -p archives
+            cp -r gh-pages-prev/archives/* archives/ 2>/dev/null || true
+            echo "기존 archives 복원: $(ls archives/ | wc -l)개"
+          else
+            echo "archives 없음 (첫 실행)"
+          fi
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          TZ: Asia/Seoul
+        run: python -m src.pipeline
+
+      - name: Build tracking summary
+        env:
+          TZ: Asia/Seoul
+        run: python -m src.tracking || echo "tracking 생성 실패 (archive 데이터 부족 가능)"
+
+      - name: Prepare gh-pages payload
+        run: |
+          mkdir -p _site
+          cp frontend/index.html _site/index.html
+          cp results.json _site/results.json
+          [ -f tracking.json ] && cp tracking.json _site/tracking.json || true
+          [ -d archives ] && cp -r archives _site/archives || true
+          # cache-busting용 메타파일
+          date -u +"{\"updated_at\":\"%Y-%m-%dT%H:%M:%SZ\"}" > _site/last_update.json
+          ls -la _site/
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          keep_files: true   # archives 누적 보존
+          force_orphan: false
+          commit_message: "scan ${{ github.run_number }} (${{ github.event_name }})"

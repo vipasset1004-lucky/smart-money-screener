@@ -270,7 +270,8 @@ if __name__ == "__main__":
                                       errors="replace")
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else None
     payload = run_pipeline(limit=limit)
-    save_results(payload)
+    # GitHub Actions/standalone 실행 시 항상 archive (포워드 추적 데이터 누적)
+    save_results(payload, archive=True)
     print(f"\n=== 결과 ===")
     print(f"전체 유니버스: {payload['universe_size']}")
     print(f"Stage1 통과:   {payload['stage1_passed']} ({payload['stage1_elapsed']}s)")

@@ -227,10 +227,13 @@ const POS_CLASS = {
   watch: "pos-watch", danger: "pos-danger", muted: "pos-muted",
 };
 
+// GitHub Actions 모드: results.json은 gh-pages 브랜치에 cron으로 갱신됨
+// 캐시 우회 위해 timestamp query 추가
 async function refresh() {
   document.getElementById("content").innerHTML = '<div class="empty">불러오는 중…</div>';
   try {
-    const res = await fetch("/api/results", { cache: "no-store" });
+    const ts = Date.now();
+    const res = await fetch(`./results.json?t=${ts}`, { cache: "no-store" });
     DATA = await res.json();
     render();
   } catch (e) {
@@ -239,57 +242,12 @@ async function refresh() {
   }
 }
 
-async function rerun() {
-  const btn = document.getElementById("rerun-btn");
-  // 분석 중이면 즉시 차단
-  try {
-    const sres = await fetch("/api/status", { cache: "no-store" });
-    const state = await sres.json();
-    if (state.running) {
-      const since = state.started_iso
-        ? new Date(state.started_iso).toLocaleString("ko-KR")
-        : "?";
-      alert(`이미 분석 중입니다 (시작: ${since}).\n결과 나올 때까지 기다리세요.`);
-      return;
-    }
-  } catch {}
-  btn.disabled = true; btn.textContent = "재분석 중…";
-  try {
-    const r = await fetch("/api/refresh", { method: "POST" });
-    if (r.status === 409) {
-      const j = await r.json();
-      alert(`이미 분석 중입니다 (다른 worker).\n시작: ${j.started_iso || "?"}`);
-      btn.disabled = false; btn.textContent = "재분석";
-      return;
-    }
-  } catch (e) {
-    btn.disabled = false; btn.textContent = "재분석";
-    return;
+// GitHub Actions로 마이그레이션됨 — 수동 트리거는 GitHub UI에서
+function rerun() {
+  const url = "https://github.com/vipasset1004-lucky/smart-money-screener/actions/workflows/scan.yml";
+  if (confirm("GitHub Actions에서 수동 스캔을 트리거합니다.\n새 탭에서 'Run workflow' 버튼을 눌러주세요.")) {
+    window.open(url, "_blank", "noopener");
   }
-  startStatusPolling();
-}
-
-let _statusPoll = null;
-function startStatusPolling() {
-  if (_statusPoll) return;
-  const btn = document.getElementById("rerun-btn");
-  _statusPoll = setInterval(async () => {
-    try {
-      const r = await fetch("/api/status", { cache: "no-store" });
-      const s = await r.json();
-      if (!s.running) {
-        clearInterval(_statusPoll); _statusPoll = null;
-        btn.disabled = false; btn.textContent = "재분석";
-        refresh();
-      } else {
-        const since = s.started_iso
-          ? new Date(s.started_iso).toLocaleTimeString("ko-KR", {hour: "2-digit", minute: "2-digit"})
-          : "";
-        btn.disabled = true;
-        btn.textContent = `분석 중… (${since}~)`;
-      }
-    } catch {}
-  }, 8000);
 }
 
 function fmtMcap(m) {
@@ -610,7 +568,8 @@ async function openTracking() {
     `<div class="modal-bg"><div class="modal"><div class="empty">불러오는 중…</div></div></div>`;
   document.body.style.overflow = "hidden";
   try {
-    const res = await fetch("/api/tracking", {cache: "no-store"});
+    const ts = Date.now();
+    const res = await fetch(`./tracking.json?t=${ts}`, {cache: "no-store"});
     const data = await res.json();
     renderTracking(data);
   } catch (e) {
@@ -712,10 +671,7 @@ document.querySelectorAll(".tab").forEach(t => {
 refresh();
 setInterval(updateSchedule, 1000);
 updateSchedule();
-// 페이지 로드 시 분석 중이면 자동 폴링 (캐시는 그대로 보여줌)
-fetch("/api/status", { cache: "no-store" }).then(r => r.json()).then(s => {
-  if (s && s.running) startStatusPolling();
-}).catch(() => {});
+// GitHub Actions 모드: in-progress 상태 추적 없음 — cron만 있음
 </script>
 </body>
 </html>

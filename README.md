@@ -2,9 +2,12 @@
 
 스마트머니(외국인·기관)의 매집과 출발을 추적하여, **단타**와 **텐버거** 후보 종목을 동시에 발굴하는 수급 매매 스크리너.
 
-## 🚀 원클릭 배포
+## 🚀 라이브 사이트
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/vipasset1004-lucky/smart-money-screener)
+**https://vipasset1004-lucky.github.io/smart-money-screener/**
+
+GitHub Actions가 평일 KST 16:00·21:00에 자동 스캔, 결과를 GitHub Pages에 배포.
+수동 트리거: [Actions 탭 → Run workflow](https://github.com/vipasset1004-lucky/smart-money-screener/actions/workflows/scan.yml)
 
 ## 핵심 철학
 
@@ -24,10 +27,11 @@
 
 ## 기술 스택
 
-- **백엔드**: Flask + APScheduler (Render.com 배포)
-- **프론트엔드**: 단일 `index.html` (GitHub Pages 배포)
-- **데이터**: pykrx (외국인/기관 수급, OHLCV)
-- **저장소**: SQLite
+- **스캔 엔진**: Python (pykrx + Naver 수급 스크래핑)
+- **실행 환경**: GitHub Actions (cron + workflow_dispatch)
+- **프론트엔드**: 단일 `index.html` + 정적 `results.json`
+- **호스팅**: GitHub Pages (gh-pages 브랜치)
+- **비용**: $0 (public 레포)
 
 ## 프로젝트 구조
 
