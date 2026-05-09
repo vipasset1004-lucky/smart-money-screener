@@ -38,9 +38,14 @@
   .tab {
     background: var(--card); color: var(--muted); border: 1px solid var(--border);
     padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 13px;
-    user-select: none;
+    user-select: none; white-space: nowrap;
   }
   .tab.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
+  .tab .cnt {
+    margin-left: 4px; font-weight: 700; font-size: 12px;
+    opacity: 0.85;
+  }
+  .tab.active .cnt { opacity: 1; }
   .grid {
     display: grid; gap: 8px;
     grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
@@ -189,11 +194,11 @@
 </header>
 
 <div class="tabs" id="tabs">
-  <span class="tab active" data-filter="all">전체</span>
-  <span class="tab" data-filter="⭐황금자리">⭐ 황금자리</span>
-  <span class="tab" data-filter="⚡단타">⚡ 단타</span>
-  <span class="tab" data-filter="💎텐버거">💎 텐버거</span>
-  <span class="tab" data-filter="🔍매집중">🔍 매집중</span>
+  <span class="tab active" data-filter="all">전체 <b class="cnt" data-cnt="all">0</b></span>
+  <span class="tab" data-filter="⭐황금자리">⭐ 황금자리 <b class="cnt" data-cnt="⭐황금자리">0</b></span>
+  <span class="tab" data-filter="⚡단타">⚡ 단타 <b class="cnt" data-cnt="⚡단타">0</b></span>
+  <span class="tab" data-filter="💎텐버거">💎 텐버거 <b class="cnt" data-cnt="💎텐버거">0</b></span>
+  <span class="tab" data-filter="🔍매집중">🔍 매집중 <b class="cnt" data-cnt="🔍매집중">0</b></span>
 </div>
 
 <div id="content"><div class="empty">로딩 중…</div></div>
@@ -354,7 +359,19 @@ function render() {
     meta.textContent = DATA.message || "—";
   }
   updateSchedule();
-  const items = (DATA.results || []).filter(r =>
+  // 라벨별 카운트
+  const all = DATA.results || [];
+  const counts = {all: all.length, "⭐황금자리": 0, "⚡단타": 0,
+                  "💎텐버거": 0, "🔍매집중": 0};
+  all.forEach(r => (r.labels || []).forEach(l => {
+    if (counts[l] != null) counts[l] += 1;
+  }));
+  document.querySelectorAll(".tab .cnt").forEach(el => {
+    const k = el.dataset.cnt;
+    el.textContent = counts[k] ?? 0;
+  });
+
+  const items = all.filter(r =>
     CURRENT_FILTER === "all" ? true : r.labels.includes(CURRENT_FILTER));
   const root = document.getElementById("content");
   if (items.length === 0) {
