@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Smart Money Screener — 수급 매매 스크리너</title>
+<style>
+  :root {
+    --bg: #0b1220; --card: #111a2c; --border: #1f2a44;
+    --text: #e6edf7; --muted: #6b7a99; --accent: #38bdf8;
+    --short: #fbbf24; --tenbagger: #a78bfa; --gold: #facc15;
+    --watch: #34d399;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+      "Pretendard", "Segoe UI", "Noto Sans KR", sans-serif;
+    background: var(--bg); color: var(--text); padding: 12px;
+    line-height: 1.5;
+  }
+  header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+  }
+  h1 { font-size: 18px; margin: 0; color: var(--accent); }
+  .meta { color: var(--muted); font-size: 12px; }
+  .controls {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;
+  }
+  button {
+    background: var(--card); color: var(--text); border: 1px solid var(--border);
+    padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 14px;
+    font-weight: 500;
+  }
+  button:hover { border-color: var(--accent); }
+  button.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px;
+  }
+  .tab {
+    background: var(--card); color: var(--muted); border: 1px solid var(--border);
+    padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 13px;
+    user-select: none;
+  }
+  .tab.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
+  .grid {
+    display: grid; gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 12px;
+  }
+  .card-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 8px; margin-bottom: 6px;
+  }
+  .name a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .name a:hover { color: var(--accent); }
+  .ticker { color: var(--muted); font-size: 11px; margin-left: 6px; }
+  .labels { display: flex; gap: 4px; flex-wrap: wrap; }
+  .label {
+    font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600;
+    background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+  }
+  .label-short { color: var(--short); border-color: var(--short); }
+  .label-tenbagger { color: var(--tenbagger); border-color: var(--tenbagger); }
+  .label-gold { color: var(--gold); border-color: var(--gold);
+    background: rgba(250,204,21,0.1); }
+  .label-watch { color: var(--watch); border-color: var(--watch); }
+  .row {
+    display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--muted);
+    margin-top: 4px;
+  }
+  .row span { white-space: nowrap; }
+  .row b { color: var(--text); font-weight: 600; }
+  .reasons {
+    margin-top: 6px; font-size: 11px; color: var(--muted);
+    display: flex; gap: 4px; flex-wrap: wrap;
+  }
+  .reasons .r {
+    padding: 1px 5px; background: rgba(56,189,248,0.08); border-radius: 3px;
+    color: var(--accent);
+  }
+  .empty { text-align: center; color: var(--muted); padding: 40px; }
+  .err { color: #f87171; }
+  @media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>💰 Smart Money Screener</h1>
+    <div class="meta" id="meta">로딩 중…</div>
+  </div>
+  <div class="controls">
+    <button id="refresh-btn" onclick="refresh()">새로고침</button>
+    <button id="rerun-btn" onclick="rerun()">재분석</button>
+  </div>
+</header>
+
+<div class="tabs" id="tabs">
+  <span class="tab active" data-filter="all">전체</span>
+  <span class="tab" data-filter="⭐황금자리">⭐ 황금자리</span>
+  <span class="tab" data-filter="⚡단타">⚡ 단타</span>
+  <span class="tab" data-filter="💎텐버거">💎 텐버거</span>
+  <span class="tab" data-filter="🔍매집중">🔍 매집중</span>
+</div>
+
+<div id="content"><div class="empty">로딩 중…</div></div>
+
+<script>
+let DATA = null;
+let CURRENT_FILTER = "all";
+
+async function refresh() {
+  document.getElementById("content").innerHTML = '<div class="empty">불러오는 중…</div>';
+  try {
+    const res = await fetch("/api/results", { cache: "no-store" });
+    DATA = await res.json();
+    render();
+  } catch (e) {
+    document.getElementById("content").innerHTML =
+      `<div class="empty err">로드 실패: ${e.message}</div>`;
+  }
+}
+
+async function rerun() {
+  const btn = document.getElementById("rerun-btn");
+  btn.disabled = true; btn.textContent = "재분석 중…";
+  try {
+    await fetch("/api/refresh", { method: "POST" });
+    setTimeout(() => { btn.disabled = false; btn.textContent = "재분석"; refresh(); }, 5000);
+  } catch (e) {
+    btn.disabled = false; btn.textContent = "재분석";
+  }
+}
+
+function fmtMcap(m) {
+  if (!m) return "—";
+  if (m >= 1e12) return (m / 1e12).toFixed(1) + "조";
+  if (m >= 1e8)  return Math.round(m / 1e8) + "억";
+  return m.toLocaleString();
+}
+
+function labelClass(l) {
+  if (l === "⭐황금자리") return "label-gold";
+  if (l === "⚡단타") return "label-short";
+  if (l === "💎텐버거") return "label-tenbagger";
+  if (l === "🔍매집중") return "label-watch";
+  return "";
+}
+
+function cardHtml(r) {
+  const reasons = [
+    ...(r.short_term?.reasons || []),
+    ...(r.tenbagger?.reasons || []),
+  ];
+  const uniqReasons = [...new Set(reasons)].slice(0, 6);
+  return `
+  <div class="card">
+    <div class="card-head">
+      <div class="name">
+        <a href="${r.naver_url}" target="_blank" rel="noopener">${r.name}</a>
+        <span class="ticker">${r.ticker}</span>
+      </div>
+      <div class="labels">
+        ${r.labels.map(l =>
+          `<span class="label ${labelClass(l)}">${l}</span>`).join("")}
+      </div>
+    </div>
+    <div class="row">
+      <span>점수 <b>${r.score.total}</b></span>
+      <span>매집 <b>${r.accumulation.duration}일</b></span>
+      <span>시총 <b>${fmtMcap(r.marcap)}</b></span>
+      <span>RVOL <b>${r.metrics.rvol ?? "—"}</b></span>
+    </div>
+    ${uniqReasons.length ? `
+      <div class="reasons">
+        ${uniqReasons.map(x => `<span class="r">${x}</span>`).join("")}
+      </div>` : ""}
+  </div>`;
+}
+
+function render() {
+  if (!DATA) return;
+  const meta = document.getElementById("meta");
+  if (DATA.generated_at) {
+    const dt = new Date(DATA.generated_at).toLocaleString("ko-KR");
+    meta.textContent = `생성 ${dt} · 분석 ${DATA.universe_size}종목 · 통과 ${DATA.passed_count}종목`;
+  } else {
+    meta.textContent = DATA.message || "—";
+  }
+
+  const items = (DATA.results || []).filter(r =>
+    CURRENT_FILTER === "all" ? true : r.labels.includes(CURRENT_FILTER));
+
+  const root = document.getElementById("content");
+  if (items.length === 0) {
+    root.innerHTML = '<div class="empty">조건 통과 종목 없음</div>';
+    return;
+  }
+  root.innerHTML = `<div class="grid">${items.map(cardHtml).join("")}</div>`;
+}
+
+document.querySelectorAll(".tab").forEach(t => {
+  t.onclick = () => {
+    document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+    t.classList.add("active");
+    CURRENT_FILTER = t.dataset.filter;
+    render();
+  };
+});
+
+refresh();
+</script>
+</body>
+</html>
