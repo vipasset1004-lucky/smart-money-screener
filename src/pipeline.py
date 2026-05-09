@@ -155,7 +155,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
     # 250일 코스피: chart_metrics RS 120d 계산용
     kospi = fetch_kospi_history(days=250)
     kosdaq = fetch_kosdaq_history(days=30)
-    ohlcv_map = bulk_fetch_universe(universe, days=30, max_workers=24)
+    ohlcv_map = bulk_fetch_universe(universe, days=30, max_workers=12)
     prefiltered = run_prefilter(ohlcv_map, kospi,
                                 threshold=stage1_threshold,
                                 max_passed=stage1_max_passed)

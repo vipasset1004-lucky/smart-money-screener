@@ -18,25 +18,31 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 
 
-def fetch_ohlcv_light(ticker: str, days: int = 30) -> Optional[pd.DataFrame]:
-    """가벼운 OHLCV (Stage 1 전용). 거래대금은 volume×close로 근사."""
+def fetch_ohlcv_light(ticker: str, days: int = 30,
+                       retry: int = 2) -> Optional[pd.DataFrame]:
+    """가벼운 OHLCV (Stage 1 전용). 거래대금 volume×close 근사. retry 추가."""
     from pykrx import stock
     end = datetime.now().strftime("%Y%m%d")
     start = (datetime.now() - timedelta(days=days + 14)).strftime("%Y%m%d")
-    try:
-        df = stock.get_market_ohlcv(start, end, ticker)
-        if df is None or df.empty:
-            return None
-        df = df.rename(columns={
-            "시가": "open", "고가": "high", "저가": "low",
-            "종가": "close", "거래량": "volume",
-        })
-        df["amount"] = (df["volume"].astype("int64")
-                        * df["close"].astype("int64"))
-        return df[["open", "high", "low", "close", "volume", "amount"]]
-    except Exception as e:
-        logger.debug(f"[ohlcv_light] {ticker}: {e}")
-        return None
+    for attempt in range(retry + 1):
+        try:
+            df = stock.get_market_ohlcv(start, end, ticker)
+            if df is not None and not df.empty:
+                df = df.rename(columns={
+                    "시가": "open", "고가": "high", "저가": "low",
+                    "종가": "close", "거래량": "volume",
+                })
+                df["amount"] = (df["volume"].astype("int64")
+                                * df["close"].astype("int64"))
+                return df[["open", "high", "low", "close", "volume", "amount"]]
+        except Exception as e:
+            if attempt < retry:
+                time.sleep(0.5 + attempt * 0.5)
+                continue
+            logger.debug(f"[ohlcv_light] {ticker}: {e}")
+        if attempt < retry:
+            time.sleep(0.5 + attempt * 0.5)
+    return None
 
 
 def fetch_kospi_history(days: int = 30) -> Optional[pd.Series]:
@@ -80,7 +86,7 @@ def fetch_kosdaq_history(days: int = 30) -> Optional[pd.Series]:
 
 
 def bulk_fetch_universe(universe: list[dict], days: int = 30,
-                        max_workers: int = 24) -> dict[str, pd.DataFrame]:
+                        max_workers: int = 12) -> dict[str, pd.DataFrame]:
     """종목 리스트 → {ticker: OHLCV DataFrame} 병렬 수집."""
     started = time.time()
     out: dict[str, pd.DataFrame] = {}
