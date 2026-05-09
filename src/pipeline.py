@@ -137,7 +137,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
 
 # ── 파이프라인 ───────────────────────────────────────────
 
-def run_pipeline(limit: int | None = None, max_workers_s2: int = 6,
+def run_pipeline(limit: int | None = None, max_workers_s2: int = 4,
                  stage1_threshold: float = 60.0,
                  stage1_max_passed: int = 500,
                  supply_pages: int = 5) -> dict:

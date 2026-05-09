@@ -54,26 +54,30 @@ def get_universe(min_mktcap: int = 50_000_000_000,
 
 # ── OHLCV (pykrx) ────────────────────────────────────────
 
-def fetch_ohlcv(ticker: str, days: int = 400) -> Optional[pd.DataFrame]:
-    """OHLCV 일봉 (pykrx). 거래대금은 volume×close로 근사."""
+def fetch_ohlcv(ticker: str, days: int = 400,
+                retry: int = 2) -> Optional[pd.DataFrame]:
+    """OHLCV 일봉 (pykrx). 거래대금은 volume×close 근사. retry 추가."""
     from pykrx import stock
     end = datetime.now().strftime("%Y%m%d")
     start = (datetime.now() - timedelta(days=days + 60)).strftime("%Y%m%d")
-    try:
-        df = stock.get_market_ohlcv(start, end, ticker)
-        if df is None or df.empty:
-            return None
-        # pykrx OHLCV columns: 시가, 고가, 저가, 종가, 거래량, 등락률
-        rename = {"시가": "open", "고가": "high", "저가": "low",
-                  "종가": "close", "거래량": "volume"}
-        df = df.rename(columns=rename)
-        # 거래대금 근사: volume × close. int64로 먼저 캐스팅해야 오버플로우 방지.
-        df["amount"] = (df["volume"].astype("int64")
-                        * df["close"].astype("int64"))
-        return df[["open", "high", "low", "close", "volume", "amount"]]
-    except Exception as e:
-        logger.warning(f"[ohlcv] {ticker}: {e}")
-        return None
+    rename = {"시가": "open", "고가": "high", "저가": "low",
+              "종가": "close", "거래량": "volume"}
+    for attempt in range(retry + 1):
+        try:
+            df = stock.get_market_ohlcv(start, end, ticker)
+            if df is not None and not df.empty:
+                df = df.rename(columns=rename)
+                df["amount"] = (df["volume"].astype("int64")
+                                * df["close"].astype("int64"))
+                return df[["open", "high", "low", "close", "volume", "amount"]]
+        except Exception as e:
+            if attempt < retry:
+                time.sleep(0.5 + attempt * 0.5)
+                continue
+            logger.warning(f"[ohlcv] {ticker}: {e}")
+        if attempt < retry:
+            time.sleep(0.5 + attempt * 0.5)
+    return None
 
 
 # ── 수급 (Naver 스크래핑) ────────────────────────────────
@@ -111,14 +115,26 @@ def fetch_supply_demand(ticker: str, max_pages: int = 6) -> Optional[pd.DataFram
     rows = []
     for page in range(1, max_pages + 1):
         url = f"https://finance.naver.com/item/frgn.naver?code={ticker}&page={page}"
-        try:
-            resp = requests.get(url, headers=NAVER_HEADERS, timeout=8)
-            resp.encoding = "euc-kr"
-            if resp.status_code != 200:
+        # 페이지당 retry 1회 (Naver rate limit 회피)
+        tables = None
+        for attempt in range(2):
+            try:
+                resp = requests.get(url, headers=NAVER_HEADERS, timeout=10)
+                resp.encoding = "euc-kr"
+                if resp.status_code != 200:
+                    if attempt == 0:
+                        time.sleep(0.5)
+                        continue
+                    break
+                tables = pd.read_html(io.StringIO(resp.text))
                 break
-            tables = pd.read_html(io.StringIO(resp.text))
-        except Exception as e:
-            logger.debug(f"[naver supply] {ticker} p{page}: {e}")
+            except Exception as e:
+                if attempt == 0:
+                    time.sleep(0.5)
+                    continue
+                logger.debug(f"[naver supply] {ticker} p{page}: {e}")
+                break
+        if tables is None:
             break
 
         # 네이버 frgn 페이지의 데이터 표는 보통 인덱스 2 근처. 가장 행 많은 표 사용.
