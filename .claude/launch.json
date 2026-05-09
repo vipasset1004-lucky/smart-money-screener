@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "smart-money-screener",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "src.server"],
+      "cwd": "smart-money-screener",
+      "port": 5001
+    }
+  ]
+}
