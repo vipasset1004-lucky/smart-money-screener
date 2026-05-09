@@ -180,6 +180,7 @@
   <div>
     <h1>💰 Smart Money Screener</h1>
     <div class="meta" id="meta">로딩 중…</div>
+    <div class="meta" id="schedule" style="margin-top:2px"></div>
   </div>
   <div class="controls">
     <button id="refresh-btn" onclick="refresh()">새로고침</button>
@@ -284,17 +285,75 @@ function cardHtml(r) {
   </div>`;
 }
 
+// ── 스케줄 (KST 평일 16:00, 21:00) ───────────────────
+function nextScheduledRun(nowMs) {
+  // KST 기준 시각 계산 (UTC+9)
+  const now = new Date(nowMs);
+  const kstOffsetMs = 9 * 60 * 60 * 1000;
+  const userOffsetMs = -now.getTimezoneOffset() * 60 * 1000;
+  // KST의 "지금" Date 객체 만들기
+  const kstNow = new Date(now.getTime() + (kstOffsetMs - userOffsetMs));
+  const slots = [16, 21];  // 평일 KST 시각
+
+  for (let i = 0; i < 8; i++) {
+    const day = new Date(kstNow);
+    day.setDate(day.getDate() + i);
+    const dow = day.getDay();  // 0=일, 6=토
+    if (dow === 0 || dow === 6) continue;
+    for (const h of slots) {
+      const slot = new Date(day);
+      slot.setHours(h, 0, 0, 0);
+      if (slot > kstNow) {
+        // 사용자 로컬 시각으로 환원
+        return new Date(slot.getTime() - (kstOffsetMs - userOffsetMs));
+      }
+    }
+  }
+  return null;
+}
+
+function fmtCountdown(ms) {
+  if (ms < 0) return "예정 시각 경과";
+  const total = Math.floor(ms / 1000);
+  const d = Math.floor(total / 86400);
+  const h = Math.floor((total % 86400) / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  if (d > 0) return `${d}일 ${h}시간 ${m}분`;
+  if (h > 0) return `${h}시간 ${m}분 ${s}초`;
+  if (m > 0) return `${m}분 ${s}초`;
+  return `${s}초`;
+}
+
+function updateSchedule() {
+  const sched = document.getElementById("schedule");
+  if (!sched) return;
+  const next = nextScheduledRun(Date.now());
+  if (!next) { sched.textContent = ""; return; }
+  const nextStr = next.toLocaleString("ko-KR", {
+    month: "numeric", day: "numeric",
+    hour: "2-digit", minute: "2-digit",
+    weekday: "short",
+  });
+  const remain = next.getTime() - Date.now();
+  sched.textContent = `⏰ 다음 자동 스캔 ${nextStr} · 남은 시간 ${fmtCountdown(remain)}`;
+}
+
 function render() {
   if (!DATA) return;
   const meta = document.getElementById("meta");
   if (DATA.generated_at) {
-    const dt = new Date(DATA.generated_at).toLocaleString("ko-KR");
+    const dt = new Date(DATA.generated_at).toLocaleString("ko-KR", {
+      month: "numeric", day: "numeric",
+      hour: "2-digit", minute: "2-digit", second: "2-digit",
+    });
     const s1 = DATA.stage1_passed ?? "?";
     const s2 = DATA.stage2_passed ?? DATA.passed_count ?? "?";
-    meta.textContent = `생성 ${dt} · 분석 ${DATA.universe_size} · S1 통과 ${s1} · S2 라벨 ${s2}`;
+    meta.textContent = `🕐 마지막 스캔 ${dt} · 분석 ${DATA.universe_size} · S1 ${s1} · 라벨 ${s2}`;
   } else {
     meta.textContent = DATA.message || "—";
   }
+  updateSchedule();
   const items = (DATA.results || []).filter(r =>
     CURRENT_FILTER === "all" ? true : r.labels.includes(CURRENT_FILTER));
   const root = document.getElementById("content");
@@ -439,6 +498,8 @@ document.querySelectorAll(".tab").forEach(t => {
 });
 
 refresh();
+setInterval(updateSchedule, 1000);
+updateSchedule();
 </script>
 </body>
 </html>
