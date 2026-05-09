@@ -30,9 +30,13 @@ NAVER_HEADERS = {
 
 # ── Universe ─────────────────────────────────────────────
 
-def get_universe(min_mktcap: int = 50_000_000_000,
-                 min_amount: int = 1_000_000_000) -> list[dict]:
-    """KRX 보통주 중 시총·거래대금 필터 통과 종목."""
+def get_universe(min_mktcap: int = 100_000_000_000,
+                 min_amount: int = 3_000_000_000) -> list[dict]:
+    """KRX 보통주 중 시총·거래대금 필터 통과 종목.
+
+    시총 1000억 / 거래대금 30억 — 외국인/기관이 의미있게 매수하는 구간.
+    이하는 smart money 신호 자체가 약해 노이즈 비율 급증.
+    """
     import FinanceDataReader as fdr
     df = fdr.StockListing("KRX")
     df = df[df["MarketId"].isin(["STK", "KSQ"])]
@@ -69,7 +73,11 @@ def fetch_ohlcv(ticker: str, days: int = 400,
                 df = df.rename(columns=rename)
                 df["amount"] = (df["volume"].astype("int64")
                                 * df["close"].astype("int64"))
-                return df[["open", "high", "low", "close", "volume", "amount"]]
+                # 메모리 절감: float64→float32 (한국주가 7자리 정밀도면 충분)
+                out = df[["open", "high", "low", "close", "volume", "amount"]]
+                return out.astype({"open": "float32", "high": "float32",
+                                   "low": "float32", "close": "float32",
+                                   "volume": "int32"})
         except Exception as e:
             if attempt < retry:
                 time.sleep(0.5 + attempt * 0.5)

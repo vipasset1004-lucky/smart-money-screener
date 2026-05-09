@@ -34,14 +34,38 @@ LOCK_PATH = ROOT / ".analysis.lock"
 app = Flask(__name__)
 
 
+def _pid_alive(pid: int) -> bool:
+    """PID이 살아있는지 체크 (signal 0 = 권한·존재 확인)."""
+    if not pid:
+        return False
+    try:
+        os.kill(pid, 0)
+        return True
+    except (ProcessLookupError, PermissionError):
+        return False
+    except OSError:
+        return False
+
+
 def _is_running() -> dict:
-    """파일 기반 lock — gunicorn worker 간 공유."""
+    """파일 기반 lock + PID liveness 체크.
+
+    좀비 락 방지: gunicorn worker가 OOM 등으로 죽었을 때 lock 파일이 남는
+    경우, PID 체크로 즉시 탐지하고 정리한다.
+    """
     if not LOCK_PATH.exists():
         return {"running": False}
     try:
         info = json.loads(LOCK_PATH.read_text(encoding="utf-8"))
-        # stale lock (1시간 이상 = 죽은 프로세스로 판단)
+        # 1) PID 죽음 → stale 락
+        pid = info.get("pid")
+        if pid and not _pid_alive(pid):
+            logger.warning(f"[lock] stale (pid {pid} dead) — 정리")
+            LOCK_PATH.unlink(missing_ok=True)
+            return {"running": False}
+        # 2) 1시간 이상 = 좀비 (PID 살아있어도 hang)
         if time.time() - info.get("started_at", 0) > 3600:
+            logger.warning(f"[lock] stale (>1h) — 정리")
             LOCK_PATH.unlink(missing_ok=True)
             return {"running": False}
         return {"running": True, **info}

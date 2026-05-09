@@ -34,7 +34,11 @@ def fetch_ohlcv_light(ticker: str, days: int = 30,
                 })
                 df["amount"] = (df["volume"].astype("int64")
                                 * df["close"].astype("int64"))
-                return df[["open", "high", "low", "close", "volume", "amount"]]
+                # 메모리 절감: float64→float32
+                out = df[["open", "high", "low", "close", "volume", "amount"]]
+                return out.astype({"open": "float32", "high": "float32",
+                                   "low": "float32", "close": "float32",
+                                   "volume": "int32"})
         except Exception as e:
             if attempt < retry:
                 time.sleep(0.5 + attempt * 0.5)

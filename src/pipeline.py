@@ -6,6 +6,7 @@ Stage 2: 300 종목 → 분석/라벨 (네이버 수급 포함, 5~7min)
 
 from __future__ import annotations
 
+import gc
 import json
 import logging
 import time
@@ -80,6 +81,8 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
                 "smart_money_w": smart_money_weekly(weekly_supply),
                 "breakout_w": weekly_breakout(weekly, w_accum),
             }
+        # 중간 DataFrame 즉시 폐기 — weekly_pack에 결과만 보존
+        del weekly, weekly_supply
 
         # Wyckoff Spring/SOS/VSA + VCP 정밀 + Mansfield RS
         wyckoff = wyckoff_diagnose(ohlcv, accum)
@@ -137,7 +140,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
 
 # ── 파이프라인 ───────────────────────────────────────────
 
-def run_pipeline(limit: int | None = None, max_workers_s2: int = 2,
+def run_pipeline(limit: int | None = None, max_workers_s2: int = 1,
                  stage1_threshold: float = 60.0,
                  stage1_max_passed: int = 500,
                  supply_pages: int = 5) -> dict:
@@ -175,6 +178,9 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 2,
     by_ticker = {s["ticker"]: s for s in universe}
     s2_input = [(by_ticker[t], score, ohlcv_map.get(t))
                 for t, score in prefiltered if t in by_ticker]
+    # 메모리 절감: 전체 ohlcv_map 폐기 (s2_input이 필요한 데이터 다 보유)
+    del ohlcv_map, s1_ohlcv
+    gc.collect()
 
     logger.info(f"[pipeline] Stage 2 시작: {len(s2_input)}종목 정밀 분석")
     s2_start = time.time()
@@ -195,6 +201,7 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 2,
     s2_elapsed = time.time() - s2_start
     logger.info(f"[pipeline] Stage 2 완료: "
                 f"{len(results)}종목 라벨 ({s2_elapsed:.0f}s)")
+    gc.collect()
 
     # 섹터 동조도 부여 (라벨 부여 종목 기준)
     labels_map = {r["ticker"]: r.get("labels", []) for r in results}
