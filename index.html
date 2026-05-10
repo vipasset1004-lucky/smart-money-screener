@@ -101,6 +101,10 @@
   .label-earn-loss { color: #fbbf24; border: 1px dashed #fbbf24; }
   .tabs-earnings { margin-top: 4px; padding-top: 6px;
     border-top: 1px dashed var(--border); }
+  .guide-rows { display: flex; flex-direction: column; gap: 4px;
+    font-size: 13px; }
+  .guide-rows .g-key { color: var(--muted); display: inline-block;
+    min-width: 88px; font-size: 12px; }
   .badges {
     display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
     font-size: 11px;
@@ -503,6 +507,82 @@ function scoreBar(label, val, max) {
     </div>`;
 }
 
+function fmtPrice(v) {
+  if (v == null) return "—";
+  return Number(v).toLocaleString();
+}
+
+function tradingGuideHtml(guide) {
+  if (!guide || !guide.rule) return "";
+  const r = guide.rule;
+  const rl = guide.rule_label;
+  const c = guide.computed || {};
+  const fib = guide.fib;
+
+  // 매매 룰 카드
+  const ruleRows = [];
+  ruleRows.push(`<div><span class="g-key">사이즈</span> <b>${r.size}</b></div>`);
+  if (r.stop_pct != null) {
+    const stopP = c.stop_price != null ? ` (${fmtPrice(c.stop_price)}원)` : "";
+    ruleRows.push(`<div><span class="g-key">손절</span> <b style="color:var(--danger)">${r.stop_pct}%</b>${stopP}</div>`);
+  }
+  if (r.tp1_pct != null) {
+    const tp1P = c.tp1_price != null ? ` (${fmtPrice(c.tp1_price)}원)` : "";
+    ruleRows.push(`<div><span class="g-key">1차 익절</span> <b style="color:var(--safe)">+${r.tp1_pct}%</b>${tp1P} <span style="color:var(--muted)">${r.tp1_portion || ""}</span></div>`);
+  }
+  if (r.tp2_pct != null) {
+    const tp2P = c.tp2_price != null ? ` (${fmtPrice(c.tp2_price)}원)` : "";
+    ruleRows.push(`<div><span class="g-key">2차 익절</span> <b style="color:var(--safe)">+${r.tp2_pct}%</b>${tp2P} <span style="color:var(--muted)">${r.tp2_portion || ""}</span></div>`);
+  }
+  if (r.trail) {
+    ruleRows.push(`<div><span class="g-key">추적매도</span> <b>${r.trail}</b></div>`);
+  }
+  ruleRows.push(`<div><span class="g-key">보유기간</span> <b>${r.horizon}</b></div>`);
+  if (r.note) {
+    ruleRows.push(`<div style="color:var(--muted);font-size:12px;margin-top:4px">💡 ${r.note}</div>`);
+  }
+
+  // Fibonacci 카드
+  let fibHtml = "";
+  if (fib) {
+    const zoneText = fib.zone === "BREAKOUT" ? `🚀 박스 돌파 +${fib.breakout_pct}%`
+                   : fib.zone === "IN_BOX" ? `📦 박스 안 (${fib.retracement_pct}% 눌림)`
+                   : `⚠️ 박스 아래 (이탈)`;
+    const nextTarget = fib.next_target != null
+      ? `<div><span class="g-key">다음 목표</span> <b style="color:var(--safe)">${fmtPrice(fib.next_target)}원</b> <span style="color:var(--muted)">(${fib.next_target_label}, +${fib.next_target_gain_pct}%)</span></div>`
+      : "";
+
+    fibHtml = `
+      <div class="section">
+        <h3>📊 가격 가이드 (박스 Fibonacci)</h3>
+        <div class="guide-rows">
+          <div><span class="g-key">박스</span> <b>${fmtPrice(fib.box_low)}~${fmtPrice(fib.box_high)}원</b> <span style="color:var(--muted)">(폭 ${fmtPrice(fib.box_range)})</span></div>
+          <div><span class="g-key">현재가</span> <b>${fmtPrice(fib.current)}원</b> · ${zoneText}</div>
+          ${nextTarget}
+          <div style="border-top:1px dashed var(--border); margin:8px 0; padding-top:6px">
+            <div style="color:var(--muted);font-size:11px;margin-bottom:4px">재매수 zone (눌림 시 추가 매수 검토)</div>
+            <div><span class="g-key">38.2% 눌림</span> <b>${fmtPrice(fib.retracement["0.382"])}원</b></div>
+            <div><span class="g-key">50% 눌림</span> <b>${fmtPrice(fib.retracement["0.500"])}원</b></div>
+            <div><span class="g-key">61.8% 눌림</span> <b>${fmtPrice(fib.retracement["0.618"])}원</b> <span style="color:var(--danger);font-size:11px">(이거 깨지면 손절)</span></div>
+          </div>
+          <div>
+            <div style="color:var(--muted);font-size:11px;margin-bottom:4px">분할 익절 목표가</div>
+            <div><span class="g-key">100% ext</span> <b>${fmtPrice(fib.extension["1.000"])}원</b> <span style="color:var(--muted)">(1차 목표)</span></div>
+            <div><span class="g-key">161.8% ext</span> <b>${fmtPrice(fib.extension["1.618"])}원</b> <span style="color:var(--muted)">(황금비, 2차)</span></div>
+            <div><span class="g-key">261.8% ext</span> <b>${fmtPrice(fib.extension["2.618"])}원</b> <span style="color:var(--muted)">(텐버거 1차)</span></div>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  return `
+    <div class="section">
+      <h3>📋 매매 룰 <span style="color:var(--muted);font-size:12px">(${rl} 기준)</span></h3>
+      <div class="guide-rows">${ruleRows.join("")}</div>
+    </div>
+    ${fibHtml}`;
+}
+
 function openDetail(ticker) {
   const r = (DATA.results || []).find(x => x.ticker === ticker);
   if (!r) return;
@@ -549,6 +629,8 @@ function openDetail(ticker) {
             <span>S1 <b>${r.stage1_score ?? "—"}</b></span>
           </div>
         </div>
+
+        ${tradingGuideHtml(r.trading_guide)}
 
         <div class="section">
           <h3>수급 점수 (총 ${r.score.total} / 100)</h3>
