@@ -80,6 +80,27 @@
   .label-imminent { color: #fb923c; border-color: #fb923c;
     background: rgba(251,146,60,0.15); font-weight: 700; }
   .label-watch { color: var(--watch); border-color: var(--watch); }
+  /* 실적 라벨 — 점선 테두리로 차트/수급 라벨과 구분 */
+  .label-earn-explosive { color: #ff5e3a; border: 1px dashed #ff5e3a;
+    background: rgba(255,94,58,0.12); }
+  .label-earn-surge { color: #34d399; border: 1px dashed #34d399;
+    background: rgba(52,211,153,0.10); }
+  .label-earn-up { color: #86efac; border: 1px dashed #86efac;
+    background: rgba(134,239,172,0.08); }
+  .label-earn-flat { color: #94a3b8; border: 1px dashed #94a3b8; }
+  .label-earn-down { color: #fb923c; border: 1px dashed #fb923c; }
+  .label-earn-poor { color: #ef4444; border: 1px dashed #ef4444;
+    background: rgba(239,68,68,0.08); }
+  .label-earn-turnaround { color: #14b8a6; border: 1px dashed #14b8a6;
+    background: rgba(20,184,166,0.12); font-weight: 700; }
+  .label-earn-loss-shrink { color: #4ade80; border: 1px dashed #4ade80;
+    background: rgba(74,222,128,0.08); }
+  .label-earn-loss-grow { color: #dc2626; border: 1px dashed #dc2626; }
+  .label-earn-loss-flip { color: #7f1d1d; border: 1px dashed #7f1d1d;
+    background: rgba(127,29,29,0.15); }
+  .label-earn-loss { color: #fbbf24; border: 1px dashed #fbbf24; }
+  .tabs-earnings { margin-top: 4px; padding-top: 6px;
+    border-top: 1px dashed var(--border); }
   .badges {
     display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
     font-size: 11px;
@@ -220,6 +241,15 @@
   <span class="tab" data-filter="🔍매집중">🔍 매집중 <b class="cnt" data-cnt="🔍매집중">0</b></span>
   <span class="tab" data-filter="unlabeled">📋 관찰 <b class="cnt" data-cnt="unlabeled">0</b></span>
 </div>
+<div class="tabs tabs-earnings" id="tabs-earnings">
+  <span class="tab" data-filter="🔥실적폭발">🔥 실적폭발 <b class="cnt" data-cnt="🔥실적폭발">0</b></span>
+  <span class="tab" data-filter="📈실적급증">📈 실적급증 <b class="cnt" data-cnt="📈실적급증">0</b></span>
+  <span class="tab" data-filter="↗️실적증가">↗️ 실적증가 <b class="cnt" data-cnt="↗️실적증가">0</b></span>
+  <span class="tab" data-filter="🔄흑자전환">🔄 흑자전환 <b class="cnt" data-cnt="🔄흑자전환">0</b></span>
+  <span class="tab" data-filter="🌱적자축소">🌱 적자축소 <b class="cnt" data-cnt="🌱적자축소">0</b></span>
+  <span class="tab" data-filter="📉실적부진">📉 실적부진 <b class="cnt" data-cnt="📉실적부진">0</b></span>
+  <span class="tab" data-filter="💀적자전환">💀 적자전환 <b class="cnt" data-cnt="💀적자전환">0</b></span>
+</div>
 
 <div id="content"><div class="empty">로딩 중…</div></div>
 <div id="modal-root"></div>
@@ -271,6 +301,18 @@ function labelClass(l) {
   if (l === "🎯VCP") return "label-vcp";
   if (l === "🛡️안정형") return "label-stable";
   if (l === "🔍매집중") return "label-watch";
+  // 실적 라벨
+  if (l === "🔥실적폭발") return "label-earn-explosive";
+  if (l === "📈실적급증") return "label-earn-surge";
+  if (l === "↗️실적증가") return "label-earn-up";
+  if (l === "➡️실적유지") return "label-earn-flat";
+  if (l === "↘️실적감소") return "label-earn-down";
+  if (l === "📉실적부진") return "label-earn-poor";
+  if (l === "🔄흑자전환") return "label-earn-turnaround";
+  if (l === "🌱적자축소") return "label-earn-loss-shrink";
+  if (l === "💸적자확대") return "label-earn-loss-grow";
+  if (l === "💀적자전환") return "label-earn-loss-flip";
+  if (l === "⚠️적자유지") return "label-earn-loss";
   return "";
 }
 
@@ -406,6 +448,11 @@ function render() {
     "⭐황금자리": 0, "⚡단타": 0, "💎텐버거": 0,
     "🏛대가합의": 0, "🌅폭발임박": 0, "🎯VCP": 0,
     "🛡️안정형": 0, "🔍매집중": 0,
+    // 실적 라벨
+    "🔥실적폭발": 0, "📈실적급증": 0, "↗️실적증가": 0,
+    "➡️실적유지": 0, "↘️실적감소": 0, "📉실적부진": 0,
+    "🔄흑자전환": 0, "🌱적자축소": 0, "💸적자확대": 0,
+    "💀적자전환": 0, "⚠️적자유지": 0,
   };
   all.forEach(r => (r.labels || []).forEach(l => {
     if (counts[l] != null) counts[l] += 1;
