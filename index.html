@@ -203,11 +203,20 @@
     border-radius: 6px; padding: 10px;
   }
   .master-head {
-    display: flex; justify-content: space-between; align-items: baseline;
-    margin-bottom: 6px;
+    display: flex; align-items: baseline; gap: 8px;
+    margin-bottom: 6px; cursor: pointer; list-style: none;
+    user-select: none;
   }
-  .master-name { font-size: 13px; font-weight: 600; }
+  .master-head::-webkit-details-marker { display: none; }
+  .master-toggle { color: var(--muted); font-size: 11px;
+    display: inline-block; transition: transform 0.15s ease;
+    width: 12px; }
+  details[open] .master-toggle { transform: rotate(90deg); }
+  .master-name { font-size: 13px; font-weight: 600; flex: 1; }
   .master-pct { font-size: 16px; font-weight: 700; color: var(--accent); }
+  details:not([open]) .master-sub,
+  details:not([open]) .master-items { display: none; }
+  details:not([open]) .master-head { margin-bottom: 0; }
   .master-sub { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
   .master-items { display: grid; gap: 3px; font-size: 11px; }
   .master-items .item.ok { color: var(--text); }
@@ -491,15 +500,18 @@ function masterCardHtml(m) {
       <span class="check">${it.ok ? "✅" : "▫️"}</span>${it.label}</div>`)
     .join("");
   const sub = m.phase || m.stage || m.type || "";
+  // 50%+ 인 대가만 기본 펼침 (강한 신호 빠른 확인)
+  const expandedDefault = (m.percent ?? 0) >= 50;
   return `
-    <div class="master">
-      <div class="master-head">
-        <div class="master-name">${m.name}</div>
-        <div class="master-pct">${m.percent ?? "—"}%</div>
-      </div>
+    <details class="master" ${expandedDefault ? "open" : ""}>
+      <summary class="master-head">
+        <span class="master-toggle">▸</span>
+        <span class="master-name">${m.name}</span>
+        <span class="master-pct">${m.percent ?? "—"}%</span>
+      </summary>
       ${sub ? `<div class="master-sub">${sub}</div>` : ""}
       <div class="master-items">${items}</div>
-    </div>`;
+    </details>`;
 }
 
 function scoreBar(label, val, max) {
