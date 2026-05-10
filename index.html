@@ -61,7 +61,7 @@
   .name a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px; }
   .name a:hover { color: var(--accent); }
   .ticker { color: var(--muted); font-size: 11px; margin-left: 6px; }
-  .labels { display: flex; gap: 4px; flex-wrap: wrap; }
+  .labels { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 6px; }
   .label {
     font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600;
     background: rgba(255,255,255,0.05); border: 1px solid var(--border);
@@ -348,15 +348,15 @@ function cardHtml(r) {
         <a href="${r.naver_url}" target="_blank" rel="noopener">${r.name}</a>
         <span class="ticker">${r.ticker}</span>
       </div>
-      <div class="labels">
-        ${r.labels.map(l =>
-          `<span class="label ${labelClass(l)}">${l}</span>`).join("")}
+      <div class="badges">
+        <span class="badge ${posCls}">📍 ${r.position?.label ?? "—"}</span>
+        <span class="badge risk-${r.risk?.severity ?? "safe"}">⚠ ${r.risk?.severity ?? "safe"}${r.risk?.signals?.length ? ` (${r.risk.signals.length})` : ""}</span>
       </div>
     </div>
-    <div class="badges">
-      <span class="badge ${posCls}">📍 ${r.position?.label ?? "—"}</span>
-      <span class="badge risk-${r.risk?.severity ?? "safe"}">⚠ ${r.risk?.severity ?? "safe"}${r.risk?.signals?.length ? ` (${r.risk.signals.length})` : ""}</span>
-    </div>
+    ${r.labels?.length ? `<div class="labels">
+      ${r.labels.map(l =>
+        `<span class="label ${labelClass(l)}">${l}</span>`).join("")}
+    </div>` : ""}
     <div class="row">
       <span>점수 <b>${r.score.total}</b></span>
       ${r.ensemble ? `<span title="대가 앙상블 가중점수">🏛 <b>${r.ensemble.ensemble}</b> (${r.ensemble.masters_70plus}/6)</span>` : ""}
