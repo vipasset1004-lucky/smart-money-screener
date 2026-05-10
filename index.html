@@ -23,12 +23,12 @@
     display: flex; justify-content: space-between; align-items: baseline;
     flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
   }
-  h1 { font-size: 18px; margin: 0; color: var(--accent); }
-  .meta { color: var(--muted); font-size: 12px; }
+  h1 { font-size: 20px; margin: 0; color: var(--accent); }
+  .meta { color: var(--muted); font-size: 14px; }
   .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
   button {
     background: var(--card); color: var(--text); border: 1px solid var(--border);
-    padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 14px;
+    padding: 8px 14px; border-radius: 6px; cursor: pointer; font-size: 16px;
     font-weight: 500;
   }
   button:hover { border-color: var(--accent); }
@@ -37,12 +37,12 @@
   .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
   .tab {
     background: var(--card); color: var(--muted); border: 1px solid var(--border);
-    padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 13px;
+    padding: 6px 12px; border-radius: 999px; cursor: pointer; font-size: 15px;
     user-select: none; white-space: nowrap;
   }
   .tab.active { background: var(--accent); color: #0b1220; border-color: var(--accent); }
   .tab .cnt {
-    margin-left: 4px; font-weight: 700; font-size: 12px;
+    margin-left: 4px; font-weight: 700; font-size: 14px;
     opacity: 0.85;
   }
   .tab.active .cnt { opacity: 1; }
@@ -58,12 +58,12 @@
     display: flex; justify-content: space-between; align-items: baseline;
     gap: 8px; margin-bottom: 6px;
   }
-  .name a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 15px; }
+  .name a { color: var(--text); text-decoration: none; font-weight: 600; font-size: 17px; }
   .name a:hover { color: var(--accent); }
-  .ticker { color: var(--muted); font-size: 11px; margin-left: 6px; }
+  .ticker { color: var(--muted); font-size: 13px; margin-left: 6px; }
   .labels { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 6px; }
   .label {
-    font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600;
+    font-size: 13px; padding: 2px 6px; border-radius: 4px; font-weight: 600;
     background: rgba(255,255,255,0.05); border: 1px solid var(--border);
     display: inline-block; white-space: nowrap;
   }
@@ -102,12 +102,12 @@
   .tabs-earnings { margin-top: 4px; padding-top: 6px;
     border-top: 1px dashed var(--border); }
   .guide-rows { display: flex; flex-direction: column; gap: 4px;
-    font-size: 13px; }
+    font-size: 15px; }
   .guide-rows .g-key { color: var(--muted); display: inline-block;
-    min-width: 88px; font-size: 12px; }
+    min-width: 88px; font-size: 14px; }
   .badges {
     display: flex; gap: 6px; flex-wrap: wrap; margin: 4px 0;
-    font-size: 11px;
+    font-size: 13px;
   }
   .badge {
     padding: 2px 7px; border-radius: 4px; border: 1px solid var(--border);
@@ -123,13 +123,13 @@
   .risk-warning { color: var(--warn);  border-color: var(--warn); }
   .risk-danger  { color: var(--danger);border-color: var(--danger); }
   .row {
-    display: flex; gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--muted);
+    display: flex; gap: 12px; flex-wrap: wrap; font-size: 14px; color: var(--muted);
     margin-top: 4px;
   }
   .row span { white-space: nowrap; }
   .row b { color: var(--text); font-weight: 600; }
   .reasons {
-    margin-top: 6px; font-size: 11px; color: var(--muted);
+    margin-top: 6px; font-size: 13px; color: var(--muted);
     display: flex; gap: 4px; flex-wrap: wrap;
   }
   .reasons .r {
@@ -138,7 +138,7 @@
   }
   .actions { display: flex; gap: 6px; margin-top: 8px; }
   .actions button {
-    flex: 1; padding: 6px 8px; font-size: 12px;
+    flex: 1; padding: 6px 8px; font-size: 14px;
   }
   .empty { text-align: center; color: var(--muted); padding: 40px; }
   .err { color: #f87171; }
@@ -161,30 +161,30 @@
     display: flex; justify-content: space-between; align-items: center;
     gap: 12px;
   }
-  .modal-head h2 { margin: 0; font-size: 17px; flex: 1; min-width: 0;
+  .modal-head h2 { margin: 0; font-size: 19px; flex: 1; min-width: 0;
     display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .modal-head h2 a { color: var(--text); text-decoration: none; }
   .modal-head h2 a:hover { color: var(--accent); }
-  .current-price { color: var(--accent); font-size: 18px; font-weight: 700;
+  .current-price { color: var(--accent); font-size: 20px; font-weight: 700;
     white-space: nowrap; }
-  .current-price .won { color: var(--muted); font-size: 12px;
+  .current-price .won { color: var(--muted); font-size: 14px;
     font-weight: 400; margin-left: 1px; }
   .modal-head-labels { display: flex; flex-wrap: wrap; gap: 6px; }
   .close-btn {
     background: transparent; border: 1px solid var(--border); color: var(--muted);
-    padding: 4px 10px; border-radius: 4px; font-size: 13px;
+    padding: 4px 10px; border-radius: 4px; font-size: 15px;
   }
   .section {
     margin-bottom: 14px;
   }
   .section h3 {
-    font-size: 13px; color: var(--accent); margin: 0 0 8px;
+    font-size: 15px; color: var(--accent); margin: 0 0 8px;
     text-transform: uppercase; letter-spacing: 0.5px;
   }
   .score-bars { display: grid; gap: 6px; }
   .score-bar {
     display: grid; grid-template-columns: 90px 1fr 50px; gap: 8px; align-items: center;
-    font-size: 12px;
+    font-size: 14px;
   }
   .score-bar .bar {
     background: rgba(255,255,255,0.06); border-radius: 4px; height: 14px;
@@ -208,25 +208,25 @@
     user-select: none;
   }
   .master-head::-webkit-details-marker { display: none; }
-  .master-toggle { color: var(--muted); font-size: 11px;
+  .master-toggle { color: var(--muted); font-size: 13px;
     display: inline-block; transition: transform 0.15s ease;
     width: 12px; }
   details[open] .master-toggle { transform: rotate(90deg); }
-  .master-name { font-size: 13px; font-weight: 600; flex: 1; }
-  .master-pct { font-size: 16px; font-weight: 700; color: var(--accent); }
+  .master-name { font-size: 15px; font-weight: 600; flex: 1; }
+  .master-pct { font-size: 18px; font-weight: 700; color: var(--accent); }
   details:not([open]) .master-sub,
   details:not([open]) .master-items { display: none; }
   details:not([open]) .master-head { margin-bottom: 0; }
-  .master-sub { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
-  .master-items { display: grid; gap: 3px; font-size: 11px; }
+  .master-sub { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .master-items { display: grid; gap: 3px; font-size: 13px; }
   .master-items .item.ok { color: var(--text); }
   .master-items .item.no { color: var(--muted); }
   .master-items .item .check { display: inline-block; width: 14px; }
-  .risks ul { margin: 0; padding-left: 18px; font-size: 12px; }
+  .risks ul { margin: 0; padding-left: 18px; font-size: 14px; }
   .risks li { color: var(--warn); }
   @media (max-width: 600px) {
     .grid { grid-template-columns: 1fr; }
-    h1 { font-size: 16px; }
+    h1 { font-size: 18px; }
     .modal { padding: 12px; }
   }
 </style>
@@ -556,7 +556,7 @@ function tradingGuideHtml(guide) {
   }
   ruleRows.push(`<div><span class="g-key">보유기간</span> <b>${r.horizon}</b></div>`);
   if (r.note) {
-    ruleRows.push(`<div style="color:var(--muted);font-size:12px;margin-top:4px">💡 ${r.note}</div>`);
+    ruleRows.push(`<div style="color:var(--muted);font-size:14px;margin-top:4px">💡 ${r.note}</div>`);
   }
 
   // Fibonacci 카드
@@ -577,13 +577,13 @@ function tradingGuideHtml(guide) {
           <div><span class="g-key">현재가</span> <b>${fmtPrice(fib.current)}원</b> · ${zoneText}</div>
           ${nextTarget}
           <div style="border-top:1px dashed var(--border); margin:8px 0; padding-top:6px">
-            <div style="color:var(--muted);font-size:11px;margin-bottom:4px">재매수 zone (눌림 시 추가 매수 검토)</div>
+            <div style="color:var(--muted);font-size:13px;margin-bottom:4px">재매수 zone (눌림 시 추가 매수 검토)</div>
             <div><span class="g-key">38.2% 눌림</span> <b>${fmtPrice(fib.retracement["0.382"])}원</b></div>
             <div><span class="g-key">50% 눌림</span> <b>${fmtPrice(fib.retracement["0.500"])}원</b></div>
-            <div><span class="g-key">61.8% 눌림</span> <b>${fmtPrice(fib.retracement["0.618"])}원</b> <span style="color:var(--danger);font-size:11px">(이거 깨지면 손절)</span></div>
+            <div><span class="g-key">61.8% 눌림</span> <b>${fmtPrice(fib.retracement["0.618"])}원</b> <span style="color:var(--danger);font-size:13px">(이거 깨지면 손절)</span></div>
           </div>
           <div>
-            <div style="color:var(--muted);font-size:11px;margin-bottom:4px">분할 익절 목표가</div>
+            <div style="color:var(--muted);font-size:13px;margin-bottom:4px">분할 익절 목표가</div>
             <div><span class="g-key">100% ext</span> <b>${fmtPrice(fib.extension["1.000"])}원</b> <span style="color:var(--muted)">(1차 목표)</span></div>
             <div><span class="g-key">161.8% ext</span> <b>${fmtPrice(fib.extension["1.618"])}원</b> <span style="color:var(--muted)">(황금비, 2차)</span></div>
             <div><span class="g-key">261.8% ext</span> <b>${fmtPrice(fib.extension["2.618"])}원</b> <span style="color:var(--muted)">(텐버거 1차)</span></div>
@@ -594,7 +594,7 @@ function tradingGuideHtml(guide) {
 
   return `
     <div class="section">
-      <h3>📋 매매 룰 <span style="color:var(--muted);font-size:12px">(${rl} 기준)</span></h3>
+      <h3>📋 매매 룰 <span style="color:var(--muted);font-size:14px">(${rl} 기준)</span></h3>
       <div class="guide-rows">${ruleRows.join("")}</div>
     </div>
     ${fibHtml}`;
@@ -638,7 +638,7 @@ function openDetail(ticker) {
 
         <div class="section">
           <h3>핵심 지표</h3>
-          <div class="row" style="font-size:13px">
+          <div class="row" style="font-size:15px">
             <span>위치 <b>${r.position?.label ?? "—"}</b> <span style="color:var(--muted)">— ${r.position?.desc ?? ""}</span></span>
             <span>리스크 <b style="color:var(--${r.risk?.severity === "danger" ? "danger" : r.risk?.severity === "warning" ? "warn" : r.risk?.severity === "watch" ? "watch" : "safe"})">${r.risk?.severity ?? "safe"}</b></span>
             <span>시총 <b>${fmtMcap(r.marcap)}</b></span>
@@ -670,7 +670,7 @@ function openDetail(ticker) {
         ${r.ensemble ? `
         <div class="section">
           <h3>🏛 대가 앙상블 (가중점수 ${r.ensemble.ensemble} / 100)</h3>
-          <div class="row" style="font-size:12px;flex-wrap:wrap">
+          <div class="row" style="font-size:14px;flex-wrap:wrap">
             <span>대가 80+: <b>${r.ensemble.masters_80plus}/6</b></span>
             <span>대가 70+: <b>${r.ensemble.masters_70plus}/6</b></span>
           </div>
@@ -772,7 +772,7 @@ function renderTracking(data) {
           </div>
           <div class="labels">${it.labels.map(l => `<span class="label ${labelClass(l)}">${l}</span>`).join("")}</div>
         </div>
-        <div class="row" style="font-size:11px">
+        <div class="row" style="font-size:13px">
           <span>진입 <b>${it.entry_close.toLocaleString()}</b></span>
           <span>현재 <b>${it.current_close.toLocaleString()}</b></span>
           <span style="color:${retColor}"><b>${it.ret_pct >= 0 ? '+' : ''}${it.ret_pct}%</b></span>
@@ -781,7 +781,7 @@ function renderTracking(data) {
       </div>`;
     }).join("");
     return `<div class="section">
-      <h3>📅 ${d.date} <span style="color:var(--muted);font-weight:400;font-size:11px">${d.regime || ""} · ${d.days_held}일 경과 · ${d.items.length}종목</span></h3>
+      <h3>📅 ${d.date} <span style="color:var(--muted);font-weight:400;font-size:13px">${d.regime || ""} · ${d.days_held}일 경과 · ${d.items.length}종목</span></h3>
       <div class="grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">${items}</div>
     </div>`;
   }).join("");
@@ -790,12 +790,12 @@ function renderTracking(data) {
     <div class="modal-bg" onclick="if(event.target===this) closeDetail()">
       <div class="modal" style="max-width:1100px">
         <div class="modal-head">
-          <h2>📈 포워드 추적 <span style="color:var(--muted);font-size:12px">(${data.archives_count}개 스캔 누적)</span></h2>
+          <h2>📈 포워드 추적 <span style="color:var(--muted);font-size:14px">(${data.archives_count}개 스캔 누적)</span></h2>
           <button class="close-btn" onclick="closeDetail()">닫기</button>
         </div>
         <div class="section">
           <h3>라벨별 누적 성과</h3>
-          <table style="width:100%;font-size:13px;border-collapse:collapse">
+          <table style="width:100%;font-size:15px;border-collapse:collapse">
             <thead><tr style="border-bottom:1px solid var(--border);color:var(--muted)">
               <th style="text-align:left;padding:6px">라벨</th>
               <th style="text-align:right;padding:6px">건수</th>
