@@ -20,6 +20,7 @@ from src.data.fetcher import (
 from src.data.bulk_fetcher import (
     bulk_fetch_universe, fetch_kospi_history, fetch_kosdaq_history,
 )
+from src.data.earnings_batch import build_earnings_map
 from src.analysis.prefilter import run_prefilter
 from src.analysis.score import (
     supply_demand_score, detect_accumulation, chart_metrics,
@@ -48,7 +49,7 @@ logger = logging.getLogger(__name__)
 
 def analyze_stage2(stock: dict, prefilter_score: dict,
                    ohlcv_light=None, supply_pages: int = 5,
-                   market_close=None) -> dict | None:
+                   market_close=None, earnings: dict | None = None) -> dict | None:
     """Stage 2 정밀 분석 (1종목)."""
     ticker = stock["ticker"]
     try:
@@ -109,7 +110,8 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
         )
         masters = evaluate_all(ohlcv, supply, score, accum, metrics)
         labels = classify(st_sig, tb_sig, accum, score["total"],
-                          marcap=mcap, ensemble=ensemble, vcp_pack=vcp_pack)
+                          marcap=mcap, ensemble=ensemble, vcp_pack=vcp_pack,
+                          earnings=earnings)
 
         return {
             "ticker": ticker,
@@ -131,6 +133,7 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
             "short_term": st_sig,
             "tenbagger": tb_sig,
             "masters": masters,
+            "earnings": earnings,
             "naver_url": f"https://finance.naver.com/item/main.naver?code={ticker}",
         }
     except Exception as e:
@@ -182,11 +185,22 @@ def run_pipeline(limit: int | None = None, max_workers_s2: int = 4,
     del ohlcv_map, s1_ohlcv
     gc.collect()
 
+    # ── 실적 데이터 (Stage 1 통과분만, Naver 일괄) ──
+    s_start = time.time()
+    s2_universe = [stock for stock, _, _ in s2_input]
+    earnings_payload = build_earnings_map(
+        s2_universe, max_workers=4, output_path="earnings.json",
+    )
+    earnings_map = earnings_payload.get("earnings", {})
+    logger.info(f"[earnings] {len(earnings_map)}/{len(s2_universe)} 종목 "
+                f"실적 분류 완료 ({time.time()-s_start:.0f}s)")
+
     logger.info(f"[pipeline] Stage 2 시작: {len(s2_input)}종목 정밀 분석")
     s2_start = time.time()
     results = []
     with ThreadPoolExecutor(max_workers=max_workers_s2) as ex:
-        futs = {ex.submit(analyze_stage2, st, sc, ol, supply_pages, kospi):
+        futs = {ex.submit(analyze_stage2, st, sc, ol, supply_pages, kospi,
+                          earnings_map.get(st["ticker"])):
                 st["ticker"]
                 for (st, sc, ol) in s2_input}
         done = 0

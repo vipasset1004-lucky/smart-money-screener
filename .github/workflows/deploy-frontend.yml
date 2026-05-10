@@ -38,6 +38,7 @@ jobs:
           # gh-pages의 모든 데이터 파일 보존
           [ -f gh-pages-current/results.json ] && cp gh-pages-current/results.json _site/
           [ -f gh-pages-current/tracking.json ] && cp gh-pages-current/tracking.json _site/
+          [ -f gh-pages-current/earnings.json ] && cp gh-pages-current/earnings.json _site/
           [ -f gh-pages-current/last_update.json ] && cp gh-pages-current/last_update.json _site/
           [ -d gh-pages-current/archives ] && cp -r gh-pages-current/archives _site/
           # frontend는 main의 최신 버전으로

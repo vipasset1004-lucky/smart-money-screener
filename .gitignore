@@ -42,6 +42,8 @@ build/
 server.log
 *.cache.json
 results.json
+earnings.json
+tracking.json
 backtest/*.csv
 backtest/*.log
 backtest/short_term/

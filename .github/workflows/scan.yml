@@ -67,6 +67,7 @@ jobs:
           cp frontend/index.html _site/index.html
           cp results.json _site/results.json
           [ -f tracking.json ] && cp tracking.json _site/tracking.json || true
+          [ -f earnings.json ] && cp earnings.json _site/earnings.json || true
           [ -d archives ] && cp -r archives _site/archives || true
           # cache-busting용 메타파일
           date -u +"{\"updated_at\":\"%Y-%m-%dT%H:%M:%SZ\"}" > _site/last_update.json

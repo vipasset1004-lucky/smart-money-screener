@@ -8,9 +8,14 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
              marcap: int | None = None,
              ensemble: dict | None = None,
              vcp_pack: dict | None = None,
+             earnings: dict | None = None,
              score_threshold: float = 50.0,
              stable_max_marcap: int = 5_000_000_000_000) -> list[str]:
-    """라벨 부여."""
+    """라벨 부여.
+
+    earnings: {label: '🔥실적폭발', yoy_pct: 209.2, ...} or None
+      → 실적 라벨이 차트/수급 라벨 다음에 추가됨 (메인 라벨에 함께 표시)
+    """
     labels: list[str] = []
     en = ensemble or {}
     en_score = float(en.get("ensemble", 0))
@@ -66,5 +71,9 @@ def classify(short_term_signal: dict, tenbagger_signal: dict,
         or en_score >= 50
     ):
         labels.append("🔍매집중")
+
+    # 실적 라벨 — 차트/수급 라벨에 부가 (필터·검색용)
+    if earnings and earnings.get("label"):
+        labels.append(earnings["label"])
 
     return labels
