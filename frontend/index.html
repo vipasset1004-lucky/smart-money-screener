@@ -65,6 +65,7 @@
   .label {
     font-size: 11px; padding: 2px 6px; border-radius: 4px; font-weight: 600;
     background: rgba(255,255,255,0.05); border: 1px solid var(--border);
+    display: inline-block; white-space: nowrap;
   }
   .label-short { color: var(--short); border-color: var(--short); }
   .label-tenbagger { color: var(--tenbagger); border-color: var(--tenbagger); }
@@ -128,13 +129,17 @@
     width: min(900px, 100%); padding: 16px;
   }
   .modal-head {
-    display: flex; justify-content: space-between; align-items: baseline;
+    display: flex; flex-direction: column; gap: 8px;
     border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 12px;
-    gap: 12px; flex-wrap: wrap;
   }
-  .modal-head h2 { margin: 0; font-size: 17px; }
+  .modal-head-top {
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 12px;
+  }
+  .modal-head h2 { margin: 0; font-size: 17px; flex: 1; min-width: 0; }
   .modal-head h2 a { color: var(--text); text-decoration: none; }
   .modal-head h2 a:hover { color: var(--accent); }
+  .modal-head-labels { display: flex; flex-wrap: wrap; gap: 6px; }
   .close-btn {
     background: transparent; border: 1px solid var(--border); color: var(--muted);
     padding: 4px 10px; border-radius: 4px; font-size: 13px;
@@ -198,7 +203,7 @@
   </div>
   <div class="controls">
     <button id="refresh-btn" onclick="refresh()">새로고침</button>
-    <button id="rerun-btn" onclick="rerun()">재분석</button>
+    <button id="rerun-btn" onclick="rerun()" style="display:none">재분석</button>
     <button onclick="openTracking()">📈 추적</button>
   </div>
 </header>
@@ -477,10 +482,11 @@ function openDetail(ticker) {
     <div class="modal-bg" onclick="if(event.target===this) closeDetail()">
       <div class="modal">
         <div class="modal-head">
-          <h2><a href="${r.naver_url}" target="_blank">${r.name} <span class="ticker">${r.ticker}</span></a>
-            ${r.labels.map(l => `<span class="label ${labelClass(l)}" style="margin-left:6px">${l}</span>`).join("")}
-          </h2>
-          <button class="close-btn" onclick="closeDetail()">닫기</button>
+          <div class="modal-head-top">
+            <h2><a href="${r.naver_url}" target="_blank">${r.name} <span class="ticker">${r.ticker}</span></a></h2>
+            <button class="close-btn" onclick="closeDetail()">닫기</button>
+          </div>
+          ${r.labels.length ? `<div class="modal-head-labels">${r.labels.map(l => `<span class="label ${labelClass(l)}">${l}</span>`).join("")}</div>` : ""}
         </div>
 
         <div class="section">
@@ -667,6 +673,19 @@ document.querySelectorAll(".tab").forEach(t => {
     render();
   };
 });
+
+// 관리자 모드 — URL ?admin=vipasset1004 또는 localStorage 기억
+(function() {
+  const params = new URLSearchParams(location.search);
+  const ADMIN_KEY = "vipasset1004";
+  if (params.get("admin") === ADMIN_KEY) {
+    localStorage.setItem("sm_admin", ADMIN_KEY);
+  }
+  if (localStorage.getItem("sm_admin") === ADMIN_KEY) {
+    const btn = document.getElementById("rerun-btn");
+    if (btn) btn.style.display = "";
+  }
+})();
 
 refresh();
 setInterval(updateSchedule, 1000);
