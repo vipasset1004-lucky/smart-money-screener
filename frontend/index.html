@@ -161,9 +161,14 @@
     display: flex; justify-content: space-between; align-items: center;
     gap: 12px;
   }
-  .modal-head h2 { margin: 0; font-size: 17px; flex: 1; min-width: 0; }
+  .modal-head h2 { margin: 0; font-size: 17px; flex: 1; min-width: 0;
+    display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .modal-head h2 a { color: var(--text); text-decoration: none; }
   .modal-head h2 a:hover { color: var(--accent); }
+  .current-price { color: var(--accent); font-size: 18px; font-weight: 700;
+    white-space: nowrap; }
+  .current-price .won { color: var(--muted); font-size: 12px;
+    font-weight: 400; margin-left: 1px; }
   .modal-head-labels { display: flex; flex-wrap: wrap; gap: 6px; }
   .close-btn {
     background: transparent; border: 1px solid var(--border); color: var(--muted);
@@ -610,7 +615,10 @@ function openDetail(ticker) {
       <div class="modal">
         <div class="modal-head">
           <div class="modal-head-top">
-            <h2><a href="${r.naver_url}" target="_blank">${r.name} <span class="ticker">${r.ticker}</span></a></h2>
+            <h2>
+              <a href="${r.naver_url}" target="_blank">${r.name} <span class="ticker">${r.ticker}</span></a>
+              ${r.metrics?.close != null ? `<span class="current-price">${fmtPrice(r.metrics.close)}<span class="won">원</span></span>` : ""}
+            </h2>
             <button class="close-btn" onclick="closeDetail()">닫기</button>
           </div>
           ${r.labels.length ? `<div class="modal-head-labels">${r.labels.map(l => `<span class="label ${labelClass(l)}">${l}</span>`).join("")}</div>` : ""}
