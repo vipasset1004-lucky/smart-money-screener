@@ -39,6 +39,7 @@ from src.analysis.wyckoff import wyckoff_pack as wyckoff_diagnose
 from src.analysis.vcp import detect_vcp_precise
 from src.analysis.mansfield import mansfield_rs
 from src.analysis.ensemble import evaluate_ensemble
+from src.analysis.trading_rules import compute_trading_guide
 from src.signals.departure import short_term_departure, tenbagger_departure
 from src.classifier.labeler import classify
 
@@ -113,12 +114,16 @@ def analyze_stage2(stock: dict, prefilter_score: dict,
                           marcap=mcap, ensemble=ensemble, vcp_pack=vcp_pack,
                           earnings=earnings)
 
+        # 매매 가이드 (라벨 우선순위 따라 룰 + Fibonacci 계산)
+        trading_guide = compute_trading_guide(labels, accum, metrics)
+
         return {
             "ticker": ticker,
             "name": stock["name"],
             "market": stock.get("market"),
             "marcap": mcap,
             "labels": labels,
+            "trading_guide": trading_guide,
             "position": position,
             "risk": risk,
             "score": score,
