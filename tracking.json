@@ -1,10 +1,3722 @@
 {
-  "generated_at": "2026-05-15T18:58:48.969369",
-  "archives_count": 11,
+  "generated_at": "2026-05-15T23:03:09.552632",
+  "archives_count": 12,
   "by_date": [
     {
       "date": "2026-05-15",
       "generated_at": "2026-05-15T18:58:31.235784",
+      "days_held": 0,
+      "regime": "📈 공격 가능",
+      "items": [
+        {
+          "ticker": "000430",
+          "name": "대원강업",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "🛡️안정형",
+            "🔄흑자전환"
+          ],
+          "score": 68.6,
+          "ensemble": 50.6,
+          "vcp_score": 23.6,
+          "entry_close": 4675.0,
+          "current_close": 4675.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000430"
+        },
+        {
+          "ticker": "071200",
+          "name": "인피니트헬스케어",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "🔥실적폭발"
+          ],
+          "score": 48.0,
+          "ensemble": 50.9,
+          "vcp_score": 28.3,
+          "entry_close": 7700.0,
+          "current_close": 7700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=071200"
+        },
+        {
+          "ticker": "290690",
+          "name": "소룩스",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "🔄흑자전환"
+          ],
+          "score": 47.6,
+          "ensemble": 27.7,
+          "vcp_score": 58.8,
+          "entry_close": 5570.0,
+          "current_close": 5570.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=290690"
+        },
+        {
+          "ticker": "069260",
+          "name": "TKG휴켐스",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "📉실적부진"
+          ],
+          "score": 41.0,
+          "ensemble": 51.3,
+          "vcp_score": 46.4,
+          "entry_close": 20100.0,
+          "current_close": 20100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=069260"
+        },
+        {
+          "ticker": "340570",
+          "name": "티앤엘",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "📉실적부진"
+          ],
+          "score": 42.0,
+          "ensemble": 41.6,
+          "vcp_score": 28.3,
+          "entry_close": 61800.0,
+          "current_close": 61800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=340570"
+        },
+        {
+          "ticker": "383800",
+          "name": "LX홀딩스",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "💸적자확대"
+          ],
+          "score": 40.0,
+          "ensemble": 47.6,
+          "vcp_score": 41.6,
+          "entry_close": 9160.0,
+          "current_close": 9160.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=383800"
+        },
+        {
+          "ticker": "003690",
+          "name": "코리안리",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "📉실적부진"
+          ],
+          "score": 20.4,
+          "ensemble": 44.9,
+          "vcp_score": 56.7,
+          "entry_close": 13130.0,
+          "current_close": 13130.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=003690"
+        },
+        {
+          "ticker": "001540",
+          "name": "안국약품",
+          "labels": [
+            "🌅폭발임박",
+            "💀적자전환"
+          ],
+          "score": 29.6,
+          "ensemble": 43.5,
+          "vcp_score": 46.7,
+          "entry_close": 9680.0,
+          "current_close": 9680.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001540"
+        },
+        {
+          "ticker": "007340",
+          "name": "DN오토모티브",
+          "labels": [
+            "⚡단타",
+            "🌅폭발임박",
+            "↗️실적증가"
+          ],
+          "score": 13.8,
+          "ensemble": 37.9,
+          "vcp_score": 18.3,
+          "entry_close": 50900.0,
+          "current_close": 50900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=007340"
+        },
+        {
+          "ticker": "001820",
+          "name": "삼화콘덴서",
+          "labels": [
+            "🎯VCP",
+            "🌱적자축소"
+          ],
+          "score": 60.0,
+          "ensemble": 45.2,
+          "vcp_score": 67.4,
+          "entry_close": 65200.0,
+          "current_close": 65200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001820"
+        },
+        {
+          "ticker": "417840",
+          "name": "저스템",
+          "labels": [
+            "🎯VCP",
+            "📉실적부진"
+          ],
+          "score": 46.6,
+          "ensemble": 42.6,
+          "vcp_score": 61.7,
+          "entry_close": 16100.0,
+          "current_close": 16100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=417840"
+        },
+        {
+          "ticker": "007460",
+          "name": "에이프로젠",
+          "labels": [
+            "🎯VCP",
+            "⚠️적자유지"
+          ],
+          "score": 37.6,
+          "ensemble": 36.5,
+          "vcp_score": 60.0,
+          "entry_close": 4710.0,
+          "current_close": 4710.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=007460"
+        },
+        {
+          "ticker": "000370",
+          "name": "한화손해보험",
+          "labels": [
+            "🎯VCP",
+            "🔥실적폭발"
+          ],
+          "score": 15.0,
+          "ensemble": 29.4,
+          "vcp_score": 71.7,
+          "entry_close": 6530.0,
+          "current_close": 6530.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000370"
+        },
+        {
+          "ticker": "326030",
+          "name": "SK바이오팜",
+          "labels": [
+            "🎯VCP",
+            "↗️실적증가"
+          ],
+          "score": 10.0,
+          "ensemble": 26.4,
+          "vcp_score": 72.7,
+          "entry_close": 96600.0,
+          "current_close": 96600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=326030"
+        },
+        {
+          "ticker": "007070",
+          "name": "GS리테일",
+          "labels": [
+            "⚡단타",
+            "📈실적급증"
+          ],
+          "score": 81.0,
+          "ensemble": 46.6,
+          "vcp_score": 28.3,
+          "entry_close": 29450.0,
+          "current_close": 29450.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=007070"
+        },
+        {
+          "ticker": "033240",
+          "name": "자화전자",
+          "labels": [
+            "⚡단타",
+            "📈실적급증"
+          ],
+          "score": 59.0,
+          "ensemble": 47.6,
+          "vcp_score": 18.3,
+          "entry_close": 55700.0,
+          "current_close": 55700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=033240"
+        },
+        {
+          "ticker": "052400",
+          "name": "코나아이",
+          "labels": [
+            "⚡단타",
+            "🔥실적폭발"
+          ],
+          "score": 55.0,
+          "ensemble": 47.9,
+          "vcp_score": 18.7,
+          "entry_close": 70000.0,
+          "current_close": 70000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=052400"
+        },
+        {
+          "ticker": "001800",
+          "name": "오리온홀딩스",
+          "labels": [
+            "⚡단타",
+            "➡️실적유지"
+          ],
+          "score": 52.0,
+          "ensemble": 49.9,
+          "vcp_score": 28.7,
+          "entry_close": 28300.0,
+          "current_close": 28300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001800"
+        },
+        {
+          "ticker": "260970",
+          "name": "에스앤디",
+          "labels": [
+            "⚡단타",
+            "↘️실적감소"
+          ],
+          "score": 50.4,
+          "ensemble": 36.7,
+          "vcp_score": 28.1,
+          "entry_close": 67000.0,
+          "current_close": 67000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=260970"
+        },
+        {
+          "ticker": "067310",
+          "name": "하나마이크론",
+          "labels": [
+            "⚡단타",
+            "↘️실적감소"
+          ],
+          "score": 52.0,
+          "ensemble": 46.4,
+          "vcp_score": 8.3,
+          "entry_close": 52900.0,
+          "current_close": 52900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=067310"
+        },
+        {
+          "ticker": "004370",
+          "name": "농심",
+          "labels": [
+            "⚡단타",
+            "📈실적급증"
+          ],
+          "score": 46.0,
+          "ensemble": 39.1,
+          "vcp_score": 56.7,
+          "entry_close": 399000.0,
+          "current_close": 399000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004370"
+        },
+        {
+          "ticker": "005180",
+          "name": "빙그레",
+          "labels": [
+            "⚡단타",
+            "💀적자전환"
+          ],
+          "score": 45.0,
+          "ensemble": 41.2,
+          "vcp_score": 48.3,
+          "entry_close": 77500.0,
+          "current_close": 77500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005180"
+        },
+        {
+          "ticker": "010780",
+          "name": "아이에스동서",
+          "labels": [
+            "⚡단타",
+            "💀적자전환"
+          ],
+          "score": 43.7,
+          "ensemble": 50.0,
+          "vcp_score": 28.9,
+          "entry_close": 30400.0,
+          "current_close": 30400.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=010780"
+        },
+        {
+          "ticker": "035900",
+          "name": "JYP Ent.",
+          "labels": [
+            "⚡단타",
+            "↗️실적증가"
+          ],
+          "score": 43.0,
+          "ensemble": 37.1,
+          "vcp_score": 42.1,
+          "entry_close": 63500.0,
+          "current_close": 63500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=035900"
+        },
+        {
+          "ticker": "002960",
+          "name": "한국쉘석유",
+          "labels": [
+            "⚡단타",
+            "➡️실적유지"
+          ],
+          "score": 45.0,
+          "ensemble": 52.6,
+          "vcp_score": 56.7,
+          "entry_close": 580000.0,
+          "current_close": 580000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=002960"
+        },
+        {
+          "ticker": "092790",
+          "name": "넥스틸",
+          "labels": [
+            "⚡단타",
+            "💀적자전환"
+          ],
+          "score": 41.2,
+          "ensemble": 46.5,
+          "vcp_score": 36.7,
+          "entry_close": 20700.0,
+          "current_close": 20700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=092790"
+        },
+        {
+          "ticker": "005850",
+          "name": "에스엘",
+          "labels": [
+            "⚡단타",
+            "🔥실적폭발"
+          ],
+          "score": 40.4,
+          "ensemble": 47.3,
+          "vcp_score": 26.6,
+          "entry_close": 71900.0,
+          "current_close": 71900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005850"
+        },
+        {
+          "ticker": "006060",
+          "name": "화승인더",
+          "labels": [
+            "⚡단타",
+            "📉실적부진"
+          ],
+          "score": 38.0,
+          "ensemble": 34.7,
+          "vcp_score": 28.6,
+          "entry_close": 3420.0,
+          "current_close": 3420.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=006060"
+        },
+        {
+          "ticker": "037460",
+          "name": "삼지전자",
+          "labels": [
+            "⚡단타",
+            "📈실적급증"
+          ],
+          "score": 40.3,
+          "ensemble": 46.0,
+          "vcp_score": 10.0,
+          "entry_close": 49650.0,
+          "current_close": 49650.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=037460"
+        },
+        {
+          "ticker": "011560",
+          "name": "세보엠이씨",
+          "labels": [
+            "⚡단타",
+            "🔄흑자전환"
+          ],
+          "score": 35.7,
+          "ensemble": 37.6,
+          "vcp_score": 26.7,
+          "entry_close": 23150.0,
+          "current_close": 23150.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=011560"
+        },
+        {
+          "ticker": "454910",
+          "name": "두산로보틱스",
+          "labels": [
+            "⚡단타",
+            "⚠️적자유지"
+          ],
+          "score": 36.3,
+          "ensemble": 41.2,
+          "vcp_score": 18.3,
+          "entry_close": 127400.0,
+          "current_close": 127400.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=454910"
+        },
+        {
+          "ticker": "452280",
+          "name": "한선엔지니어링",
+          "labels": [
+            "⚡단타",
+            "🔥실적폭발"
+          ],
+          "score": 27.6,
+          "ensemble": 47.2,
+          "vcp_score": 8.3,
+          "entry_close": 28900.0,
+          "current_close": 28900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=452280"
+        },
+        {
+          "ticker": "017940",
+          "name": "E1",
+          "labels": [
+            "⚡단타",
+            "🔥실적폭발"
+          ],
+          "score": 24.9,
+          "ensemble": 46.1,
+          "vcp_score": 56.7,
+          "entry_close": 102600.0,
+          "current_close": 102600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=017940"
+        },
+        {
+          "ticker": "194700",
+          "name": "노바렉스",
+          "labels": [
+            "⚡단타",
+            "📈실적급증"
+          ],
+          "score": 19.0,
+          "ensemble": 12.8,
+          "vcp_score": 18.3,
+          "entry_close": 17260.0,
+          "current_close": 17260.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=194700"
+        },
+        {
+          "ticker": "031330",
+          "name": "에스에이엠티",
+          "labels": [
+            "⚡단타",
+            "🔥실적폭발"
+          ],
+          "score": 21.0,
+          "ensemble": 44.4,
+          "vcp_score": 18.3,
+          "entry_close": 14300.0,
+          "current_close": 14300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=031330"
+        },
+        {
+          "ticker": "000240",
+          "name": "한국앤컴퍼니",
+          "labels": [
+            "⚡단타",
+            "🔥실적폭발"
+          ],
+          "score": 13.9,
+          "ensemble": 27.7,
+          "vcp_score": 38.3,
+          "entry_close": 25450.0,
+          "current_close": 25450.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000240"
+        },
+        {
+          "ticker": "111770",
+          "name": "영원무역",
+          "labels": [
+            "⚡단타",
+            "🔄흑자전환"
+          ],
+          "score": 12.6,
+          "ensemble": 40.7,
+          "vcp_score": 56.7,
+          "entry_close": 89600.0,
+          "current_close": 89600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=111770"
+        },
+        {
+          "ticker": "095190",
+          "name": "신화프리텍",
+          "labels": [
+            "⚡단타",
+            "💀적자전환"
+          ],
+          "score": 11.0,
+          "ensemble": 36.6,
+          "vcp_score": 18.3,
+          "entry_close": 2580.0,
+          "current_close": 2580.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=095190"
+        },
+        {
+          "ticker": "030000",
+          "name": "제일기획",
+          "labels": [
+            "⚡단타",
+            "➡️실적유지"
+          ],
+          "score": 6.0,
+          "ensemble": 27.8,
+          "vcp_score": 48.3,
+          "entry_close": 19590.0,
+          "current_close": 19590.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=030000"
+        },
+        {
+          "ticker": "066430",
+          "name": "아이로보틱스",
+          "labels": [
+            "⚡단타",
+            "📉실적부진"
+          ],
+          "score": 5.0,
+          "ensemble": 30.5,
+          "vcp_score": 33.4,
+          "entry_close": 3080.0,
+          "current_close": 3080.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=066430"
+        },
+        {
+          "ticker": "122990",
+          "name": "와이솔",
+          "labels": [
+            "🛡️안정형",
+            "🔄흑자전환"
+          ],
+          "score": 65.6,
+          "ensemble": 56.7,
+          "vcp_score": 47.8,
+          "entry_close": 7680.0,
+          "current_close": 7680.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=122990"
+        },
+        {
+          "ticker": "452430",
+          "name": "사피엔반도체",
+          "labels": [
+            "🔍매집중",
+            "💀적자전환"
+          ],
+          "score": 65.0,
+          "ensemble": 46.1,
+          "vcp_score": 18.3,
+          "entry_close": 51900.0,
+          "current_close": 51900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=452430"
+        },
+        {
+          "ticker": "006110",
+          "name": "삼아알미늄",
+          "labels": [
+            "🔍매집중",
+            "💸적자확대"
+          ],
+          "score": 65.0,
+          "ensemble": 45.9,
+          "vcp_score": 43.3,
+          "entry_close": 84300.0,
+          "current_close": 84300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=006110"
+        },
+        {
+          "ticker": "069960",
+          "name": "현대백화점",
+          "labels": [
+            "🔍매집중",
+            "➡️실적유지"
+          ],
+          "score": 64.5,
+          "ensemble": 36.6,
+          "vcp_score": 18.3,
+          "entry_close": 118700.0,
+          "current_close": 118700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=069960"
+        },
+        {
+          "ticker": "004020",
+          "name": "현대제철",
+          "labels": [
+            "🔍매집중",
+            "🔄흑자전환"
+          ],
+          "score": 63.0,
+          "ensemble": 42.6,
+          "vcp_score": 21.6,
+          "entry_close": 46150.0,
+          "current_close": 46150.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004020"
+        },
+        {
+          "ticker": "412350",
+          "name": "레이저쎌",
+          "labels": [
+            "🔍매집중",
+            "⚠️적자유지"
+          ],
+          "score": 65.8,
+          "ensemble": 44.3,
+          "vcp_score": 33.4,
+          "entry_close": 11410.0,
+          "current_close": 11410.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=412350"
+        },
+        {
+          "ticker": "389500",
+          "name": "에스비비테크",
+          "labels": [
+            "🔍매집중",
+            "⚠️적자유지"
+          ],
+          "score": 62.1,
+          "ensemble": 33.4,
+          "vcp_score": 18.3,
+          "entry_close": 85000.0,
+          "current_close": 85000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=389500"
+        },
+        {
+          "ticker": "016380",
+          "name": "KG스틸",
+          "labels": [
+            "🔍매집중",
+            "💀적자전환"
+          ],
+          "score": 65.0,
+          "ensemble": 46.9,
+          "vcp_score": 8.3,
+          "entry_close": 7490.0,
+          "current_close": 7490.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=016380"
+        },
+        {
+          "ticker": "088350",
+          "name": "한화생명",
+          "labels": [
+            "🔍매집중",
+            "➡️실적유지"
+          ],
+          "score": 61.5,
+          "ensemble": 47.4,
+          "vcp_score": 56.7,
+          "entry_close": 5390.0,
+          "current_close": 5390.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=088350"
+        },
+        {
+          "ticker": "041830",
+          "name": "인바디",
+          "labels": [
+            "🔍매집중",
+            "↗️실적증가"
+          ],
+          "score": 63.0,
+          "ensemble": 41.3,
+          "vcp_score": 18.3,
+          "entry_close": 44800.0,
+          "current_close": 44800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=041830"
+        },
+        {
+          "ticker": "090360",
+          "name": "로보스타",
+          "labels": [
+            "🔍매집중",
+            "💀적자전환"
+          ],
+          "score": 62.8,
+          "ensemble": 37.2,
+          "vcp_score": 35.5,
+          "entry_close": 88800.0,
+          "current_close": 88800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=090360"
+        },
+        {
+          "ticker": "418420",
+          "name": "라온텍",
+          "labels": [
+            "🔍매집중",
+            "⚠️적자유지"
+          ],
+          "score": 58.3,
+          "ensemble": 41.5,
+          "vcp_score": 18.3,
+          "entry_close": 11130.0,
+          "current_close": 11130.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=418420"
+        },
+        {
+          "ticker": "144960",
+          "name": "뉴파워프라즈마",
+          "labels": [
+            "🔍매집중",
+            "↘️실적감소"
+          ],
+          "score": 60.6,
+          "ensemble": 42.3,
+          "vcp_score": 18.3,
+          "entry_close": 10750.0,
+          "current_close": 10750.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=144960"
+        },
+        {
+          "ticker": "012200",
+          "name": "계양전기",
+          "labels": [
+            "🔍매집중",
+            "💸적자확대"
+          ],
+          "score": 57.6,
+          "ensemble": 36.6,
+          "vcp_score": 18.9,
+          "entry_close": 9010.0,
+          "current_close": 9010.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=012200"
+        },
+        {
+          "ticker": "440110",
+          "name": "파두",
+          "labels": [
+            "🔍매집중",
+            "⚠️적자유지"
+          ],
+          "score": 58.2,
+          "ensemble": 37.2,
+          "vcp_score": 26.7,
+          "entry_close": 100100.0,
+          "current_close": 100100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=440110"
+        },
+        {
+          "ticker": "204320",
+          "name": "HL만도",
+          "labels": [
+            "🔍매집중",
+            "↘️실적감소"
+          ],
+          "score": 54.5,
+          "ensemble": 41.4,
+          "vcp_score": 33.4,
+          "entry_close": 61700.0,
+          "current_close": 61700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=204320"
+        },
+        {
+          "ticker": "483650",
+          "name": "달바글로벌",
+          "labels": [
+            "🔍매집중",
+            "📈실적급증"
+          ],
+          "score": 53.7,
+          "ensemble": 36.3,
+          "vcp_score": 28.3,
+          "entry_close": 236500.0,
+          "current_close": 236500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=483650"
+        },
+        {
+          "ticker": "096530",
+          "name": "씨젠",
+          "labels": [
+            "🔍매집중",
+            "🔄흑자전환"
+          ],
+          "score": 56.0,
+          "ensemble": 37.6,
+          "vcp_score": 18.3,
+          "entry_close": 31050.0,
+          "current_close": 31050.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=096530"
+        },
+        {
+          "ticker": "420770",
+          "name": "기가비스",
+          "labels": [
+            "🔍매집중",
+            "🔄흑자전환"
+          ],
+          "score": 53.0,
+          "ensemble": 40.2,
+          "vcp_score": 26.7,
+          "entry_close": 119800.0,
+          "current_close": 119800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=420770"
+        },
+        {
+          "ticker": "019210",
+          "name": "와이지-원",
+          "labels": [
+            "🔍매집중",
+            "📈실적급증"
+          ],
+          "score": 52.9,
+          "ensemble": 42.3,
+          "vcp_score": 26.7,
+          "entry_close": 17630.0,
+          "current_close": 17630.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=019210"
+        },
+        {
+          "ticker": "277810",
+          "name": "레인보우로보틱스",
+          "labels": [
+            "🔍매집중",
+            "📈실적급증"
+          ],
+          "score": 55.6,
+          "ensemble": 38.5,
+          "vcp_score": 37.8,
+          "entry_close": 810000.0,
+          "current_close": 810000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=277810"
+        },
+        {
+          "ticker": "080220",
+          "name": "제주반도체",
+          "labels": [
+            "🔍매집중",
+            "🔥실적폭발"
+          ],
+          "score": 55.5,
+          "ensemble": 50.4,
+          "vcp_score": 18.3,
+          "entry_close": 82300.0,
+          "current_close": 82300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=080220"
+        },
+        {
+          "ticker": "095610",
+          "name": "테스",
+          "labels": [
+            "🔍매집중",
+            "📉실적부진"
+          ],
+          "score": 55.0,
+          "ensemble": 39.7,
+          "vcp_score": 16.7,
+          "entry_close": 118100.0,
+          "current_close": 118100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=095610"
+        },
+        {
+          "ticker": "195870",
+          "name": "해성디에스",
+          "labels": [
+            "🔍매집중",
+            "🔥실적폭발"
+          ],
+          "score": 51.9,
+          "ensemble": 33.5,
+          "vcp_score": 8.3,
+          "entry_close": 87600.0,
+          "current_close": 87600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=195870"
+        },
+        {
+          "ticker": "004800",
+          "name": "효성",
+          "labels": [
+            "🔍매집중",
+            "📉실적부진"
+          ],
+          "score": 50.7,
+          "ensemble": 34.6,
+          "vcp_score": 18.3,
+          "entry_close": 226000.0,
+          "current_close": 226000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004800"
+        },
+        {
+          "ticker": "439090",
+          "name": "마녀공장",
+          "labels": [
+            "🔍매집중",
+            "📉실적부진"
+          ],
+          "score": 50.2,
+          "ensemble": 22.0,
+          "vcp_score": 18.3,
+          "entry_close": 16240.0,
+          "current_close": 16240.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=439090"
+        },
+        {
+          "ticker": "004380",
+          "name": "삼익THK",
+          "labels": [
+            "🔍매집중",
+            "💸적자확대"
+          ],
+          "score": 50.1,
+          "ensemble": 43.2,
+          "vcp_score": 36.7,
+          "entry_close": 13090.0,
+          "current_close": 13090.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004380"
+        },
+        {
+          "ticker": "023530",
+          "name": "롯데쇼핑",
+          "labels": [
+            "🔍매집중",
+            "📈실적급증"
+          ],
+          "score": 53.0,
+          "ensemble": 35.0,
+          "vcp_score": 10.0,
+          "entry_close": 169800.0,
+          "current_close": 169800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=023530"
+        },
+        {
+          "ticker": "240550",
+          "name": "동방메디컬",
+          "labels": [
+            "🔍매집중",
+            "📈실적급증"
+          ],
+          "score": 49.1,
+          "ensemble": 26.5,
+          "vcp_score": 20.7,
+          "entry_close": 7820.0,
+          "current_close": 7820.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=240550"
+        },
+        {
+          "ticker": "011780",
+          "name": "금호석유화학",
+          "labels": [
+            "🔍매집중",
+            "📉실적부진"
+          ],
+          "score": 49.0,
+          "ensemble": 39.4,
+          "vcp_score": 26.7,
+          "entry_close": 144700.0,
+          "current_close": 144700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=011780"
+        },
+        {
+          "ticker": "051900",
+          "name": "LG생활건강",
+          "labels": [
+            "🔍매집중",
+            "💀적자전환"
+          ],
+          "score": 47.2,
+          "ensemble": 31.3,
+          "vcp_score": 27.4,
+          "entry_close": 268000.0,
+          "current_close": 268000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=051900"
+        },
+        {
+          "ticker": "003350",
+          "name": "한국화장품제조",
+          "labels": [
+            "🔍매집중",
+            "➡️실적유지"
+          ],
+          "score": 50.0,
+          "ensemble": 38.5,
+          "vcp_score": 26.7,
+          "entry_close": 10290.0,
+          "current_close": 10290.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=003350"
+        },
+        {
+          "ticker": "282330",
+          "name": "BGF리테일",
+          "labels": [
+            "🔍매집중",
+            "↗️실적증가"
+          ],
+          "score": 46.0,
+          "ensemble": 43.1,
+          "vcp_score": 28.6,
+          "entry_close": 140700.0,
+          "current_close": 140700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=282330"
+        },
+        {
+          "ticker": "114090",
+          "name": "GKL",
+          "labels": [
+            "🔍매집중",
+            "💀적자전환"
+          ],
+          "score": 43.7,
+          "ensemble": 33.4,
+          "vcp_score": 27.3,
+          "entry_close": 12610.0,
+          "current_close": 12610.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=114090"
+        },
+        {
+          "ticker": "022100",
+          "name": "포스코DX",
+          "labels": [
+            "🔍매집중",
+            "💀적자전환"
+          ],
+          "score": 43.6,
+          "ensemble": 43.6,
+          "vcp_score": 41.7,
+          "entry_close": 33700.0,
+          "current_close": 33700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=022100"
+        },
+        {
+          "ticker": "145720",
+          "name": "덴티움",
+          "labels": [
+            "🔍매집중",
+            "➡️실적유지"
+          ],
+          "score": 43.1,
+          "ensemble": 27.3,
+          "vcp_score": 42.3,
+          "entry_close": 51700.0,
+          "current_close": 51700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=145720"
+        },
+        {
+          "ticker": "214320",
+          "name": "이노션",
+          "labels": [
+            "🔍매집중",
+            "➡️실적유지"
+          ],
+          "score": 43.0,
+          "ensemble": 48.2,
+          "vcp_score": 25.9,
+          "entry_close": 20850.0,
+          "current_close": 20850.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=214320"
+        },
+        {
+          "ticker": "018670",
+          "name": "SK가스",
+          "labels": [
+            "🔍매집중",
+            "📉실적부진"
+          ],
+          "score": 41.8,
+          "ensemble": 48.3,
+          "vcp_score": 36.2,
+          "entry_close": 290000.0,
+          "current_close": 290000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=018670"
+        },
+        {
+          "ticker": "003490",
+          "name": "대한항공",
+          "labels": [
+            "🔍매집중",
+            "📉실적부진"
+          ],
+          "score": 40.5,
+          "ensemble": 44.8,
+          "vcp_score": 46.7,
+          "entry_close": 26050.0,
+          "current_close": 26050.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=003490"
+        },
+        {
+          "ticker": "009450",
+          "name": "경동나비엔",
+          "labels": [
+            "🔍매집중",
+            "📈실적급증"
+          ],
+          "score": 40.1,
+          "ensemble": 32.6,
+          "vcp_score": 18.3,
+          "entry_close": 70600.0,
+          "current_close": 70600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=009450"
+        },
+        {
+          "ticker": "020000",
+          "name": "한섬",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 49.9,
+          "ensemble": 34.0,
+          "vcp_score": 17.9,
+          "entry_close": 26950.0,
+          "current_close": 26950.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=020000"
+        },
+        {
+          "ticker": "017670",
+          "name": "SK텔레콤",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 49.8,
+          "ensemble": 39.6,
+          "vcp_score": 28.8,
+          "entry_close": 101300.0,
+          "current_close": 101300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=017670"
+        },
+        {
+          "ticker": "459510",
+          "name": "나우로보틱스",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 49.7,
+          "ensemble": 33.3,
+          "vcp_score": 8.3,
+          "entry_close": 28400.0,
+          "current_close": 28400.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=459510"
+        },
+        {
+          "ticker": "178320",
+          "name": "서진시스템",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 49.6,
+          "ensemble": 42.3,
+          "vcp_score": 10.0,
+          "entry_close": 67000.0,
+          "current_close": 67000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=178320"
+        },
+        {
+          "ticker": "006260",
+          "name": "LS",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 49.5,
+          "ensemble": 34.5,
+          "vcp_score": 8.3,
+          "entry_close": 472500.0,
+          "current_close": 472500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=006260"
+        },
+        {
+          "ticker": "092460",
+          "name": "한라IMS",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 49.0,
+          "ensemble": 34.6,
+          "vcp_score": 28.3,
+          "entry_close": 20900.0,
+          "current_close": 20900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=092460"
+        },
+        {
+          "ticker": "078350",
+          "name": "한양디지텍",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 48.9,
+          "ensemble": 38.9,
+          "vcp_score": 14.3,
+          "entry_close": 33700.0,
+          "current_close": 33700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=078350"
+        },
+        {
+          "ticker": "445180",
+          "name": "퓨릿",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 48.6,
+          "ensemble": 37.3,
+          "vcp_score": 18.3,
+          "entry_close": 11560.0,
+          "current_close": 11560.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=445180"
+        },
+        {
+          "ticker": "090710",
+          "name": "휴림로봇",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 48.2,
+          "ensemble": 40.8,
+          "vcp_score": 26.6,
+          "entry_close": 13120.0,
+          "current_close": 13120.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=090710"
+        },
+        {
+          "ticker": "219130",
+          "name": "타이거일렉",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 48.0,
+          "ensemble": 33.9,
+          "vcp_score": 18.3,
+          "entry_close": 58000.0,
+          "current_close": 58000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=219130"
+        },
+        {
+          "ticker": "356860",
+          "name": "티엘비",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 48.0,
+          "ensemble": 39.9,
+          "vcp_score": 41.7,
+          "entry_close": 100700.0,
+          "current_close": 100700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=356860"
+        },
+        {
+          "ticker": "223250",
+          "name": "드림씨아이에스",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 47.4,
+          "ensemble": 35.0,
+          "vcp_score": 26.7,
+          "entry_close": 6570.0,
+          "current_close": 6570.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=223250"
+        },
+        {
+          "ticker": "036570",
+          "name": "NC",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 47.3,
+          "ensemble": 36.2,
+          "vcp_score": 28.3,
+          "entry_close": 271500.0,
+          "current_close": 271500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=036570"
+        },
+        {
+          "ticker": "031430",
+          "name": "신세계인터내셔날",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 47.0,
+          "ensemble": 34.3,
+          "vcp_score": 8.3,
+          "entry_close": 16190.0,
+          "current_close": 16190.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=031430"
+        },
+        {
+          "ticker": "053610",
+          "name": "프로텍",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 46.9,
+          "ensemble": 39.1,
+          "vcp_score": 28.3,
+          "entry_close": 82800.0,
+          "current_close": 82800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=053610"
+        },
+        {
+          "ticker": "000810",
+          "name": "삼성화재",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 49.9,
+          "ensemble": 34.2,
+          "vcp_score": 37.5,
+          "entry_close": 554000.0,
+          "current_close": 554000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000810"
+        },
+        {
+          "ticker": "187870",
+          "name": "디바이스",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 49.7,
+          "ensemble": 41.5,
+          "vcp_score": 0.0,
+          "entry_close": 28100.0,
+          "current_close": 28100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=187870"
+        },
+        {
+          "ticker": "204620",
+          "name": "글로벌텍스프리",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 46.0,
+          "ensemble": 27.1,
+          "vcp_score": 36.7,
+          "entry_close": 6240.0,
+          "current_close": 6240.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=204620"
+        },
+        {
+          "ticker": "330860",
+          "name": "네패스아크",
+          "labels": [
+            "🌱적자축소"
+          ],
+          "score": 45.8,
+          "ensemble": 41.7,
+          "vcp_score": 10.0,
+          "entry_close": 45550.0,
+          "current_close": 45550.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=330860"
+        },
+        {
+          "ticker": "015860",
+          "name": "일진홀딩스",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 45.8,
+          "ensemble": 36.9,
+          "vcp_score": 18.3,
+          "entry_close": 12300.0,
+          "current_close": 12300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=015860"
+        },
+        {
+          "ticker": "355150",
+          "name": "코스텍시스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 45.6,
+          "ensemble": 37.2,
+          "vcp_score": 10.0,
+          "entry_close": 49850.0,
+          "current_close": 49850.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=355150"
+        },
+        {
+          "ticker": "003720",
+          "name": "삼영",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 45.0,
+          "ensemble": 39.1,
+          "vcp_score": 28.3,
+          "entry_close": 11260.0,
+          "current_close": 11260.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=003720"
+        },
+        {
+          "ticker": "307950",
+          "name": "현대오토에버",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 44.1,
+          "ensemble": 32.1,
+          "vcp_score": 28.3,
+          "entry_close": 648000.0,
+          "current_close": 648000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=307950"
+        },
+        {
+          "ticker": "036710",
+          "name": "심텍홀딩스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 44.1,
+          "ensemble": 29.6,
+          "vcp_score": 10.0,
+          "entry_close": 4400.0,
+          "current_close": 4400.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=036710"
+        },
+        {
+          "ticker": "012610",
+          "name": "경인양행",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 43.8,
+          "ensemble": 38.3,
+          "vcp_score": 18.3,
+          "entry_close": 5660.0,
+          "current_close": 5660.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=012610"
+        },
+        {
+          "ticker": "452260",
+          "name": "한화갤러리아",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 43.1,
+          "ensemble": 34.3,
+          "vcp_score": 18.3,
+          "entry_close": 3350.0,
+          "current_close": 3350.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=452260"
+        },
+        {
+          "ticker": "103590",
+          "name": "일진전기",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 43.0,
+          "ensemble": 35.8,
+          "vcp_score": 18.3,
+          "entry_close": 119100.0,
+          "current_close": 119100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=103590"
+        },
+        {
+          "ticker": "052900",
+          "name": "KX하이텍",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 42.1,
+          "ensemble": 42.7,
+          "vcp_score": 27.1,
+          "entry_close": 1516.0,
+          "current_close": 1516.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=052900"
+        },
+        {
+          "ticker": "004710",
+          "name": "한솔테크닉스",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 44.8,
+          "ensemble": 38.9,
+          "vcp_score": 18.3,
+          "entry_close": 13270.0,
+          "current_close": 13270.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004710"
+        },
+        {
+          "ticker": "009150",
+          "name": "삼성전기",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 44.6,
+          "ensemble": 36.1,
+          "vcp_score": 28.3,
+          "entry_close": 1010000.0,
+          "current_close": 1010000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=009150"
+        },
+        {
+          "ticker": "001450",
+          "name": "현대해상",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 40.9,
+          "ensemble": 42.5,
+          "vcp_score": 56.7,
+          "entry_close": 33350.0,
+          "current_close": 33350.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001450"
+        },
+        {
+          "ticker": "064400",
+          "name": "LG씨엔에스",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 42.9,
+          "ensemble": 22.0,
+          "vcp_score": 27.9,
+          "entry_close": 86600.0,
+          "current_close": 86600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=064400"
+        },
+        {
+          "ticker": "281820",
+          "name": "케이씨텍",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 39.8,
+          "ensemble": 32.7,
+          "vcp_score": 18.3,
+          "entry_close": 71300.0,
+          "current_close": 71300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=281820"
+        },
+        {
+          "ticker": "077500",
+          "name": "유니퀘스트",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 39.1,
+          "ensemble": 42.0,
+          "vcp_score": 18.3,
+          "entry_close": 7860.0,
+          "current_close": 7860.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=077500"
+        },
+        {
+          "ticker": "196170",
+          "name": "알테오젠",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 38.7,
+          "ensemble": 36.8,
+          "vcp_score": 48.3,
+          "entry_close": 369000.0,
+          "current_close": 369000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=196170"
+        },
+        {
+          "ticker": "062040",
+          "name": "산일전기",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 38.3,
+          "ensemble": 38.8,
+          "vcp_score": 10.0,
+          "entry_close": 268500.0,
+          "current_close": 268500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=062040"
+        },
+        {
+          "ticker": "094170",
+          "name": "동운아나텍",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 38.3,
+          "ensemble": 32.5,
+          "vcp_score": 10.0,
+          "entry_close": 46900.0,
+          "current_close": 46900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=094170"
+        },
+        {
+          "ticker": "036460",
+          "name": "한국가스공사",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 38.1,
+          "ensemble": 34.9,
+          "vcp_score": 56.7,
+          "entry_close": 37850.0,
+          "current_close": 37850.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=036460"
+        },
+        {
+          "ticker": "383220",
+          "name": "F&F",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 41.0,
+          "ensemble": 20.5,
+          "vcp_score": 26.7,
+          "entry_close": 84200.0,
+          "current_close": 84200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=383220"
+        },
+        {
+          "ticker": "214450",
+          "name": "파마리서치",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 38.0,
+          "ensemble": 13.4,
+          "vcp_score": 26.4,
+          "entry_close": 328000.0,
+          "current_close": 328000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=214450"
+        },
+        {
+          "ticker": "131970",
+          "name": "두산테스나",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 37.8,
+          "ensemble": 37.5,
+          "vcp_score": 18.3,
+          "entry_close": 177800.0,
+          "current_close": 177800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=131970"
+        },
+        {
+          "ticker": "160980",
+          "name": "싸이맥스",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 37.6,
+          "ensemble": 38.9,
+          "vcp_score": 26.7,
+          "entry_close": 36650.0,
+          "current_close": 36650.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=160980"
+        },
+        {
+          "ticker": "001530",
+          "name": "DI동일",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 37.5,
+          "ensemble": 21.9,
+          "vcp_score": 28.3,
+          "entry_close": 28250.0,
+          "current_close": 28250.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001530"
+        },
+        {
+          "ticker": "180640",
+          "name": "한진칼",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 37.4,
+          "ensemble": 27.4,
+          "vcp_score": 56.7,
+          "entry_close": 119200.0,
+          "current_close": 119200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=180640"
+        },
+        {
+          "ticker": "033160",
+          "name": "엠케이전자",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 36.6,
+          "ensemble": 43.0,
+          "vcp_score": 51.7,
+          "entry_close": 28450.0,
+          "current_close": 28450.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=033160"
+        },
+        {
+          "ticker": "131290",
+          "name": "티에스이",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 36.4,
+          "ensemble": 34.7,
+          "vcp_score": 18.3,
+          "entry_close": 181500.0,
+          "current_close": 181500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=131290"
+        },
+        {
+          "ticker": "353200",
+          "name": "대덕전자",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 36.2,
+          "ensemble": 45.6,
+          "vcp_score": 51.7,
+          "entry_close": 135800.0,
+          "current_close": 135800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=353200"
+        },
+        {
+          "ticker": "259960",
+          "name": "크래프톤",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 36.0,
+          "ensemble": 26.9,
+          "vcp_score": 18.3,
+          "entry_close": 279000.0,
+          "current_close": 279000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=259960"
+        },
+        {
+          "ticker": "042700",
+          "name": "한미반도체",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 35.9,
+          "ensemble": 38.9,
+          "vcp_score": 36.7,
+          "entry_close": 369000.0,
+          "current_close": 369000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=042700"
+        },
+        {
+          "ticker": "005490",
+          "name": "POSCO홀딩스",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 35.7,
+          "ensemble": 32.2,
+          "vcp_score": 18.3,
+          "entry_close": 467500.0,
+          "current_close": 467500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005490"
+        },
+        {
+          "ticker": "054450",
+          "name": "텔레칩스",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 35.0,
+          "ensemble": 29.5,
+          "vcp_score": 22.1,
+          "entry_close": 16970.0,
+          "current_close": 16970.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=054450"
+        },
+        {
+          "ticker": "032830",
+          "name": "삼성생명",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 34.5,
+          "ensemble": 34.6,
+          "vcp_score": 33.0,
+          "entry_close": 310000.0,
+          "current_close": 310000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=032830"
+        },
+        {
+          "ticker": "229640",
+          "name": "LS에코에너지",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 37.3,
+          "ensemble": 39.5,
+          "vcp_score": 10.0,
+          "entry_close": 81200.0,
+          "current_close": 81200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=229640"
+        },
+        {
+          "ticker": "336260",
+          "name": "두산퓨얼셀",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 37.3,
+          "ensemble": 38.5,
+          "vcp_score": 0.0,
+          "entry_close": 84500.0,
+          "current_close": 84500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=336260"
+        },
+        {
+          "ticker": "382800",
+          "name": "지앤비에스 에코",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 34.2,
+          "ensemble": 39.7,
+          "vcp_score": 28.3,
+          "entry_close": 9080.0,
+          "current_close": 9080.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=382800"
+        },
+        {
+          "ticker": "172670",
+          "name": "에이엘티",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 34.0,
+          "ensemble": 31.1,
+          "vcp_score": 18.3,
+          "entry_close": 17960.0,
+          "current_close": 17960.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=172670"
+        },
+        {
+          "ticker": "018880",
+          "name": "한온시스템",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 37.0,
+          "ensemble": 31.5,
+          "vcp_score": 18.7,
+          "entry_close": 5050.0,
+          "current_close": 5050.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=018880"
+        },
+        {
+          "ticker": "254490",
+          "name": "미래반도체",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 36.9,
+          "ensemble": 32.0,
+          "vcp_score": 18.3,
+          "entry_close": 41000.0,
+          "current_close": 41000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=254490"
+        },
+        {
+          "ticker": "092190",
+          "name": "서울바이오시스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 36.8,
+          "ensemble": 40.0,
+          "vcp_score": 18.3,
+          "entry_close": 15410.0,
+          "current_close": 15410.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=092190"
+        },
+        {
+          "ticker": "003230",
+          "name": "삼양식품",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 33.5,
+          "ensemble": 21.9,
+          "vcp_score": 39.6,
+          "entry_close": 1444000.0,
+          "current_close": 1444000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=003230"
+        },
+        {
+          "ticker": "159010",
+          "name": "아스플로",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 36.4,
+          "ensemble": 40.5,
+          "vcp_score": 18.3,
+          "entry_close": 14860.0,
+          "current_close": 14860.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=159010"
+        },
+        {
+          "ticker": "001040",
+          "name": "CJ",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 32.1,
+          "ensemble": 39.3,
+          "vcp_score": 28.6,
+          "entry_close": 217000.0,
+          "current_close": 217000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001040"
+        },
+        {
+          "ticker": "222800",
+          "name": "심텍",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 31.2,
+          "ensemble": 37.4,
+          "vcp_score": 18.3,
+          "entry_close": 100300.0,
+          "current_close": 100300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=222800"
+        },
+        {
+          "ticker": "046890",
+          "name": "서울반도체",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 30.8,
+          "ensemble": 37.2,
+          "vcp_score": 18.3,
+          "entry_close": 16120.0,
+          "current_close": 16120.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=046890"
+        },
+        {
+          "ticker": "000080",
+          "name": "하이트진로",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 29.6,
+          "ensemble": 30.2,
+          "vcp_score": 45.7,
+          "entry_close": 16960.0,
+          "current_close": 16960.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000080"
+        },
+        {
+          "ticker": "212560",
+          "name": "네오오토",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 32.0,
+          "ensemble": 43.5,
+          "vcp_score": 46.6,
+          "entry_close": 12500.0,
+          "current_close": 12500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=212560"
+        },
+        {
+          "ticker": "094940",
+          "name": "푸른기술",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 31.9,
+          "ensemble": 47.2,
+          "vcp_score": 42.4,
+          "entry_close": 13000.0,
+          "current_close": 13000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=094940"
+        },
+        {
+          "ticker": "001440",
+          "name": "대한전선",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 28.7,
+          "ensemble": 40.8,
+          "vcp_score": 18.3,
+          "entry_close": 60000.0,
+          "current_close": 60000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001440"
+        },
+        {
+          "ticker": "271560",
+          "name": "오리온",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 28.6,
+          "ensemble": 36.4,
+          "vcp_score": 41.5,
+          "entry_close": 141000.0,
+          "current_close": 141000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=271560"
+        },
+        {
+          "ticker": "189300",
+          "name": "인텔리안테크",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 28.5,
+          "ensemble": 35.5,
+          "vcp_score": 24.5,
+          "entry_close": 162000.0,
+          "current_close": 162000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=189300"
+        },
+        {
+          "ticker": "000990",
+          "name": "DB하이텍",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 27.9,
+          "ensemble": 36.3,
+          "vcp_score": 18.3,
+          "entry_close": 163500.0,
+          "current_close": 163500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000990"
+        },
+        {
+          "ticker": "136490",
+          "name": "선진",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 27.0,
+          "ensemble": 29.4,
+          "vcp_score": 44.3,
+          "entry_close": 11550.0,
+          "current_close": 11550.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=136490"
+        },
+        {
+          "ticker": "329180",
+          "name": "HD현대중공업",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 29.5,
+          "ensemble": 29.4,
+          "vcp_score": 10.0,
+          "entry_close": 640000.0,
+          "current_close": 640000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=329180"
+        },
+        {
+          "ticker": "261780",
+          "name": "차백신연구소",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 26.2,
+          "ensemble": 36.1,
+          "vcp_score": 18.3,
+          "entry_close": 4195.0,
+          "current_close": 4195.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=261780"
+        },
+        {
+          "ticker": "059270",
+          "name": "해성에어로보틱스",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 26.0,
+          "ensemble": 22.3,
+          "vcp_score": 56.7,
+          "entry_close": 10090.0,
+          "current_close": 10090.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=059270"
+        },
+        {
+          "ticker": "396300",
+          "name": "세아메카닉스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 25.0,
+          "ensemble": 40.4,
+          "vcp_score": 18.3,
+          "entry_close": 6280.0,
+          "current_close": 6280.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=396300"
+        },
+        {
+          "ticker": "008490",
+          "name": "서흥",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 25.0,
+          "ensemble": 24.3,
+          "vcp_score": 28.7,
+          "entry_close": 21950.0,
+          "current_close": 21950.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=008490"
+        },
+        {
+          "ticker": "446540",
+          "name": "메가터치",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 24.5,
+          "ensemble": 34.9,
+          "vcp_score": 36.7,
+          "entry_close": 7030.0,
+          "current_close": 7030.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=446540"
+        },
+        {
+          "ticker": "005830",
+          "name": "DB손해보험",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 23.7,
+          "ensemble": 33.3,
+          "vcp_score": 46.7,
+          "entry_close": 164500.0,
+          "current_close": 164500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005830"
+        },
+        {
+          "ticker": "396270",
+          "name": "넥스트칩",
+          "labels": [
+            "🌱적자축소"
+          ],
+          "score": 23.0,
+          "ensemble": 28.8,
+          "vcp_score": 8.3,
+          "entry_close": 6270.0,
+          "current_close": 6270.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=396270"
+        },
+        {
+          "ticker": "033100",
+          "name": "제룡전기",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 22.5,
+          "ensemble": 31.9,
+          "vcp_score": 18.3,
+          "entry_close": 69200.0,
+          "current_close": 69200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=033100"
+        },
+        {
+          "ticker": "005950",
+          "name": "이수화학",
+          "labels": [
+            "🌱적자축소"
+          ],
+          "score": 22.0,
+          "ensemble": 29.3,
+          "vcp_score": 18.3,
+          "entry_close": 10010.0,
+          "current_close": 10010.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005950"
+        },
+        {
+          "ticker": "034730",
+          "name": "SK",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 21.3,
+          "ensemble": 35.4,
+          "vcp_score": 26.7,
+          "entry_close": 503000.0,
+          "current_close": 503000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=034730"
+        },
+        {
+          "ticker": "253840",
+          "name": "수젠텍",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 21.0,
+          "ensemble": 15.3,
+          "vcp_score": 28.3,
+          "entry_close": 6640.0,
+          "current_close": 6640.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=253840"
+        },
+        {
+          "ticker": "161390",
+          "name": "한국타이어앤테크놀로지",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 21.0,
+          "ensemble": 28.9,
+          "vcp_score": 35.1,
+          "entry_close": 62200.0,
+          "current_close": 62200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=161390"
+        },
+        {
+          "ticker": "280360",
+          "name": "롯데웰푸드",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 21.0,
+          "ensemble": 37.7,
+          "vcp_score": 29.6,
+          "entry_close": 121400.0,
+          "current_close": 121400.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=280360"
+        },
+        {
+          "ticker": "007310",
+          "name": "오뚜기",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 20.9,
+          "ensemble": 29.5,
+          "vcp_score": 46.7,
+          "entry_close": 360000.0,
+          "current_close": 360000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=007310"
+        },
+        {
+          "ticker": "097950",
+          "name": "CJ제일제당",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 20.6,
+          "ensemble": 30.6,
+          "vcp_score": 36.7,
+          "entry_close": 228500.0,
+          "current_close": 228500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=097950"
+        },
+        {
+          "ticker": "004170",
+          "name": "신세계",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 35.4,
+          "ensemble": 37.5,
+          "vcp_score": 8.3,
+          "entry_close": 541000.0,
+          "current_close": 541000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004170"
+        },
+        {
+          "ticker": "402340",
+          "name": "SK스퀘어",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 23.0,
+          "ensemble": 30.3,
+          "vcp_score": 8.3,
+          "entry_close": 1098000.0,
+          "current_close": 1098000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=402340"
+        },
+        {
+          "ticker": "332570",
+          "name": "PS일렉트로닉스",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 20.0,
+          "ensemble": 33.3,
+          "vcp_score": 18.3,
+          "entry_close": 12280.0,
+          "current_close": 12280.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=332570"
+        },
+        {
+          "ticker": "142210",
+          "name": "유니트론텍",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 22.0,
+          "ensemble": 16.5,
+          "vcp_score": 36.9,
+          "entry_close": 7440.0,
+          "current_close": 7440.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=142210"
+        },
+        {
+          "ticker": "192080",
+          "name": "더블유게임즈",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 18.6,
+          "ensemble": 28.5,
+          "vcp_score": 18.3,
+          "entry_close": 59100.0,
+          "current_close": 59100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=192080"
+        },
+        {
+          "ticker": "028260",
+          "name": "삼성물산",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 21.0,
+          "ensemble": 25.6,
+          "vcp_score": 26.7,
+          "entry_close": 396500.0,
+          "current_close": 396500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=028260"
+        },
+        {
+          "ticker": "138360",
+          "name": "앤로보틱스",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 21.0,
+          "ensemble": 35.5,
+          "vcp_score": 10.0,
+          "entry_close": 3935.0,
+          "current_close": 3935.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=138360"
+        },
+        {
+          "ticker": "322000",
+          "name": "HD현대에너지솔루션",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 18.0,
+          "ensemble": 38.5,
+          "vcp_score": 51.7,
+          "entry_close": 196800.0,
+          "current_close": 196800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=322000"
+        },
+        {
+          "ticker": "028670",
+          "name": "팬오션",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 17.5,
+          "ensemble": 41.6,
+          "vcp_score": 54.7,
+          "entry_close": 6030.0,
+          "current_close": 6030.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=028670"
+        },
+        {
+          "ticker": "010170",
+          "name": "대한광통신",
+          "labels": [
+            "🌱적자축소"
+          ],
+          "score": 17.0,
+          "ensemble": 30.1,
+          "vcp_score": 18.3,
+          "entry_close": 23000.0,
+          "current_close": 23000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=010170"
+        },
+        {
+          "ticker": "078930",
+          "name": "GS",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 16.8,
+          "ensemble": 37.3,
+          "vcp_score": 20.8,
+          "entry_close": 77300.0,
+          "current_close": 77300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=078930"
+        },
+        {
+          "ticker": "005380",
+          "name": "현대차",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 19.0,
+          "ensemble": 33.6,
+          "vcp_score": 33.3,
+          "entry_close": 700000.0,
+          "current_close": 700000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005380"
+        },
+        {
+          "ticker": "000150",
+          "name": "두산",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 15.0,
+          "ensemble": 28.3,
+          "vcp_score": 28.3,
+          "entry_close": 1614000.0,
+          "current_close": 1614000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000150"
+        },
+        {
+          "ticker": "033790",
+          "name": "피노",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 14.0,
+          "ensemble": 30.1,
+          "vcp_score": 18.3,
+          "entry_close": 14850.0,
+          "current_close": 14850.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=033790"
+        },
+        {
+          "ticker": "079160",
+          "name": "CJ CGV",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 14.0,
+          "ensemble": 22.3,
+          "vcp_score": 55.6,
+          "entry_close": 4900.0,
+          "current_close": 4900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=079160"
+        },
+        {
+          "ticker": "033780",
+          "name": "KT&G",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 13.8,
+          "ensemble": 35.0,
+          "vcp_score": 37.4,
+          "entry_close": 179800.0,
+          "current_close": 179800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=033780"
+        },
+        {
+          "ticker": "455900",
+          "name": "엔젤로보틱스",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 13.7,
+          "ensemble": 36.2,
+          "vcp_score": 36.0,
+          "entry_close": 29750.0,
+          "current_close": 29750.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=455900"
+        },
+        {
+          "ticker": "321260",
+          "name": "프로이천",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 13.0,
+          "ensemble": 30.8,
+          "vcp_score": 8.3,
+          "entry_close": 3715.0,
+          "current_close": 3715.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=321260"
+        },
+        {
+          "ticker": "024840",
+          "name": "KBI메탈",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 13.0,
+          "ensemble": 30.5,
+          "vcp_score": 18.3,
+          "entry_close": 6920.0,
+          "current_close": 6920.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=024840"
+        },
+        {
+          "ticker": "089890",
+          "name": "코세스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 13.0,
+          "ensemble": 30.3,
+          "vcp_score": 18.3,
+          "entry_close": 40550.0,
+          "current_close": 40550.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=089890"
+        },
+        {
+          "ticker": "011070",
+          "name": "LG이노텍",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 15.0,
+          "ensemble": 29.1,
+          "vcp_score": 8.3,
+          "entry_close": 732000.0,
+          "current_close": 732000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=011070"
+        },
+        {
+          "ticker": "056080",
+          "name": "유진로봇",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 11.0,
+          "ensemble": 25.3,
+          "vcp_score": 36.8,
+          "entry_close": 27450.0,
+          "current_close": 27450.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=056080"
+        },
+        {
+          "ticker": "019180",
+          "name": "티에이치엔",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 11.0,
+          "ensemble": 20.1,
+          "vcp_score": 38.3,
+          "entry_close": 7640.0,
+          "current_close": 7640.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=019180"
+        },
+        {
+          "ticker": "001740",
+          "name": "SK네트웍스",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 25.8,
+          "ensemble": 43.7,
+          "vcp_score": 18.6,
+          "entry_close": 8720.0,
+          "current_close": 8720.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=001740"
+        },
+        {
+          "ticker": "007610",
+          "name": "선도전기",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 10.0,
+          "ensemble": 30.8,
+          "vcp_score": 36.7,
+          "entry_close": 9990.0,
+          "current_close": 9990.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=007610"
+        },
+        {
+          "ticker": "035250",
+          "name": "강원랜드",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 10.0,
+          "ensemble": 26.3,
+          "vcp_score": 46.6,
+          "entry_close": 16300.0,
+          "current_close": 16300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=035250"
+        },
+        {
+          "ticker": "006400",
+          "name": "삼성SDI",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 10.0,
+          "ensemble": 35.7,
+          "vcp_score": 36.7,
+          "entry_close": 614000.0,
+          "current_close": 614000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=006400"
+        },
+        {
+          "ticker": "388720",
+          "name": "유일로보틱스",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 10.0,
+          "ensemble": 20.9,
+          "vcp_score": 50.9,
+          "entry_close": 98100.0,
+          "current_close": 98100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=388720"
+        },
+        {
+          "ticker": "336570",
+          "name": "원텍",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 12.0,
+          "ensemble": 23.3,
+          "vcp_score": 27.7,
+          "entry_close": 8080.0,
+          "current_close": 8080.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=336570"
+        },
+        {
+          "ticker": "076610",
+          "name": "해성옵틱스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 9.0,
+          "ensemble": 34.3,
+          "vcp_score": 18.3,
+          "entry_close": 2190.0,
+          "current_close": 2190.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=076610"
+        },
+        {
+          "ticker": "066570",
+          "name": "LG전자",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 11.0,
+          "ensemble": 38.9,
+          "vcp_score": 18.3,
+          "entry_close": 240500.0,
+          "current_close": 240500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=066570"
+        },
+        {
+          "ticker": "403550",
+          "name": "쏘카",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 11.0,
+          "ensemble": 12.0,
+          "vcp_score": 10.0,
+          "entry_close": 15300.0,
+          "current_close": 15300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=403550"
+        },
+        {
+          "ticker": "014680",
+          "name": "한솔케미칼",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 11.0,
+          "ensemble": 39.3,
+          "vcp_score": 41.4,
+          "entry_close": 326000.0,
+          "current_close": 326000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=014680"
+        },
+        {
+          "ticker": "006040",
+          "name": "동원산업",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 8.0,
+          "ensemble": 24.1,
+          "vcp_score": 36.7,
+          "entry_close": 38100.0,
+          "current_close": 38100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=006040"
+        },
+        {
+          "ticker": "100790",
+          "name": "미래에셋벤처투자",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 11.0,
+          "ensemble": 36.3,
+          "vcp_score": 43.3,
+          "entry_close": 54900.0,
+          "current_close": 54900.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=100790"
+        },
+        {
+          "ticker": "307180",
+          "name": "아이엘",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 8.0,
+          "ensemble": 33.7,
+          "vcp_score": 42.5,
+          "entry_close": 7800.0,
+          "current_close": 7800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=307180"
+        },
+        {
+          "ticker": "011210",
+          "name": "현대위아",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 8.0,
+          "ensemble": 27.0,
+          "vcp_score": 30.5,
+          "entry_close": 92300.0,
+          "current_close": 92300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=011210"
+        },
+        {
+          "ticker": "084670",
+          "name": "동양고속",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 10.0,
+          "ensemble": 36.4,
+          "vcp_score": 56.7,
+          "entry_close": 65800.0,
+          "current_close": 65800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=084670"
+        },
+        {
+          "ticker": "000490",
+          "name": "대동",
+          "labels": [
+            "⚠️적자유지"
+          ],
+          "score": 10.0,
+          "ensemble": 34.5,
+          "vcp_score": 48.3,
+          "entry_close": 10150.0,
+          "current_close": 10150.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000490"
+        },
+        {
+          "ticker": "139130",
+          "name": "iM금융지주",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 6.9,
+          "ensemble": 34.9,
+          "vcp_score": 40.5,
+          "entry_close": 18150.0,
+          "current_close": 18150.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=139130"
+        },
+        {
+          "ticker": "005930",
+          "name": "삼성전자",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 6.0,
+          "ensemble": 30.9,
+          "vcp_score": 18.3,
+          "entry_close": 270500.0,
+          "current_close": 270500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005930"
+        },
+        {
+          "ticker": "048770",
+          "name": "TPC로보틱스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 9.0,
+          "ensemble": 34.6,
+          "vcp_score": 18.3,
+          "entry_close": 7570.0,
+          "current_close": 7570.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=048770"
+        },
+        {
+          "ticker": "010120",
+          "name": "LS ELECTRIC",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 6.0,
+          "ensemble": 32.1,
+          "vcp_score": 18.3,
+          "entry_close": 259000.0,
+          "current_close": 259000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=010120"
+        },
+        {
+          "ticker": "105560",
+          "name": "KB금융",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 6.0,
+          "ensemble": 35.4,
+          "vcp_score": 56.7,
+          "entry_close": 155600.0,
+          "current_close": 155600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=105560"
+        },
+        {
+          "ticker": "081660",
+          "name": "미스토홀딩스",
+          "labels": [
+            "🌱적자축소"
+          ],
+          "score": 6.0,
+          "ensemble": 24.8,
+          "vcp_score": 38.3,
+          "entry_close": 39200.0,
+          "current_close": 39200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=081660"
+        },
+        {
+          "ticker": "243070",
+          "name": "휴온스",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 8.0,
+          "ensemble": 12.0,
+          "vcp_score": 18.3,
+          "entry_close": 34800.0,
+          "current_close": 34800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=243070"
+        },
+        {
+          "ticker": "008060",
+          "name": "대덕",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 8.0,
+          "ensemble": 30.4,
+          "vcp_score": 26.7,
+          "entry_close": 18770.0,
+          "current_close": 18770.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=008060"
+        },
+        {
+          "ticker": "083450",
+          "name": "GST",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 8.0,
+          "ensemble": 28.5,
+          "vcp_score": 8.3,
+          "entry_close": 59100.0,
+          "current_close": 59100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=083450"
+        },
+        {
+          "ticker": "018260",
+          "name": "삼성에스디에스",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 5.0,
+          "ensemble": 35.6,
+          "vcp_score": 18.3,
+          "entry_close": 189000.0,
+          "current_close": 189000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=018260"
+        },
+        {
+          "ticker": "000650",
+          "name": "천일고속",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 19.0,
+          "ensemble": 38.9,
+          "vcp_score": 56.3,
+          "entry_close": 330500.0,
+          "current_close": 330500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000650"
+        },
+        {
+          "ticker": "021240",
+          "name": "코웨이",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 4.0,
+          "ensemble": 25.6,
+          "vcp_score": 18.3,
+          "entry_close": 94700.0,
+          "current_close": 94700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=021240"
+        },
+        {
+          "ticker": "006280",
+          "name": "녹십자",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 6.0,
+          "ensemble": 28.8,
+          "vcp_score": 38.3,
+          "entry_close": 138700.0,
+          "current_close": 138700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=006280"
+        },
+        {
+          "ticker": "425040",
+          "name": "티이엠씨",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 6.0,
+          "ensemble": 31.1,
+          "vcp_score": 18.3,
+          "entry_close": 21950.0,
+          "current_close": 21950.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=425040"
+        },
+        {
+          "ticker": "000270",
+          "name": "기아",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 5.0,
+          "ensemble": 37.7,
+          "vcp_score": 54.0,
+          "entry_close": 168000.0,
+          "current_close": 168000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000270"
+        },
+        {
+          "ticker": "005300",
+          "name": "롯데칠성",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 5.0,
+          "ensemble": 20.3,
+          "vcp_score": 46.5,
+          "entry_close": 118300.0,
+          "current_close": 118300.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=005300"
+        },
+        {
+          "ticker": "036930",
+          "name": "주성엔지니어링",
+          "labels": [
+            "💀적자전환"
+          ],
+          "score": 0.0,
+          "ensemble": 35.7,
+          "vcp_score": 51.7,
+          "entry_close": 140200.0,
+          "current_close": 140200.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=036930"
+        },
+        {
+          "ticker": "026960",
+          "name": "동서",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 14.7,
+          "ensemble": 30.7,
+          "vcp_score": 53.3,
+          "entry_close": 25350.0,
+          "current_close": 25350.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=026960"
+        },
+        {
+          "ticker": "308080",
+          "name": "바이젠셀",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 14.0,
+          "ensemble": 32.4,
+          "vcp_score": 26.7,
+          "entry_close": 11090.0,
+          "current_close": 11090.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=308080"
+        },
+        {
+          "ticker": "055550",
+          "name": "신한지주",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 13.3,
+          "ensemble": 32.9,
+          "vcp_score": 56.7,
+          "entry_close": 95100.0,
+          "current_close": 95100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=055550"
+        },
+        {
+          "ticker": "012330",
+          "name": "현대모비스",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 1.0,
+          "ensemble": 29.3,
+          "vcp_score": 18.3,
+          "entry_close": 629000.0,
+          "current_close": 629000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=012330"
+        },
+        {
+          "ticker": "000500",
+          "name": "가온전선",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 11.7,
+          "ensemble": 34.6,
+          "vcp_score": 18.3,
+          "entry_close": 338500.0,
+          "current_close": 338500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000500"
+        },
+        {
+          "ticker": "032580",
+          "name": "피델릭스",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 11.0,
+          "ensemble": 39.0,
+          "vcp_score": 28.3,
+          "entry_close": 3865.0,
+          "current_close": 3865.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=032580"
+        },
+        {
+          "ticker": "029780",
+          "name": "삼성카드",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 10.0,
+          "ensemble": 36.0,
+          "vcp_score": 48.3,
+          "entry_close": 50800.0,
+          "current_close": 50800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=029780"
+        },
+        {
+          "ticker": "319400",
+          "name": "현대무벡스",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 8.0,
+          "ensemble": 28.1,
+          "vcp_score": 25.3,
+          "entry_close": 41100.0,
+          "current_close": 41100.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=319400"
+        },
+        {
+          "ticker": "190510",
+          "name": "나무가",
+          "labels": [
+            "↘️실적감소"
+          ],
+          "score": 8.0,
+          "ensemble": 27.7,
+          "vcp_score": 35.4,
+          "entry_close": 20450.0,
+          "current_close": 20450.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=190510"
+        },
+        {
+          "ticker": "323350",
+          "name": "다원넥스뷰",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 6.0,
+          "ensemble": 38.8,
+          "vcp_score": 30.9,
+          "entry_close": 25800.0,
+          "current_close": 25800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=323350"
+        },
+        {
+          "ticker": "004490",
+          "name": "세방전지",
+          "labels": [
+            "➡️실적유지"
+          ],
+          "score": 6.0,
+          "ensemble": 28.6,
+          "vcp_score": 30.4,
+          "entry_close": 61500.0,
+          "current_close": 61500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004490"
+        },
+        {
+          "ticker": "035420",
+          "name": "NAVER",
+          "labels": [
+            "↗️실적증가"
+          ],
+          "score": 6.0,
+          "ensemble": 20.2,
+          "vcp_score": 29.2,
+          "entry_close": 203500.0,
+          "current_close": 203500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=035420"
+        },
+        {
+          "ticker": "298040",
+          "name": "효성중공업",
+          "labels": [
+            "📈실적급증"
+          ],
+          "score": 5.0,
+          "ensemble": 26.4,
+          "vcp_score": 8.3,
+          "entry_close": 3745000.0,
+          "current_close": 3745000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=298040"
+        },
+        {
+          "ticker": "030200",
+          "name": "KT",
+          "labels": [
+            "🔄흑자전환"
+          ],
+          "score": 5.0,
+          "ensemble": 29.6,
+          "vcp_score": 38.3,
+          "entry_close": 58700.0,
+          "current_close": 58700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=030200"
+        },
+        {
+          "ticker": "110990",
+          "name": "디아이티",
+          "labels": [
+            "📉실적부진"
+          ],
+          "score": 5.0,
+          "ensemble": 26.8,
+          "vcp_score": 18.3,
+          "entry_close": 24350.0,
+          "current_close": 24350.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=110990"
+        },
+        {
+          "ticker": "000660",
+          "name": "SK하이닉스",
+          "labels": [
+            "🔥실적폭발"
+          ],
+          "score": 0.0,
+          "ensemble": 27.5,
+          "vcp_score": 16.7,
+          "entry_close": 1819000.0,
+          "current_close": 1819000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000660"
+        },
+        {
+          "ticker": "003550",
+          "name": "LG",
+          "labels": [
+            "💸적자확대"
+          ],
+          "score": 11.0,
+          "ensemble": 36.5,
+          "vcp_score": 32.1,
+          "entry_close": 126000.0,
+          "current_close": 126000.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=003550"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "generated_at": "2026-05-15T23:02:53.797412",
       "days_held": 0,
       "regime": "📈 공격 가능",
       "items": [
@@ -50354,9 +54066,9 @@
   ],
   "summary_by_label": {
     "⚡단타": {
-      "count": 464,
-      "win_rate": 27.6,
-      "avg_ret_pct": -2.92,
+      "count": 498,
+      "win_rate": 25.7,
+      "avg_ret_pct": -2.72,
       "by_age": {
         "4-7d": {
           "count": 226,
@@ -50369,16 +54081,16 @@
           "avg_ret_pct": -3.34
         },
         "0d": {
-          "count": 34,
+          "count": 68,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🌅폭발임박": {
-      "count": 110,
-      "win_rate": 24.5,
-      "avg_ret_pct": -4.16,
+      "count": 119,
+      "win_rate": 22.7,
+      "avg_ret_pct": -3.85,
       "by_age": {
         "4-7d": {
           "count": 54,
@@ -50391,16 +54103,16 @@
           "avg_ret_pct": -6.53
         },
         "0d": {
-          "count": 9,
+          "count": 18,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🛡️안정형": {
-      "count": 33,
-      "win_rate": 15.2,
-      "avg_ret_pct": -4.07,
+      "count": 35,
+      "win_rate": 14.3,
+      "avg_ret_pct": -3.83,
       "by_age": {
         "4-7d": {
           "count": 21,
@@ -50413,16 +54125,16 @@
           "avg_ret_pct": -4.14
         },
         "0d": {
-          "count": 2,
+          "count": 4,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🎯VCP": {
-      "count": 295,
-      "win_rate": 24.1,
-      "avg_ret_pct": -4.78,
+      "count": 300,
+      "win_rate": 23.7,
+      "avg_ret_pct": -4.7,
       "by_age": {
         "4-7d": {
           "count": 207,
@@ -50435,16 +54147,16 @@
           "avg_ret_pct": -3.09
         },
         "0d": {
-          "count": 5,
+          "count": 10,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🔍매집중": {
-      "count": 444,
-      "win_rate": 31.1,
-      "avg_ret_pct": -2.06,
+      "count": 483,
+      "win_rate": 28.6,
+      "avg_ret_pct": -1.9,
       "by_age": {
         "4-7d": {
           "count": 196,
@@ -50457,16 +54169,16 @@
           "avg_ret_pct": -1.61
         },
         "0d": {
-          "count": 39,
+          "count": 78,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🌱적자축소": {
-      "count": 102,
-      "win_rate": 11.8,
-      "avg_ret_pct": -9.24,
+      "count": 108,
+      "win_rate": 11.1,
+      "avg_ret_pct": -8.72,
       "by_age": {
         "4-7d": {
           "count": 52,
@@ -50479,16 +54191,16 @@
           "avg_ret_pct": -9.64
         },
         "0d": {
-          "count": 6,
+          "count": 12,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "↗️실적증가": {
-      "count": 227,
-      "win_rate": 25.6,
-      "avg_ret_pct": -3.85,
+      "count": 245,
+      "win_rate": 23.7,
+      "avg_ret_pct": -3.57,
       "by_age": {
         "4-7d": {
           "count": 104,
@@ -50501,16 +54213,16 @@
           "avg_ret_pct": -3.96
         },
         "0d": {
-          "count": 18,
+          "count": 36,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "📈실적급증": {
-      "count": 464,
-      "win_rate": 29.5,
-      "avg_ret_pct": -2.5,
+      "count": 499,
+      "win_rate": 27.5,
+      "avg_ret_pct": -2.32,
       "by_age": {
         "4-7d": {
           "count": 202,
@@ -50523,16 +54235,16 @@
           "avg_ret_pct": -2.89
         },
         "0d": {
-          "count": 35,
+          "count": 70,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "💸적자확대": {
-      "count": 158,
-      "win_rate": 32.9,
-      "avg_ret_pct": -3.85,
+      "count": 172,
+      "win_rate": 30.2,
+      "avg_ret_pct": -3.53,
       "by_age": {
         "4-7d": {
           "count": 70,
@@ -50545,16 +54257,16 @@
           "avg_ret_pct": -3.63
         },
         "0d": {
-          "count": 14,
+          "count": 28,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "📉실적부진": {
-      "count": 366,
-      "win_rate": 21.3,
-      "avg_ret_pct": -4.36,
+      "count": 395,
+      "win_rate": 19.7,
+      "avg_ret_pct": -4.04,
       "by_age": {
         "4-7d": {
           "count": 168,
@@ -50567,16 +54279,16 @@
           "avg_ret_pct": -2.93
         },
         "0d": {
-          "count": 29,
+          "count": 58,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "💀적자전환": {
-      "count": 258,
-      "win_rate": 20.5,
-      "avg_ret_pct": -3.53,
+      "count": 278,
+      "win_rate": 19.1,
+      "avg_ret_pct": -3.28,
       "by_age": {
         "4-7d": {
           "count": 120,
@@ -50589,16 +54301,16 @@
           "avg_ret_pct": -3.86
         },
         "0d": {
-          "count": 20,
+          "count": 40,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "⚠️적자유지": {
-      "count": 286,
-      "win_rate": 16.8,
-      "avg_ret_pct": -7.29,
+      "count": 301,
+      "win_rate": 15.9,
+      "avg_ret_pct": -6.93,
       "by_age": {
         "4-7d": {
           "count": 138,
@@ -50611,16 +54323,16 @@
           "avg_ret_pct": -6.46
         },
         "0d": {
-          "count": 15,
+          "count": 30,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "↘️실적감소": {
-      "count": 203,
-      "win_rate": 20.7,
-      "avg_ret_pct": -3.43,
+      "count": 221,
+      "win_rate": 19.0,
+      "avg_ret_pct": -3.15,
       "by_age": {
         "4-7d": {
           "count": 84,
@@ -50633,16 +54345,16 @@
           "avg_ret_pct": -2.83
         },
         "0d": {
-          "count": 18,
+          "count": 36,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🔄흑자전환": {
-      "count": 460,
-      "win_rate": 14.6,
-      "avg_ret_pct": -6.78,
+      "count": 493,
+      "win_rate": 13.6,
+      "avg_ret_pct": -6.33,
       "by_age": {
         "4-7d": {
           "count": 228,
@@ -50655,16 +54367,16 @@
           "avg_ret_pct": -5.58
         },
         "0d": {
-          "count": 33,
+          "count": 66,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "🔥실적폭발": {
-      "count": 430,
-      "win_rate": 22.1,
-      "avg_ret_pct": -3.33,
+      "count": 464,
+      "win_rate": 20.5,
+      "avg_ret_pct": -3.08,
       "by_age": {
         "4-7d": {
           "count": 196,
@@ -50677,16 +54389,16 @@
           "avg_ret_pct": -3.73
         },
         "0d": {
-          "count": 34,
+          "count": 68,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
       }
     },
     "➡️실적유지": {
-      "count": 181,
-      "win_rate": 34.8,
-      "avg_ret_pct": -2.62,
+      "count": 200,
+      "win_rate": 31.5,
+      "avg_ret_pct": -2.37,
       "by_age": {
         "4-7d": {
           "count": 74,
@@ -50699,7 +54411,7 @@
           "avg_ret_pct": -1.5
         },
         "0d": {
-          "count": 19,
+          "count": 38,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
