@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-28T20:01:53.386734",
-  "elapsed_sec": 254.7,
-  "stage1_elapsed": 28.7,
-  "stage2_elapsed": 177.2,
+  "generated_at": "2026-05-29T00:42:12.893770",
+  "elapsed_sec": 221.0,
+  "stage1_elapsed": 24.8,
+  "stage2_elapsed": 153.1,
   "universe_size": 711,
-  "stage1_passed": 115,
-  "stage2_passed": 115,
-  "passed_count": 115,
+  "stage1_passed": 116,
+  "stage2_passed": 116,
+  "passed_count": 116,
   "regime": {
-    "score": 51.0,
+    "score": 43.2,
     "mode": "neutral",
     "label": "⚖ 중립",
     "color": "watch",
@@ -16,7 +16,7 @@
       "kospi": 25.0,
       "kosdaq": 7.5,
       "amount": 10.7,
-      "breadth": 7.8
+      "breadth": 0.0
     },
     "advice": "눌림목·매집 종목 위주, 신중 진입"
   },
@@ -91,7 +91,7 @@
       "stage1_score": 69.2,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 76.47,
         "ma60_slope_pct": 12.48,
         "box_high": 51700.0,
@@ -201,8 +201,8 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
-            "중기 매집 241일"
+            "매집 진행 240일",
+            "중기 매집 240일"
           ],
           "minervini": [
             "close>MA60",
@@ -242,7 +242,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 17.4/25",
@@ -354,7 +354,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -492,7 +492,7 @@
       "stage1_score": 80.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 200.0,
         "ma60_slope_pct": 82.23,
         "box_high": 9790.0,
@@ -602,9 +602,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +4",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 2.6x"
           ],
           "minervini": [
@@ -649,7 +649,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 15.4/25",
@@ -763,7 +763,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -824,9 +824,9 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=032580",
       "confluence": {
-        "peer_count": 0,
-        "labeled_peers": 0,
-        "ratio": 0.0
+        "peer_count": 1,
+        "labeled_peers": 1,
+        "ratio": 1.0
       }
     },
     {
@@ -899,7 +899,7 @@
       "stage1_score": 100.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 74.28,
         "ma60_slope_pct": 14.2,
         "box_high": 2450.0,
@@ -1009,9 +1009,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +4",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 1.93x"
           ],
           "minervini": [
@@ -1055,7 +1055,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "60>240 정배열",
@@ -1168,7 +1168,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -4144,7 +4144,7 @@
       "stage1_score": 62.9,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 43.06,
         "ma60_slope_pct": -1.71,
         "box_high": 11290.0,
@@ -4254,9 +4254,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +4",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 약↑ 1.44x"
           ],
           "minervini": [
@@ -4296,7 +4296,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "60>240 정배열",
           "거래대금 체급↑ 1.44x"
         ],
@@ -4407,7 +4407,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "판별 곤란",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -5740,7 +5740,7 @@
       "position": {
         "label": "매집중",
         "color": "watch",
-        "desc": "매집 진행 중 (241일)"
+        "desc": "매집 진행 중 (240일)"
       },
       "risk": {
         "signals": [],
@@ -5756,7 +5756,7 @@
       "stage1_score": 66.3,
       "accumulation": {
         "in_accumulation": true,
-        "duration": 241,
+        "duration": 240,
         "range_pct": "31.74",
         "ma60_slope_pct": 1.76,
         "box_high": 29750.0,
@@ -5868,7 +5868,7 @@
         "items": {
           "wyckoff": [
             "매집 단계 ON",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "close>MA60",
@@ -6026,8 +6026,8 @@
         },
         "wyckoff": {
           "name": "와이코프 단계",
-          "phase": "Accumulation (매집, 241일)",
-          "duration": 241,
+          "phase": "Accumulation (매집, 240일)",
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -9304,9 +9304,9 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=290650",
       "confluence": {
-        "peer_count": 0,
-        "labeled_peers": 0,
-        "ratio": 0.0
+        "peer_count": 1,
+        "labeled_peers": 1,
+        "ratio": 1.0
       }
     },
     {
@@ -9377,7 +9377,7 @@
       "stage1_score": 100.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 52.82,
         "ma60_slope_pct": -1.84,
         "box_high": 93100.0,
@@ -9487,9 +9487,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +4",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 약↑ 1.24x"
           ],
           "minervini": [
@@ -9530,7 +9530,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 점수 75.4",
@@ -9643,7 +9643,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -9704,8 +9704,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=005430",
       "confluence": {
-        "peer_count": 1,
-        "labeled_peers": 1,
+        "peer_count": 2,
+        "labeled_peers": 2,
         "ratio": 1.0
       }
     },
@@ -10896,9 +10896,9 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=417840",
       "confluence": {
-        "peer_count": 0,
-        "labeled_peers": 0,
-        "ratio": 0.0
+        "peer_count": 1,
+        "labeled_peers": 1,
+        "ratio": 1.0
       }
     },
     {
@@ -12158,7 +12158,7 @@
       "stage1_score": 67.1,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 40.41,
         "ma60_slope_pct": 5.24,
         "box_high": 70800.0,
@@ -12268,8 +12268,8 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
-            "중기 매집 241일",
+            "매집 진행 240일",
+            "중기 매집 240일",
             "거래대금 약↑ 1.43x"
           ],
           "minervini": [
@@ -12313,7 +12313,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 25.0/25",
@@ -12428,7 +12428,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "판별 곤란",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -12559,7 +12559,7 @@
       "stage1_score": 65.3,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 108.82,
         "ma60_slope_pct": 36.74,
         "box_high": 10990.0,
@@ -12669,9 +12669,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +3",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "close>MA60",
@@ -12713,7 +12713,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 20.9/25",
@@ -12826,7 +12826,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -13285,6 +13285,397 @@
         "annual_yoy_pct": 73.9
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=036710",
+      "confluence": {
+        "peer_count": 4,
+        "labeled_peers": 4,
+        "ratio": 1.0
+      }
+    },
+    {
+      "ticker": "042520",
+      "name": "한스바이오메드",
+      "market": "KOSDAQ",
+      "marcap": 469198974300,
+      "labels": [
+        "🔍매집중",
+        "🔥실적폭발"
+      ],
+      "trading_guide": {
+        "rule": {
+          "size": "관찰만",
+          "stop_pct": null,
+          "tp1_pct": null,
+          "tp1_portion": null,
+          "tp2_pct": null,
+          "tp2_portion": null,
+          "trail": null,
+          "horizon": "출발 신호 대기",
+          "note": "아직 진입 아님 — 박스 돌파 또는 출발 신호 기다림"
+        },
+        "rule_label": "🔍매집중",
+        "fib": {
+          "box_low": 22450.0,
+          "box_high": 57800.0,
+          "box_range": 35350.0,
+          "current": 32900.0,
+          "retracement": {
+            "0.236": 49457.4,
+            "0.382": 44296.3,
+            "0.500": 40125.0,
+            "0.618": 35953.7,
+            "0.786": 30014.9
+          },
+          "extension": {
+            "1.000": 93150.0,
+            "1.272": 102765.2,
+            "1.618": 114996.3,
+            "2.618": 150346.3,
+            "4.236": 207542.6
+          },
+          "retracement_pct": 70.4,
+          "zone": "IN_BOX"
+        },
+        "computed": null
+      },
+      "position": {
+        "label": "관망",
+        "color": "muted",
+        "desc": "특이 신호 없음"
+      },
+      "risk": {
+        "signals": [],
+        "severity": "safe"
+      },
+      "score": {
+        "total": 52.1,
+        "confluence": 12.0,
+        "intensity": 20.1,
+        "persistence": 10.0,
+        "aux": 10.0
+      },
+      "stage1_score": 63.7,
+      "accumulation": {
+        "in_accumulation": false,
+        "duration": 151,
+        "range_pct": 88.1,
+        "ma60_slope_pct": -9.78,
+        "box_high": 57800.0,
+        "box_low": 22450.0,
+        "lookback_used": 60
+      },
+      "metrics": {
+        "close": 32900.0,
+        "ma5": 30910.0,
+        "ma20": 27867.5,
+        "ma60": 35590.833333333336,
+        "rvol": 1.29,
+        "amount_mult": 1.54,
+        "amount_trend": 0.95,
+        "rs_120d_pp": -102.33,
+        "is_52w_high": false,
+        "strong_close": false,
+        "ma60_above_ma240": true
+      },
+      "weekly_pack": {
+        "accum": {
+          "in_accumulation": false,
+          "weeks": 0,
+          "range_pct": null,
+          "box_high": 57800.0,
+          "box_low": 21200.0,
+          "ma20w_slope_pct": 0.25
+        },
+        "vcp": {
+          "vcp": false,
+          "widths_pct": [
+            "49.91",
+            "71.52",
+            "66.97",
+            "47.15"
+          ],
+          "vol_dried": false
+        },
+        "dry_explode": {
+          "dry_to_explode": false,
+          "dried_ratio": 1.36,
+          "explode_ratio": 0.84
+        },
+        "smart_money_w": {
+          "available": true,
+          "weeks_analyzed": 22,
+          "foreign_sum": 325724.0,
+          "inst_sum": 757281.0,
+          "individual_sum": -1083005.0,
+          "foreign_buy_weeks": 12,
+          "inst_buy_weeks": 11,
+          "coincide_weeks": 5,
+          "smart_money_positive": true,
+          "individual_negative": true
+        },
+        "breakout_w": {
+          "breakout": false,
+          "price_breakout": false,
+          "vol_breakout": false,
+          "vol_ratio": 0.9
+        }
+      },
+      "wyckoff": {
+        "spring": {
+          "spring": false
+        },
+        "sos": {
+          "sos": false
+        },
+        "vsa": {
+          "vsa_score": 2,
+          "harmful_days": 0,
+          "harmful": false
+        },
+        "stage_1_to_2_pattern": false
+      },
+      "vcp": {
+        "vcp_score": 36.1,
+        "vcp_detected": false,
+        "widths_pct": [
+          "38.47",
+          "55.28",
+          "26.24",
+          "47.15"
+        ],
+        "atr_ratio": 0.73,
+        "atr_compressed": true,
+        "last_vol_dry": false,
+        "components": {
+          "width_contraction": 10.0,
+          "vol_contraction": 8.3,
+          "last_vol_dry": 0,
+          "atr_compression": 17.7
+        }
+      },
+      "mansfield": {
+        "available": false
+      },
+      "ensemble": {
+        "scores": {
+          "wyckoff": 25,
+          "minervini": 38.0,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 25,
+          "korean": 25
+        },
+        "items": {
+          "wyckoff": [
+            "매집 진행 151일",
+            "중기 매집 151일"
+          ],
+          "minervini": [
+            "MA60>MA240",
+            "MA240 -15% 이내"
+          ],
+          "weinstein": [],
+          "oneil": [
+            "기관 60일 +",
+            "M: 정배열",
+            "S: 강도 20.1"
+          ],
+          "livermore": [
+            "정배열"
+          ],
+          "korean": []
+        },
+        "ensemble": 25.9,
+        "masters_70plus": 0,
+        "masters_80plus": 0
+      },
+      "short_term": {
+        "triggered": false,
+        "reasons": [
+          "당일 수급 진입"
+        ],
+        "fail": [
+          "거래대금 부족",
+          "rvol 부족",
+          "약한 마감",
+          "박스 미돌파"
+        ],
+        "checks_passed": 1
+      },
+      "tenbagger": {
+        "triggered": false,
+        "reasons": [
+          "스마트머니 누적 +",
+          "개인 누적 -",
+          "수급 강도 20.1/25",
+          "60>240 정배열"
+        ],
+        "fail": [
+          "매집 부족(주봉 0주, 일봉 151일)",
+          "출발 신호 없음"
+        ],
+        "supply_passed": 2,
+        "chart_passed": 1,
+        "weekly_accum_weeks": 0,
+        "weekly_breakout": false,
+        "dry_explode": false
+      },
+      "masters": {
+        "oneil": {
+          "name": "오닐 CAN SLIM",
+          "items": [
+            {
+              "key": "I",
+              "label": "기관 후원 (외인+기관 60일 +)",
+              "ok": false
+            },
+            {
+              "key": "N",
+              "label": "52주 신고가권",
+              "ok": false
+            },
+            {
+              "key": "M",
+              "label": "장기 정배열 (60>240)",
+              "ok": true
+            },
+            {
+              "key": "S",
+              "label": "수급 강도 양호 (intensity≥10)",
+              "ok": "True"
+            },
+            {
+              "key": "L",
+              "label": "단기 모멘텀 (rvol≥1.5 강한 마감)",
+              "ok": false
+            }
+          ],
+          "fulfilled": 2,
+          "total": 5,
+          "percent": 40
+        },
+        "minervini": {
+          "name": "미너비니 Trend Template",
+          "items": [
+            {
+              "label": "현재가 > 150일선 > 200일선",
+              "ok": false
+            },
+            {
+              "label": "200일선 상승 중",
+              "ok": true
+            },
+            {
+              "label": "50일선 > 150일선 > 200일선",
+              "ok": true
+            },
+            {
+              "label": "현재가 > 50일선",
+              "ok": false
+            },
+            {
+              "label": "52주 저가 대비 +30%↑",
+              "ok": true
+            },
+            {
+              "label": "52주 고가의 -25% 이내",
+              "ok": false
+            },
+            {
+              "label": "52주 고가의 -15% 이내 (강함)",
+              "ok": false
+            },
+            {
+              "label": "장기 정배열 (60>240)",
+              "ok": true
+            }
+          ],
+          "fulfilled": 4,
+          "total": 8,
+          "percent": 50
+        },
+        "weinstein": {
+          "name": "와인스타인 Stage",
+          "stage": "Stage 3 (분산 의심) 또는 전환 중",
+          "ok": false,
+          "ma150_slope_pct": 9.5,
+          "items": [
+            {
+              "label": "현재가 > 150일선",
+              "ok": false
+            },
+            {
+              "label": "150일선 상승 중",
+              "ok": true
+            },
+            {
+              "label": "52주 신고가권",
+              "ok": false
+            }
+          ]
+        },
+        "wyckoff": {
+          "name": "와이코프 단계",
+          "phase": "Trend 진행 중 (박스 아님)",
+          "duration": 151,
+          "items": [
+            {
+              "label": "박스권 횡보 (range≤40%)",
+              "ok": false
+            },
+            {
+              "label": "매집 60일+",
+              "ok": true
+            },
+            {
+              "label": "거래량 폭발 (rvol≥1.8)",
+              "ok": false
+            },
+            {
+              "label": "외인 60일 누적 +",
+              "ok": "False"
+            }
+          ],
+          "fulfilled": 1,
+          "total": 4,
+          "percent": 25
+        },
+        "livermore": {
+          "name": "리버모어 Pivot",
+          "type": "피벗 미형성",
+          "items": [
+            {
+              "label": "박스 상단 돌파",
+              "ok": false
+            },
+            {
+              "label": "거래량 동반 (rvol≥1.5)",
+              "ok": false
+            },
+            {
+              "label": "강한 마감 (윗꼬리 짧음)",
+              "ok": false
+            },
+            {
+              "label": "신고가 (52주)",
+              "ok": false
+            }
+          ],
+          "fulfilled": 0,
+          "total": 4,
+          "percent": 0
+        }
+      },
+      "earnings": {
+        "label": "🔥실적폭발",
+        "yoy_pct": 144.4,
+        "period": "2026.03 vs 2025.03",
+        "status": "growing",
+        "quarterly_label": "🔥실적폭발",
+        "quarterly_yoy_pct": 144.4,
+        "annual_label": "💀적자전환",
+        "annual_yoy_pct": null
+      },
+      "naver_url": "https://finance.naver.com/item/main.naver?code=042520",
       "confluence": {
         "peer_count": 2,
         "labeled_peers": 2,
@@ -14945,7 +15336,7 @@
       "stage1_score": 67.6,
       "accumulation": {
         "in_accumulation": true,
-        "duration": 241,
+        "duration": 240,
         "range_pct": "28.64",
         "ma60_slope_pct": 1.54,
         "box_high": 4950.0,
@@ -15058,7 +15449,7 @@
           "wyckoff": [
             "매집 단계 ON",
             "VSA +3",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 1.54x"
           ],
           "minervini": [
@@ -15218,7 +15609,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -15333,7 +15724,7 @@
       "position": {
         "label": "매집중",
         "color": "watch",
-        "desc": "매집 진행 중 (241일)"
+        "desc": "매집 진행 중 (240일)"
       },
       "risk": {
         "signals": [
@@ -15351,7 +15742,7 @@
       "stage1_score": 62.9,
       "accumulation": {
         "in_accumulation": true,
-        "duration": 241,
+        "duration": 240,
         "range_pct": "37.93",
         "ma60_slope_pct": -2.31,
         "box_high": 34500.0,
@@ -15463,7 +15854,7 @@
           "wyckoff": [
             "매집 단계 ON",
             "VSA 분산 의심",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "close>MA60",
@@ -15503,7 +15894,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 18.3/25"
@@ -15614,7 +16005,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "SOS 의심 (Sign of Strength)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -17123,9 +17514,9 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=336260",
       "confluence": {
-        "peer_count": 0,
-        "labeled_peers": 0,
-        "ratio": 0.0
+        "peer_count": 1,
+        "labeled_peers": 1,
+        "ratio": 1.0
       }
     },
     {
@@ -17489,8 +17880,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=036010",
       "confluence": {
-        "peer_count": 4,
-        "labeled_peers": 4,
+        "peer_count": 3,
+        "labeled_peers": 3,
         "ratio": 1.0
       }
     },
@@ -18967,7 +19358,7 @@
       "stage1_score": 60.5,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 101.52,
         "ma60_slope_pct": 41.03,
         "box_high": 9200.0,
@@ -19077,9 +19468,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +5",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 2.83x"
           ],
           "minervini": [
@@ -19121,7 +19512,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 22.7/25",
@@ -19235,7 +19626,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -19696,7 +20087,7 @@
       "stage1_score": 79.7,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 117.62,
         "ma60_slope_pct": 44.35,
         "box_high": 5610.0,
@@ -19806,9 +20197,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +3",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 3.32x"
           ],
           "minervini": [
@@ -19850,7 +20241,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "수급 강도 15.2/25",
           "60>240 정배열",
@@ -19963,7 +20354,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -21496,7 +21887,7 @@
       "stage1_score": 80.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 76.36,
         "ma60_slope_pct": 4.73,
         "box_high": 15580.0,
@@ -21606,9 +21997,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA 분산 의심",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "close>MA60",
@@ -21643,7 +22034,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 16.3/25"
@@ -21754,7 +22145,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -24343,8 +24734,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=018260",
       "confluence": {
-        "peer_count": 4,
-        "labeled_peers": 4,
+        "peer_count": 5,
+        "labeled_peers": 5,
         "ratio": 1.0
       }
     },
@@ -24376,7 +24767,7 @@
       "stage1_score": 81.9,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 54.47,
         "ma60_slope_pct": 2.85,
         "box_high": 12730.0,
@@ -24486,9 +24877,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +6",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 2.9x"
           ],
           "minervini": [
@@ -24530,7 +24921,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 16.0/25",
@@ -24643,7 +25034,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -25085,7 +25476,7 @@
       "position": {
         "label": "매집중",
         "color": "watch",
-        "desc": "매집 진행 중 (241일)"
+        "desc": "매집 진행 중 (240일)"
       },
       "risk": {
         "signals": [],
@@ -25101,7 +25492,7 @@
       "stage1_score": 62.2,
       "accumulation": {
         "in_accumulation": true,
-        "duration": 241,
+        "duration": 240,
         "range_pct": "36.55",
         "ma60_slope_pct": -8.25,
         "box_high": 183800.0,
@@ -25212,7 +25603,7 @@
         "items": {
           "wyckoff": [
             "매집 단계 ON",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "MA60>MA240",
@@ -25250,7 +25641,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "수급 강도 21.2/25",
           "60>240 정배열"
         ],
@@ -25361,8 +25752,8 @@
         },
         "wyckoff": {
           "name": "와이코프 단계",
-          "phase": "Accumulation (매집, 241일)",
-          "duration": 241,
+          "phase": "Accumulation (매집, 240일)",
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -26176,7 +26567,7 @@
       "stage1_score": 80.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 133.42,
         "ma60_slope_pct": 61.96,
         "box_high": 30550.0,
@@ -26286,9 +26677,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +4",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 2.47x"
           ],
           "minervini": [
@@ -26331,7 +26722,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 15.8/25",
@@ -26446,7 +26837,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -26868,9 +27259,9 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=066570",
       "confluence": {
-        "peer_count": 0,
-        "labeled_peers": 0,
-        "ratio": 0.0
+        "peer_count": 1,
+        "labeled_peers": 1,
+        "ratio": 1.0
       }
     },
     {
@@ -26901,7 +27292,7 @@
       "stage1_score": 60.2,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 112.59,
         "ma60_slope_pct": 43.05,
         "box_high": 16020.0,
@@ -27011,9 +27402,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +5",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 3.0x"
           ],
           "minervini": [
@@ -27055,7 +27446,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "60>240 정배열",
@@ -27167,7 +27558,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -28666,8 +29057,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=064400",
       "confluence": {
-        "peer_count": 3,
-        "labeled_peers": 3,
+        "peer_count": 4,
+        "labeled_peers": 4,
         "ratio": 1.0
       }
     },
@@ -31901,9 +32292,9 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=095610",
       "confluence": {
-        "peer_count": 0,
-        "labeled_peers": 0,
-        "ratio": 0.0
+        "peer_count": 1,
+        "labeled_peers": 1,
+        "ratio": 1.0
       }
     },
     {
@@ -33032,7 +33423,7 @@
       "stage1_score": 62.9,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 86.22,
         "ma60_slope_pct": 17.51,
         "box_high": 12440.0,
@@ -33142,9 +33533,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +5",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 2.17x"
           ],
           "minervini": [
@@ -33185,7 +33576,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "60>240 정배열",
@@ -33297,7 +33688,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -34446,8 +34837,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=183300",
       "confluence": {
-        "peer_count": 1,
-        "labeled_peers": 1,
+        "peer_count": 2,
+        "labeled_peers": 2,
         "ratio": 1.0
       }
     },
@@ -37373,7 +37764,7 @@
       "stage1_score": 66.4,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 90.58,
         "ma60_slope_pct": 3.87,
         "box_high": 7170.0,
@@ -37483,9 +37874,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +4",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 1.79x"
           ],
           "minervini": [
@@ -37517,7 +37908,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "거래대금 체급↑ 1.79x"
         ],
         "fail": [
@@ -37627,7 +38018,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -39172,7 +39563,7 @@
       "stage1_score": 81.7,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 59.82,
         "ma60_slope_pct": -2.72,
         "box_high": 20000.0,
@@ -39282,9 +39673,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA +7",
-            "중기 매집 241일",
+            "중기 매집 240일",
             "거래대금 체급↑ 2.29x"
           ],
           "minervini": [
@@ -39322,7 +39713,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "거래대금 체급↑ 2.29x",
@@ -39434,7 +39825,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -39495,8 +39886,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=006660",
       "confluence": {
-        "peer_count": 2,
-        "labeled_peers": 2,
+        "peer_count": 3,
+        "labeled_peers": 3,
         "ratio": 1.0
       }
     },
@@ -39530,7 +39921,7 @@
       "stage1_score": 84.8,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 76.26,
         "ma60_slope_pct": -4.3,
         "box_high": 36950.0,
@@ -39640,9 +40031,9 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
+            "매집 진행 240일",
             "VSA 분산 의심",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "close>MA60",
@@ -39677,7 +40068,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "개인 누적 -"
         ],
@@ -39788,7 +40179,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -39849,8 +40240,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=007390",
       "confluence": {
-        "peer_count": 2,
-        "labeled_peers": 2,
+        "peer_count": 1,
+        "labeled_peers": 1,
         "ratio": 1.0
       }
     },
@@ -39884,7 +40275,7 @@
       "stage1_score": 72.7,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 241,
+        "duration": 240,
         "range_pct": 59.51,
         "ma60_slope_pct": 0.79,
         "box_high": 9060.0,
@@ -39994,8 +40385,8 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 241일",
-            "중기 매집 241일",
+            "매집 진행 240일",
+            "중기 매집 240일",
             "거래대금 체급↑ 1.99x"
           ],
           "minervini": [
@@ -40029,7 +40420,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 241일",
+          "매집 240일",
           "스마트머니 누적 +",
           "거래대금 체급↑ 1.99x"
         ],
@@ -40139,7 +40530,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 241,
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -40200,8 +40591,8 @@
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=142210",
       "confluence": {
-        "peer_count": 3,
-        "labeled_peers": 3,
+        "peer_count": 4,
+        "labeled_peers": 4,
         "ratio": 1.0
       }
     },
@@ -40943,7 +41334,7 @@
       "position": {
         "label": "매집중",
         "color": "watch",
-        "desc": "매집 진행 중 (241일)"
+        "desc": "매집 진행 중 (240일)"
       },
       "risk": {
         "signals": [],
@@ -40959,7 +41350,7 @@
       "stage1_score": 64.1,
       "accumulation": {
         "in_accumulation": true,
-        "duration": 241,
+        "duration": 240,
         "range_pct": "8.05",
         "ma60_slope_pct": -0.51,
         "box_high": 11890.0,
@@ -41071,7 +41462,7 @@
         "items": {
           "wyckoff": [
             "매집 단계 ON",
-            "중기 매집 241일"
+            "중기 매집 240일"
           ],
           "minervini": [
             "MA240 -15% 이내",
@@ -41214,8 +41605,8 @@
         },
         "wyckoff": {
           "name": "와이코프 단계",
-          "phase": "Accumulation (매집, 241일)",
-          "duration": 241,
+          "phase": "Accumulation (매집, 240일)",
+          "duration": 240,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
