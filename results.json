@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-06-22T21:53:11.093611",
-  "elapsed_sec": 111.5,
-  "stage1_elapsed": 17.3,
-  "stage2_elapsed": 72.9,
+  "generated_at": "2026-06-23T01:47:13.141649",
+  "elapsed_sec": 105.9,
+  "stage1_elapsed": 20.5,
+  "stage2_elapsed": 66.2,
   "universe_size": 495,
   "stage1_passed": 52,
   "stage2_passed": 52,
@@ -91,7 +91,7 @@
       "stage1_score": 100.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 59.91,
         "ma60_slope_pct": 9.22,
         "box_high": 11800.0,
@@ -105,11 +105,11 @@
         "ma60": 8212.0,
         "rvol": 3.73,
         "amount_mult": 4.45,
-        "amount_trend": 1.91,
+        "amount_trend": null,
         "rs_120d_pp": -62.38,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -192,46 +192,38 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 40.0,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 50,
+          "wyckoff": 35,
+          "minervini": 10.0,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 25,
           "korean": 40
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +6",
-            "중기 매집 240일",
-            "거래대금 체급↑ 1.91x"
+            "중기 매집 239일"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "S: 강도 20.7"
           ],
           "livermore": [
-            "정배열",
             "거래량 폭발 3.73"
           ],
           "korean": [
             "주봉 동시매수 10주"
           ]
         },
-        "ensemble": 46.2,
-        "masters_70plus": 1,
+        "ensemble": 27.0,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -250,19 +242,17 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
+          "매집 239일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 20.7/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.91x",
           "52주 신고가 (보조)"
         ],
         "fail": [
           "출발 신호 없음"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -284,7 +274,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -297,9 +287,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 5,
+          "fulfilled": 4,
           "total": 5,
-          "percent": 100
+          "percent": 80
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -334,12 +324,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -364,7 +354,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -502,7 +492,7 @@
       "stage1_score": 100.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 106.33,
         "ma60_slope_pct": 19.17,
         "box_high": 23150.0,
@@ -516,7 +506,7 @@
         "ma60": 10062.116666666667,
         "rvol": 11.35,
         "amount_mult": 14.05,
-        "amount_trend": 3.25,
+        "amount_trend": null,
         "rs_120d_pp": 9.38,
         "is_52w_high": true,
         "strong_close": true,
@@ -603,8 +593,8 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 39.1,
+          "wyckoff": 35,
+          "minervini": 19.1,
           "weinstein": 0,
           "oneil": 80,
           "livermore": 25,
@@ -612,15 +602,12 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +6",
-            "중기 매집 240일",
-            "거래대금 체급↑ 3.25x"
+            "중기 매집 239일"
           ],
           "minervini": [
-            "close>MA60",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
           "weinstein": [],
           "oneil": [
@@ -637,7 +624,7 @@
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 37.1,
+        "ensemble": 30.6,
         "masters_70plus": 1,
         "masters_80plus": 1
       },
@@ -657,11 +644,10 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
+          "매집 239일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 15.9/25",
-          "거래대금 체급↑ 3.25x",
           "52주 신고가 (보조)",
           "RS +9.38%p"
         ],
@@ -669,7 +655,7 @@
           "출발 신호 없음"
         ],
         "supply_passed": 2,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -771,7 +757,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -909,7 +895,7 @@
       "stage1_score": 100.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 66.21,
         "ma60_slope_pct": -6.6,
         "box_high": 1546.0,
@@ -923,7 +909,7 @@
         "ma60": 1080.85,
         "rvol": 3.53,
         "amount_mult": 4.51,
-        "amount_trend": 0.47,
+        "amount_trend": null,
         "rs_120d_pp": -103.43,
         "is_52w_high": true,
         "strong_close": true,
@@ -1011,7 +997,7 @@
       "ensemble": {
         "scores": {
           "wyckoff": 35,
-          "minervini": 30.0,
+          "minervini": 10.0,
           "weinstein": 0,
           "oneil": 45,
           "livermore": 25,
@@ -1019,14 +1005,12 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +6",
-            "중기 매집 240일"
+            "중기 매집 239일"
           ],
           "minervini": [
-            "close>MA60",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
           "weinstein": [],
           "oneil": [
@@ -1041,7 +1025,7 @@
             "동시매수 11/20일"
           ]
         },
-        "ensemble": 27.4,
+        "ensemble": 23.4,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -1061,7 +1045,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
+          "매집 239일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "52주 신고가 (보조)"
@@ -1172,7 +1156,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -1308,7 +1292,7 @@
       "stage1_score": 73.2,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 118.12,
         "ma60_slope_pct": 61.93,
         "box_high": 16430.0,
@@ -1322,11 +1306,11 @@
         "ma60": 9376.0,
         "rvol": 4.77,
         "amount_mult": 5.5,
-        "amount_trend": 3.37,
+        "amount_trend": null,
         "rs_120d_pp": 46.51,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -1409,42 +1393,34 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 45.0,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 50,
+          "wyckoff": 35,
+          "minervini": 15.0,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 25,
           "korean": 13
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +3",
-            "중기 매집 240일",
-            "거래대금 체급↑ 3.37x"
+            "중기 매집 239일"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +46.51%p"
           ],
           "livermore": [
-            "정배열",
             "거래량 폭발 4.77"
           ],
           "korean": []
         },
-        "ensemble": 41.2,
+        "ensemble": 21.9,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -1464,11 +1440,9 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
+          "매집 239일",
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 3.37x",
           "52주 신고가 (보조)",
           "RS +46.51%p"
         ],
@@ -1477,7 +1451,7 @@
           "시총 6281억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -1499,7 +1473,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -1512,9 +1486,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -1549,12 +1523,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -1579,7 +1553,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -1639,414 +1613,6 @@
         "annual_yoy_pct": -38.9
       },
       "naver_url": "https://finance.naver.com/item/main.naver?code=004710",
-      "confluence": {
-        "peer_count": 2,
-        "labeled_peers": 2,
-        "ratio": 1.0
-      }
-    },
-    {
-      "ticker": "067290",
-      "name": "JW신약",
-      "market": "KOSDAQ",
-      "marcap": 152981291190,
-      "labels": [
-        "⚡단타",
-        "🌅폭발임박",
-        "🔥실적폭발"
-      ],
-      "trading_guide": {
-        "rule": {
-          "size": "관찰 → 돌파 확인 후 1/4",
-          "stop_pct": -5.0,
-          "tp1_pct": 15.0,
-          "tp1_portion": "1/2",
-          "tp2_pct": 30.0,
-          "tp2_portion": "추가 1/2",
-          "trail": null,
-          "horizon": "단기~중기",
-          "note": "돌파 캔들 close 확인 후 진입, 고점 회피"
-        },
-        "rule_label": "🌅폭발임박",
-        "fib": {
-          "box_low": 1246.0,
-          "box_high": 2930.0,
-          "box_range": 1684.0,
-          "current": 2730.0,
-          "retracement": {
-            "0.236": 2532.6,
-            "0.382": 2286.7,
-            "0.500": 2088.0,
-            "0.618": 1889.3,
-            "0.786": 1606.4
-          },
-          "extension": {
-            "1.000": 4614.0,
-            "1.272": 5072.0,
-            "1.618": 5654.7,
-            "2.618": 7338.7,
-            "4.236": 10063.4
-          },
-          "retracement_pct": 11.9,
-          "zone": "IN_BOX"
-        },
-        "computed": {
-          "stop_price": 2593.5,
-          "tp1_price": 3139.5,
-          "tp2_price": 3549.0
-        }
-      },
-      "position": {
-        "label": "돌파진행",
-        "color": "good",
-        "desc": "출발 신호 점등 — 진입 검토"
-      },
-      "risk": {
-        "signals": [
-          "RSI 부담권 (80)"
-        ],
-        "severity": "watch"
-      },
-      "score": {
-        "total": 24.0,
-        "confluence": 12.0,
-        "intensity": 0,
-        "persistence": 2.0,
-        "aux": 10.0
-      },
-      "stage1_score": 96.3,
-      "accumulation": {
-        "in_accumulation": false,
-        "duration": 240,
-        "range_pct": 80.65,
-        "ma60_slope_pct": -10.61,
-        "box_high": 2930.0,
-        "box_low": 1246.0,
-        "lookback_used": 60
-      },
-      "metrics": {
-        "close": 2730.0,
-        "ma5": 2252.6,
-        "ma20": 1641.6,
-        "ma60": 1838.0333333333333,
-        "rvol": 3.98,
-        "amount_mult": 4.81,
-        "amount_trend": 1.91,
-        "rs_120d_pp": -83.55,
-        "is_52w_high": true,
-        "strong_close": true,
-        "ma60_above_ma240": true
-      },
-      "weekly_pack": {
-        "accum": {
-          "in_accumulation": false,
-          "weeks": 0,
-          "range_pct": null,
-          "box_high": 2930.0,
-          "box_low": 1246.0,
-          "ma20w_slope_pct": -3.62
-        },
-        "vcp": {
-          "vcp": false,
-          "widths_pct": [
-            "41.75",
-            "35.29",
-            "31.29",
-            "80.65"
-          ],
-          "vol_dried": false
-        },
-        "dry_explode": {
-          "dry_to_explode": false,
-          "dried_ratio": 25.21,
-          "explode_ratio": 0.99
-        },
-        "smart_money_w": {
-          "available": true,
-          "weeks_analyzed": 23,
-          "foreign_sum": -144550.0,
-          "inst_sum": 82641.0,
-          "individual_sum": 61909.0,
-          "foreign_buy_weeks": 15,
-          "inst_buy_weeks": 15,
-          "coincide_weeks": 11,
-          "smart_money_positive": true,
-          "individual_negative": false
-        },
-        "breakout_w": {
-          "breakout": false,
-          "price_breakout": false,
-          "vol_breakout": true,
-          "vol_ratio": 3.03
-        }
-      },
-      "wyckoff": {
-        "spring": {
-          "spring": false
-        },
-        "sos": {
-          "sos": false
-        },
-        "vsa": {
-          "vsa_score": 2,
-          "harmful_days": 2,
-          "harmful": true
-        },
-        "stage_1_to_2_pattern": false
-      },
-      "vcp": {
-        "vcp_score": 16.7,
-        "vcp_detected": false,
-        "widths_pct": [
-          "21.53",
-          "20.41",
-          "28.83",
-          "80.65"
-        ],
-        "atr_ratio": 1.25,
-        "atr_compressed": false,
-        "last_vol_dry": false,
-        "components": {
-          "width_contraction": 0.0,
-          "vol_contraction": 16.7,
-          "last_vol_dry": 0,
-          "atr_compression": 0
-        }
-      },
-      "mansfield": {
-        "available": false
-      },
-      "ensemble": {
-        "scores": {
-          "wyckoff": 25,
-          "minervini": 48.4,
-          "weinstein": 40,
-          "oneil": 40,
-          "livermore": 50,
-          "korean": 24
-        },
-        "items": {
-          "wyckoff": [
-            "매집 진행 240일",
-            "VSA 분산 의심",
-            "중기 매집 240일",
-            "거래대금 체급↑ 1.91x"
-          ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
-          "oneil": [
-            "기관 60일 +",
-            "52주 신고가",
-            "M: 정배열"
-          ],
-          "livermore": [
-            "정배열",
-            "거래량 폭발 3.98"
-          ],
-          "korean": [
-            "동시매수 8/20일",
-            "주봉 동시매수 11주"
-          ]
-        },
-        "ensemble": 37.0,
-        "masters_70plus": 0,
-        "masters_80plus": 0
-      },
-      "short_term": {
-        "triggered": true,
-        "reasons": [
-          "거래대금 4.8배",
-          "rvol 3.98",
-          "종가 강세",
-          "당일 수급 진입"
-        ],
-        "fail": [
-          "박스 미돌파"
-        ],
-        "checks_passed": 4
-      },
-      "tenbagger": {
-        "triggered": false,
-        "reasons": [
-          "매집 240일",
-          "스마트머니 누적 +",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.91x",
-          "52주 신고가 (보조)"
-        ],
-        "fail": [
-          "출발 신호 없음"
-        ],
-        "supply_passed": 0,
-        "chart_passed": 2,
-        "weekly_accum_weeks": 0,
-        "weekly_breakout": false,
-        "dry_explode": false
-      },
-      "masters": {
-        "oneil": {
-          "name": "오닐 CAN SLIM",
-          "items": [
-            {
-              "key": "I",
-              "label": "기관 후원 (외인+기관 60일 +)",
-              "ok": false
-            },
-            {
-              "key": "N",
-              "label": "52주 신고가권",
-              "ok": true
-            },
-            {
-              "key": "M",
-              "label": "장기 정배열 (60>240)",
-              "ok": true
-            },
-            {
-              "key": "S",
-              "label": "수급 강도 양호 (intensity≥10)",
-              "ok": false
-            },
-            {
-              "key": "L",
-              "label": "단기 모멘텀 (rvol≥1.5 강한 마감)",
-              "ok": true
-            }
-          ],
-          "fulfilled": 3,
-          "total": 5,
-          "percent": 60
-        },
-        "minervini": {
-          "name": "미너비니 Trend Template",
-          "items": [
-            {
-              "label": "현재가 > 150일선 > 200일선",
-              "ok": true
-            },
-            {
-              "label": "200일선 상승 중",
-              "ok": true
-            },
-            {
-              "label": "50일선 > 150일선 > 200일선",
-              "ok": false
-            },
-            {
-              "label": "현재가 > 50일선",
-              "ok": true
-            },
-            {
-              "label": "52주 저가 대비 +30%↑",
-              "ok": true
-            },
-            {
-              "label": "52주 고가의 -25% 이내",
-              "ok": true
-            },
-            {
-              "label": "52주 고가의 -15% 이내 (강함)",
-              "ok": true
-            },
-            {
-              "label": "장기 정배열 (60>240)",
-              "ok": true
-            }
-          ],
-          "fulfilled": 7,
-          "total": 8,
-          "percent": 88
-        },
-        "weinstein": {
-          "name": "와인스타인 Stage",
-          "stage": "Stage 2 (상승 추세)",
-          "ok": true,
-          "ma150_slope_pct": 3.19,
-          "items": [
-            {
-              "label": "현재가 > 150일선",
-              "ok": true
-            },
-            {
-              "label": "150일선 상승 중",
-              "ok": true
-            },
-            {
-              "label": "52주 신고가권",
-              "ok": true
-            }
-          ]
-        },
-        "wyckoff": {
-          "name": "와이코프 단계",
-          "phase": "Markup 진행 (마크업)",
-          "duration": 240,
-          "items": [
-            {
-              "label": "박스권 횡보 (range≤40%)",
-              "ok": false
-            },
-            {
-              "label": "매집 60일+",
-              "ok": true
-            },
-            {
-              "label": "거래량 폭발 (rvol≥1.8)",
-              "ok": true
-            },
-            {
-              "label": "외인 60일 누적 +",
-              "ok": "False"
-            }
-          ],
-          "fulfilled": 2,
-          "total": 4,
-          "percent": 50
-        },
-        "livermore": {
-          "name": "리버모어 Pivot",
-          "type": "Continuation Pivot (단타 가능)",
-          "items": [
-            {
-              "label": "박스 상단 돌파",
-              "ok": false
-            },
-            {
-              "label": "거래량 동반 (rvol≥1.5)",
-              "ok": true
-            },
-            {
-              "label": "강한 마감 (윗꼬리 짧음)",
-              "ok": true
-            },
-            {
-              "label": "신고가 (52주)",
-              "ok": true
-            }
-          ],
-          "fulfilled": 3,
-          "total": 4,
-          "percent": 75
-        }
-      },
-      "earnings": {
-        "label": "🔥실적폭발",
-        "yoy_pct": 314.3,
-        "period": "2026.03 vs 2025.03",
-        "status": "growing",
-        "quarterly_label": "🔥실적폭발",
-        "quarterly_yoy_pct": 314.3,
-        "annual_label": "↘️실적감소",
-        "annual_yoy_pct": -25.0
-      },
-      "naver_url": "https://finance.naver.com/item/main.naver?code=067290",
       "confluence": {
         "peer_count": 2,
         "labeled_peers": 2,
@@ -2135,11 +1701,11 @@
         "ma60": 40760.0,
         "rvol": 3.11,
         "amount_mult": 3.65,
-        "amount_trend": 1.75,
+        "amount_trend": null,
         "rs_120d_pp": 1.2,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -2222,45 +1788,37 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 44.1,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 50,
+          "wyckoff": 20,
+          "minervini": 14.2,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 25,
           "korean": 38
         },
         "items": {
           "wyckoff": [
             "매집 진행 98일",
-            "단기 매집",
-            "거래대금 체급↑ 1.75x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +1.2%p",
             "S: 강도 17.6"
           ],
           "livermore": [
-            "정배열",
             "거래량 폭발 3.11"
           ],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 43.0,
-        "masters_70plus": 1,
+        "ensemble": 23.8,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -2282,8 +1840,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 17.6/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.75x",
           "52주 신고가 (보조)",
           "RS +1.2%p"
         ],
@@ -2293,7 +1849,7 @@
           "시총 37760억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -2315,7 +1871,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -2328,9 +1884,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 4,
+          "fulfilled": 3,
           "total": 5,
-          "percent": 80
+          "percent": 60
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -2365,12 +1921,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -2543,11 +2099,11 @@
         "ma60": 29350.833333333332,
         "rvol": 1.88,
         "amount_mult": 2.06,
-        "amount_trend": 1.08,
+        "amount_trend": null,
         "rs_120d_pp": -87.21,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -2631,10 +2187,10 @@
       "ensemble": {
         "scores": {
           "wyckoff": 10,
-          "minervini": 30.0,
-          "weinstein": 40,
-          "oneil": 45,
-          "livermore": 40,
+          "minervini": 0,
+          "weinstein": 0,
+          "oneil": 35,
+          "livermore": 15,
           "korean": 29
         },
         "items": {
@@ -2643,26 +2199,18 @@
             "VSA 분산 의심",
             "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "S: 강도 19.2"
           ],
           "livermore": [
-            "정배열",
             "거래량 양호 1.88"
           ],
           "korean": []
         },
-        "ensemble": 29.4,
+        "ensemble": 12.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -2684,15 +2232,14 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "수급 강도 19.2/25",
-          "60>240 정배열"
+          "수급 강도 19.2/25"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 116일)",
           "출발 신호 없음"
         ],
         "supply_passed": 2,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -2714,7 +2261,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -2727,9 +2274,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -2764,12 +2311,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 7,
+          "fulfilled": 6,
           "total": 8,
-          "percent": 88
+          "percent": 75
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -2942,11 +2489,11 @@
         "ma60": 5085.833333333333,
         "rvol": 1.69,
         "amount_mult": 2.34,
-        "amount_trend": 1.75,
+        "amount_trend": null,
         "rs_120d_pp": 138.33,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -3029,43 +2576,34 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 40,
+          "wyckoff": 30,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 15,
           "korean": 29
         },
         "items": {
           "wyckoff": [
             "매집 진행 122일",
             "VSA +4",
-            "단기 매집",
-            "거래대금 체급↑ 1.75x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +138.33%p"
           ],
           "livermore": [
-            "정배열",
             "거래량 양호 1.69"
           ],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 39.7,
+        "ensemble": 20.4,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -3087,8 +2625,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.75x",
           "RS +138.33%p"
         ],
         "fail": [
@@ -3096,7 +2632,7 @@
           "출발 신호 없음"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -3118,7 +2654,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -3131,9 +2667,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -3168,12 +2704,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -3346,11 +2882,11 @@
         "ma60": 26544.666666666668,
         "rvol": 1.96,
         "amount_mult": 2.18,
-        "amount_trend": 2.42,
+        "amount_trend": null,
         "rs_120d_pp": 0.04,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -3433,41 +2969,32 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 40,
+          "wyckoff": 30,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 15,
           "korean": 7
         },
         "items": {
           "wyckoff": [
             "매집 진행 102일",
             "VSA +5",
-            "단기 매집",
-            "거래대금 체급↑ 2.42x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +0.04%p"
           ],
           "livermore": [
-            "정배열",
             "거래량 양호 1.96"
           ],
           "korean": []
         },
-        "ensemble": 36.4,
+        "ensemble": 17.1,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -3489,8 +3016,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.42x",
           "RS +0.04%p"
         ],
         "fail": [
@@ -3499,7 +3024,7 @@
           "시총 8311억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -3521,7 +3046,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -3534,9 +3059,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -3571,12 +3096,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -3668,6 +3193,402 @@
       }
     },
     {
+      "ticker": "067290",
+      "name": "JW신약",
+      "market": "KOSDAQ",
+      "marcap": 152981291190,
+      "labels": [
+        "⚡단타",
+        "🔥실적폭발"
+      ],
+      "trading_guide": {
+        "rule": {
+          "size": "1/4~1/3",
+          "stop_pct": -5.0,
+          "tp1_pct": 7.0,
+          "tp1_portion": "전량",
+          "tp2_pct": null,
+          "tp2_portion": null,
+          "trail": null,
+          "horizon": "3~7일 (7일 내 폭발 못 하면 출구)",
+          "note": "기계적 손절·익절, 미루지 말 것"
+        },
+        "rule_label": "⚡단타",
+        "fib": {
+          "box_low": 1246.0,
+          "box_high": 2930.0,
+          "box_range": 1684.0,
+          "current": 2730.0,
+          "retracement": {
+            "0.236": 2532.6,
+            "0.382": 2286.7,
+            "0.500": 2088.0,
+            "0.618": 1889.3,
+            "0.786": 1606.4
+          },
+          "extension": {
+            "1.000": 4614.0,
+            "1.272": 5072.0,
+            "1.618": 5654.7,
+            "2.618": 7338.7,
+            "4.236": 10063.4
+          },
+          "retracement_pct": 11.9,
+          "zone": "IN_BOX"
+        },
+        "computed": {
+          "stop_price": 2593.5,
+          "tp1_price": 2921.1
+        }
+      },
+      "position": {
+        "label": "돌파진행",
+        "color": "good",
+        "desc": "출발 신호 점등 — 진입 검토"
+      },
+      "risk": {
+        "signals": [
+          "RSI 부담권 (80)"
+        ],
+        "severity": "watch"
+      },
+      "score": {
+        "total": 24.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 10.0
+      },
+      "stage1_score": 96.3,
+      "accumulation": {
+        "in_accumulation": false,
+        "duration": 239,
+        "range_pct": 80.65,
+        "ma60_slope_pct": -10.61,
+        "box_high": 2930.0,
+        "box_low": 1246.0,
+        "lookback_used": 60
+      },
+      "metrics": {
+        "close": 2730.0,
+        "ma5": 2252.6,
+        "ma20": 1641.6,
+        "ma60": 1838.0333333333333,
+        "rvol": 3.98,
+        "amount_mult": 4.81,
+        "amount_trend": null,
+        "rs_120d_pp": -83.55,
+        "is_52w_high": true,
+        "strong_close": true,
+        "ma60_above_ma240": false
+      },
+      "weekly_pack": {
+        "accum": {
+          "in_accumulation": false,
+          "weeks": 0,
+          "range_pct": null,
+          "box_high": 2930.0,
+          "box_low": 1246.0,
+          "ma20w_slope_pct": -3.62
+        },
+        "vcp": {
+          "vcp": false,
+          "widths_pct": [
+            "41.75",
+            "35.29",
+            "31.29",
+            "80.65"
+          ],
+          "vol_dried": false
+        },
+        "dry_explode": {
+          "dry_to_explode": false,
+          "dried_ratio": 25.21,
+          "explode_ratio": 0.99
+        },
+        "smart_money_w": {
+          "available": true,
+          "weeks_analyzed": 23,
+          "foreign_sum": -144550.0,
+          "inst_sum": 82641.0,
+          "individual_sum": 61909.0,
+          "foreign_buy_weeks": 15,
+          "inst_buy_weeks": 15,
+          "coincide_weeks": 11,
+          "smart_money_positive": true,
+          "individual_negative": false
+        },
+        "breakout_w": {
+          "breakout": false,
+          "price_breakout": false,
+          "vol_breakout": true,
+          "vol_ratio": 3.03
+        }
+      },
+      "wyckoff": {
+        "spring": {
+          "spring": false
+        },
+        "sos": {
+          "sos": false
+        },
+        "vsa": {
+          "vsa_score": 2,
+          "harmful_days": 2,
+          "harmful": true
+        },
+        "stage_1_to_2_pattern": false
+      },
+      "vcp": {
+        "vcp_score": 16.7,
+        "vcp_detected": false,
+        "widths_pct": [
+          "21.53",
+          "20.41",
+          "28.83",
+          "80.65"
+        ],
+        "atr_ratio": 1.25,
+        "atr_compressed": false,
+        "last_vol_dry": false,
+        "components": {
+          "width_contraction": 0.0,
+          "vol_contraction": 16.7,
+          "last_vol_dry": 0,
+          "atr_compression": 0
+        }
+      },
+      "mansfield": {
+        "available": false
+      },
+      "ensemble": {
+        "scores": {
+          "wyckoff": 15,
+          "minervini": 18.4,
+          "weinstein": 0,
+          "oneil": 30,
+          "livermore": 25,
+          "korean": 24
+        },
+        "items": {
+          "wyckoff": [
+            "매집 진행 239일",
+            "VSA 분산 의심",
+            "중기 매집 239일"
+          ],
+          "minervini": [
+            "52주 신고가"
+          ],
+          "weinstein": [],
+          "oneil": [
+            "기관 60일 +",
+            "52주 신고가"
+          ],
+          "livermore": [
+            "거래량 폭발 3.98"
+          ],
+          "korean": [
+            "동시매수 8/20일",
+            "주봉 동시매수 11주"
+          ]
+        },
+        "ensemble": 17.8,
+        "masters_70plus": 0,
+        "masters_80plus": 0
+      },
+      "short_term": {
+        "triggered": true,
+        "reasons": [
+          "거래대금 4.8배",
+          "rvol 3.98",
+          "종가 강세",
+          "당일 수급 진입"
+        ],
+        "fail": [
+          "박스 미돌파"
+        ],
+        "checks_passed": 4
+      },
+      "tenbagger": {
+        "triggered": false,
+        "reasons": [
+          "매집 239일",
+          "스마트머니 누적 +",
+          "52주 신고가 (보조)"
+        ],
+        "fail": [
+          "출발 신호 없음"
+        ],
+        "supply_passed": 0,
+        "chart_passed": 0,
+        "weekly_accum_weeks": 0,
+        "weekly_breakout": false,
+        "dry_explode": false
+      },
+      "masters": {
+        "oneil": {
+          "name": "오닐 CAN SLIM",
+          "items": [
+            {
+              "key": "I",
+              "label": "기관 후원 (외인+기관 60일 +)",
+              "ok": false
+            },
+            {
+              "key": "N",
+              "label": "52주 신고가권",
+              "ok": true
+            },
+            {
+              "key": "M",
+              "label": "장기 정배열 (60>240)",
+              "ok": false
+            },
+            {
+              "key": "S",
+              "label": "수급 강도 양호 (intensity≥10)",
+              "ok": false
+            },
+            {
+              "key": "L",
+              "label": "단기 모멘텀 (rvol≥1.5 강한 마감)",
+              "ok": true
+            }
+          ],
+          "fulfilled": 2,
+          "total": 5,
+          "percent": 40
+        },
+        "minervini": {
+          "name": "미너비니 Trend Template",
+          "items": [
+            {
+              "label": "현재가 > 150일선 > 200일선",
+              "ok": true
+            },
+            {
+              "label": "200일선 상승 중",
+              "ok": true
+            },
+            {
+              "label": "50일선 > 150일선 > 200일선",
+              "ok": false
+            },
+            {
+              "label": "현재가 > 50일선",
+              "ok": true
+            },
+            {
+              "label": "52주 저가 대비 +30%↑",
+              "ok": true
+            },
+            {
+              "label": "52주 고가의 -25% 이내",
+              "ok": true
+            },
+            {
+              "label": "52주 고가의 -15% 이내 (강함)",
+              "ok": true
+            },
+            {
+              "label": "장기 정배열 (60>240)",
+              "ok": false
+            }
+          ],
+          "fulfilled": 6,
+          "total": 8,
+          "percent": 75
+        },
+        "weinstein": {
+          "name": "와인스타인 Stage",
+          "stage": "Stage 2 (상승 추세)",
+          "ok": true,
+          "ma150_slope_pct": 3.19,
+          "items": [
+            {
+              "label": "현재가 > 150일선",
+              "ok": true
+            },
+            {
+              "label": "150일선 상승 중",
+              "ok": true
+            },
+            {
+              "label": "52주 신고가권",
+              "ok": true
+            }
+          ]
+        },
+        "wyckoff": {
+          "name": "와이코프 단계",
+          "phase": "Markup 진행 (마크업)",
+          "duration": 239,
+          "items": [
+            {
+              "label": "박스권 횡보 (range≤40%)",
+              "ok": false
+            },
+            {
+              "label": "매집 60일+",
+              "ok": true
+            },
+            {
+              "label": "거래량 폭발 (rvol≥1.8)",
+              "ok": true
+            },
+            {
+              "label": "외인 60일 누적 +",
+              "ok": "False"
+            }
+          ],
+          "fulfilled": 2,
+          "total": 4,
+          "percent": 50
+        },
+        "livermore": {
+          "name": "리버모어 Pivot",
+          "type": "Continuation Pivot (단타 가능)",
+          "items": [
+            {
+              "label": "박스 상단 돌파",
+              "ok": false
+            },
+            {
+              "label": "거래량 동반 (rvol≥1.5)",
+              "ok": true
+            },
+            {
+              "label": "강한 마감 (윗꼬리 짧음)",
+              "ok": true
+            },
+            {
+              "label": "신고가 (52주)",
+              "ok": true
+            }
+          ],
+          "fulfilled": 3,
+          "total": 4,
+          "percent": 75
+        }
+      },
+      "earnings": {
+        "label": "🔥실적폭발",
+        "yoy_pct": 314.3,
+        "period": "2026.03 vs 2025.03",
+        "status": "growing",
+        "quarterly_label": "🔥실적폭발",
+        "quarterly_yoy_pct": 314.3,
+        "annual_label": "↘️실적감소",
+        "annual_yoy_pct": -25.0
+      },
+      "naver_url": "https://finance.naver.com/item/main.naver?code=067290",
+      "confluence": {
+        "peer_count": 2,
+        "labeled_peers": 2,
+        "ratio": 1.0
+      }
+    },
+    {
       "ticker": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
@@ -3749,11 +3670,11 @@
         "ma60": 71012.5,
         "rvol": 2.55,
         "amount_mult": 3.08,
-        "amount_trend": 2.42,
+        "amount_trend": null,
         "rs_120d_pp": 477.75,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -3836,44 +3757,36 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 49.1,
-          "weinstein": 40,
-          "oneil": 70,
-          "livermore": 50,
+          "wyckoff": 30,
+          "minervini": 19.1,
+          "weinstein": 0,
+          "oneil": 60,
+          "livermore": 25,
           "korean": 5
         },
         "items": {
           "wyckoff": [
             "매집 진행 96일",
             "VSA +4",
-            "단기 매집",
-            "거래대금 체급↑ 2.42x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +477.75%p"
           ],
           "livermore": [
-            "정배열",
             "거래량 폭발 2.55"
           ],
           "korean": []
         },
-        "ensemble": 41.1,
-        "masters_70plus": 1,
+        "ensemble": 21.8,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -3894,8 +3807,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.42x",
           "52주 신고가 (보조)",
           "RS +477.75%p"
         ],
@@ -3905,7 +3816,7 @@
           "시총 46153억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -3927,7 +3838,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -3940,9 +3851,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 4,
+          "fulfilled": 3,
           "total": 5,
-          "percent": 80
+          "percent": 60
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -3977,12 +3888,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -4152,11 +4063,11 @@
         "ma60": 23640.333333333332,
         "rvol": 0.62,
         "amount_mult": 0.77,
-        "amount_trend": 3.0,
+        "amount_trend": null,
         "rs_120d_pp": 135.05,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -4239,47 +4150,38 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 49.1,
-          "weinstein": 40,
-          "oneil": 90,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 19.1,
+          "weinstein": 0,
+          "oneil": 80,
+          "livermore": 0,
           "korean": 75
         },
         "items": {
           "wyckoff": [
             "매집 진행 139일",
             "VSA +5",
-            "단기 매집",
-            "거래대금 체급↑ 3.0x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +135.05%p",
             "S: 강도 21.0"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "동시매수 8/20일",
             "외인 매도→매수 전환",
             "주봉 동시매수 13주"
           ]
         },
-        "ensemble": 49.8,
+        "ensemble": 30.6,
         "masters_70plus": 2,
         "masters_80plus": 1
       },
@@ -4303,8 +4205,6 @@
           "외인·기관 동시매수 13주",
           "개인 누적 -",
           "수급 강도 21.0/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 3.0x",
           "52주 신고가 (보조)",
           "RS +135.05%p"
         ],
@@ -4313,7 +4213,7 @@
           "출발 신호 없음"
         ],
         "supply_passed": 3,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -4335,7 +4235,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -4348,9 +4248,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 4,
+          "fulfilled": 3,
           "total": 5,
-          "percent": 80
+          "percent": 60
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -4385,12 +4285,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -4560,11 +4460,11 @@
         "ma60": 10604.833333333334,
         "rvol": 4.18,
         "amount_mult": 4.3,
-        "amount_trend": 0.62,
+        "amount_trend": null,
         "rs_120d_pp": -109.49,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -4648,10 +4548,10 @@
       "ensemble": {
         "scores": {
           "wyckoff": 35,
-          "minervini": 65.8,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 50,
+          "minervini": 35.9,
+          "weinstein": 25,
+          "oneil": 45,
+          "livermore": 25,
           "korean": 49
         },
         "items": {
@@ -4660,22 +4560,17 @@
             "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내",
             "매집 ON"
           ],
           "weinstein": [
-            "Stage 2 (상승)"
+            "Stage 1 (매집)"
           ],
           "oneil": [
             "기관 60일 +",
             "최근 5일 동시매수",
-            "M: 정배열",
             "S: 강도 25"
           ],
           "livermore": [
-            "정배열",
             "거래량 폭발 4.18"
           ],
           "korean": [
@@ -4683,7 +4578,7 @@
             "주봉 동시매수 8주"
           ]
         },
-        "ensemble": 48.3,
+        "ensemble": 35.3,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -4705,15 +4600,14 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "수급 강도 25.0/25",
-          "60>240 정배열"
+          "수급 강도 25.0/25"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 75일)",
           "출발 신호 없음"
         ],
         "supply_passed": 2,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -4735,7 +4629,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -4748,9 +4642,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -4785,12 +4679,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -4963,11 +4857,11 @@
         "ma60": 105910.0,
         "rvol": 1.33,
         "amount_mult": 1.72,
-        "amount_trend": 2.05,
+        "amount_trend": null,
         "rs_120d_pp": 299.58,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -5050,47 +4944,38 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 40.0,
-          "weinstein": 40,
-          "oneil": 85,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 10.0,
+          "weinstein": 0,
+          "oneil": 75,
+          "livermore": 0,
           "korean": 46
         },
         "items": {
           "wyckoff": [
             "매집 진행 67일",
             "VSA +3",
-            "단기 매집",
-            "거래대금 체급↑ 2.05x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "최근 5일 동시매수",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +299.58%p",
             "S: 강도 18.5"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 43.1,
+        "ensemble": 23.9,
         "masters_70plus": 1,
-        "masters_80plus": 1
+        "masters_80plus": 0
       },
       "short_term": {
         "triggered": false,
@@ -5111,8 +4996,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 18.5/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.05x",
           "52주 신고가 (보조)",
           "RS +299.58%p"
         ],
@@ -5122,7 +5005,7 @@
           "시총 52198억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -5144,7 +5027,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -5157,9 +5040,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -5194,12 +5077,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -5332,11 +5215,11 @@
         "ma60": 71155.0,
         "rvol": 0.97,
         "amount_mult": 1.06,
-        "amount_trend": 0.63,
+        "amount_trend": null,
         "rs_120d_pp": -90.64,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -5420,10 +5303,10 @@
       "ensemble": {
         "scores": {
           "wyckoff": 30,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 45,
-          "livermore": 25,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 35,
+          "livermore": 0,
           "korean": 49
         },
         "items": {
@@ -5432,28 +5315,19 @@
             "VSA +4",
             "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "S: 강도 20.5"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "동시매수 11/20일",
             "주봉 동시매수 9주"
           ]
         },
-        "ensemble": 36.1,
+        "ensemble": 19.4,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -5475,8 +5349,7 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "수급 강도 20.5/25",
-          "60>240 정배열"
+          "수급 강도 20.5/25"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 76일)",
@@ -5484,7 +5357,7 @@
           "시총 23733억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -5506,7 +5379,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -5519,9 +5392,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -5556,12 +5429,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -5694,11 +5567,11 @@
         "ma60": 36804.166666666664,
         "rvol": 0.89,
         "amount_mult": 0.92,
-        "amount_trend": 1.61,
+        "amount_trend": null,
         "rs_120d_pp": -80.02,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -5781,40 +5654,30 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 35,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 45,
-          "livermore": 25,
+          "wyckoff": 25,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 35,
+          "livermore": 0,
           "korean": 45
         },
         "items": {
           "wyckoff": [
             "매집 진행 213일",
-            "중기 매집 213일",
-            "거래대금 체급↑ 1.61x"
+            "중기 매집 213일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
-            "M: 정배열",
             "S: 강도 23.1"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "주봉 동시매수 10주"
           ]
         },
-        "ensemble": 37.6,
+        "ensemble": 18.3,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -5837,16 +5700,14 @@
           "매집 213일",
           "스마트머니 누적 +",
           "개인 누적 -",
-          "수급 강도 23.1/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.61x"
+          "수급 강도 23.1/25"
         ],
         "fail": [
           "출발 신호 없음",
           "시총 6248억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -5868,7 +5729,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -5881,9 +5742,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -5918,12 +5779,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -6056,11 +5917,11 @@
         "ma60": 81617.25,
         "rvol": 0.9,
         "amount_mult": 0.93,
-        "amount_trend": 1.59,
+        "amount_trend": null,
         "rs_120d_pp": 17.8,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -6143,39 +6004,29 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 60,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 50,
+          "livermore": 0,
           "korean": 26
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
-            "단기 매집",
-            "거래대금 체급↑ 1.59x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "L: RS +17.8%p",
             "S: 강도 19.7"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 35.0,
+        "ensemble": 15.7,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -6198,8 +6049,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 19.7/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.59x",
           "RS +17.8%p"
         ],
         "fail": [
@@ -6208,7 +6057,7 @@
           "시총 22456억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -6230,7 +6079,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -6243,9 +6092,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -6280,12 +6129,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 7,
+          "fulfilled": 6,
           "total": 8,
-          "percent": 88
+          "percent": 75
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -6420,11 +6269,11 @@
         "ma60": 59340.833333333336,
         "rvol": 1.04,
         "amount_mult": 1.34,
-        "amount_trend": 1.94,
+        "amount_trend": null,
         "rs_120d_pp": 121.25,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -6507,44 +6356,35 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 45.0,
-          "weinstein": 40,
-          "oneil": 90,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 15.0,
+          "weinstein": 0,
+          "oneil": 80,
+          "livermore": 0,
           "korean": 35
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
-            "단기 매집",
-            "거래대금 체급↑ 1.94x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +121.25%p",
             "S: 강도 22.6"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "주봉 동시매수 8주"
           ]
         },
-        "ensemble": 40.5,
+        "ensemble": 21.2,
         "masters_70plus": 1,
         "masters_80plus": 1
       },
@@ -6567,8 +6407,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 22.6/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.94x",
           "52주 신고가 (보조)",
           "RS +121.25%p"
         ],
@@ -6578,7 +6416,7 @@
           "시총 25466억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -6600,7 +6438,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -6613,9 +6451,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 4,
+          "fulfilled": 3,
           "total": 5,
-          "percent": 80
+          "percent": 60
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -6650,12 +6488,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -6788,11 +6626,11 @@
         "ma60": 1110408.3333333333,
         "rvol": 0.54,
         "amount_mult": 0.65,
-        "amount_trend": 3.01,
+        "amount_trend": null,
         "rs_120d_pp": 653.46,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -6875,40 +6713,30 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 60,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 50,
+          "livermore": 0,
           "korean": 27
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
             "VSA +3",
-            "단기 매집",
-            "거래대금 체급↑ 3.01x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "L: RS +653.46%p",
             "S: 강도 20.4"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 36.8,
+        "ensemble": 17.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -6931,8 +6759,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 20.4/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 3.01x",
           "RS +653.46%p"
         ],
         "fail": [
@@ -6941,7 +6767,7 @@
           "시총 1664176억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -6963,7 +6789,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -6976,9 +6802,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -7013,12 +6839,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -7151,11 +6977,11 @@
         "ma60": 79433.33333333333,
         "rvol": 0.58,
         "amount_mult": 0.65,
-        "amount_trend": 0.9,
+        "amount_trend": null,
         "rs_120d_pp": -105.01,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -7239,10 +7065,10 @@
       "ensemble": {
         "scores": {
           "wyckoff": 35,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 60,
-          "livermore": 25,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 50,
+          "livermore": 0,
           "korean": 26
         },
         "items": {
@@ -7251,26 +7077,17 @@
             "VSA +3",
             "중기 매집 157일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "S: 강도 19.2"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 35.4,
+        "ensemble": 18.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -7291,8 +7108,7 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "수급 강도 19.2/25",
-          "60>240 정배열"
+          "수급 강도 19.2/25"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 157일)",
@@ -7300,7 +7116,7 @@
           "시총 47089억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -7322,7 +7138,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -7335,9 +7151,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -7372,12 +7188,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 7,
+          "fulfilled": 6,
           "total": 8,
-          "percent": 88
+          "percent": 75
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -7510,11 +7326,11 @@
         "ma60": 30959.166666666668,
         "rvol": 0.32,
         "amount_mult": 0.35,
-        "amount_trend": 2.55,
+        "amount_trend": null,
         "rs_120d_pp": 105.8,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -7597,45 +7413,35 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 70,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 60,
+          "livermore": 0,
           "korean": 46
         },
         "items": {
           "wyckoff": [
             "매집 진행 66일",
             "VSA +4",
-            "단기 매집",
-            "거래대금 체급↑ 2.55x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
             "최근 5일 동시매수",
-            "M: 정배열",
             "L: RS +105.8%p",
             "S: 강도 19.0"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "동시매수 10/20일",
             "주봉 동시매수 9주"
           ]
         },
-        "ensemble": 41.5,
-        "masters_70plus": 1,
+        "ensemble": 22.2,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -7657,8 +7463,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 19.0/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.55x",
           "RS +105.8%p"
         ],
         "fail": [
@@ -7667,7 +7471,7 @@
           "시총 5827억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -7689,7 +7493,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -7702,9 +7506,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -7739,12 +7543,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -7877,11 +7681,11 @@
         "ma60": 18490.0,
         "rvol": 0.93,
         "amount_mult": 0.85,
-        "amount_trend": 2.78,
+        "amount_trend": null,
         "rs_120d_pp": 39.07,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -7964,44 +7768,34 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 38.4,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 8.3,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 0,
           "korean": 33
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
             "VSA +7",
-            "단기 매집",
-            "거래대금 체급↑ 2.78x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +39.07%p",
             "S: 강도 16.9"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "동시매수 10/20일"
           ]
         },
-        "ensemble": 39.9,
-        "masters_70plus": 1,
+        "ensemble": 20.6,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -8023,8 +7817,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 16.9/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.78x",
           "RS +39.07%p"
         ],
         "fail": [
@@ -8033,7 +7825,7 @@
           "시총 32714억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -8055,7 +7847,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -8068,9 +7860,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -8105,12 +7897,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -8243,11 +8035,11 @@
         "ma60": 63359.166666666664,
         "rvol": 1.36,
         "amount_mult": 1.64,
-        "amount_trend": 1.66,
+        "amount_trend": null,
         "rs_120d_pp": 20.28,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -8330,44 +8122,35 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 40.0,
-          "weinstein": 40,
-          "oneil": 70,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 10.0,
+          "weinstein": 0,
+          "oneil": 60,
+          "livermore": 0,
           "korean": 37
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
-            "단기 매집",
-            "거래대금 체급↑ 1.66x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +20.28%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 37.8,
-        "masters_70plus": 1,
+        "ensemble": 18.6,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -8388,8 +8171,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.66x",
           "52주 신고가 (보조)",
           "RS +20.28%p"
         ],
@@ -8399,7 +8180,7 @@
           "시총 18611억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -8421,7 +8202,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -8434,9 +8215,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 4,
+          "fulfilled": 3,
           "total": 5,
-          "percent": 80
+          "percent": 60
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -8471,12 +8252,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -8609,11 +8390,11 @@
         "ma60": 1630883.3333333333,
         "rvol": 0.92,
         "amount_mult": 1.16,
-        "amount_trend": 2.22,
+        "amount_trend": null,
         "rs_120d_pp": 281.29,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -8696,41 +8477,32 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 48.4,
-          "weinstein": 40,
-          "oneil": 65,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 18.4,
+          "weinstein": 0,
+          "oneil": 55,
+          "livermore": 0,
           "korean": 16
         },
         "items": {
           "wyckoff": [
             "매집 진행 97일",
-            "단기 매집",
-            "거래대금 체급↑ 2.22x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
             "최근 5일 동시매수",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +281.29%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 35.8,
+        "ensemble": 16.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -8751,8 +8523,6 @@
         "triggered": false,
         "reasons": [
           "스마트머니 누적 +",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.22x",
           "52주 신고가 (보조)",
           "RS +281.29%p"
         ],
@@ -8762,7 +8532,7 @@
           "시총 20803782억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 0,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -8784,7 +8554,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -8797,9 +8567,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -8834,12 +8604,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -8972,11 +8742,11 @@
         "ma60": 110103.33333333333,
         "rvol": 1.38,
         "amount_mult": 1.6,
-        "amount_trend": 2.35,
+        "amount_trend": null,
         "rs_120d_pp": 295.74,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -9059,45 +8829,36 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 44.1,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 14.2,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 0,
           "korean": 41
         },
         "items": {
           "wyckoff": [
             "매집 진행 71일",
             "VSA +4",
-            "단기 매집",
-            "거래대금 체급↑ 2.35x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +295.74%p",
             "S: 강도 16.1"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 42.2,
-        "masters_70plus": 1,
+        "ensemble": 23.0,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -9119,8 +8880,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 16.1/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.35x",
           "52주 신고가 (보조)",
           "RS +295.74%p"
         ],
@@ -9130,7 +8889,7 @@
           "시총 20180억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -9152,7 +8911,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -9165,9 +8924,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -9202,12 +8961,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -9342,11 +9101,11 @@
         "ma60": 41280.833333333336,
         "rvol": 1.23,
         "amount_mult": 1.4,
-        "amount_trend": 1.89,
+        "amount_trend": null,
         "rs_120d_pp": 69.53,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -9429,39 +9188,29 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 60,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 50,
+          "livermore": 0,
           "korean": 28
         },
         "items": {
           "wyckoff": [
             "매집 진행 66일",
-            "단기 매집",
-            "거래대금 체급↑ 1.89x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +69.53%p",
             "S: 강도 21.1"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 35.3,
+        "ensemble": 16.0,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -9484,8 +9233,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 21.1/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.89x",
           "RS +69.53%p"
         ],
         "fail": [
@@ -9494,7 +9241,7 @@
           "시총 5916억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -9516,7 +9263,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -9529,9 +9276,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -9566,12 +9313,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -9706,11 +9453,11 @@
         "ma60": 137936.66666666666,
         "rvol": 0.88,
         "amount_mult": 1.03,
-        "amount_trend": 1.39,
+        "amount_trend": null,
         "rs_120d_pp": 22.53,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -9793,39 +9540,29 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 25,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 60,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 50,
+          "livermore": 0,
           "korean": 24
         },
         "items": {
           "wyckoff": [
             "매집 진행 85일",
-            "단기 매집",
-            "거래대금 약↑ 1.39x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "L: RS +22.53%p",
             "S: 강도 19.5"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 32.6,
+        "ensemble": 14.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -9848,8 +9585,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 19.5/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.39x",
           "RS +22.53%p"
         ],
         "fail": [
@@ -9858,7 +9593,7 @@
           "시총 42922억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -9880,7 +9615,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -9893,9 +9628,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -9930,12 +9665,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -10068,11 +9803,11 @@
         "ma60": 2291.5833333333335,
         "rvol": 0.69,
         "amount_mult": 0.65,
-        "amount_trend": 3.41,
+        "amount_trend": null,
         "rs_120d_pp": 135.1,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -10155,42 +9890,32 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 20,
-          "minervini": 30.0,
-          "weinstein": 40,
-          "oneil": 60,
-          "livermore": 25,
+          "wyckoff": 10,
+          "minervini": 0,
+          "weinstein": 0,
+          "oneil": 50,
+          "livermore": 0,
           "korean": 36
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
             "VSA 분산 의심",
-            "단기 매집",
-            "거래대금 체급↑ 3.41x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +135.1%p",
             "S: 강도 13.2"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 32.1,
+        "ensemble": 12.9,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -10212,8 +9937,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "수급 강도 13.2/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 3.41x",
           "RS +135.1%p"
         ],
         "fail": [
@@ -10221,7 +9944,7 @@
           "출발 신호 없음"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -10243,7 +9966,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -10256,9 +9979,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -10293,12 +10016,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -10431,11 +10154,11 @@
         "ma60": 125145.0,
         "rvol": 1.24,
         "amount_mult": 1.49,
-        "amount_trend": 1.84,
+        "amount_trend": null,
         "rs_120d_pp": 51.82,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -10518,39 +10241,29 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 25,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 15,
+          "livermore": 0,
           "korean": 27
         },
         "items": {
           "wyckoff": [
             "매집 진행 97일",
-            "단기 매집",
-            "거래대금 체급↑ 1.84x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
-            "M: 정배열",
             "L: RS +51.82%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 30.8,
+        "ensemble": 11.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -10572,8 +10285,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.84x",
           "RS +51.82%p"
         ],
         "fail": [
@@ -10582,7 +10293,7 @@
           "시총 84670억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -10604,7 +10315,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -10617,9 +10328,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -10654,12 +10365,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -10792,11 +10503,11 @@
         "ma60": 86628.33333333333,
         "rvol": 0.28,
         "amount_mult": 0.34,
-        "amount_trend": 3.35,
+        "amount_trend": null,
         "rs_120d_pp": 304.83,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -10879,44 +10590,34 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 44.1,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 14.2,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 0,
           "korean": 37
         },
         "items": {
           "wyckoff": [
             "매집 진행 70일",
             "VSA +6",
-            "단기 매집",
-            "거래대금 체급↑ 3.35x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +304.83%p",
             "S: 강도 15.6"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "주봉 동시매수 8주"
           ]
         },
-        "ensemble": 41.6,
-        "masters_70plus": 1,
+        "ensemble": 22.4,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -10938,8 +10639,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 15.6/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 3.35x",
           "RS +304.83%p"
         ],
         "fail": [
@@ -10948,7 +10647,7 @@
           "시총 17360억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -10970,7 +10669,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -10983,9 +10682,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -11020,12 +10719,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -11158,11 +10857,11 @@
         "ma60": 494066.6666666667,
         "rvol": 0.86,
         "amount_mult": 0.96,
-        "amount_trend": 1.48,
+        "amount_trend": null,
         "rs_120d_pp": 68.85,
         "is_52w_high": true,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -11245,45 +10944,36 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 35,
-          "minervini": 49.1,
-          "weinstein": 40,
-          "oneil": 70,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 19.1,
+          "weinstein": 0,
+          "oneil": 60,
+          "livermore": 0,
           "korean": 28
         },
         "items": {
           "wyckoff": [
             "매집 진행 106일",
             "VSA +3",
-            "단기 매집",
-            "거래대금 약↑ 1.48x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +68.85%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "주봉 동시매수 11주"
           ]
         },
-        "ensemble": 39.5,
-        "masters_70plus": 1,
+        "ensemble": 21.5,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -11304,8 +10994,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.48x",
           "52주 신고가 (보조)",
           "RS +68.85%p"
         ],
@@ -11315,7 +11003,7 @@
           "시총 529270억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -11337,7 +11025,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -11350,9 +11038,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -11387,12 +11075,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -11513,7 +11201,7 @@
       "stage1_score": 100.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 200.0,
         "ma60_slope_pct": 9.72,
         "box_high": 6250.0,
@@ -11527,11 +11215,11 @@
         "ma60": 1594.3166666666666,
         "rvol": 1.87,
         "amount_mult": 3.61,
-        "amount_trend": 3.73,
+        "amount_trend": null,
         "rs_120d_pp": 212.34,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -11614,44 +11302,36 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 44.1,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 40,
+          "wyckoff": 35,
+          "minervini": 14.2,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 15,
           "korean": 23
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +6",
-            "중기 매집 240일",
-            "거래대금 체급↑ 3.73x"
+            "중기 매집 239일"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +212.34%p",
             "S: 강도 15.5"
           ],
           "livermore": [
-            "정배열",
             "거래량 양호 1.87"
           ],
           "korean": []
         },
-        "ensemble": 43.0,
-        "masters_70plus": 1,
+        "ensemble": 23.8,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -11670,12 +11350,10 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
+          "매집 239일",
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 15.5/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 3.73x",
           "52주 신고가 (보조)",
           "RS +212.34%p"
         ],
@@ -11683,7 +11361,7 @@
           "출발 신호 없음"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -11705,7 +11383,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -11718,9 +11396,9 @@
               "ok": true
             }
           ],
-          "fulfilled": 4,
+          "fulfilled": 3,
           "total": 5,
-          "percent": 80
+          "percent": 60
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -11755,12 +11433,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -11785,7 +11463,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Markup 진행 (마크업)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -11861,7 +11539,7 @@
       "position": {
         "label": "매집중",
         "color": "watch",
-        "desc": "매집 진행 중 (240일)"
+        "desc": "매집 진행 중 (239일)"
       },
       "risk": {
         "signals": [],
@@ -11877,7 +11555,7 @@
       "stage1_score": 65.8,
       "accumulation": {
         "in_accumulation": true,
-        "duration": 240,
+        "duration": 239,
         "range_pct": "11.8",
         "ma60_slope_pct": -1.74,
         "box_high": 11890.0,
@@ -11891,7 +11569,7 @@
         "ma60": 11175.833333333334,
         "rvol": 0.92,
         "amount_mult": 0.9,
-        "amount_trend": 1.21,
+        "amount_trend": null,
         "rs_120d_pp": -129.78,
         "is_52w_high": false,
         "strong_close": false,
@@ -11900,7 +11578,7 @@
       "weekly_pack": {
         "accum": {
           "in_accumulation": true,
-          "weeks": 53,
+          "weeks": 52,
           "range_pct": "11.8",
           "box_high": 11890.0,
           "box_low": 10565.0,
@@ -11979,8 +11657,8 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 25.0,
+          "wyckoff": 40,
+          "minervini": 15.0,
           "weinstein": 25,
           "oneil": 0,
           "livermore": 0,
@@ -11989,11 +11667,9 @@
         "items": {
           "wyckoff": [
             "매집 단계 ON",
-            "중기 매집 240일",
-            "거래대금 약↑ 1.21x"
+            "중기 매집 239일"
           ],
           "minervini": [
-            "MA240 -15% 이내",
             "매집 ON"
           ],
           "weinstein": [
@@ -12003,7 +11679,7 @@
           "livermore": [],
           "korean": []
         },
-        "ensemble": 21.1,
+        "ensemble": 17.8,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -12023,7 +11699,7 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "주봉 매집 53주",
+          "주봉 매집 52주",
           "스마트머니 누적 +",
           "개인 누적 -"
         ],
@@ -12033,7 +11709,7 @@
         ],
         "supply_passed": 1,
         "chart_passed": 0,
-        "weekly_accum_weeks": 53,
+        "weekly_accum_weeks": 52,
         "weekly_breakout": false,
         "dry_explode": false
       },
@@ -12133,8 +11809,8 @@
         },
         "wyckoff": {
           "name": "와이코프 단계",
-          "phase": "Accumulation (매집, 240일)",
-          "duration": 240,
+          "phase": "Accumulation (매집, 239일)",
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -12235,11 +11911,11 @@
         "ma60": 107271.66666666667,
         "rvol": 0.73,
         "amount_mult": 0.88,
-        "amount_trend": 2.08,
+        "amount_trend": null,
         "rs_120d_pp": 230.3,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -12322,43 +11998,34 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 49.1,
-          "weinstein": 40,
-          "oneil": 75,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 19.1,
+          "weinstein": 0,
+          "oneil": 65,
+          "livermore": 0,
           "korean": 22
         },
         "items": {
           "wyckoff": [
             "매집 진행 98일",
             "VSA +5",
-            "단기 매집",
-            "거래대금 체급↑ 2.08x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +230.3%p",
             "S: 강도 22.2"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 40.4,
-        "masters_70plus": 1,
+        "ensemble": 21.1,
+        "masters_70plus": 0,
         "masters_80plus": 0
       },
       "short_term": {
@@ -12380,8 +12047,6 @@
           "스마트머니 누적 +",
           "개인 누적 -",
           "수급 강도 22.2/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.08x",
           "52주 신고가 (보조)",
           "RS +230.3%p"
         ],
@@ -12391,7 +12056,7 @@
           "시총 35506억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -12413,7 +12078,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -12426,9 +12091,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 3,
+          "fulfilled": 2,
           "total": 5,
-          "percent": 60
+          "percent": 40
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -12463,12 +12128,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -12603,11 +12268,11 @@
         "ma60": 30403.333333333332,
         "rvol": 0.71,
         "amount_mult": 0.75,
-        "amount_trend": 1.33,
+        "amount_trend": null,
         "rs_120d_pp": -96.6,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -12690,39 +12355,32 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 40.0,
-          "weinstein": 40,
-          "oneil": 45,
-          "livermore": 25,
+          "wyckoff": 35,
+          "minervini": 10.0,
+          "weinstein": 25,
+          "oneil": 35,
+          "livermore": 0,
           "korean": 27
         },
         "items": {
           "wyckoff": [
             "매집 단계 ON",
-            "단기 매집",
-            "거래대금 약↑ 1.33x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내",
             "매집 ON"
           ],
           "weinstein": [
-            "Stage 2 (상승)"
+            "Stage 1 (매집)"
           ],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "S: 강도 19.6"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 36.3,
+        "ensemble": 22.1,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -12743,9 +12401,7 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "수급 강도 19.6/25",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.33x"
+          "수급 강도 19.6/25"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 76일)",
@@ -12753,7 +12409,7 @@
           "시총 6785억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 2,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -12775,7 +12431,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -12788,9 +12444,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -12825,12 +12481,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -12965,11 +12621,11 @@
         "ma60": 115780.0,
         "rvol": 0.47,
         "amount_mult": 0.58,
-        "amount_trend": 1.77,
+        "amount_trend": null,
         "rs_120d_pp": -8.71,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -13052,40 +12708,30 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 25,
-          "livermore": 25,
+          "wyckoff": 35,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 15,
+          "livermore": 0,
           "korean": 25
         },
         "items": {
           "wyckoff": [
             "매집 진행 192일",
             "VSA +4",
-            "중기 매집 192일",
-            "거래대금 체급↑ 1.77x"
+            "중기 매집 192일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
-            "기관 60일 +",
-            "M: 정배열"
+            "기관 60일 +"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 34.2,
+        "ensemble": 15.0,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -13107,16 +12753,14 @@
         "reasons": [
           "매집 192일",
           "스마트머니 누적 +",
-          "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.77x"
+          "개인 누적 -"
         ],
         "fail": [
           "출발 신호 없음",
           "시총 42267억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -13138,7 +12782,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -13151,9 +12795,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -13188,12 +12832,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -13312,7 +12956,7 @@
       "stage1_score": 72.9,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 79.23,
         "ma60_slope_pct": 10.27,
         "box_high": 17040.0,
@@ -13326,11 +12970,11 @@
         "ma60": 9902.333333333334,
         "rvol": 0.18,
         "amount_mult": 0.18,
-        "amount_trend": 2.89,
+        "amount_trend": null,
         "rs_120d_pp": -50.74,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -13413,39 +13057,28 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 10,
-          "livermore": 25,
+          "wyckoff": 35,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 0,
+          "livermore": 0,
           "korean": 32
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +6",
-            "중기 매집 240일",
-            "거래대금 체급↑ 2.89x"
+            "중기 매집 239일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
-          "oneil": [
-            "M: 정배열"
-          ],
-          "livermore": [
-            "정배열"
-          ],
+          "minervini": [],
+          "weinstein": [],
+          "oneil": [],
+          "livermore": [],
           "korean": [
             "외인 매도→매수 전환"
           ]
         },
-        "ensemble": 33.8,
+        "ensemble": 14.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -13465,16 +13098,14 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
-          "스마트머니 누적 +",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.89x"
+          "매집 239일",
+          "스마트머니 누적 +"
         ],
         "fail": [
           "출발 신호 없음"
         ],
         "supply_passed": 0,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -13496,7 +13127,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -13509,9 +13140,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -13546,12 +13177,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -13576,7 +13207,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -13684,7 +13315,7 @@
         "ma60": 31848.333333333332,
         "rvol": 1.07,
         "amount_mult": 1.09,
-        "amount_trend": 0.95,
+        "amount_trend": null,
         "rs_120d_pp": -134.81,
         "is_52w_high": false,
         "strong_close": false,
@@ -13773,7 +13404,7 @@
       "ensemble": {
         "scores": {
           "wyckoff": 35,
-          "minervini": 34.1,
+          "minervini": 14.2,
           "weinstein": 25,
           "oneil": 15,
           "livermore": 0,
@@ -13785,8 +13416,6 @@
             "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA240 -15% 이내",
             "매집 ON"
           ],
           "weinstein": [
@@ -13798,7 +13427,7 @@
           "livermore": [],
           "korean": []
         },
-        "ensemble": 23.7,
+        "ensemble": 19.7,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -14037,11 +13666,11 @@
         "ma60": 473991.6666666667,
         "rvol": 0.6,
         "amount_mult": 0.67,
-        "amount_trend": 2.02,
+        "amount_trend": null,
         "rs_120d_pp": 66.59,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -14124,38 +13753,28 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 30.0,
-          "weinstein": 40,
-          "oneil": 40,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 0,
+          "weinstein": 0,
+          "oneil": 30,
+          "livermore": 0,
           "korean": 3
         },
         "items": {
           "wyckoff": [
             "매집 진행 97일",
-            "단기 매집",
-            "거래대금 체급↑ 2.02x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "M: 정배열",
             "L: RS +66.59%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 27.7,
+        "ensemble": 8.4,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -14177,8 +13796,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.02x",
           "RS +66.59%p"
         ],
         "fail": [
@@ -14187,7 +13804,7 @@
           "시총 68005억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -14209,7 +13826,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -14222,9 +13839,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -14259,12 +13876,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -14397,11 +14014,11 @@
         "ma60": 369858.3333333333,
         "rvol": 1.12,
         "amount_mult": 1.26,
-        "amount_trend": 1.86,
+        "amount_trend": null,
         "rs_120d_pp": -9.31,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -14484,37 +14101,27 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 30.0,
-          "weinstein": 40,
-          "oneil": 25,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 0,
+          "weinstein": 0,
+          "oneil": 15,
+          "livermore": 0,
           "korean": 5
         },
         "items": {
           "wyckoff": [
             "매집 진행 133일",
-            "단기 매집",
-            "거래대금 체급↑ 1.86x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
-            "기관 60일 +",
-            "M: 정배열"
+            "기관 60일 +"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 26.5,
+        "ensemble": 7.2,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -14535,9 +14142,7 @@
         "triggered": false,
         "reasons": [
           "스마트머니 누적 +",
-          "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.86x"
+          "개인 누적 -"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 133일)",
@@ -14545,7 +14150,7 @@
           "시총 843271억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -14567,7 +14172,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -14580,9 +14185,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -14617,12 +14222,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -14755,11 +14360,11 @@
         "ma60": 12520.833333333334,
         "rvol": 1.14,
         "amount_mult": 1.24,
-        "amount_trend": 2.93,
+        "amount_trend": null,
         "rs_120d_pp": 16.17,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -14842,41 +14447,31 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 44.1,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 14.2,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 0,
           "korean": 17
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
-            "단기 매집",
-            "거래대금 체급↑ 2.93x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +16.17%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "동시매수 10/20일"
           ]
         },
-        "ensemble": 34.1,
+        "ensemble": 14.9,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -14898,8 +14493,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.93x",
           "RS +16.17%p"
         ],
         "fail": [
@@ -14908,7 +14501,7 @@
           "시총 19949억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -14930,7 +14523,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -14943,9 +14536,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -14980,12 +14573,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 7,
+          "fulfilled": 6,
           "total": 8,
-          "percent": 88
+          "percent": 75
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -15104,7 +14697,7 @@
       "stage1_score": 74.1,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 57.48,
         "ma60_slope_pct": 9.44,
         "box_high": 757000.0,
@@ -15118,11 +14711,11 @@
         "ma60": 536158.3333333334,
         "rvol": 0.44,
         "amount_mult": 0.47,
-        "amount_trend": 1.62,
+        "amount_trend": null,
         "rs_120d_pp": -84.3,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -15205,38 +14798,28 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 25,
-          "livermore": 25,
+          "wyckoff": 35,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 15,
+          "livermore": 0,
           "korean": 6
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +3",
-            "중기 매집 240일",
-            "거래대금 체급↑ 1.62x"
+            "중기 매집 239일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
-            "외인 60일 +",
-            "M: 정배열"
+            "외인 60일 +"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 31.4,
+        "ensemble": 12.2,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -15256,18 +14839,16 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
+          "매집 239일",
           "스마트머니 누적 +",
-          "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.62x"
+          "개인 누적 -"
         ],
         "fail": [
           "출발 신호 없음",
           "시총 305835억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -15289,7 +14870,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -15302,9 +14883,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -15339,12 +14920,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -15369,7 +14950,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -15477,11 +15058,11 @@
         "ma60": 309716.6666666667,
         "rvol": 0.96,
         "amount_mult": 1.05,
-        "amount_trend": 1.89,
+        "amount_trend": null,
         "rs_120d_pp": 59.05,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -15564,38 +15145,28 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 30.0,
-          "weinstein": 40,
-          "oneil": 40,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 0,
+          "weinstein": 0,
+          "oneil": 30,
+          "livermore": 0,
           "korean": 10
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
-            "단기 매집",
-            "거래대금 체급↑ 1.89x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +59.05%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 28.8,
+        "ensemble": 9.5,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -15616,8 +15187,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.89x",
           "RS +59.05%p"
         ],
         "fail": [
@@ -15626,7 +15195,7 @@
           "시총 901000억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -15648,7 +15217,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -15661,9 +15230,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -15698,12 +15267,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -15838,11 +15407,11 @@
         "ma60": 22410.833333333332,
         "rvol": 0.39,
         "amount_mult": 0.41,
-        "amount_trend": 2.91,
+        "amount_trend": null,
         "rs_120d_pp": 81.97,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -15925,40 +15494,30 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 48.4,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 18.4,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 0,
           "korean": 5
         },
         "items": {
           "wyckoff": [
             "매집 진행 74일",
             "VSA +6",
-            "단기 매집",
-            "거래대금 체급↑ 2.91x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +81.97%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 35.7,
+        "ensemble": 16.4,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -15979,8 +15538,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.91x",
           "RS +81.97%p"
         ],
         "fail": [
@@ -15988,7 +15545,7 @@
           "출발 신호 없음"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -16010,7 +15567,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -16023,9 +15580,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -16060,12 +15617,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -16200,11 +15757,11 @@
         "ma60": 8600.833333333334,
         "rvol": 0.47,
         "amount_mult": 0.51,
-        "amount_trend": 1.34,
+        "amount_trend": null,
         "rs_120d_pp": -43.92,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -16287,41 +15844,31 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 35,
-          "minervini": 34.1,
-          "weinstein": 40,
-          "oneil": 40,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 4.2,
+          "weinstein": 0,
+          "oneil": 30,
+          "livermore": 0,
           "korean": 18
         },
         "items": {
           "wyckoff": [
             "매집 진행 121일",
             "VSA +3",
-            "단기 매집",
-            "거래대금 약↑ 1.34x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "외인 60일 +",
-            "기관 60일 +",
-            "M: 정배열"
+            "기관 60일 +"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": [
             "주봉 동시매수 9주"
           ]
         },
-        "ensemble": 32.0,
+        "ensemble": 14.0,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -16341,16 +15888,14 @@
         "triggered": false,
         "reasons": [
           "스마트머니 누적 +",
-          "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.34x"
+          "개인 누적 -"
         ],
         "fail": [
           "매집 부족(주봉 0주, 일봉 121일)",
           "출발 신호 없음"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -16372,7 +15917,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -16385,9 +15930,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -16422,12 +15967,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -16562,11 +16107,11 @@
         "ma60": 260418.33333333334,
         "rvol": 0.78,
         "amount_mult": 0.84,
-        "amount_trend": 1.91,
+        "amount_trend": null,
         "rs_120d_pp": 97.92,
         "is_52w_high": false,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -16649,38 +16194,28 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 39.1,
-          "weinstein": 40,
-          "oneil": 40,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 9.2,
+          "weinstein": 0,
+          "oneil": 30,
+          "livermore": 0,
           "korean": 5
         },
         "items": {
           "wyckoff": [
             "매집 진행 88일",
-            "단기 매집",
-            "거래대금 체급↑ 1.91x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +97.92%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 29.8,
+        "ensemble": 10.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -16701,8 +16236,6 @@
         "triggered": false,
         "reasons": [
           "스마트머니 누적 +",
-          "60>240 정배열",
-          "거래대금 체급↑ 1.91x",
           "RS +97.92%p"
         ],
         "fail": [
@@ -16711,7 +16244,7 @@
           "시총 20666595억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 0,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -16733,7 +16266,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -16746,9 +16279,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -16783,12 +16316,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -16923,7 +16456,7 @@
         "ma60": 18655.666666666668,
         "rvol": 7.6,
         "amount_mult": 8.4,
-        "amount_trend": 1.01,
+        "amount_trend": null,
         "rs_120d_pp": -108.3,
         "is_52w_high": false,
         "strong_close": false,
@@ -17011,7 +16544,7 @@
       "ensemble": {
         "scores": {
           "wyckoff": 35,
-          "minervini": 20.0,
+          "minervini": 0,
           "weinstein": 0,
           "oneil": 15,
           "livermore": 25,
@@ -17023,10 +16556,7 @@
             "VSA +5",
             "중기 매집 151일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA240 -15% 이내"
-          ],
+          "minervini": [],
           "weinstein": [],
           "oneil": [
             "외인 60일 +"
@@ -17036,7 +16566,7 @@
           ],
           "korean": []
         },
-        "ensemble": 19.5,
+        "ensemble": 15.5,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -17277,11 +16807,11 @@
         "ma60": 979466.6666666666,
         "rvol": 1.32,
         "amount_mult": 1.86,
-        "amount_trend": 2.49,
+        "amount_trend": null,
         "rs_120d_pp": 403.41,
         "is_52w_high": true,
         "strong_close": true,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -17364,40 +16894,31 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 30,
-          "minervini": 45.0,
-          "weinstein": 40,
-          "oneil": 55,
-          "livermore": 25,
+          "wyckoff": 20,
+          "minervini": 15.0,
+          "weinstein": 0,
+          "oneil": 45,
+          "livermore": 0,
           "korean": 7
         },
         "items": {
           "wyckoff": [
             "매집 진행 100일",
-            "단기 매집",
-            "거래대금 체급↑ 2.49x"
+            "단기 매집"
           ],
           "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "52주 신고가",
-            "MA240 -15% 이내"
+            "52주 신고가"
           ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
             "52주 신고가",
-            "M: 정배열",
             "L: RS +403.41%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 32.8,
+        "ensemble": 13.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -17419,8 +16940,6 @@
         "reasons": [
           "스마트머니 누적 +",
           "개인 누적 -",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.49x",
           "52주 신고가 (보조)",
           "RS +403.41%p"
         ],
@@ -17430,7 +16949,7 @@
           "시총 2599580억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 1,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -17452,7 +16971,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -17465,9 +16984,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 2,
+          "fulfilled": 1,
           "total": 5,
-          "percent": 40
+          "percent": 20
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -17502,12 +17021,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 8,
+          "fulfilled": 7,
           "total": 8,
-          "percent": 100
+          "percent": 88
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -17640,11 +17159,11 @@
         "ma60": 8150.166666666667,
         "rvol": 2.74,
         "amount_mult": 2.83,
-        "amount_trend": 0.73,
+        "amount_trend": null,
         "rs_120d_pp": -123.94,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -17728,10 +17247,10 @@
       "ensemble": {
         "scores": {
           "wyckoff": 10,
-          "minervini": 34.1,
-          "weinstein": 40,
-          "oneil": 10,
-          "livermore": 50,
+          "minervini": 4.2,
+          "weinstein": 0,
+          "oneil": 0,
+          "livermore": 25,
           "korean": 3
         },
         "items": {
@@ -17740,24 +17259,15 @@
             "VSA 분산 의심",
             "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
-          "oneil": [
-            "M: 정배열"
-          ],
+          "minervini": [],
+          "weinstein": [],
+          "oneil": [],
           "livermore": [
-            "정배열",
             "거래량 폭발 2.74"
           ],
           "korean": []
         },
-        "ensemble": 24.3,
+        "ensemble": 7.5,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -17776,16 +17286,14 @@
       },
       "tenbagger": {
         "triggered": false,
-        "reasons": [
-          "60>240 정배열"
-        ],
+        "reasons": [],
         "fail": [
           "매집 부족(주봉 0주, 일봉 77일)",
           "출발 신호 없음",
           "스마트머니 누적 부진"
         ],
         "supply_passed": 0,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -17807,7 +17315,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -17820,9 +17328,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -17857,12 +17365,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 5,
+          "fulfilled": 4,
           "total": 8,
-          "percent": 62
+          "percent": 50
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -17981,7 +17489,7 @@
       "stage1_score": 75.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 56.41,
         "ma60_slope_pct": 3.95,
         "box_high": 7330.0,
@@ -17995,7 +17503,7 @@
         "ma60": 4884.25,
         "rvol": 4.58,
         "amount_mult": 5.09,
-        "amount_trend": 3.1,
+        "amount_trend": null,
         "rs_120d_pp": -101.23,
         "is_52w_high": false,
         "strong_close": true,
@@ -18082,8 +17590,8 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 45,
-          "minervini": 33.4,
+          "wyckoff": 35,
+          "minervini": 13.3,
           "weinstein": 0,
           "oneil": 0,
           "livermore": 25,
@@ -18091,15 +17599,11 @@
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA +6",
-            "중기 매집 240일",
-            "거래대금 체급↑ 3.1x"
+            "중기 매집 239일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA240 -15% 이내"
-          ],
+          "minervini": [],
           "weinstein": [],
           "oneil": [],
           "livermore": [
@@ -18107,7 +17611,7 @@
           ],
           "korean": []
         },
-        "ensemble": 21.7,
+        "ensemble": 15.2,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -18127,15 +17631,14 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
-          "거래대금 체급↑ 3.1x"
+          "매집 239일"
         ],
         "fail": [
           "출발 신호 없음",
           "스마트머니 누적 부진"
         ],
         "supply_passed": 0,
-        "chart_passed": 1,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -18237,7 +17740,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
@@ -18347,7 +17850,7 @@
         "ma60": 6279.833333333333,
         "rvol": 4.28,
         "amount_mult": 4.74,
-        "amount_trend": 1.08,
+        "amount_trend": null,
         "rs_120d_pp": -144.88,
         "is_52w_high": false,
         "strong_close": false,
@@ -18435,7 +17938,7 @@
       "ensemble": {
         "scores": {
           "wyckoff": 30,
-          "minervini": 14.2,
+          "minervini": 4.2,
           "weinstein": 0,
           "oneil": 0,
           "livermore": 25,
@@ -18447,19 +17950,15 @@
             "VSA +7",
             "단기 매집"
           ],
-          "minervini": [
-            "close>MA60"
-          ],
-          "weinstein": [
-            "Stage 4 (하락) 회피"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [],
           "livermore": [
             "거래량 폭발 4.28"
           ],
           "korean": []
         },
-        "ensemble": 14.2,
+        "ensemble": 12.2,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -18699,11 +18198,11 @@
         "ma60": 723975.0,
         "rvol": 0.43,
         "amount_mult": 0.4,
-        "amount_trend": 2.94,
+        "amount_trend": null,
         "rs_120d_pp": 180.87,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -18786,39 +18285,29 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 40,
-          "minervini": 35.0,
-          "weinstein": 40,
-          "oneil": 40,
-          "livermore": 25,
+          "wyckoff": 30,
+          "minervini": 5.0,
+          "weinstein": 0,
+          "oneil": 30,
+          "livermore": 0,
           "korean": 7
         },
         "items": {
           "wyckoff": [
             "매집 진행 64일",
             "VSA +3",
-            "단기 매집",
-            "거래대금 체급↑ 2.94x"
+            "단기 매집"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
+          "minervini": [],
+          "weinstein": [],
           "oneil": [
             "기관 60일 +",
-            "M: 정배열",
             "L: RS +180.87%p"
           ],
-          "livermore": [
-            "정배열"
-          ],
+          "livermore": [],
           "korean": []
         },
-        "ensemble": 31.8,
+        "ensemble": 12.6,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -18839,8 +18328,6 @@
         "triggered": false,
         "reasons": [
           "스마트머니 누적 +",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.94x",
           "RS +180.87%p"
         ],
         "fail": [
@@ -18849,7 +18336,7 @@
           "시총 267438억 (텐버거 cap 5000억 초과)"
         ],
         "supply_passed": 0,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -18871,7 +18358,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -18884,9 +18371,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -18921,12 +18408,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 6,
+          "fulfilled": 5,
           "total": 8,
-          "percent": 75
+          "percent": 62
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -19048,7 +18535,7 @@
       "stage1_score": 80.0,
       "accumulation": {
         "in_accumulation": false,
-        "duration": 240,
+        "duration": 239,
         "range_pct": 105.13,
         "ma60_slope_pct": 3.61,
         "box_high": 2930.0,
@@ -19062,11 +18549,11 @@
         "ma60": 1157.1,
         "rvol": 9.98,
         "amount_mult": 10.73,
-        "amount_trend": 2.82,
+        "amount_trend": null,
         "rs_120d_pp": -34.21,
         "is_52w_high": false,
         "strong_close": false,
-        "ma60_above_ma240": true
+        "ma60_above_ma240": false
       },
       "weekly_pack": {
         "accum": {
@@ -19149,38 +18636,28 @@
       },
       "ensemble": {
         "scores": {
-          "wyckoff": 25,
-          "minervini": 34.1,
-          "weinstein": 40,
-          "oneil": 10,
-          "livermore": 50,
+          "wyckoff": 15,
+          "minervini": 4.2,
+          "weinstein": 0,
+          "oneil": 0,
+          "livermore": 25,
           "korean": 7
         },
         "items": {
           "wyckoff": [
-            "매집 진행 240일",
+            "매집 진행 239일",
             "VSA 분산 의심",
-            "중기 매집 240일",
-            "거래대금 체급↑ 2.82x"
+            "중기 매집 239일"
           ],
-          "minervini": [
-            "close>MA60",
-            "MA60>MA240",
-            "MA240 -15% 이내"
-          ],
-          "weinstein": [
-            "Stage 2 (상승)"
-          ],
-          "oneil": [
-            "M: 정배열"
-          ],
+          "minervini": [],
+          "weinstein": [],
+          "oneil": [],
           "livermore": [
-            "정배열",
             "거래량 폭발 9.98"
           ],
           "korean": []
         },
-        "ensemble": 28.6,
+        "ensemble": 9.4,
         "masters_70plus": 0,
         "masters_80plus": 0
       },
@@ -19200,16 +18677,14 @@
       "tenbagger": {
         "triggered": false,
         "reasons": [
-          "매집 240일",
-          "60>240 정배열",
-          "거래대금 체급↑ 2.82x"
+          "매집 239일"
         ],
         "fail": [
           "출발 신호 없음",
           "스마트머니 누적 부진"
         ],
         "supply_passed": 0,
-        "chart_passed": 2,
+        "chart_passed": 0,
         "weekly_accum_weeks": 0,
         "weekly_breakout": false,
         "dry_explode": false
@@ -19231,7 +18706,7 @@
             {
               "key": "M",
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             },
             {
               "key": "S",
@@ -19244,9 +18719,9 @@
               "ok": false
             }
           ],
-          "fulfilled": 1,
+          "fulfilled": 0,
           "total": 5,
-          "percent": 20
+          "percent": 0
         },
         "minervini": {
           "name": "미너비니 Trend Template",
@@ -19281,12 +18756,12 @@
             },
             {
               "label": "장기 정배열 (60>240)",
-              "ok": true
+              "ok": false
             }
           ],
-          "fulfilled": 5,
+          "fulfilled": 4,
           "total": 8,
-          "percent": 62
+          "percent": 50
         },
         "weinstein": {
           "name": "와인스타인 Stage",
@@ -19311,7 +18786,7 @@
         "wyckoff": {
           "name": "와이코프 단계",
           "phase": "Trend 진행 중 (박스 아님)",
-          "duration": 240,
+          "duration": 239,
           "items": [
             {
               "label": "박스권 횡보 (range≤40%)",
