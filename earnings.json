@@ -1,19 +1,9 @@
 {
-  "generated_at": "2026-06-29T21:01:50.732476",
-  "elapsed_sec": 37.7,
+  "generated_at": "2026-06-30T00:38:41.099798",
+  "elapsed_sec": 52.9,
   "universe_size": 128,
   "fetched_count": 127,
   "earnings": {
-    "005440": {
-      "label": "↗️실적증가",
-      "yoy_pct": 23.9,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "↗️실적증가",
-      "quarterly_yoy_pct": 23.9,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 38.4
-    },
     "041830": {
       "label": "📈실적급증",
       "yoy_pct": 85.7,
@@ -23,16 +13,6 @@
       "quarterly_yoy_pct": 85.7,
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 0.3
-    },
-    "161890": {
-      "label": "📈실적급증",
-      "yoy_pct": 31.7,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "📈실적급증",
-      "quarterly_yoy_pct": 31.7,
-      "annual_label": "↗️실적증가",
-      "annual_yoy_pct": 23.6
     },
     "183190": {
       "label": "↗️실적증가",
@@ -44,15 +24,25 @@
       "annual_label": "📉실적부진",
       "annual_yoy_pct": -45.2
     },
-    "002990": {
-      "label": "🔥실적폭발",
-      "yoy_pct": 112.3,
+    "161890": {
+      "label": "📈실적급증",
+      "yoy_pct": 31.7,
       "period": "2026.03 vs 2025.03",
       "status": "growing",
-      "quarterly_label": "🔥실적폭발",
-      "quarterly_yoy_pct": 112.3,
-      "annual_label": "🔄흑자전환",
-      "annual_yoy_pct": null
+      "quarterly_label": "📈실적급증",
+      "quarterly_yoy_pct": 31.7,
+      "annual_label": "↗️실적증가",
+      "annual_yoy_pct": 23.6
+    },
+    "005440": {
+      "label": "↗️실적증가",
+      "yoy_pct": 23.9,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "↗️실적증가",
+      "quarterly_yoy_pct": 23.9,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 38.4
     },
     "123330": {
       "label": "↘️실적감소",
@@ -64,13 +54,13 @@
       "annual_label": "🔥실적폭발",
       "annual_yoy_pct": 150.0
     },
-    "091590": {
-      "label": "🔄흑자전환",
-      "yoy_pct": null,
+    "002990": {
+      "label": "🔥실적폭발",
+      "yoy_pct": 112.3,
       "period": "2026.03 vs 2025.03",
-      "status": "turnaround",
-      "quarterly_label": "🔄흑자전환",
-      "quarterly_yoy_pct": null,
+      "status": "growing",
+      "quarterly_label": "🔥실적폭발",
+      "quarterly_yoy_pct": 112.3,
       "annual_label": "🔄흑자전환",
       "annual_yoy_pct": null
     },
@@ -84,24 +74,14 @@
       "annual_label": "📉실적부진",
       "annual_yoy_pct": -48.8
     },
-    "214450": {
-      "label": "↗️실적증가",
-      "yoy_pct": 28.2,
+    "091590": {
+      "label": "🔄흑자전환",
+      "yoy_pct": null,
       "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "↗️실적증가",
-      "quarterly_yoy_pct": 28.2,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 70.0
-    },
-    "048550": {
-      "label": "⚠️적자유지",
-      "yoy_pct": -24.1,
-      "period": "2026.03 vs 2025.03",
-      "status": "loss",
-      "quarterly_label": "⚠️적자유지",
-      "quarterly_yoy_pct": -24.1,
-      "annual_label": "💀적자전환",
+      "status": "turnaround",
+      "quarterly_label": "🔄흑자전환",
+      "quarterly_yoy_pct": null,
+      "annual_label": "🔄흑자전환",
       "annual_yoy_pct": null
     },
     "011560": {
@@ -114,6 +94,16 @@
       "annual_label": "📈실적급증",
       "annual_yoy_pct": 41.3
     },
+    "048550": {
+      "label": "⚠️적자유지",
+      "yoy_pct": -24.1,
+      "period": "2026.03 vs 2025.03",
+      "status": "loss",
+      "quarterly_label": "⚠️적자유지",
+      "quarterly_yoy_pct": -24.1,
+      "annual_label": "💀적자전환",
+      "annual_yoy_pct": null
+    },
     "009420": {
       "label": "🔄흑자전환",
       "yoy_pct": null,
@@ -124,15 +114,15 @@
       "annual_label": "💀적자전환",
       "annual_yoy_pct": null
     },
-    "458870": {
-      "label": "🔄흑자전환",
-      "yoy_pct": null,
+    "214450": {
+      "label": "↗️실적증가",
+      "yoy_pct": 28.2,
       "period": "2026.03 vs 2025.03",
-      "status": "turnaround",
-      "quarterly_label": "🔄흑자전환",
-      "quarterly_yoy_pct": null,
-      "annual_label": "🔄흑자전환",
-      "annual_yoy_pct": null
+      "status": "growing",
+      "quarterly_label": "↗️실적증가",
+      "quarterly_yoy_pct": 28.2,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 70.0
     },
     "000400": {
       "label": "💀적자전환",
@@ -144,16 +134,6 @@
       "annual_label": "🔥실적폭발",
       "annual_yoy_pct": 108.0
     },
-    "025320": {
-      "label": "📉실적부진",
-      "yoy_pct": -80.9,
-      "period": "2026.03 vs 2025.03",
-      "status": "declining",
-      "quarterly_label": "📉실적부진",
-      "quarterly_yoy_pct": -80.9,
-      "annual_label": "📉실적부진",
-      "annual_yoy_pct": -67.9
-    },
     "271560": {
       "label": "↗️실적증가",
       "yoy_pct": 26.0,
@@ -164,25 +144,25 @@
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 2.7
     },
-    "196170": {
+    "458870": {
+      "label": "🔄흑자전환",
+      "yoy_pct": null,
+      "period": "2026.03 vs 2025.03",
+      "status": "turnaround",
+      "quarterly_label": "🔄흑자전환",
+      "quarterly_yoy_pct": null,
+      "annual_label": "🔄흑자전환",
+      "annual_yoy_pct": null
+    },
+    "025320": {
       "label": "📉실적부진",
-      "yoy_pct": -35.6,
+      "yoy_pct": -80.9,
       "period": "2026.03 vs 2025.03",
       "status": "declining",
       "quarterly_label": "📉실적부진",
-      "quarterly_yoy_pct": -35.6,
-      "annual_label": "🔥실적폭발",
-      "annual_yoy_pct": 320.9
-    },
-    "145020": {
-      "label": "↗️실적증가",
-      "yoy_pct": 22.1,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "↗️실적증가",
-      "quarterly_yoy_pct": 22.1,
-      "annual_label": "↗️실적증가",
-      "annual_yoy_pct": 20.9
+      "quarterly_yoy_pct": -80.9,
+      "annual_label": "📉실적부진",
+      "annual_yoy_pct": -67.9
     },
     "237690": {
       "label": "🔥실적폭발",
@@ -204,6 +184,26 @@
       "annual_label": "↘️실적감소",
       "annual_yoy_pct": -16.8
     },
+    "196170": {
+      "label": "📉실적부진",
+      "yoy_pct": -35.6,
+      "period": "2026.03 vs 2025.03",
+      "status": "declining",
+      "quarterly_label": "📉실적부진",
+      "quarterly_yoy_pct": -35.6,
+      "annual_label": "🔥실적폭발",
+      "annual_yoy_pct": 320.9
+    },
+    "145020": {
+      "label": "↗️실적증가",
+      "yoy_pct": 22.1,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "↗️실적증가",
+      "quarterly_yoy_pct": 22.1,
+      "annual_label": "↗️실적증가",
+      "annual_yoy_pct": 20.9
+    },
     "207940": {
       "label": "📈실적급증",
       "yoy_pct": 35.0,
@@ -214,16 +214,6 @@
       "annual_label": "📈실적급증",
       "annual_yoy_pct": 56.6
     },
-    "073240": {
-      "label": "➡️실적유지",
-      "yoy_pct": 0.3,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "➡️실적유지",
-      "quarterly_yoy_pct": 0.3,
-      "annual_label": "➡️실적유지",
-      "annual_yoy_pct": -2.2
-    },
     "290650": {
       "label": "🔄흑자전환",
       "yoy_pct": null,
@@ -233,6 +223,16 @@
       "quarterly_yoy_pct": null,
       "annual_label": "↗️실적증가",
       "annual_yoy_pct": 12.8
+    },
+    "073240": {
+      "label": "➡️실적유지",
+      "yoy_pct": 0.3,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "➡️실적유지",
+      "quarterly_yoy_pct": 0.3,
+      "annual_label": "➡️실적유지",
+      "annual_yoy_pct": -2.2
     },
     "090430": {
       "label": "➡️실적유지",
@@ -254,6 +254,16 @@
       "annual_label": "🔥실적폭발",
       "annual_yoy_pct": 109.4
     },
+    "281820": {
+      "label": "🔥실적폭발",
+      "yoy_pct": 346.2,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "🔥실적폭발",
+      "quarterly_yoy_pct": 346.2,
+      "annual_label": "↗️실적증가",
+      "annual_yoy_pct": 20.5
+    },
     "089970": {
       "label": "🔥실적폭발",
       "yoy_pct": 1484.2,
@@ -274,15 +284,25 @@
       "annual_label": "🔄흑자전환",
       "annual_yoy_pct": null
     },
-    "281820": {
+    "383310": {
+      "label": "📈실적급증",
+      "yoy_pct": 47.1,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "📈실적급증",
+      "quarterly_yoy_pct": 47.1,
+      "annual_label": "📉실적부진",
+      "annual_yoy_pct": -51.7
+    },
+    "389260": {
       "label": "🔥실적폭발",
-      "yoy_pct": 346.2,
+      "yoy_pct": 214.0,
       "period": "2026.03 vs 2025.03",
       "status": "growing",
       "quarterly_label": "🔥실적폭발",
-      "quarterly_yoy_pct": 346.2,
-      "annual_label": "↗️실적증가",
-      "annual_yoy_pct": 20.5
+      "quarterly_yoy_pct": 214.0,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 73.2
     },
     "096530": {
       "label": "📈실적급증",
@@ -304,25 +324,15 @@
       "annual_label": "↘️실적감소",
       "annual_yoy_pct": -24.1
     },
-    "389260": {
-      "label": "🔥실적폭발",
-      "yoy_pct": 214.0,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "🔥실적폭발",
-      "quarterly_yoy_pct": 214.0,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 73.2
-    },
-    "383310": {
+    "483650": {
       "label": "📈실적급증",
-      "yoy_pct": 47.1,
+      "yoy_pct": 49.8,
       "period": "2026.03 vs 2025.03",
       "status": "growing",
       "quarterly_label": "📈실적급증",
-      "quarterly_yoy_pct": 47.1,
-      "annual_label": "📉실적부진",
-      "annual_yoy_pct": -51.7
+      "quarterly_yoy_pct": 49.8,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 69.7
     },
     "023410": {
       "label": "🔄흑자전환",
@@ -333,16 +343,6 @@
       "quarterly_yoy_pct": null,
       "annual_label": "📉실적부진",
       "annual_yoy_pct": -41.1
-    },
-    "483650": {
-      "label": "📈실적급증",
-      "yoy_pct": 49.8,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "📈실적급증",
-      "quarterly_yoy_pct": 49.8,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 69.7
     },
     "214150": {
       "label": "➡️실적유지",
@@ -384,16 +384,6 @@
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 10.0
     },
-    "004980": {
-      "label": "🔄흑자전환",
-      "yoy_pct": null,
-      "period": "2026.03 vs 2025.03",
-      "status": "turnaround",
-      "quarterly_label": "🔄흑자전환",
-      "quarterly_yoy_pct": null,
-      "annual_label": "↘️실적감소",
-      "annual_yoy_pct": -17.9
-    },
     "013580": {
       "label": "📈실적급증",
       "yoy_pct": 31.2,
@@ -403,6 +393,16 @@
       "quarterly_yoy_pct": 31.2,
       "annual_label": "📈실적급증",
       "annual_yoy_pct": 91.6
+    },
+    "004980": {
+      "label": "🔄흑자전환",
+      "yoy_pct": null,
+      "period": "2026.03 vs 2025.03",
+      "status": "turnaround",
+      "quarterly_label": "🔄흑자전환",
+      "quarterly_yoy_pct": null,
+      "annual_label": "↘️실적감소",
+      "annual_yoy_pct": -17.9
     },
     "319660": {
       "label": "🔥실적폭발",
@@ -444,16 +444,6 @@
       "annual_label": "🔄흑자전환",
       "annual_yoy_pct": null
     },
-    "475430": {
-      "label": "↗️실적증가",
-      "yoy_pct": 16.7,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "↗️실적증가",
-      "quarterly_yoy_pct": 16.7,
-      "annual_label": "↗️실적증가",
-      "annual_yoy_pct": 25.4
-    },
     "004170": {
       "label": "📈실적급증",
       "yoy_pct": 49.5,
@@ -463,6 +453,16 @@
       "quarterly_yoy_pct": 49.5,
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 0.6
+    },
+    "475430": {
+      "label": "↗️실적증가",
+      "yoy_pct": 16.7,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "↗️실적증가",
+      "quarterly_yoy_pct": 16.7,
+      "annual_label": "↗️실적증가",
+      "annual_yoy_pct": 25.4
     },
     "068270": {
       "label": "🔥실적폭발",
@@ -574,16 +574,6 @@
       "annual_label": "🔥실적폭발",
       "annual_yoy_pct": 819.2
     },
-    "326030": {
-      "label": "🔥실적폭발",
-      "yoy_pct": 249.4,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "🔥실적폭발",
-      "quarterly_yoy_pct": 249.4,
-      "annual_label": "🔥실적폭발",
-      "annual_yoy_pct": 111.7
-    },
     "010950": {
       "label": "🔄흑자전환",
       "yoy_pct": null,
@@ -593,6 +583,16 @@
       "quarterly_yoy_pct": null,
       "annual_label": "📉실적부진",
       "annual_yoy_pct": -44.2
+    },
+    "326030": {
+      "label": "🔥실적폭발",
+      "yoy_pct": 249.4,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "🔥실적폭발",
+      "quarterly_yoy_pct": 249.4,
+      "annual_label": "🔥실적폭발",
+      "annual_yoy_pct": 111.7
     },
     "081660": {
       "label": "↗️실적증가",
@@ -634,16 +634,6 @@
       "annual_label": "↗️실적증가",
       "annual_yoy_pct": 14.5
     },
-    "002790": {
-      "label": "➡️실적유지",
-      "yoy_pct": 6.9,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "➡️실적유지",
-      "quarterly_yoy_pct": 6.9,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 47.6
-    },
     "101530": {
       "label": "↘️실적감소",
       "yoy_pct": -20.7,
@@ -653,6 +643,16 @@
       "quarterly_yoy_pct": -20.7,
       "annual_label": "↘️실적감소",
       "annual_yoy_pct": -13.8
+    },
+    "002790": {
+      "label": "➡️실적유지",
+      "yoy_pct": 6.9,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "➡️실적유지",
+      "quarterly_yoy_pct": 6.9,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 47.6
     },
     "241710": {
       "label": "📈실적급증",
@@ -674,16 +674,6 @@
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 3.1
     },
-    "198440": {
-      "label": "⚠️적자유지",
-      "yoy_pct": 0.0,
-      "period": "2026.03 vs 2025.03",
-      "status": "loss",
-      "quarterly_label": "⚠️적자유지",
-      "quarterly_yoy_pct": 0.0,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 32.1
-    },
     "014680": {
       "label": "➡️실적유지",
       "yoy_pct": 6.5,
@@ -693,6 +683,16 @@
       "quarterly_yoy_pct": 6.5,
       "annual_label": "↗️실적증가",
       "annual_yoy_pct": 21.3
+    },
+    "198440": {
+      "label": "⚠️적자유지",
+      "yoy_pct": 0.0,
+      "period": "2026.03 vs 2025.03",
+      "status": "loss",
+      "quarterly_label": "⚠️적자유지",
+      "quarterly_yoy_pct": 0.0,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 32.1
     },
     "402340": {
       "label": "🔥실적폭발",
@@ -754,16 +754,6 @@
       "annual_label": "📈실적급증",
       "annual_yoy_pct": 33.1
     },
-    "138040": {
-      "label": "↗️실적증가",
-      "yoy_pct": 18.4,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "↗️실적증가",
-      "quarterly_yoy_pct": 18.4,
-      "annual_label": "➡️실적유지",
-      "annual_yoy_pct": -9.9
-    },
     "222800": {
       "label": "🔄흑자전환",
       "yoy_pct": null,
@@ -773,6 +763,16 @@
       "quarterly_yoy_pct": null,
       "annual_label": "🔄흑자전환",
       "annual_yoy_pct": null
+    },
+    "138040": {
+      "label": "↗️실적증가",
+      "yoy_pct": 18.4,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "↗️실적증가",
+      "quarterly_yoy_pct": 18.4,
+      "annual_label": "➡️실적유지",
+      "annual_yoy_pct": -9.9
     },
     "019210": {
       "label": "🔥실적폭발",
@@ -794,16 +794,6 @@
       "annual_label": "💀적자전환",
       "annual_yoy_pct": null
     },
-    "031980": {
-      "label": "➡️실적유지",
-      "yoy_pct": -3.2,
-      "period": "2026.03 vs 2025.03",
-      "status": "declining",
-      "quarterly_label": "➡️실적유지",
-      "quarterly_yoy_pct": -3.2,
-      "annual_label": "↘️실적감소",
-      "annual_yoy_pct": -17.1
-    },
     "159010": {
       "label": "🔄흑자전환",
       "yoy_pct": null,
@@ -813,6 +803,16 @@
       "quarterly_yoy_pct": null,
       "annual_label": "💸적자확대",
       "annual_yoy_pct": 268.4
+    },
+    "031980": {
+      "label": "➡️실적유지",
+      "yoy_pct": -3.2,
+      "period": "2026.03 vs 2025.03",
+      "status": "declining",
+      "quarterly_label": "➡️실적유지",
+      "quarterly_yoy_pct": -3.2,
+      "annual_label": "↘️실적감소",
+      "annual_yoy_pct": -17.1
     },
     "122870": {
       "label": "🔥실적폭발",
@@ -914,16 +914,6 @@
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 8.7
     },
-    "018000": {
-      "label": "⚠️적자유지",
-      "yoy_pct": 44.4,
-      "period": "2026.03 vs 2025.03",
-      "status": "loss",
-      "quarterly_label": "⚠️적자유지",
-      "quarterly_yoy_pct": 44.4,
-      "annual_label": "⚠️적자유지",
-      "annual_yoy_pct": -24.0
-    },
     "084370": {
       "label": "🔥실적폭발",
       "yoy_pct": 104.3,
@@ -933,6 +923,16 @@
       "quarterly_yoy_pct": 104.3,
       "annual_label": "↘️실적감소",
       "annual_yoy_pct": -15.5
+    },
+    "018000": {
+      "label": "⚠️적자유지",
+      "yoy_pct": 44.4,
+      "period": "2026.03 vs 2025.03",
+      "status": "loss",
+      "quarterly_label": "⚠️적자유지",
+      "quarterly_yoy_pct": 44.4,
+      "annual_label": "⚠️적자유지",
+      "annual_yoy_pct": -24.0
     },
     "302440": {
       "label": "💸적자확대",
@@ -944,16 +944,6 @@
       "annual_label": "⚠️적자유지",
       "annual_yoy_pct": -10.8
     },
-    "003230": {
-      "label": "📈실적급증",
-      "yoy_pct": 32.2,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "📈실적급증",
-      "quarterly_yoy_pct": 32.2,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 52.1
-    },
     "170920": {
       "label": "📈실적급증",
       "yoy_pct": 92.6,
@@ -964,15 +954,15 @@
       "annual_label": "↗️실적증가",
       "annual_yoy_pct": 22.3
     },
-    "316140": {
-      "label": "➡️실적유지",
-      "yoy_pct": -7.0,
+    "003230": {
+      "label": "📈실적급증",
+      "yoy_pct": 32.2,
       "period": "2026.03 vs 2025.03",
-      "status": "declining",
-      "quarterly_label": "➡️실적유지",
-      "quarterly_yoy_pct": -7.0,
-      "annual_label": "↘️실적감소",
-      "annual_yoy_pct": -13.6
+      "status": "growing",
+      "quarterly_label": "📈실적급증",
+      "quarterly_yoy_pct": 32.2,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 52.1
     },
     "086790": {
       "label": "↗️실적증가",
@@ -983,6 +973,16 @@
       "quarterly_yoy_pct": 11.1,
       "annual_label": "↗️실적증가",
       "annual_yoy_pct": 10.2
+    },
+    "316140": {
+      "label": "➡️실적유지",
+      "yoy_pct": -7.0,
+      "period": "2026.03 vs 2025.03",
+      "status": "declining",
+      "quarterly_label": "➡️실적유지",
+      "quarterly_yoy_pct": -7.0,
+      "annual_label": "↘️실적감소",
+      "annual_yoy_pct": -13.6
     },
     "032830": {
       "label": "📈실적급증",
@@ -1004,16 +1004,6 @@
       "annual_label": "↗️실적증가",
       "annual_yoy_pct": 24.3
     },
-    "036200": {
-      "label": "➡️실적유지",
-      "yoy_pct": 6.2,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "➡️실적유지",
-      "quarterly_yoy_pct": 6.2,
-      "annual_label": "➡️실적유지",
-      "annual_yoy_pct": 9.0
-    },
     "024110": {
       "label": "➡️실적유지",
       "yoy_pct": -8.9,
@@ -1023,6 +1013,16 @@
       "quarterly_yoy_pct": -8.9,
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 1.7
+    },
+    "036200": {
+      "label": "➡️실적유지",
+      "yoy_pct": 6.2,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "➡️실적유지",
+      "quarterly_yoy_pct": 6.2,
+      "annual_label": "➡️실적유지",
+      "annual_yoy_pct": 9.0
     },
     "023530": {
       "label": "📈실적급증",
@@ -1074,16 +1074,6 @@
       "annual_label": "🌱적자축소",
       "annual_yoy_pct": 80.6
     },
-    "482630": {
-      "label": "📈실적급증",
-      "yoy_pct": 44.4,
-      "period": "2026.03 vs 2025.03",
-      "status": "growing",
-      "quarterly_label": "📈실적급증",
-      "quarterly_yoy_pct": 44.4,
-      "annual_label": "📈실적급증",
-      "annual_yoy_pct": 64.5
-    },
     "105560": {
       "label": "↗️실적증가",
       "yoy_pct": 19.0,
@@ -1093,6 +1083,16 @@
       "quarterly_yoy_pct": 19.0,
       "annual_label": "➡️실적유지",
       "annual_yoy_pct": 5.9
+    },
+    "482630": {
+      "label": "📈실적급증",
+      "yoy_pct": 44.4,
+      "period": "2026.03 vs 2025.03",
+      "status": "growing",
+      "quarterly_label": "📈실적급증",
+      "quarterly_yoy_pct": 44.4,
+      "annual_label": "📈실적급증",
+      "annual_yoy_pct": 64.5
     },
     "003690": {
       "label": "🔥실적폭발",
