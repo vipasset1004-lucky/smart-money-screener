@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-07-07T19:31:36.236321",
-  "elapsed_sec": 279.4,
-  "stage1_elapsed": 19.3,
-  "stage2_elapsed": 204.7,
+  "generated_at": "2026-07-07T23:21:57.941488",
+  "elapsed_sec": 213.5,
+  "stage1_elapsed": 15.5,
+  "stage2_elapsed": 155.7,
   "universe_size": 455,
   "stage1_passed": 133,
   "stage2_passed": 133,
@@ -21,6 +21,404 @@
     "advice": "눌림목·매집 종목 위주, 신중 진입"
   },
   "results": [
+    {
+      "ticker": "092730",
+      "name": "네오팜",
+      "market": "KOSDAQ",
+      "marcap": 316552782750,
+      "labels": [
+        "⚡단타",
+        "🌅폭발임박",
+        "↗️실적증가"
+      ],
+      "trading_guide": {
+        "rule": {
+          "size": "관찰 → 돌파 확인 후 1/4",
+          "stop_pct": -5.0,
+          "tp1_pct": 15.0,
+          "tp1_portion": "1/2",
+          "tp2_pct": 30.0,
+          "tp2_portion": "추가 1/2",
+          "trail": null,
+          "horizon": "단기~중기",
+          "note": "돌파 캔들 close 확인 후 진입, 고점 회피"
+        },
+        "rule_label": "🌅폭발임박",
+        "fib": {
+          "box_low": 15590.0,
+          "box_high": 22350.0,
+          "box_range": 6760.0,
+          "current": 19750.0,
+          "retracement": {
+            "0.236": 20754.6,
+            "0.382": 19767.7,
+            "0.500": 18970.0,
+            "0.618": 18172.3,
+            "0.786": 17036.6
+          },
+          "extension": {
+            "1.000": 29110.0,
+            "1.272": 30948.7,
+            "1.618": 33287.7,
+            "2.618": 40047.7,
+            "4.236": 50985.4
+          },
+          "retracement_pct": 38.5,
+          "zone": "IN_BOX"
+        },
+        "computed": {
+          "stop_price": 18762.5,
+          "tp1_price": 22712.5,
+          "tp2_price": 25675.0
+        }
+      },
+      "position": {
+        "label": "돌파진행",
+        "color": "good",
+        "desc": "출발 신호 점등 — 진입 검토"
+      },
+      "risk": {
+        "signals": [],
+        "severity": "safe"
+      },
+      "score": {
+        "total": 54.0,
+        "confluence": 18.0,
+        "intensity": 25,
+        "persistence": 6.0,
+        "aux": 5.0
+      },
+      "stage1_score": 100.0,
+      "accumulation": {
+        "in_accumulation": true,
+        "duration": 240,
+        "range_pct": "35.64",
+        "ma60_slope_pct": -0.32,
+        "box_high": 22350.0,
+        "box_low": 15590.0,
+        "lookback_used": 120
+      },
+      "metrics": {
+        "close": 19750.0,
+        "ma5": 18746.0,
+        "ma20": 17445.5,
+        "ma60": 18314.666666666668,
+        "rvol": 3.82,
+        "amount_mult": 4.23,
+        "amount_trend": 0.52,
+        "rs_120d_pp": -53.56,
+        "is_52w_high": false,
+        "strong_close": true,
+        "ma60_above_ma240": false
+      },
+      "weekly_pack": {
+        "accum": {
+          "in_accumulation": false,
+          "weeks": 0,
+          "range_pct": null,
+          "box_high": 22350.0,
+          "box_low": 15590.0,
+          "ma20w_slope_pct": -2.31
+        },
+        "vcp": {
+          "vcp": false,
+          "widths_pct": [
+            "26.54",
+            "14.58",
+            "24.57",
+            "25.52"
+          ],
+          "vol_dried": true
+        },
+        "dry_explode": {
+          "dry_to_explode": false,
+          "dried_ratio": 0.69,
+          "explode_ratio": 1.03
+        },
+        "smart_money_w": {
+          "available": true,
+          "weeks_analyzed": 23,
+          "foreign_sum": 583792.0,
+          "inst_sum": -363809.0,
+          "individual_sum": -219983.0,
+          "foreign_buy_weeks": 19,
+          "inst_buy_weeks": 7,
+          "coincide_weeks": 5,
+          "smart_money_positive": true,
+          "individual_negative": true
+        },
+        "breakout_w": {
+          "breakout": false,
+          "price_breakout": false,
+          "vol_breakout": false,
+          "vol_ratio": 0.73
+        }
+      },
+      "wyckoff": {
+        "spring": {
+          "spring": false
+        },
+        "sos": {
+          "sos": false
+        },
+        "vsa": {
+          "vsa_score": 4,
+          "harmful_days": 0,
+          "harmful": false
+        },
+        "stage_1_to_2_pattern": false
+      },
+      "vcp": {
+        "vcp_score": 36.7,
+        "vcp_detected": false,
+        "widths_pct": [
+          "28.59",
+          "21.5",
+          "15.9",
+          "25.52"
+        ],
+        "atr_ratio": 1.03,
+        "atr_compressed": false,
+        "last_vol_dry": false,
+        "components": {
+          "width_contraction": 20.0,
+          "vol_contraction": 16.7,
+          "last_vol_dry": 0,
+          "atr_compression": 0
+        }
+      },
+      "mansfield": {
+        "available": false
+      },
+      "ensemble": {
+        "scores": {
+          "wyckoff": 50,
+          "minervini": 48.4,
+          "weinstein": 25,
+          "oneil": 35,
+          "livermore": 25,
+          "korean": 32
+        },
+        "items": {
+          "wyckoff": [
+            "매집 단계 ON",
+            "VSA +4",
+            "중기 매집 240일"
+          ],
+          "minervini": [
+            "close>MA60",
+            "MA240 -15% 이내",
+            "매집 ON"
+          ],
+          "weinstein": [
+            "Stage 1 (매집)"
+          ],
+          "oneil": [
+            "외인 60일 +",
+            "S: 강도 25"
+          ],
+          "livermore": [
+            "거래량 폭발 3.82"
+          ],
+          "korean": []
+        },
+        "ensemble": 38.0,
+        "masters_70plus": 0,
+        "masters_80plus": 0
+      },
+      "short_term": {
+        "triggered": true,
+        "reasons": [
+          "거래대금 4.2배",
+          "rvol 3.82",
+          "종가 강세",
+          "당일 수급 진입"
+        ],
+        "fail": [
+          "박스 미돌파"
+        ],
+        "checks_passed": 4
+      },
+      "tenbagger": {
+        "triggered": false,
+        "reasons": [
+          "매집 240일",
+          "스마트머니 누적 +",
+          "개인 누적 -",
+          "수급 강도 25.0/25"
+        ],
+        "fail": [
+          "출발 신호 없음"
+        ],
+        "supply_passed": 2,
+        "chart_passed": 0,
+        "weekly_accum_weeks": 0,
+        "weekly_breakout": false,
+        "dry_explode": false
+      },
+      "masters": {
+        "oneil": {
+          "name": "오닐 CAN SLIM",
+          "items": [
+            {
+              "key": "I",
+              "label": "기관 후원 (외인+기관 60일 +)",
+              "ok": false
+            },
+            {
+              "key": "N",
+              "label": "52주 신고가권",
+              "ok": false
+            },
+            {
+              "key": "M",
+              "label": "장기 정배열 (60>240)",
+              "ok": false
+            },
+            {
+              "key": "S",
+              "label": "수급 강도 양호 (intensity≥10)",
+              "ok": true
+            },
+            {
+              "key": "L",
+              "label": "단기 모멘텀 (rvol≥1.5 강한 마감)",
+              "ok": true
+            }
+          ],
+          "fulfilled": 2,
+          "total": 5,
+          "percent": 40
+        },
+        "minervini": {
+          "name": "미너비니 Trend Template",
+          "items": [
+            {
+              "label": "현재가 > 150일선 > 200일선",
+              "ok": true
+            },
+            {
+              "label": "200일선 상승 중",
+              "ok": false
+            },
+            {
+              "label": "50일선 > 150일선 > 200일선",
+              "ok": false
+            },
+            {
+              "label": "현재가 > 50일선",
+              "ok": true
+            },
+            {
+              "label": "52주 저가 대비 +30%↑",
+              "ok": false
+            },
+            {
+              "label": "52주 고가의 -25% 이내",
+              "ok": true
+            },
+            {
+              "label": "52주 고가의 -15% 이내 (강함)",
+              "ok": true
+            },
+            {
+              "label": "장기 정배열 (60>240)",
+              "ok": false
+            }
+          ],
+          "fulfilled": 4,
+          "total": 8,
+          "percent": 50
+        },
+        "weinstein": {
+          "name": "와인스타인 Stage",
+          "stage": "Stage 1→2 전환 가능",
+          "ok": true,
+          "ma150_slope_pct": -0.13,
+          "items": [
+            {
+              "label": "현재가 > 150일선",
+              "ok": true
+            },
+            {
+              "label": "150일선 상승 중",
+              "ok": false
+            },
+            {
+              "label": "52주 신고가권",
+              "ok": false
+            }
+          ]
+        },
+        "wyckoff": {
+          "name": "와이코프 단계",
+          "phase": "SOS 의심 (Sign of Strength)",
+          "duration": 240,
+          "items": [
+            {
+              "label": "박스권 횡보 (range≤40%)",
+              "ok": true
+            },
+            {
+              "label": "매집 60일+",
+              "ok": true
+            },
+            {
+              "label": "거래량 폭발 (rvol≥1.8)",
+              "ok": true
+            },
+            {
+              "label": "외인 60일 누적 +",
+              "ok": "True"
+            }
+          ],
+          "fulfilled": 4,
+          "total": 4,
+          "percent": 100
+        },
+        "livermore": {
+          "name": "리버모어 Pivot",
+          "type": "Continuation Pivot (단타 가능)",
+          "items": [
+            {
+              "label": "박스 상단 돌파",
+              "ok": false
+            },
+            {
+              "label": "거래량 동반 (rvol≥1.5)",
+              "ok": true
+            },
+            {
+              "label": "강한 마감 (윗꼬리 짧음)",
+              "ok": true
+            },
+            {
+              "label": "신고가 (52주)",
+              "ok": false
+            }
+          ],
+          "fulfilled": 2,
+          "total": 4,
+          "percent": 50
+        }
+      },
+      "earnings": {
+        "label": "↗️실적증가",
+        "yoy_pct": 11.5,
+        "period": "2026.03 vs 2025.03",
+        "status": "growing",
+        "quarterly_label": "↗️실적증가",
+        "quarterly_yoy_pct": 11.5,
+        "annual_label": "↗️실적증가",
+        "annual_yoy_pct": 16.6
+      },
+      "naver_url": "https://finance.naver.com/item/main.naver?code=092730",
+      "confluence": {
+        "peer_count": 3,
+        "labeled_peers": 3,
+        "ratio": 1.0
+      }
+    },
     {
       "ticker": "415640",
       "name": "KB발해인프라",
@@ -420,404 +818,6 @@
         "peer_count": 0,
         "labeled_peers": 0,
         "ratio": 0.0
-      }
-    },
-    {
-      "ticker": "092730",
-      "name": "네오팜",
-      "market": "KOSDAQ",
-      "marcap": 316552782750,
-      "labels": [
-        "⚡단타",
-        "🌅폭발임박",
-        "↗️실적증가"
-      ],
-      "trading_guide": {
-        "rule": {
-          "size": "관찰 → 돌파 확인 후 1/4",
-          "stop_pct": -5.0,
-          "tp1_pct": 15.0,
-          "tp1_portion": "1/2",
-          "tp2_pct": 30.0,
-          "tp2_portion": "추가 1/2",
-          "trail": null,
-          "horizon": "단기~중기",
-          "note": "돌파 캔들 close 확인 후 진입, 고점 회피"
-        },
-        "rule_label": "🌅폭발임박",
-        "fib": {
-          "box_low": 15590.0,
-          "box_high": 22350.0,
-          "box_range": 6760.0,
-          "current": 19750.0,
-          "retracement": {
-            "0.236": 20754.6,
-            "0.382": 19767.7,
-            "0.500": 18970.0,
-            "0.618": 18172.3,
-            "0.786": 17036.6
-          },
-          "extension": {
-            "1.000": 29110.0,
-            "1.272": 30948.7,
-            "1.618": 33287.7,
-            "2.618": 40047.7,
-            "4.236": 50985.4
-          },
-          "retracement_pct": 38.5,
-          "zone": "IN_BOX"
-        },
-        "computed": {
-          "stop_price": 18762.5,
-          "tp1_price": 22712.5,
-          "tp2_price": 25675.0
-        }
-      },
-      "position": {
-        "label": "돌파진행",
-        "color": "good",
-        "desc": "출발 신호 점등 — 진입 검토"
-      },
-      "risk": {
-        "signals": [],
-        "severity": "safe"
-      },
-      "score": {
-        "total": 54.0,
-        "confluence": 18.0,
-        "intensity": 25,
-        "persistence": 6.0,
-        "aux": 5.0
-      },
-      "stage1_score": 100.0,
-      "accumulation": {
-        "in_accumulation": true,
-        "duration": 240,
-        "range_pct": "35.64",
-        "ma60_slope_pct": -0.32,
-        "box_high": 22350.0,
-        "box_low": 15590.0,
-        "lookback_used": 120
-      },
-      "metrics": {
-        "close": 19750.0,
-        "ma5": 18746.0,
-        "ma20": 17445.5,
-        "ma60": 18314.666666666668,
-        "rvol": 3.82,
-        "amount_mult": 4.23,
-        "amount_trend": 0.52,
-        "rs_120d_pp": -53.56,
-        "is_52w_high": false,
-        "strong_close": true,
-        "ma60_above_ma240": false
-      },
-      "weekly_pack": {
-        "accum": {
-          "in_accumulation": false,
-          "weeks": 0,
-          "range_pct": null,
-          "box_high": 22350.0,
-          "box_low": 15590.0,
-          "ma20w_slope_pct": -2.31
-        },
-        "vcp": {
-          "vcp": false,
-          "widths_pct": [
-            "26.54",
-            "14.58",
-            "24.57",
-            "25.52"
-          ],
-          "vol_dried": true
-        },
-        "dry_explode": {
-          "dry_to_explode": false,
-          "dried_ratio": 0.69,
-          "explode_ratio": 1.03
-        },
-        "smart_money_w": {
-          "available": true,
-          "weeks_analyzed": 23,
-          "foreign_sum": 583792.0,
-          "inst_sum": -363809.0,
-          "individual_sum": -219983.0,
-          "foreign_buy_weeks": 19,
-          "inst_buy_weeks": 7,
-          "coincide_weeks": 5,
-          "smart_money_positive": true,
-          "individual_negative": true
-        },
-        "breakout_w": {
-          "breakout": false,
-          "price_breakout": false,
-          "vol_breakout": false,
-          "vol_ratio": 0.73
-        }
-      },
-      "wyckoff": {
-        "spring": {
-          "spring": false
-        },
-        "sos": {
-          "sos": false
-        },
-        "vsa": {
-          "vsa_score": 4,
-          "harmful_days": 0,
-          "harmful": false
-        },
-        "stage_1_to_2_pattern": false
-      },
-      "vcp": {
-        "vcp_score": 36.7,
-        "vcp_detected": false,
-        "widths_pct": [
-          "28.59",
-          "21.5",
-          "15.9",
-          "25.52"
-        ],
-        "atr_ratio": 1.03,
-        "atr_compressed": false,
-        "last_vol_dry": false,
-        "components": {
-          "width_contraction": 20.0,
-          "vol_contraction": 16.7,
-          "last_vol_dry": 0,
-          "atr_compression": 0
-        }
-      },
-      "mansfield": {
-        "available": false
-      },
-      "ensemble": {
-        "scores": {
-          "wyckoff": 50,
-          "minervini": 48.4,
-          "weinstein": 25,
-          "oneil": 35,
-          "livermore": 25,
-          "korean": 32
-        },
-        "items": {
-          "wyckoff": [
-            "매집 단계 ON",
-            "VSA +4",
-            "중기 매집 240일"
-          ],
-          "minervini": [
-            "close>MA60",
-            "MA240 -15% 이내",
-            "매집 ON"
-          ],
-          "weinstein": [
-            "Stage 1 (매집)"
-          ],
-          "oneil": [
-            "외인 60일 +",
-            "S: 강도 25"
-          ],
-          "livermore": [
-            "거래량 폭발 3.82"
-          ],
-          "korean": []
-        },
-        "ensemble": 38.0,
-        "masters_70plus": 0,
-        "masters_80plus": 0
-      },
-      "short_term": {
-        "triggered": true,
-        "reasons": [
-          "거래대금 4.2배",
-          "rvol 3.82",
-          "종가 강세",
-          "당일 수급 진입"
-        ],
-        "fail": [
-          "박스 미돌파"
-        ],
-        "checks_passed": 4
-      },
-      "tenbagger": {
-        "triggered": false,
-        "reasons": [
-          "매집 240일",
-          "스마트머니 누적 +",
-          "개인 누적 -",
-          "수급 강도 25.0/25"
-        ],
-        "fail": [
-          "출발 신호 없음"
-        ],
-        "supply_passed": 2,
-        "chart_passed": 0,
-        "weekly_accum_weeks": 0,
-        "weekly_breakout": false,
-        "dry_explode": false
-      },
-      "masters": {
-        "oneil": {
-          "name": "오닐 CAN SLIM",
-          "items": [
-            {
-              "key": "I",
-              "label": "기관 후원 (외인+기관 60일 +)",
-              "ok": false
-            },
-            {
-              "key": "N",
-              "label": "52주 신고가권",
-              "ok": false
-            },
-            {
-              "key": "M",
-              "label": "장기 정배열 (60>240)",
-              "ok": false
-            },
-            {
-              "key": "S",
-              "label": "수급 강도 양호 (intensity≥10)",
-              "ok": true
-            },
-            {
-              "key": "L",
-              "label": "단기 모멘텀 (rvol≥1.5 강한 마감)",
-              "ok": true
-            }
-          ],
-          "fulfilled": 2,
-          "total": 5,
-          "percent": 40
-        },
-        "minervini": {
-          "name": "미너비니 Trend Template",
-          "items": [
-            {
-              "label": "현재가 > 150일선 > 200일선",
-              "ok": true
-            },
-            {
-              "label": "200일선 상승 중",
-              "ok": false
-            },
-            {
-              "label": "50일선 > 150일선 > 200일선",
-              "ok": false
-            },
-            {
-              "label": "현재가 > 50일선",
-              "ok": true
-            },
-            {
-              "label": "52주 저가 대비 +30%↑",
-              "ok": false
-            },
-            {
-              "label": "52주 고가의 -25% 이내",
-              "ok": true
-            },
-            {
-              "label": "52주 고가의 -15% 이내 (강함)",
-              "ok": true
-            },
-            {
-              "label": "장기 정배열 (60>240)",
-              "ok": false
-            }
-          ],
-          "fulfilled": 4,
-          "total": 8,
-          "percent": 50
-        },
-        "weinstein": {
-          "name": "와인스타인 Stage",
-          "stage": "Stage 1→2 전환 가능",
-          "ok": true,
-          "ma150_slope_pct": -0.13,
-          "items": [
-            {
-              "label": "현재가 > 150일선",
-              "ok": true
-            },
-            {
-              "label": "150일선 상승 중",
-              "ok": false
-            },
-            {
-              "label": "52주 신고가권",
-              "ok": false
-            }
-          ]
-        },
-        "wyckoff": {
-          "name": "와이코프 단계",
-          "phase": "SOS 의심 (Sign of Strength)",
-          "duration": 240,
-          "items": [
-            {
-              "label": "박스권 횡보 (range≤40%)",
-              "ok": true
-            },
-            {
-              "label": "매집 60일+",
-              "ok": true
-            },
-            {
-              "label": "거래량 폭발 (rvol≥1.8)",
-              "ok": true
-            },
-            {
-              "label": "외인 60일 누적 +",
-              "ok": "True"
-            }
-          ],
-          "fulfilled": 4,
-          "total": 4,
-          "percent": 100
-        },
-        "livermore": {
-          "name": "리버모어 Pivot",
-          "type": "Continuation Pivot (단타 가능)",
-          "items": [
-            {
-              "label": "박스 상단 돌파",
-              "ok": false
-            },
-            {
-              "label": "거래량 동반 (rvol≥1.5)",
-              "ok": true
-            },
-            {
-              "label": "강한 마감 (윗꼬리 짧음)",
-              "ok": true
-            },
-            {
-              "label": "신고가 (52주)",
-              "ok": false
-            }
-          ],
-          "fulfilled": 2,
-          "total": 4,
-          "percent": 50
-        }
-      },
-      "earnings": {
-        "label": "↗️실적증가",
-        "yoy_pct": 11.5,
-        "period": "2026.03 vs 2025.03",
-        "status": "growing",
-        "quarterly_label": "↗️실적증가",
-        "quarterly_yoy_pct": 11.5,
-        "annual_label": "↗️실적증가",
-        "annual_yoy_pct": 16.6
-      },
-      "naver_url": "https://finance.naver.com/item/main.naver?code=092730",
-      "confluence": {
-        "peer_count": 3,
-        "labeled_peers": 3,
-        "ratio": 1.0
       }
     },
     {
