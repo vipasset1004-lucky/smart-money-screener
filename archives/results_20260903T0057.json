@@ -1,0 +1,4524 @@
+{
+  "generated_at": "2026-09-03T00:57:39.143986",
+  "regime": {
+    "score": 44.7,
+    "mode": "neutral",
+    "label": "⚖ 중립",
+    "color": "watch",
+    "components": {
+      "kospi": 5.5,
+      "kosdaq": 7.5,
+      "amount": 6.5,
+      "breadth": 25.2
+    },
+    "advice": "눌림목·매집 종목 위주, 신중 진입"
+  },
+  "results": [
+    {
+      "ticker": "079650",
+      "name": "서산",
+      "labels": [
+        "⚡단타",
+        "🌅폭발임박",
+        "🎯VCP",
+        "🌱적자축소"
+      ],
+      "score": {
+        "total": 31.9,
+        "confluence": 8.0,
+        "intensity": 15.9,
+        "persistence": 3.0,
+        "aux": 5.0
+      },
+      "ensemble": 48.6,
+      "vcp_score": 80.8,
+      "entry_close": 6790.0,
+      "marcap": 135800000000
+    },
+    {
+      "ticker": "067290",
+      "name": "JW신약",
+      "labels": [
+        "🌅폭발임박",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 26.6,
+        "confluence": 10.0,
+        "intensity": 15.6,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 45.3,
+      "vcp_score": 29.6,
+      "entry_close": 3100.0,
+      "marcap": 173715019300
+    },
+    {
+      "ticker": "198440",
+      "name": "강동씨앤엘",
+      "labels": [
+        "🌅폭발임박",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 8.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 39.6,
+      "vcp_score": 46.7,
+      "entry_close": 2135.0,
+      "marcap": 130089597960
+    },
+    {
+      "ticker": "403870",
+      "name": "HPSP",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 64.8,
+        "confluence": 24.0,
+        "intensity": 21.8,
+        "persistence": 4.0,
+        "aux": 15.0
+      },
+      "ensemble": 47.9,
+      "vcp_score": 81.7,
+      "entry_close": 50400.0,
+      "marcap": 4147920000000
+    },
+    {
+      "ticker": "009150",
+      "name": "삼성전기",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 58.1,
+        "confluence": 20.0,
+        "intensity": 22.1,
+        "persistence": 1.0,
+        "aux": 15.0
+      },
+      "ensemble": 36.0,
+      "vcp_score": 90.0,
+      "entry_close": 1400000.0,
+      "marcap": 104571174400000
+    },
+    {
+      "ticker": "022100",
+      "name": "포스코DX",
+      "labels": [
+        "🎯VCP",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 57.1,
+        "confluence": 22.0,
+        "intensity": 14.1,
+        "persistence": 6.0,
+        "aux": 15.0
+      },
+      "ensemble": 22.5,
+      "vcp_score": 81.7,
+      "entry_close": 20900.0,
+      "marcap": 3177525836100
+    },
+    {
+      "ticker": "000500",
+      "name": "가온전선",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 52.3,
+        "confluence": 12.0,
+        "intensity": 19.3,
+        "persistence": 6.0,
+        "aux": 15.0
+      },
+      "ensemble": 41.1,
+      "vcp_score": 71.7,
+      "entry_close": 201000.0,
+      "marcap": 5985299007000
+    },
+    {
+      "ticker": "000210",
+      "name": "DL",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 49.7,
+        "confluence": 12.0,
+        "intensity": 13.7,
+        "persistence": 9.0,
+        "aux": 15.0
+      },
+      "ensemble": 43.9,
+      "vcp_score": 67.5,
+      "entry_close": 51200.0,
+      "marcap": 1072941260800
+    },
+    {
+      "ticker": "139130",
+      "name": "iM금융지주",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 48.9,
+        "confluence": 14.0,
+        "intensity": 24.9,
+        "persistence": 10.0,
+        "aux": 0.0
+      },
+      "ensemble": 43.3,
+      "vcp_score": 82.5,
+      "entry_close": 18860.0,
+      "marcap": 2986733874880
+    },
+    {
+      "ticker": "036460",
+      "name": "한국가스공사",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 44.5,
+        "confluence": 18.0,
+        "intensity": 17.5,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 39.5,
+      "vcp_score": 69.3,
+      "entry_close": 37000.0,
+      "marcap": 3415581000000
+    },
+    {
+      "ticker": "034230",
+      "name": "파라다이스",
+      "labels": [
+        "🎯VCP",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 44.0,
+        "confluence": 10.0,
+        "intensity": 25,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 19.3,
+      "vcp_score": 63.3,
+      "entry_close": 10040.0,
+      "marcap": 929998995280
+    },
+    {
+      "ticker": "122640",
+      "name": "예스티",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 44.0,
+        "confluence": 16.0,
+        "intensity": 23.0,
+        "persistence": 5.0,
+        "aux": 0.0
+      },
+      "ensemble": 33.3,
+      "vcp_score": 78.5,
+      "entry_close": 27000.0,
+      "marcap": 584585775000
+    },
+    {
+      "ticker": "171090",
+      "name": "선익시스템",
+      "labels": [
+        "🎯VCP",
+        "💀적자전환"
+      ],
+      "score": {
+        "total": 42.0,
+        "confluence": 12.0,
+        "intensity": 25,
+        "persistence": 5.0,
+        "aux": 0.0
+      },
+      "ensemble": 26.8,
+      "vcp_score": 69.6,
+      "entry_close": 70600.0,
+      "marcap": 715010395600
+    },
+    {
+      "ticker": "357780",
+      "name": "솔브레인",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 40.6,
+        "confluence": 12.0,
+        "intensity": 9.6,
+        "persistence": 4.0,
+        "aux": 15.0
+      },
+      "ensemble": 21.4,
+      "vcp_score": 80.0,
+      "entry_close": 329500.0,
+      "marcap": 2563037497000
+    },
+    {
+      "ticker": "175330",
+      "name": "JB금융지주",
+      "labels": [
+        "⚡단타",
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 39.1,
+        "confluence": 12.0,
+        "intensity": 18.1,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 44.4,
+      "vcp_score": 64.8,
+      "entry_close": 30550.0,
+      "marcap": 5698241723200
+    },
+    {
+      "ticker": "051910",
+      "name": "LG화학",
+      "labels": [
+        "🎯VCP",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 38.2,
+        "confluence": 16.0,
+        "intensity": 7.2,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 17.6,
+      "vcp_score": 89.8,
+      "entry_close": 269000.0,
+      "marcap": 18989340267000
+    },
+    {
+      "ticker": "031980",
+      "name": "피에스케이홀딩스",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 37.9,
+        "confluence": 8.0,
+        "intensity": 21.9,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 40.2,
+      "vcp_score": 70.6,
+      "entry_close": 122000.0,
+      "marcap": 2630612190000
+    },
+    {
+      "ticker": "323410",
+      "name": "카카오뱅크",
+      "labels": [
+        "🎯VCP",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 37.0,
+        "confluence": 16.0,
+        "intensity": 9.0,
+        "persistence": 7.0,
+        "aux": 5.0
+      },
+      "ensemble": 30.9,
+      "vcp_score": 75.0,
+      "entry_close": 21900.0,
+      "marcap": 10448937570300
+    },
+    {
+      "ticker": "126640",
+      "name": "화신정공",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 37.9,
+        "confluence": 10.0,
+        "intensity": 17.9,
+        "persistence": 10.0,
+        "aux": 0.0
+      },
+      "ensemble": 45.4,
+      "vcp_score": 80.9,
+      "entry_close": 4780.0,
+      "marcap": 167567249800
+    },
+    {
+      "ticker": "018260",
+      "name": "삼성에스디에스",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 33.2,
+        "confluence": 16.0,
+        "intensity": 16.2,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 46.4,
+      "vcp_score": 79.8,
+      "entry_close": 233000.0,
+      "marcap": 18029027400000
+    },
+    {
+      "ticker": "039030",
+      "name": "이오테크닉스",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 32.8,
+        "confluence": 6.0,
+        "intensity": 7.8,
+        "persistence": 4.0,
+        "aux": 15.0
+      },
+      "ensemble": 33.0,
+      "vcp_score": 62.4,
+      "entry_close": 402000.0,
+      "marcap": 4952459100000
+    },
+    {
+      "ticker": "006220",
+      "name": "제주은행",
+      "labels": [
+        "🎯VCP",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 31.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 15.0
+      },
+      "ensemble": 18.2,
+      "vcp_score": 71.7,
+      "entry_close": 10020.0,
+      "marcap": 378741541140
+    },
+    {
+      "ticker": "005070",
+      "name": "코스모신소재",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 30.1,
+        "confluence": 14.0,
+        "intensity": 5.1,
+        "persistence": 6.0,
+        "aux": 5.0
+      },
+      "ensemble": 19.6,
+      "vcp_score": 73.0,
+      "entry_close": 38150.0,
+      "marcap": 1267135883650
+    },
+    {
+      "ticker": "036540",
+      "name": "SFA반도체",
+      "labels": [
+        "🎯VCP",
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 29.2,
+        "confluence": 12.0,
+        "intensity": 15.2,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.6,
+      "vcp_score": 65.5,
+      "entry_close": 5800.0,
+      "marcap": 953869757400
+    },
+    {
+      "ticker": "086280",
+      "name": "현대글로비스",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 29.0,
+        "confluence": 14.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 30.2,
+      "vcp_score": 89.2,
+      "entry_close": 195000.0,
+      "marcap": 14625000000000
+    },
+    {
+      "ticker": "064400",
+      "name": "LG씨엔에스",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 26.7,
+        "confluence": 10.0,
+        "intensity": 7.7,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 30.4,
+      "vcp_score": 65.0,
+      "entry_close": 74500.0,
+      "marcap": 7218003126000
+    },
+    {
+      "ticker": "095610",
+      "name": "테스",
+      "labels": [
+        "🎯VCP",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 25.5,
+        "confluence": 10.0,
+        "intensity": 6.5,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 30.0,
+      "vcp_score": 71.7,
+      "entry_close": 136000.0,
+      "marcap": 2632960000000
+    },
+    {
+      "ticker": "240810",
+      "name": "원익IPS",
+      "labels": [
+        "🎯VCP",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 23.4,
+        "confluence": 6.0,
+        "intensity": 12.4,
+        "persistence": 5.0,
+        "aux": 0.0
+      },
+      "ensemble": 29.7,
+      "vcp_score": 71.7,
+      "entry_close": 109700.0,
+      "marcap": 5384503939700
+    },
+    {
+      "ticker": "004800",
+      "name": "효성",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 23.2,
+        "confluence": 6.0,
+        "intensity": 2.2,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 24.4,
+      "vcp_score": 71.7,
+      "entry_close": 159800.0,
+      "marcap": 2675117038600
+    },
+    {
+      "ticker": "005880",
+      "name": "대한해운",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 23.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 15.0
+      },
+      "ensemble": 32.1,
+      "vcp_score": 73.1,
+      "entry_close": 2010.0,
+      "marcap": 648722153400
+    },
+    {
+      "ticker": "004310",
+      "name": "현대약품",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 37.9,
+        "confluence": 18.0,
+        "intensity": 5.9,
+        "persistence": 4.0,
+        "aux": 10.0
+      },
+      "ensemble": 30.4,
+      "vcp_score": 71.7,
+      "entry_close": 7570.0,
+      "marcap": 242240000000
+    },
+    {
+      "ticker": "036930",
+      "name": "주성엔지니어링",
+      "labels": [
+        "🎯VCP",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 22.4,
+        "confluence": 4.0,
+        "intensity": 15.4,
+        "persistence": 3.0,
+        "aux": 0.0
+      },
+      "ensemble": 36.2,
+      "vcp_score": 90.0,
+      "entry_close": 173700.0,
+      "marcap": 8073770717700
+    },
+    {
+      "ticker": "004090",
+      "name": "한국석유",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 10.0
+      },
+      "ensemble": 32.7,
+      "vcp_score": 71.7,
+      "entry_close": 11250.0,
+      "marcap": 142808850000
+    },
+    {
+      "ticker": "024060",
+      "name": "흥구석유",
+      "labels": [
+        "🎯VCP",
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 10.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.0,
+      "vcp_score": 71.7,
+      "entry_close": 11570.0,
+      "marcap": 173550000000
+    },
+    {
+      "ticker": "112610",
+      "name": "씨에스윈드",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 10.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.1,
+      "vcp_score": 70.3,
+      "entry_close": 45550.0,
+      "marcap": 1920907406650
+    },
+    {
+      "ticker": "035250",
+      "name": "강원랜드",
+      "labels": [
+        "🎯VCP",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 20.9,
+        "confluence": 10.0,
+        "intensity": 3.9,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 31.3,
+      "vcp_score": 87.9,
+      "entry_close": 14600.0,
+      "marcap": 3123531300000
+    },
+    {
+      "ticker": "089030",
+      "name": "테크윙",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 20.3,
+        "confluence": 6.0,
+        "intensity": 8.3,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 21.5,
+      "vcp_score": 80.0,
+      "entry_close": 47350.0,
+      "marcap": 1754490090750
+    },
+    {
+      "ticker": "084370",
+      "name": "유진테크",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 18.6,
+        "confluence": 6.0,
+        "intensity": 7.6,
+        "persistence": 5.0,
+        "aux": 0.0
+      },
+      "ensemble": 28.2,
+      "vcp_score": 90.0,
+      "entry_close": 133500.0,
+      "marcap": 3059291607000
+    },
+    {
+      "ticker": "003280",
+      "name": "흥아해운",
+      "labels": [
+        "🎯VCP",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 18.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 18.9,
+      "vcp_score": 71.7,
+      "entry_close": 1712.0,
+      "marcap": 411607427088
+    },
+    {
+      "ticker": "093370",
+      "name": "후성",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 17.5,
+        "confluence": 10.0,
+        "intensity": 1.5,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 32.6,
+      "vcp_score": 81.7,
+      "entry_close": 12530.0,
+      "marcap": 1343909284900
+    },
+    {
+      "ticker": "066570",
+      "name": "LG전자",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 20.3,
+        "confluence": 12.0,
+        "intensity": 3.3,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 41.8,
+      "vcp_score": 90.0,
+      "entry_close": 200500.0,
+      "marcap": 32658369919000
+    },
+    {
+      "ticker": "011790",
+      "name": "SKC",
+      "labels": [
+        "🎯VCP",
+        "🌱적자축소"
+      ],
+      "score": {
+        "total": 20.0,
+        "confluence": 12.0,
+        "intensity": 8.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 18.5,
+      "vcp_score": 80.0,
+      "entry_close": 83600.0,
+      "marcap": 4146417712800
+    },
+    {
+      "ticker": "353200",
+      "name": "대덕전자",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 10.0,
+        "aux": 5.0
+      },
+      "ensemble": 25.2,
+      "vcp_score": 71.7,
+      "entry_close": 108900.0,
+      "marcap": 5381503132500
+    },
+    {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 15.8,
+        "confluence": 14.0,
+        "intensity": 1.8,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 29.6,
+      "vcp_score": 90.0,
+      "entry_close": 373000.0,
+      "marcap": 60488507713000
+    },
+    {
+      "ticker": "012750",
+      "name": "에스원",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 15.6,
+        "confluence": 6.0,
+        "intensity": 2.6,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 32.8,
+      "vcp_score": 81.4,
+      "entry_close": 80200.0,
+      "marcap": 3047534075600
+    },
+    {
+      "ticker": "180640",
+      "name": "한진칼",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 13.8,
+        "confluence": 4.0,
+        "intensity": 2.8,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 41.3,
+      "vcp_score": 60.5,
+      "entry_close": 139100.0,
+      "marcap": 9286633008900
+    },
+    {
+      "ticker": "030000",
+      "name": "제일기획",
+      "labels": [
+        "🎯VCP",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 13.0,
+        "confluence": 10.0,
+        "intensity": 1.0,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 26.2,
+      "vcp_score": 73.3,
+      "entry_close": 18880.0,
+      "marcap": 2171978328000
+    },
+    {
+      "ticker": "008770",
+      "name": "호텔신라",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 13.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 17.7,
+      "vcp_score": 81.7,
+      "entry_close": 42150.0,
+      "marcap": 1654308300150
+    },
+    {
+      "ticker": "004710",
+      "name": "한솔테크닉스",
+      "labels": [
+        "⚡단타",
+        "🎯VCP",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 12.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 36.0,
+      "vcp_score": 90.0,
+      "entry_close": 7580.0,
+      "marcap": 402648212860
+    },
+    {
+      "ticker": "010170",
+      "name": "대한광통신",
+      "labels": [
+        "🎯VCP",
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 24.8,
+        "confluence": 12.0,
+        "intensity": 10.8,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 36.8,
+      "vcp_score": 68.2,
+      "entry_close": 13570.0,
+      "marcap": 2109940406200
+    },
+    {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "labels": [
+        "🎯VCP",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 12.4,
+        "confluence": 6.0,
+        "intensity": 0.4,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 26.9,
+      "vcp_score": 80.0,
+      "entry_close": 213500.0,
+      "marcap": 20349154700000
+    },
+    {
+      "ticker": "443060",
+      "name": "HD현대마린솔루션",
+      "labels": [
+        "🎯VCP",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 12.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 24.8,
+      "vcp_score": 70.1,
+      "entry_close": 199000.0,
+      "marcap": 8921858540000
+    },
+    {
+      "ticker": "456040",
+      "name": "OCI",
+      "labels": [
+        "🎯VCP",
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 9.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 26.7,
+      "vcp_score": 81.7,
+      "entry_close": 78400.0,
+      "marcap": 701875608000
+    },
+    {
+      "ticker": "375500",
+      "name": "DL이앤씨",
+      "labels": [
+        "🎯VCP",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 7.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 35.3,
+      "vcp_score": 75.6,
+      "entry_close": 70000.0,
+      "marcap": 2708553610000
+    },
+    {
+      "ticker": "007390",
+      "name": "네이처셀",
+      "labels": [
+        "🎯VCP",
+        "💸적자확대"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 25.4,
+      "vcp_score": 90.0,
+      "entry_close": 23650.0,
+      "marcap": 1523889074400
+    },
+    {
+      "ticker": "003220",
+      "name": "대원제약",
+      "labels": [
+        "🎯VCP",
+        "🌱적자축소"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 10.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 20.9,
+      "vcp_score": 71.7,
+      "entry_close": 8100.0,
+      "marcap": 181663422300
+    },
+    {
+      "ticker": "222080",
+      "name": "SFA넥셀",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 5.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 16.7,
+      "vcp_score": 67.4,
+      "entry_close": 7610.0,
+      "marcap": 591906895840
+    },
+    {
+      "ticker": "252990",
+      "name": "샘씨엔에스",
+      "labels": [
+        "🎯VCP",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 0.0
+      },
+      "ensemble": 33.3,
+      "vcp_score": 67.7,
+      "entry_close": 13530.0,
+      "marcap": 814748038170
+    },
+    {
+      "ticker": "029780",
+      "name": "삼성카드",
+      "labels": [
+        "🎯VCP",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 8.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 27.1,
+      "vcp_score": 66.7,
+      "entry_close": 45400.0,
+      "marcap": 5259993651400
+    },
+    {
+      "ticker": "396300",
+      "name": "세아메카닉스",
+      "labels": [
+        "⚡단타",
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 55.1,
+        "confluence": 20.0,
+        "intensity": 20.1,
+        "persistence": 5.0,
+        "aux": 10.0
+      },
+      "ensemble": 43.5,
+      "vcp_score": 32.1,
+      "entry_close": 5720.0,
+      "marcap": 151519940000
+    },
+    {
+      "ticker": "003160",
+      "name": "디아이",
+      "labels": [
+        "⚡단타",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 47.5,
+        "confluence": 8.0,
+        "intensity": 22.5,
+        "persistence": 2.0,
+        "aux": 15.0
+      },
+      "ensemble": 25.8,
+      "vcp_score": 33.4,
+      "entry_close": 30600.0,
+      "marcap": 865980000000
+    },
+    {
+      "ticker": "044490",
+      "name": "태웅",
+      "labels": [
+        "⚡단타",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 43.1,
+        "confluence": 18.0,
+        "intensity": 21.1,
+        "persistence": 4.0,
+        "aux": 0.0
+      },
+      "ensemble": 27.5,
+      "vcp_score": 34.4,
+      "entry_close": 37250.0,
+      "marcap": 745274942250
+    },
+    {
+      "ticker": "045390",
+      "name": "대아티아이",
+      "labels": [
+        "⚡단타",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 35.7,
+        "confluence": 8.0,
+        "intensity": 16.7,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 24.3,
+      "vcp_score": 26.7,
+      "entry_close": 3770.0,
+      "marcap": 265684631290
+    },
+    {
+      "ticker": "159010",
+      "name": "아스플로",
+      "labels": [
+        "⚡단타",
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 35.2,
+        "confluence": 10.0,
+        "intensity": 19.2,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 43.9,
+      "vcp_score": 16.2,
+      "entry_close": 24100.0,
+      "marcap": 321367209900
+    },
+    {
+      "ticker": "032350",
+      "name": "롯데관광개발",
+      "labels": [
+        "⚡단타",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 27.0,
+        "confluence": 10.0,
+        "intensity": 0,
+        "persistence": 7.0,
+        "aux": 10.0
+      },
+      "ensemble": 16.3,
+      "vcp_score": 45.8,
+      "entry_close": 13390.0,
+      "marcap": 1067523882620
+    },
+    {
+      "ticker": "232140",
+      "name": "와이씨",
+      "labels": [
+        "⚡단타",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 24.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 8.0,
+        "aux": 10.0
+      },
+      "ensemble": 13.8,
+      "vcp_score": 20.7,
+      "entry_close": 12050.0,
+      "marcap": 988646467500
+    },
+    {
+      "ticker": "443670",
+      "name": "에스피소프트",
+      "labels": [
+        "⚡단타",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 15.0
+      },
+      "ensemble": 21.2,
+      "vcp_score": 31.6,
+      "entry_close": 4350.0,
+      "marcap": 104445953400
+    },
+    {
+      "ticker": "024850",
+      "name": "HLB이노베이션",
+      "labels": [
+        "⚡단타",
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 14.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 6.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.1,
+      "vcp_score": 57.4,
+      "entry_close": 15690.0,
+      "marcap": 498213105360
+    },
+    {
+      "ticker": "092870",
+      "name": "엑시콘",
+      "labels": [
+        "⚡단타",
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 10.0
+      },
+      "ensemble": 20.2,
+      "vcp_score": 29.5,
+      "entry_close": 31050.0,
+      "marcap": 405227246850
+    },
+    {
+      "ticker": "253590",
+      "name": "네오셈",
+      "labels": [
+        "⚡단타",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 11.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 6.0,
+        "aux": 5.0
+      },
+      "ensemble": 26.1,
+      "vcp_score": 33.7,
+      "entry_close": 11550.0,
+      "marcap": 506688844200
+    },
+    {
+      "ticker": "216080",
+      "name": "제테마",
+      "labels": [
+        "⚡단타",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 9.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.5,
+      "vcp_score": 29.8,
+      "entry_close": 6180.0,
+      "marcap": 230434271820
+    },
+    {
+      "ticker": "003490",
+      "name": "대한항공",
+      "labels": [
+        "🛡️안정형",
+        "💀적자전환"
+      ],
+      "score": {
+        "total": 65.0,
+        "confluence": 26.0,
+        "intensity": 25,
+        "persistence": 9.0,
+        "aux": 5.0
+      },
+      "ensemble": 48.5,
+      "vcp_score": 36.9,
+      "entry_close": 28900.0,
+      "marcap": 10641577102900
+    },
+    {
+      "ticker": "005180",
+      "name": "빙그레",
+      "labels": [
+        "🔍매집중",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 75.0,
+        "confluence": 22.0,
+        "intensity": 25,
+        "persistence": 13.0,
+        "aux": 15.0
+      },
+      "ensemble": 30.4,
+      "vcp_score": 18.3,
+      "entry_close": 92800.0,
+      "marcap": 860166076800
+    },
+    {
+      "ticker": "377450",
+      "name": "리파인",
+      "labels": [
+        "🔍매집중",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 72.0,
+        "confluence": 16.0,
+        "intensity": 25,
+        "persistence": 16.0,
+        "aux": 15.0
+      },
+      "ensemble": 27.8,
+      "vcp_score": 10.0,
+      "entry_close": 16800.0,
+      "marcap": 291144000000
+    },
+    {
+      "ticker": "004490",
+      "name": "세방전지",
+      "labels": [
+        "🔍매집중",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 68.0,
+        "confluence": 18.0,
+        "intensity": 25,
+        "persistence": 10.0,
+        "aux": 15.0
+      },
+      "ensemble": 26.7,
+      "vcp_score": 34.4,
+      "entry_close": 65500.0,
+      "marcap": 907830000000
+    },
+    {
+      "ticker": "090430",
+      "name": "아모레퍼시픽",
+      "labels": [
+        "🔍매집중",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 59.0,
+        "confluence": 18.0,
+        "intensity": 25,
+        "persistence": 11.0,
+        "aux": 5.0
+      },
+      "ensemble": 23.6,
+      "vcp_score": 21.1,
+      "entry_close": 142300.0,
+      "marcap": 8323519605700
+    },
+    {
+      "ticker": "417840",
+      "name": "저스템",
+      "labels": [
+        "🔍매집중",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 57.9,
+        "confluence": 26.0,
+        "intensity": 23.9,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 35.9,
+      "vcp_score": 22.1,
+      "entry_close": 15030.0,
+      "marcap": 343726796430
+    },
+    {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "labels": [
+        "🔍매집중",
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 56.6,
+        "confluence": 18.0,
+        "intensity": 15.6,
+        "persistence": 8.0,
+        "aux": 15.0
+      },
+      "ensemble": 32.8,
+      "vcp_score": 45.0,
+      "entry_close": 347500.0,
+      "marcap": 81315000000000
+    },
+    {
+      "ticker": "096770",
+      "name": "SK이노베이션",
+      "labels": [
+        "🔍매집중",
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 56.0,
+        "confluence": 22.0,
+        "intensity": 25,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 27.6,
+      "vcp_score": 10.0,
+      "entry_close": 131500.0,
+      "marcap": 22230441622000
+    },
+    {
+      "ticker": "138040",
+      "name": "메리츠금융지주",
+      "labels": [
+        "🔍매집중",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 55.1,
+        "confluence": 20.0,
+        "intensity": 20.1,
+        "persistence": 10.0,
+        "aux": 5.0
+      },
+      "ensemble": 48.8,
+      "vcp_score": 11.9,
+      "entry_close": 129800.0,
+      "marcap": 21721676035400
+    },
+    {
+      "ticker": "000370",
+      "name": "한화손해보험",
+      "labels": [
+        "🔍매집중",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 56.0,
+        "confluence": 16.0,
+        "intensity": 25,
+        "persistence": 10.0,
+        "aux": 5.0
+      },
+      "ensemble": 41.9,
+      "vcp_score": 18.3,
+      "entry_close": 8580.0,
+      "marcap": 1001619890700
+    },
+    {
+      "ticker": "298020",
+      "name": "효성티앤씨",
+      "labels": [
+        "🔍매집중",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 52.0,
+        "confluence": 18.0,
+        "intensity": 25,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 31.7,
+      "vcp_score": 49.1,
+      "entry_close": 345000.0,
+      "marcap": 1493050290000
+    },
+    {
+      "ticker": "280360",
+      "name": "롯데웰푸드",
+      "labels": [
+        "🔍매집중",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 51.0,
+        "confluence": 8.0,
+        "intensity": 23.0,
+        "persistence": 10.0,
+        "aux": 10.0
+      },
+      "ensemble": 25.7,
+      "vcp_score": 18.3,
+      "entry_close": 148600.0,
+      "marcap": 1367799696400
+    },
+    {
+      "ticker": "053690",
+      "name": "한미글로벌",
+      "labels": [
+        "🔍매집중",
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 50.8,
+        "confluence": 18.0,
+        "intensity": 18.8,
+        "persistence": 14.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.5,
+      "vcp_score": 18.3,
+      "entry_close": 20550.0,
+      "marcap": 225177652500
+    },
+    {
+      "ticker": "323990",
+      "name": "박셀바이오",
+      "labels": [
+        "🔍매집중",
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 50.6,
+        "confluence": 14.0,
+        "intensity": 18.6,
+        "persistence": 8.0,
+        "aux": 10.0
+      },
+      "ensemble": 25.6,
+      "vcp_score": 35.0,
+      "entry_close": 5020.0,
+      "marcap": 116751871900
+    },
+    {
+      "ticker": "004370",
+      "name": "농심",
+      "labels": [
+        "🔍매집중",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 48.9,
+        "confluence": 16.0,
+        "intensity": 21.9,
+        "persistence": 6.0,
+        "aux": 5.0
+      },
+      "ensemble": 36.3,
+      "vcp_score": 18.3,
+      "entry_close": 437500.0,
+      "marcap": 2661155875000
+    },
+    {
+      "ticker": "134580",
+      "name": "탑코미디어",
+      "labels": [
+        "🔍매집중",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 51.8,
+        "confluence": 18.0,
+        "intensity": 18.8,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 23.0,
+      "vcp_score": 18.3,
+      "entry_close": 3840.0,
+      "marcap": 189289532160
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "labels": [
+        "🔍매집중",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 47.4,
+        "confluence": 18.0,
+        "intensity": 16.4,
+        "persistence": 8.0,
+        "aux": 5.0
+      },
+      "ensemble": 42.2,
+      "vcp_score": 28.0,
+      "entry_close": 34500.0,
+      "marcap": 25419136216500
+    },
+    {
+      "ticker": "282330",
+      "name": "BGF리테일",
+      "labels": [
+        "🔍매집중",
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 45.6,
+        "confluence": 18.0,
+        "intensity": 20.6,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 43.2,
+      "vcp_score": 36.7,
+      "entry_close": 149900.0,
+      "marcap": 2590857509400
+    },
+    {
+      "ticker": "294870",
+      "name": "IPARK현대산업개발",
+      "labels": [
+        "🔍매집중",
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 45.4,
+        "confluence": 18.0,
+        "intensity": 12.4,
+        "persistence": 10.0,
+        "aux": 5.0
+      },
+      "ensemble": 35.6,
+      "vcp_score": 34.6,
+      "entry_close": 22800.0,
+      "marcap": 1502687124000
+    },
+    {
+      "ticker": "098120",
+      "name": "마이크로컨텍솔",
+      "labels": [
+        "🔍매집중",
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 60.0,
+        "confluence": 14.0,
+        "intensity": 25,
+        "persistence": 6.0,
+        "aux": 15.0
+      },
+      "ensemble": 39.8,
+      "vcp_score": 28.3,
+      "entry_close": 41100.0,
+      "marcap": 341654682600
+    },
+    {
+      "ticker": "024110",
+      "name": "기업은행",
+      "labels": [
+        "🔍매집중",
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 40.7,
+        "confluence": 20.0,
+        "intensity": 13.7,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 34.4,
+      "vcp_score": 58.3,
+      "entry_close": 20850.0,
+      "marcap": 16626329368650
+    },
+    {
+      "ticker": "003230",
+      "name": "삼양식품",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 49.5,
+        "confluence": 16.0,
+        "intensity": 20.5,
+        "persistence": 8.0,
+        "aux": 5.0
+      },
+      "ensemble": 27.3,
+      "vcp_score": 8.3,
+      "entry_close": 1475000.0,
+      "marcap": 11111197125000
+    },
+    {
+      "ticker": "080580",
+      "name": "오킨스전자",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 48.5,
+        "confluence": 12.0,
+        "intensity": 24.5,
+        "persistence": 2.0,
+        "aux": 10.0
+      },
+      "ensemble": 35.3,
+      "vcp_score": 28.9,
+      "entry_close": 19460.0,
+      "marcap": 410429984300
+    },
+    {
+      "ticker": "025860",
+      "name": "남해화학",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 47.4,
+        "confluence": 8.0,
+        "intensity": 19.4,
+        "persistence": 10.0,
+        "aux": 10.0
+      },
+      "ensemble": 22.0,
+      "vcp_score": 23.3,
+      "entry_close": 6510.0,
+      "marcap": 323409267930
+    },
+    {
+      "ticker": "095340",
+      "name": "ISC",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 46.3,
+        "confluence": 14.0,
+        "intensity": 10.3,
+        "persistence": 7.0,
+        "aux": 15.0
+      },
+      "ensemble": 34.4,
+      "vcp_score": 56.4,
+      "entry_close": 170500.0,
+      "marcap": 3614098389000
+    },
+    {
+      "ticker": "051980",
+      "name": "중앙첨단소재",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 45.2,
+        "confluence": 12.0,
+        "intensity": 9.2,
+        "persistence": 9.0,
+        "aux": 15.0
+      },
+      "ensemble": 21.6,
+      "vcp_score": 41.0,
+      "entry_close": 1014.0,
+      "marcap": 112646992926
+    },
+    {
+      "ticker": "003670",
+      "name": "포스코퓨처엠",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 48.0,
+        "confluence": 14.0,
+        "intensity": 19.0,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 21.1,
+      "vcp_score": 20.9,
+      "entry_close": 176000.0,
+      "marcap": 15654534720000
+    },
+    {
+      "ticker": "192650",
+      "name": "드림텍",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 44.7,
+        "confluence": 10.0,
+        "intensity": 18.7,
+        "persistence": 6.0,
+        "aux": 10.0
+      },
+      "ensemble": 26.4,
+      "vcp_score": 39.8,
+      "entry_close": 6210.0,
+      "marcap": 409157208090
+    },
+    {
+      "ticker": "014620",
+      "name": "성광벤드",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 46.9,
+        "confluence": 10.0,
+        "intensity": 21.9,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 23.5,
+      "vcp_score": 28.2,
+      "entry_close": 29750.0,
+      "marcap": 790081579000
+    },
+    {
+      "ticker": "036800",
+      "name": "나이스정보통신",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 46.7,
+        "confluence": 12.0,
+        "intensity": 20.7,
+        "persistence": 9.0,
+        "aux": 5.0
+      },
+      "ensemble": 39.9,
+      "vcp_score": 19.0,
+      "entry_close": 7700.0,
+      "marcap": 350350000000
+    },
+    {
+      "ticker": "002380",
+      "name": "KCC",
+      "labels": [
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 43.6,
+        "confluence": 14.0,
+        "intensity": 8.6,
+        "persistence": 6.0,
+        "aux": 15.0
+      },
+      "ensemble": 17.8,
+      "vcp_score": 45.8,
+      "entry_close": 479500.0,
+      "marcap": 4120293632000
+    },
+    {
+      "ticker": "192820",
+      "name": "코스맥스",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 43.4,
+        "confluence": 14.0,
+        "intensity": 21.4,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 36.1,
+      "vcp_score": 0.0,
+      "entry_close": 285500.0,
+      "marcap": 3240284819500
+    },
+    {
+      "ticker": "120110",
+      "name": "코오롱인더",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 43.1,
+        "confluence": 10.0,
+        "intensity": 23.1,
+        "persistence": 5.0,
+        "aux": 5.0
+      },
+      "ensemble": 27.3,
+      "vcp_score": 49.5,
+      "entry_close": 56300.0,
+      "marcap": 1685961601600
+    },
+    {
+      "ticker": "285130",
+      "name": "SK케미칼",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 40.5,
+        "confluence": 8.0,
+        "intensity": 22.5,
+        "persistence": 10.0,
+        "aux": 0.0
+      },
+      "ensemble": 18.4,
+      "vcp_score": 18.3,
+      "entry_close": 52200.0,
+      "marcap": 902995585200
+    },
+    {
+      "ticker": "007660",
+      "name": "이수페타시스",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 42.6,
+        "confluence": 12.0,
+        "intensity": 22.6,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 25.4,
+      "vcp_score": 58.6,
+      "entry_close": 112000.0,
+      "marcap": 8221832528000
+    },
+    {
+      "ticker": "006400",
+      "name": "삼성SDI",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 39.2,
+        "confluence": 8.0,
+        "intensity": 21.2,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 36.2,
+      "vcp_score": 30.3,
+      "entry_close": 538000.0,
+      "marcap": 43355015140000
+    },
+    {
+      "ticker": "010950",
+      "name": "S-Oil",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 38.4,
+        "confluence": 16.0,
+        "intensity": 13.4,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 35.9,
+      "vcp_score": 36.7,
+      "entry_close": 150900.0,
+      "marcap": 16988743312800
+    },
+    {
+      "ticker": "000880",
+      "name": "한화",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 40.6,
+        "confluence": 12.0,
+        "intensity": 21.6,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 23.6,
+      "vcp_score": 46.7,
+      "entry_close": 126500.0,
+      "marcap": 6746105470500
+    },
+    {
+      "ticker": "356860",
+      "name": "티엘비",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 36.8,
+        "confluence": 6.0,
+        "intensity": 17.8,
+        "persistence": 3.0,
+        "aux": 10.0
+      },
+      "ensemble": 33.0,
+      "vcp_score": 35.6,
+      "entry_close": 39600.0,
+      "marcap": 938569896000
+    },
+    {
+      "ticker": "011780",
+      "name": "금호석유화학",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 34.3,
+        "confluence": 12.0,
+        "intensity": 13.3,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 29.3,
+      "vcp_score": 36.2,
+      "entry_close": 127200.0,
+      "marcap": 3200011740000
+    },
+    {
+      "ticker": "204620",
+      "name": "글로벌텍스프리",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 37.1,
+        "confluence": 8.0,
+        "intensity": 24.1,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 23.9,
+      "vcp_score": 24.5,
+      "entry_close": 5800.0,
+      "marcap": 407643314000
+    },
+    {
+      "ticker": "257720",
+      "name": "실리콘투",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 33.8,
+        "confluence": 12.0,
+        "intensity": 14.8,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 22.9,
+      "vcp_score": 0.0,
+      "entry_close": 50900.0,
+      "marcap": 3337831226800
+    },
+    {
+      "ticker": "001820",
+      "name": "삼화콘덴서",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 33.0,
+        "confluence": 10.0,
+        "intensity": 16.0,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 42.4,
+      "vcp_score": 56.7,
+      "entry_close": 111500.0,
+      "marcap": 1159042500000
+    },
+    {
+      "ticker": "125020",
+      "name": "티씨머티리얼즈",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 32.2,
+        "confluence": 10.0,
+        "intensity": 20.2,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 39.5,
+      "vcp_score": 42.5,
+      "entry_close": 6170.0,
+      "marcap": 216187853500
+    },
+    {
+      "ticker": "004020",
+      "name": "현대제철",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 31.2,
+        "confluence": 4.0,
+        "intensity": 14.2,
+        "persistence": 3.0,
+        "aux": 10.0
+      },
+      "ensemble": 16.6,
+      "vcp_score": 30.5,
+      "entry_close": 29900.0,
+      "marcap": 3990028971500
+    },
+    {
+      "ticker": "317400",
+      "name": "자이에스앤디",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 30.3,
+        "confluence": 6.0,
+        "intensity": 18.3,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 41.3,
+      "vcp_score": 18.3,
+      "entry_close": 10150.0,
+      "marcap": 393642578000
+    },
+    {
+      "ticker": "017800",
+      "name": "현대엘리베이터",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 30.2,
+        "confluence": 12.0,
+        "intensity": 2.2,
+        "persistence": 1.0,
+        "aux": 15.0
+      },
+      "ensemble": 27.9,
+      "vcp_score": 35.8,
+      "entry_close": 72800.0,
+      "marcap": 2845925628000
+    },
+    {
+      "ticker": "090460",
+      "name": "비에이치",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 29.7,
+        "confluence": 10.0,
+        "intensity": 16.7,
+        "persistence": 3.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.1,
+      "vcp_score": 34.8,
+      "entry_close": 20250.0,
+      "marcap": 682658644500
+    },
+    {
+      "ticker": "114810",
+      "name": "한솔아이원스",
+      "labels": [
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 29.6,
+        "confluence": 14.0,
+        "intensity": 8.6,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 19.9,
+      "vcp_score": 35.0,
+      "entry_close": 13140.0,
+      "marcap": 369801306360
+    },
+    {
+      "ticker": "041960",
+      "name": "코미팜",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 28.8,
+        "confluence": 14.0,
+        "intensity": 7.8,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 33.3,
+      "vcp_score": 28.3,
+      "entry_close": 8680.0,
+      "marcap": 641334776600
+    },
+    {
+      "ticker": "096530",
+      "name": "씨젠",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 31.2,
+        "confluence": 6.0,
+        "intensity": 19.2,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 41.0,
+      "vcp_score": 18.3,
+      "entry_close": 32100.0,
+      "marcap": 1676454407400
+    },
+    {
+      "ticker": "064760",
+      "name": "티씨케이",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 28.1,
+        "confluence": 6.0,
+        "intensity": 1.1,
+        "persistence": 6.0,
+        "aux": 15.0
+      },
+      "ensemble": 32.4,
+      "vcp_score": 33.6,
+      "entry_close": 247000.0,
+      "marcap": 2761315752000
+    },
+    {
+      "ticker": "327260",
+      "name": "RF머트리얼즈",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 28.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 10.0,
+        "aux": 10.0
+      },
+      "ensemble": 28.8,
+      "vcp_score": 20.0,
+      "entry_close": 35350.0,
+      "marcap": 635905458650
+    },
+    {
+      "ticker": "078930",
+      "name": "GS",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 27.5,
+        "confluence": 8.0,
+        "intensity": 12.5,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 34.5,
+      "vcp_score": 10.0,
+      "entry_close": 120000.0,
+      "marcap": 11147459400000
+    },
+    {
+      "ticker": "032640",
+      "name": "LG유플러스",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 27.0,
+        "confluence": 10.0,
+        "intensity": 8.0,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 28.6,
+      "vcp_score": 54.3,
+      "entry_close": 14890.0,
+      "marcap": 6319728929480
+    },
+    {
+      "ticker": "011170",
+      "name": "롯데케미칼",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 27.0,
+        "confluence": 14.0,
+        "intensity": 8.0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 12.6,
+      "vcp_score": 38.3,
+      "entry_close": 57300.0,
+      "marcap": 2451031508700
+    },
+    {
+      "ticker": "003380",
+      "name": "하림지주",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 26.3,
+        "confluence": 14.0,
+        "intensity": 10.3,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 25.5,
+      "vcp_score": 28.4,
+      "entry_close": 10700.0,
+      "marcap": 1198460144700
+    },
+    {
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 26.1,
+        "confluence": 4.0,
+        "intensity": 7.1,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 20.0,
+      "vcp_score": 54.9,
+      "entry_close": 330000.0,
+      "marcap": 26149703910000
+    },
+    {
+      "ticker": "293490",
+      "name": "카카오게임즈",
+      "labels": [
+        "💸적자확대"
+      ],
+      "score": {
+        "total": 26.1,
+        "confluence": 6.0,
+        "intensity": 20.1,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.1,
+      "vcp_score": 27.4,
+      "entry_close": 9020.0,
+      "marcap": 962842290300
+    },
+    {
+      "ticker": "0039P0",
+      "name": "매드업",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 26.0,
+        "confluence": 4.0,
+        "intensity": 16.0,
+        "persistence": 6.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.1,
+      "vcp_score": 0,
+      "entry_close": null,
+      "marcap": 174156524000
+    },
+    {
+      "ticker": "001450",
+      "name": "현대해상",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 25.5,
+        "confluence": 10.0,
+        "intensity": 11.5,
+        "persistence": 4.0,
+        "aux": 0.0
+      },
+      "ensemble": 33.2,
+      "vcp_score": 18.3,
+      "entry_close": 52400.0,
+      "marcap": 4467008300000
+    },
+    {
+      "ticker": "055550",
+      "name": "신한지주",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 24.9,
+        "confluence": 10.0,
+        "intensity": 5.9,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 35.8,
+      "vcp_score": 44.1,
+      "entry_close": 110500.0,
+      "marcap": 51874251409500
+    },
+    {
+      "ticker": "128940",
+      "name": "한미약품",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 24.7,
+        "confluence": 8.0,
+        "intensity": 3.7,
+        "persistence": 8.0,
+        "aux": 5.0
+      },
+      "ensemble": 17.2,
+      "vcp_score": 15.6,
+      "entry_close": 474000.0,
+      "marcap": 6072409734000
+    },
+    {
+      "ticker": "195940",
+      "name": "HK이노엔",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 24.2,
+        "confluence": 10.0,
+        "intensity": 6.2,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.2,
+      "vcp_score": 26.1,
+      "entry_close": 43450.0,
+      "marcap": 1230933763950
+    },
+    {
+      "ticker": "020150",
+      "name": "롯데에너지머티리얼즈",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 24.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 6.0,
+        "aux": 10.0
+      },
+      "ensemble": 15.7,
+      "vcp_score": 38.3,
+      "entry_close": 36400.0,
+      "marcap": 1906102853200
+    },
+    {
+      "ticker": "006650",
+      "name": "대한유화",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 24.0,
+        "confluence": 4.0,
+        "intensity": 10.0,
+        "persistence": 5.0,
+        "aux": 5.0
+      },
+      "ensemble": 14.5,
+      "vcp_score": 38.3,
+      "entry_close": 92000.0,
+      "marcap": 598000000000
+    },
+    {
+      "ticker": "039200",
+      "name": "오스코텍",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 24.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 5.0,
+        "aux": 15.0
+      },
+      "ensemble": 12.6,
+      "vcp_score": 21.1,
+      "entry_close": 36600.0,
+      "marcap": 1400249241600
+    },
+    {
+      "ticker": "002990",
+      "name": "금호건설",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 22.8,
+        "confluence": 8.0,
+        "intensity": 1.8,
+        "persistence": 3.0,
+        "aux": 10.0
+      },
+      "ensemble": 33.0,
+      "vcp_score": 18.3,
+      "entry_close": 17100.0,
+      "marcap": 637145555400
+    },
+    {
+      "ticker": "051900",
+      "name": "LG생활건강",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 22.6,
+        "confluence": 6.0,
+        "intensity": 10.6,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 22.6,
+      "vcp_score": 36.7,
+      "entry_close": 297000.0,
+      "marcap": 4447730331000
+    },
+    {
+      "ticker": "131970",
+      "name": "두산테스나",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 22.5,
+        "confluence": 12.0,
+        "intensity": 3.5,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 25.6,
+      "vcp_score": 46.7,
+      "entry_close": 78200.0,
+      "marcap": 1511390011600
+    },
+    {
+      "ticker": "003550",
+      "name": "LG",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 25.0,
+        "confluence": 10.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 37.2,
+      "vcp_score": 56.7,
+      "entry_close": 118500.0,
+      "marcap": 17916252474000
+    },
+    {
+      "ticker": "086450",
+      "name": "동국제약",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 10.0
+      },
+      "ensemble": 28.2,
+      "vcp_score": 26.7,
+      "entry_close": 21850.0,
+      "marcap": 988284677000
+    },
+    {
+      "ticker": "234340",
+      "name": "헥토파이낸셜",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 10.0
+      },
+      "ensemble": 15.1,
+      "vcp_score": 28.3,
+      "entry_close": 23000.0,
+      "marcap": 321325088000
+    },
+    {
+      "ticker": "126730",
+      "name": "코칩",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 18.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.8,
+      "vcp_score": 30.0,
+      "entry_close": 21400.0,
+      "marcap": 187680696400
+    },
+    {
+      "ticker": "271560",
+      "name": "오리온",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 21.9,
+        "confluence": 12.0,
+        "intensity": 0.9,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 31.3,
+      "vcp_score": 25.8,
+      "entry_close": 127500.0,
+      "marcap": 5039920470000
+    },
+    {
+      "ticker": "006730",
+      "name": "서부T&D",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 21.1,
+        "confluence": 10.0,
+        "intensity": 10.1,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 28.2,
+      "vcp_score": 30.4,
+      "entry_close": 11420.0,
+      "marcap": 734042460660
+    },
+    {
+      "ticker": "064550",
+      "name": "바이오니아",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 20.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 10.0
+      },
+      "ensemble": 17.4,
+      "vcp_score": 26.7,
+      "entry_close": 9970.0,
+      "marcap": 257328601270
+    },
+    {
+      "ticker": "161890",
+      "name": "한국콜마",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 20.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 7.0,
+        "aux": 5.0
+      },
+      "ensemble": 33.0,
+      "vcp_score": 8.3,
+      "entry_close": 155000.0,
+      "marcap": 3658786935000
+    },
+    {
+      "ticker": "256840",
+      "name": "한국비엔씨",
+      "labels": [
+        "💀적자전환"
+      ],
+      "score": {
+        "total": 23.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 20.6,
+      "vcp_score": 39.4,
+      "entry_close": 2660.0,
+      "marcap": 181930396760
+    },
+    {
+      "ticker": "278470",
+      "name": "에이피알",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 19.7,
+        "confluence": 8.0,
+        "intensity": 9.7,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 29.3,
+      "vcp_score": 21.2,
+      "entry_close": 419000.0,
+      "marcap": 15686586945000
+    },
+    {
+      "ticker": "214450",
+      "name": "파마리서치",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 19.1,
+        "confluence": 8.0,
+        "intensity": 4.1,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 20.6,
+      "vcp_score": 28.3,
+      "entry_close": 392500.0,
+      "marcap": 4077936840000
+    },
+    {
+      "ticker": "393890",
+      "name": "더블유씨피",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 19.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 5.0,
+        "aux": 10.0
+      },
+      "ensemble": 16.2,
+      "vcp_score": 31.8,
+      "entry_close": 10400.0,
+      "marcap": 351968697600
+    },
+    {
+      "ticker": "0015N0",
+      "name": "아로마티카",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 15.0
+      },
+      "ensemble": 13.4,
+      "vcp_score": 18.3,
+      "entry_close": 10030.0,
+      "marcap": 126146527660
+    },
+    {
+      "ticker": "003530",
+      "name": "한화투자증권",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 14.2,
+      "vcp_score": 49.1,
+      "entry_close": 4700.0,
+      "marcap": 1008374542500
+    },
+    {
+      "ticker": "183300",
+      "name": "코미코",
+      "labels": [
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 18.8,
+        "confluence": 10.0,
+        "intensity": 1.8,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 26.5,
+      "vcp_score": 46.7,
+      "entry_close": 26350.0,
+      "marcap": 1353422296250
+    },
+    {
+      "ticker": "181710",
+      "name": "NHN",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 33.4,
+        "confluence": 14.0,
+        "intensity": 9.4,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 34.6,
+      "vcp_score": 20.0,
+      "entry_close": 68000.0,
+      "marcap": 2227213452000
+    },
+    {
+      "ticker": "088350",
+      "name": "한화생명",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 17.9,
+        "confluence": 6.0,
+        "intensity": 4.9,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 30.5,
+      "vcp_score": 18.3,
+      "entry_close": 5770.0,
+      "marcap": 5011418100000
+    },
+    {
+      "ticker": "105560",
+      "name": "KB금융",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 17.6,
+        "confluence": 12.0,
+        "intensity": 4.6,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 35.8,
+      "vcp_score": 48.3,
+      "entry_close": 169100.0,
+      "marcap": 59977695819400
+    },
+    {
+      "ticker": "086790",
+      "name": "하나금융지주",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 17.4,
+        "confluence": 6.0,
+        "intensity": 2.4,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 35.1,
+      "vcp_score": 30.8,
+      "entry_close": 134900.0,
+      "marcap": 37012209205200
+    },
+    {
+      "ticker": "033780",
+      "name": "KT&G",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 17.4,
+        "confluence": 4.0,
+        "intensity": 0.4,
+        "persistence": 8.0,
+        "aux": 5.0
+      },
+      "ensemble": 36.0,
+      "vcp_score": 55.9,
+      "entry_close": 174400.0,
+      "marcap": 18104543526400
+    },
+    {
+      "ticker": "452260",
+      "name": "한화갤러리아",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 5.0,
+        "aux": 0.0
+      },
+      "ensemble": 28.7,
+      "vcp_score": 56.7,
+      "entry_close": 2100.0,
+      "marcap": 407105181000
+    },
+    {
+      "ticker": "107640",
+      "name": "한중엔시에스",
+      "labels": [
+        "💀적자전환"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 10.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 11.8,
+      "vcp_score": 33.7,
+      "entry_close": 39600.0,
+      "marcap": 358971861600
+    },
+    {
+      "ticker": "000100",
+      "name": "유한양행",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 5.0
+      },
+      "ensemble": 26.8,
+      "vcp_score": 30.0,
+      "entry_close": 81300.0,
+      "marcap": 5984962995300
+    },
+    {
+      "ticker": "247540",
+      "name": "에코프로비엠",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 6.0,
+        "aux": 5.0
+      },
+      "ensemble": 15.2,
+      "vcp_score": 45.3,
+      "entry_close": 108000.0,
+      "marcap": 10565686872000
+    },
+    {
+      "ticker": "066970",
+      "name": "엘앤에프",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 19.6,
+        "confluence": 6.0,
+        "intensity": 2.6,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 12.9,
+      "vcp_score": 21.2,
+      "entry_close": 124700.0,
+      "marcap": 5073377351400
+    },
+    {
+      "ticker": "033790",
+      "name": "피노",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 18.7,
+      "vcp_score": 18.2,
+      "entry_close": 7850.0,
+      "marcap": 654076812950
+    },
+    {
+      "ticker": "310210",
+      "name": "보로노이",
+      "labels": [
+        "💸적자확대"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 10.0
+      },
+      "ensemble": 16.7,
+      "vcp_score": 33.4,
+      "entry_close": 169500.0,
+      "marcap": 3139741386000
+    },
+    {
+      "ticker": "457190",
+      "name": "이수스페셜티케미컬",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 12.4,
+      "vcp_score": 31.0,
+      "entry_close": 64300.0,
+      "marcap": 1943073469600
+    },
+    {
+      "ticker": "078340",
+      "name": "컴투스",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 10.0,
+        "intensity": 0,
+        "persistence": 6.0,
+        "aux": 0.0
+      },
+      "ensemble": 16.1,
+      "vcp_score": 8.3,
+      "entry_close": 34050.0,
+      "marcap": 411709207650
+    },
+    {
+      "ticker": "060250",
+      "name": "NHN KCP",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 19.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 28.9,
+      "vcp_score": 36.7,
+      "entry_close": 14660.0,
+      "marcap": 588754557260
+    },
+    {
+      "ticker": "067310",
+      "name": "하나마이크론",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 16.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.9,
+      "vcp_score": 44.7,
+      "entry_close": 35350.0,
+      "marcap": 2350452219150
+    },
+    {
+      "ticker": "383220",
+      "name": "F&F",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 15.3,
+        "confluence": 6.0,
+        "intensity": 3.3,
+        "persistence": 6.0,
+        "aux": 0.0
+      },
+      "ensemble": 36.0,
+      "vcp_score": 55.4,
+      "entry_close": 67700.0,
+      "marcap": 2593388977500
+    },
+    {
+      "ticker": "361610",
+      "name": "SK아이이테크놀로지",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 15.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 10.0,
+      "vcp_score": 29.8,
+      "entry_close": 15850.0,
+      "marcap": 1296325535000
+    },
+    {
+      "ticker": "403850",
+      "name": "더핑크퐁컴퍼니",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 28.2,
+      "vcp_score": 23.9,
+      "entry_close": 13960.0,
+      "marcap": 200340099600
+    },
+    {
+      "ticker": "006110",
+      "name": "삼아알미늄",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 15.0
+      },
+      "ensemble": 28.3,
+      "vcp_score": 28.3,
+      "entry_close": 68300.0,
+      "marcap": 1032931976500
+    },
+    {
+      "ticker": "196170",
+      "name": "알테오젠",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 17.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 22.8,
+      "vcp_score": 18.3,
+      "entry_close": 298500.0,
+      "marcap": 20792057200500
+    },
+    {
+      "ticker": "124500",
+      "name": "아이티센글로벌",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 14.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 18.3,
+      "vcp_score": 18.3,
+      "entry_close": 33750.0,
+      "marcap": 783152786250
+    },
+    {
+      "ticker": "077360",
+      "name": "덕산하이메탈",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 14.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 18.2,
+      "vcp_score": 28.0,
+      "entry_close": 9950.0,
+      "marcap": 452098169900
+    },
+    {
+      "ticker": "241710",
+      "name": "코스메카코리아",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 13.6,
+        "confluence": 4.0,
+        "intensity": 2.6,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 32.7,
+      "vcp_score": 10.0,
+      "entry_close": 139400.0,
+      "marcap": 1488792000000
+    },
+    {
+      "ticker": "108490",
+      "name": "로보티즈",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 13.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 14.5,
+      "vcp_score": 50.2,
+      "entry_close": 247000.0,
+      "marcap": 3622755916000
+    },
+    {
+      "ticker": "030200",
+      "name": "KT",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 15.5,
+        "confluence": 6.0,
+        "intensity": 9.5,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 29.8,
+      "vcp_score": 58.3,
+      "entry_close": 53800.0,
+      "marcap": 13558766653000
+    },
+    {
+      "ticker": "001210",
+      "name": "금호전기",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 27.4,
+        "confluence": 12.0,
+        "intensity": 15.4,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 42.7,
+      "vcp_score": 18.3,
+      "entry_close": 13300.0,
+      "marcap": 164601012800
+    },
+    {
+      "ticker": "083650",
+      "name": "비에이치아이",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 15.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 15.6,
+      "vcp_score": 21.0,
+      "entry_close": 59600.0,
+      "marcap": 1844284750000
+    },
+    {
+      "ticker": "007810",
+      "name": "코리아써키트",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 12.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 23.8,
+      "vcp_score": 48.3,
+      "entry_close": 57300.0,
+      "marcap": 1374204126000
+    },
+    {
+      "ticker": "377300",
+      "name": "카카오페이",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 11.3,
+        "confluence": 2.0,
+        "intensity": 2.3,
+        "persistence": 2.0,
+        "aux": 5.0
+      },
+      "ensemble": 29.1,
+      "vcp_score": 18.3,
+      "entry_close": 44750.0,
+      "marcap": 6053452653750
+    },
+    {
+      "ticker": "011040",
+      "name": "경동제약",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 11.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 27.4,
+      "vcp_score": 26.6,
+      "entry_close": 5060.0,
+      "marcap": 155689955960
+    },
+    {
+      "ticker": "213420",
+      "name": "덕산네오룩스",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 13.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 13.2,
+      "vcp_score": 46.0,
+      "entry_close": 32800.0,
+      "marcap": 814462671200
+    },
+    {
+      "ticker": "131290",
+      "name": "티에스이",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 10.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 5.0,
+        "aux": 5.0
+      },
+      "ensemble": 26.5,
+      "vcp_score": 30.6,
+      "entry_close": 234000.0,
+      "marcap": 2588374386000
+    },
+    {
+      "ticker": "064290",
+      "name": "인텍플러스",
+      "labels": [
+        "💀적자전환"
+      ],
+      "score": {
+        "total": 10.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 25.2,
+      "vcp_score": 43.0,
+      "entry_close": 33800.0,
+      "marcap": 437966136400
+    },
+    {
+      "ticker": "251970",
+      "name": "펌텍코리아",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 10.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.1,
+      "vcp_score": 10.0,
+      "entry_close": 56900.0,
+      "marcap": 705560000000
+    },
+    {
+      "ticker": "041190",
+      "name": "우리기술투자",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 13.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 13.0,
+      "vcp_score": 18.3,
+      "entry_close": 5840.0,
+      "marcap": 490560000000
+    },
+    {
+      "ticker": "123330",
+      "name": "제닉",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 12.9,
+        "confluence": 8.0,
+        "intensity": 2.9,
+        "persistence": 2.0,
+        "aux": 0.0
+      },
+      "ensemble": 29.3,
+      "vcp_score": 18.3,
+      "entry_close": 34800.0,
+      "marcap": 277310064000
+    },
+    {
+      "ticker": "317330",
+      "name": "덕산테코피아",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 24.0,
+        "confluence": 14.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 15.4,
+      "vcp_score": 34.6,
+      "entry_close": 11690.0,
+      "marcap": 239371266960
+    },
+    {
+      "ticker": "047050",
+      "name": "포스코인터내셔널",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 9.0,
+        "confluence": 4.0,
+        "intensity": 2.0,
+        "persistence": 3.0,
+        "aux": 0.0
+      },
+      "ensemble": 27.5,
+      "vcp_score": 42.7,
+      "entry_close": 53200.0,
+      "marcap": 9359092321600
+    },
+    {
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 24.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 3.0,
+        "aux": 15.0
+      },
+      "ensemble": 28.3,
+      "vcp_score": 49.5,
+      "entry_close": 1501000.0,
+      "marcap": 69482717451000
+    },
+    {
+      "ticker": "010130",
+      "name": "고려아연",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 9.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 9.0,
+        "aux": 0.0
+      },
+      "ensemble": 19.0,
+      "vcp_score": 28.3,
+      "entry_close": 1216000.0,
+      "marcap": 25381530304000
+    },
+    {
+      "ticker": "000720",
+      "name": "현대건설",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 9.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 7.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.0,
+      "vcp_score": 39.7,
+      "entry_close": 112600.0,
+      "marcap": 12538659139000
+    },
+    {
+      "ticker": "005830",
+      "name": "DB손해보험",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 8.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 0.0
+      },
+      "ensemble": 26.3,
+      "vcp_score": 18.3,
+      "entry_close": 190900.0,
+      "marcap": 12504016624100
+    },
+    {
+      "ticker": "100840",
+      "name": "SNT에너지",
+      "labels": [
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 10.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 16.1,
+      "vcp_score": 42.4,
+      "entry_close": 31350.0,
+      "marcap": 648342547050
+    },
+    {
+      "ticker": "425420",
+      "name": "티에프이",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 10.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 8.0,
+        "aux": 0.0
+      },
+      "ensemble": 18.8,
+      "vcp_score": 25.9,
+      "entry_close": 48500.0,
+      "marcap": 598838278500
+    },
+    {
+      "ticker": "445680",
+      "name": "큐리옥스바이오시스템즈",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 10.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 10.0
+      },
+      "ensemble": 11.3,
+      "vcp_score": 23.9,
+      "entry_close": 49350.0,
+      "marcap": 849386883450
+    },
+    {
+      "ticker": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 22.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 9.0,
+        "aux": 5.0
+      },
+      "ensemble": 38.5,
+      "vcp_score": 59.2,
+      "entry_close": 65600.0,
+      "marcap": 8126204526400
+    },
+    {
+      "ticker": "047770",
+      "name": "코데즈컴바인",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 17.9,
+      "vcp_score": 26.7,
+      "entry_close": 3950.0,
+      "marcap": 149478277900
+    },
+    {
+      "ticker": "000810",
+      "name": "삼성화재",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 38.5,
+      "vcp_score": 42.3,
+      "entry_close": 657000.0,
+      "marcap": 29333389761000
+    },
+    {
+      "ticker": "484870",
+      "name": "엠앤씨솔루션",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 4.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.0,
+      "vcp_score": 38.3,
+      "entry_close": 17700.0,
+      "marcap": 486072090000
+    },
+    {
+      "ticker": "387690",
+      "name": "레메디",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 8.0,
+        "confluence": 8.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 3.7,
+      "vcp_score": 0,
+      "entry_close": null,
+      "marcap": 127960772980
+    },
+    {
+      "ticker": "358570",
+      "name": "지아이이노베이션",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 20.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 9.0,
+        "aux": 5.0
+      },
+      "ensemble": 17.0,
+      "vcp_score": 45.4,
+      "entry_close": 8100.0,
+      "marcap": 522579648600
+    },
+    {
+      "ticker": "018000",
+      "name": "유니슨",
+      "labels": [
+        "💸적자확대"
+      ],
+      "score": {
+        "total": 19.8,
+        "confluence": 6.0,
+        "intensity": 2.8,
+        "persistence": 1.0,
+        "aux": 10.0
+      },
+      "ensemble": 14.2,
+      "vcp_score": 20.0,
+      "entry_close": 1265.0,
+      "marcap": 328265329260
+    },
+    {
+      "ticker": "036810",
+      "name": "에프에스티",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 7.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 11.1,
+      "vcp_score": 18.3,
+      "entry_close": 27400.0,
+      "marcap": 593204218600
+    },
+    {
+      "ticker": "036830",
+      "name": "솔브레인홀딩스",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 7.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.1,
+      "vcp_score": 19.5,
+      "entry_close": 42800.0,
+      "marcap": 877570386800
+    },
+    {
+      "ticker": "108320",
+      "name": "LX세미콘",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 7.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 12.7,
+      "vcp_score": 54.9,
+      "entry_close": 36450.0,
+      "marcap": 592833735000
+    },
+    {
+      "ticker": "222800",
+      "name": "심텍",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 7.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 32.8,
+      "vcp_score": 32.4,
+      "entry_close": 123400.0,
+      "marcap": 4686019735200
+    },
+    {
+      "ticker": "185750",
+      "name": "종근당",
+      "labels": [
+        "↘️실적감소"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 31.4,
+      "vcp_score": 44.0,
+      "entry_close": 69300.0,
+      "marcap": 956532654000
+    },
+    {
+      "ticker": "021240",
+      "name": "코웨이",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 5.0
+      },
+      "ensemble": 36.8,
+      "vcp_score": 50.5,
+      "entry_close": 98700.0,
+      "marcap": 6984744946200
+    },
+    {
+      "ticker": "079160",
+      "name": "CJ CGV",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.2,
+      "vcp_score": 20.0,
+      "entry_close": 5290.0,
+      "marcap": 875932996130
+    },
+    {
+      "ticker": "091580",
+      "name": "상신이디피",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 3.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 30.2,
+      "vcp_score": 28.3,
+      "entry_close": 20900.0,
+      "marcap": 278559777100
+    },
+    {
+      "ticker": "052690",
+      "name": "한전기술",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 3.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 16.5,
+      "vcp_score": 33.2,
+      "entry_close": 105800.0,
+      "marcap": 4043676000000
+    },
+    {
+      "ticker": "493330",
+      "name": "지에프아이",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 5.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 12.1,
+      "vcp_score": 8.5,
+      "entry_close": 13810.0,
+      "marcap": 111025674530
+    },
+    {
+      "ticker": "008040",
+      "name": "사조동아원",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 5.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 15.2,
+      "vcp_score": 30.0,
+      "entry_close": 7770.0,
+      "marcap": 109669354200
+    },
+    {
+      "ticker": "187660",
+      "name": "페니트리움바이오",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.2,
+      "vcp_score": 17.0,
+      "entry_close": 4760.0,
+      "marcap": 304479364280
+    },
+    {
+      "ticker": "032940",
+      "name": "원익",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 9.6,
+      "vcp_score": 31.4,
+      "entry_close": 7220.0,
+      "marcap": 131354766820
+    },
+    {
+      "ticker": "024840",
+      "name": "KBI메탈",
+      "labels": [
+        "🔄흑자전환"
+      ],
+      "score": {
+        "total": 5.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 32.0,
+      "vcp_score": 27.0,
+      "entry_close": 5430.0,
+      "marcap": 235071411480
+    },
+    {
+      "ticker": "138930",
+      "name": "BNK금융지주",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 5.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.1,
+      "vcp_score": 56.7,
+      "entry_close": 15140.0,
+      "marcap": 4645553830140
+    },
+    {
+      "ticker": "089860",
+      "name": "롯데렌탈",
+      "labels": [
+        "➡️실적유지"
+      ],
+      "score": {
+        "total": 1.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 31.1,
+      "vcp_score": 0.0,
+      "entry_close": 50500.0,
+      "marcap": 1833624094000
+    },
+    {
+      "ticker": "249420",
+      "name": "일동제약",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 1.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 14.4,
+      "vcp_score": 26.4,
+      "entry_close": 16490.0,
+      "marcap": 521714775480
+    },
+    {
+      "ticker": "035760",
+      "name": "CJ ENM",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 4.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 12.0,
+      "vcp_score": 28.3,
+      "entry_close": 32150.0,
+      "marcap": 705022301100
+    },
+    {
+      "ticker": "003350",
+      "name": "한국화장품제조",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 4.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.0,
+      "vcp_score": 10.0,
+      "entry_close": 13300.0,
+      "marcap": 301378000000
+    },
+    {
+      "ticker": "019170",
+      "name": "신풍제약",
+      "labels": [
+        "💀적자전환"
+      ],
+      "score": {
+        "total": 3.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.8,
+      "vcp_score": 18.3,
+      "entry_close": 10380.0,
+      "marcap": 544104258360
+    },
+    {
+      "ticker": "140410",
+      "name": "메지온",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 14.3,
+      "vcp_score": 43.3,
+      "entry_close": 66100.0,
+      "marcap": 2024092651400
+    },
+    {
+      "ticker": "041510",
+      "name": "에스엠",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.6,
+      "vcp_score": 41.5,
+      "entry_close": 74300.0,
+      "marcap": 1701075467000
+    },
+    {
+      "ticker": "326030",
+      "name": "SK바이오팜",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.1,
+      "vcp_score": 29.9,
+      "entry_close": 86300.0,
+      "marcap": 6758433475000
+    },
+    {
+      "ticker": "062040",
+      "name": "산일전기",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.4,
+      "vcp_score": 47.0,
+      "entry_close": 183800.0,
+      "marcap": 5632155830000
+    },
+    {
+      "ticker": "103590",
+      "name": "일진전기",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.9,
+      "vcp_score": 23.0,
+      "entry_close": 67500.0,
+      "marcap": 3218763825000
+    },
+    {
+      "ticker": "025980",
+      "name": "아난티",
+      "labels": [
+        "💸적자확대"
+      ],
+      "score": {
+        "total": 12.0,
+        "confluence": 12.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 15.1,
+      "vcp_score": 18.3,
+      "entry_close": 5310.0,
+      "marcap": 516668256900
+    },
+    {
+      "ticker": "067080",
+      "name": "대화제약",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 9.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 5.0
+      },
+      "ensemble": 15.1,
+      "vcp_score": 28.4,
+      "entry_close": 10870.0,
+      "marcap": 202362985500
+    },
+    {
+      "ticker": "308080",
+      "name": "바이젠셀",
+      "labels": [
+        "🌱적자축소"
+      ],
+      "score": {
+        "total": 7.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 17.9,
+      "vcp_score": 46.7,
+      "entry_close": 6180.0,
+      "marcap": 126685426800
+    },
+    {
+      "ticker": "476060",
+      "name": "온코닉테라퓨틱스",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.2,
+      "vcp_score": 12.8,
+      "entry_close": 16800.0,
+      "marcap": 762851712000
+    },
+    {
+      "ticker": "138610",
+      "name": "나이벡",
+      "labels": [
+        "📉실적부진"
+      ],
+      "score": {
+        "total": 6.0,
+        "confluence": 6.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 10.7,
+      "vcp_score": 18.3,
+      "entry_close": 16050.0,
+      "marcap": 182453077650
+    },
+    {
+      "ticker": "462860",
+      "name": "더즌",
+      "labels": [
+        "↗️실적증가"
+      ],
+      "score": {
+        "total": 5.0,
+        "confluence": 4.0,
+        "intensity": 0,
+        "persistence": 1.0,
+        "aux": 0.0
+      },
+      "ensemble": 16.3,
+      "vcp_score": 18.3,
+      "entry_close": 3265.0,
+      "marcap": 234285047595
+    },
+    {
+      "ticker": "336260",
+      "name": "두산퓨얼셀",
+      "labels": [
+        "💸적자확대"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.9,
+      "vcp_score": 45.1,
+      "entry_close": 38700.0,
+      "marcap": 2534607196200
+    },
+    {
+      "ticker": "240550",
+      "name": "동방메디컬",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.5,
+      "vcp_score": 39.1,
+      "entry_close": 5940.0,
+      "marcap": 124347603600
+    },
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "labels": [
+        "🔥실적폭발"
+      ],
+      "score": {
+        "total": 2.0,
+        "confluence": 2.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.5,
+      "vcp_score": 32.9,
+      "entry_close": 250500.0,
+      "marcap": 1464492791304000
+    },
+    {
+      "ticker": "204270",
+      "name": "제이앤티씨",
+      "labels": [
+        "⚠️적자유지"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 17.4,
+      "vcp_score": 35.0,
+      "entry_close": 18790.0,
+      "marcap": 1086972676140
+    },
+    {
+      "ticker": "122870",
+      "name": "와이지엔터테인먼트",
+      "labels": [
+        "📈실적급증"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.6,
+      "vcp_score": 39.6,
+      "entry_close": 40000.0,
+      "marcap": 747641960000
+    }
+  ]
+}
