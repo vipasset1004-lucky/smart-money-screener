@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-10-27T03:07:29.906927",
+  "regime": {
+    "score": 10.3,
+    "mode": "cash",
+    "label": "💰 현금 우위",
+    "color": "danger",
+    "components": {
+      "kospi": 1.8,
+      "kosdaq": 7.5,
+      "amount": 1.0,
+      "breadth": 0.0
+    },
+    "advice": "관망 권장, 신규 진입 자제"
+  },
+  "results": [
+    {
+      "ticker": "263750",
+      "name": "펄어비스",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.8,
+      "vcp_score": 62.8,
+      "entry_close": 34350.0,
+      "marcap": 2158688308500
+    },
+    {
+      "ticker": "088980",
+      "name": "맥쿼리인프라",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.6,
+      "vcp_score": 63.4,
+      "entry_close": 9640.0,
+      "marcap": 4607229572660
+    },
+    {
+      "ticker": "237690",
+      "name": "에스티팜",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.3,
+      "vcp_score": 63.3,
+      "entry_close": 87800.0,
+      "marcap": 1847582463000
+    },
+    {
+      "ticker": "347850",
+      "name": "디앤디파마텍",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 14.4,
+      "vcp_score": 69.2,
+      "entry_close": 40750.0,
+      "marcap": 1869745082850
+    },
+    {
+      "ticker": "448900",
+      "name": "한국피아이엠",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.0,
+      "vcp_score": 87.1,
+      "entry_close": 46300.0,
+      "marcap": 283373419050
+    },
+    {
+      "ticker": "015760",
+      "name": "한국전력",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.7,
+      "vcp_score": 71.7,
+      "entry_close": 28050.0,
+      "marcap": 17974994156000
+    }
+  ]
+}
