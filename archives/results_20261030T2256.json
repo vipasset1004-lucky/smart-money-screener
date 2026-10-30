@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-10-30T22:56:31.733841",
+  "regime": {
+    "score": 20.8,
+    "mode": "defensive",
+    "label": "🛡 방어",
+    "color": "warn",
+    "components": {
+      "kospi": 4.2,
+      "kosdaq": 7.5,
+      "amount": 9.1,
+      "breadth": 0.0
+    },
+    "advice": "현금 비중 확대, 시장 대비 강한 종목만"
+  },
+  "results": [
+    {
+      "ticker": "251270",
+      "name": "넷마블",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.8,
+      "vcp_score": 62.8,
+      "entry_close": 33400.0,
+      "marcap": 2806596843750
+    },
+    {
+      "ticker": "015760",
+      "name": "한국전력",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.5,
+      "vcp_score": 69.9,
+      "entry_close": 28250.0,
+      "marcap": 18360172602200
+    },
+    {
+      "ticker": "024060",
+      "name": "흥구석유",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.7,
+      "vcp_score": 74.5,
+      "entry_close": 11630.0,
+      "marcap": 173700000000
+    },
+    {
+      "ticker": "001450",
+      "name": "현대해상",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.0,
+      "vcp_score": 67.8,
+      "entry_close": 43800.0,
+      "marcap": 3746660587500
+    },
+    {
+      "ticker": "347850",
+      "name": "디앤디파마텍",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.9,
+      "vcp_score": 63.6,
+      "entry_close": 39900.0,
+      "marcap": 1878944320650
+    },
+    {
+      "ticker": "298020",
+      "name": "효성티앤씨",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.1,
+      "vcp_score": 66.1,
+      "entry_close": 264000.0,
+      "marcap": 1155491094000
+    },
+    {
+      "ticker": "017900",
+      "name": "광전자",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 34.4,
+      "vcp_score": 63.8,
+      "entry_close": 8620.0,
+      "marcap": 502372425210
+    },
+    {
+      "ticker": "051900",
+      "name": "LG생활건강",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 32.3,
+      "vcp_score": 75.5,
+      "entry_close": 256000.0,
+      "marcap": 3886148218500
+    }
+  ]
+}
