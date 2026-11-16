@@ -1,0 +1,108 @@
+{
+  "generated_at": "2026-11-17T06:35:58.305476",
+  "regime": {
+    "score": 19.0,
+    "mode": "cash",
+    "label": "💰 현금 우위",
+    "color": "danger",
+    "components": {
+      "kospi": 2.3,
+      "kosdaq": 7.5,
+      "amount": 9.2,
+      "breadth": 0.0
+    },
+    "advice": "관망 권장, 신규 진입 자제"
+  },
+  "results": [
+    {
+      "ticker": "002990",
+      "name": "금호건설",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 19.9,
+      "vcp_score": 71.7,
+      "entry_close": 10580.0,
+      "marcap": 399054321540
+    },
+    {
+      "ticker": "0039P0",
+      "name": "매드업",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.3,
+      "vcp_score": 63.3,
+      "entry_close": 6420.0,
+      "marcap": 117815704000
+    },
+    {
+      "ticker": "187660",
+      "name": "페니트리움바이오",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.7,
+      "vcp_score": 72.2,
+      "entry_close": 5950.0,
+      "marcap": 381238867880
+    },
+    {
+      "ticker": "073240",
+      "name": "금호타이어",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 14.4,
+      "vcp_score": 78.9,
+      "entry_close": 5350.0,
+      "marcap": 1545460344060
+    },
+    {
+      "ticker": "008930",
+      "name": "한미사이언스",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.2,
+      "vcp_score": 67.0,
+      "entry_close": 53100.0,
+      "marcap": 3624752150000
+    }
+  ]
+}
