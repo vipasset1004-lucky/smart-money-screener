@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-20T01:27:39.004214",
+  "regime": {
+    "score": 34.1,
+    "mode": "defensive",
+    "label": "🛡 방어",
+    "color": "warn",
+    "components": {
+      "kospi": 2.3,
+      "kosdaq": 7.5,
+      "amount": 4.4,
+      "breadth": 19.9
+    },
+    "advice": "현금 비중 확대, 시장 대비 강한 종목만"
+  },
+  "results": [
+    {
+      "ticker": "187660",
+      "name": "페니트리움바이오",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.5,
+      "vcp_score": 67.6,
+      "entry_close": 7000.0,
+      "marcap": 426015244980
+    },
+    {
+      "ticker": "950260",
+      "name": "인제니아테라퓨틱스(Reg.S)",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.0,
+      "vcp_score": 60.0,
+      "entry_close": 23400.0,
+      "marcap": 1159476034150
+    },
+    {
+      "ticker": "033790",
+      "name": "피노",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 24.4,
+      "vcp_score": 66.4,
+      "entry_close": 7360.0,
+      "marcap": 627894556900
+    },
+    {
+      "ticker": "002990",
+      "name": "금호건설",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.2,
+      "vcp_score": 61.7,
+      "entry_close": 10190.0,
+      "marcap": 369246342340
+    },
+    {
+      "ticker": "047050",
+      "name": "포스코인터내셔널",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.6,
+      "vcp_score": 75.9,
+      "entry_close": 48600.0,
+      "marcap": 8497070660400
+    },
+    {
+      "ticker": "034220",
+      "name": "LG디스플레이",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.0,
+      "vcp_score": 64.9,
+      "entry_close": 7130.0,
+      "marcap": 3555000000000
+    },
+    {
+      "ticker": "000500",
+      "name": "가온전선",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 26.4,
+      "vcp_score": 61.7,
+      "entry_close": 219500.0,
+      "marcap": 6283075077000
+    }
+  ]
+}
