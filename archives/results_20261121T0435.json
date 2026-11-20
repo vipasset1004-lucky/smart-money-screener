@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-11-21T04:35:17.531528",
+  "regime": {
+    "score": 26.9,
+    "mode": "defensive",
+    "label": "🛡 방어",
+    "color": "warn",
+    "components": {
+      "kospi": 1.3,
+      "kosdaq": 7.5,
+      "amount": 3.6,
+      "breadth": 14.5
+    },
+    "advice": "현금 비중 확대, 시장 대비 강한 종목만"
+  },
+  "results": [
+    {
+      "ticker": "187660",
+      "name": "페니트리움바이오",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 19.4,
+      "vcp_score": 66.2,
+      "entry_close": 6520.0,
+      "marcap": 436889507990
+    },
+    {
+      "ticker": "377300",
+      "name": "카카오페이",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 16.1,
+      "vcp_score": 71.3,
+      "entry_close": 33450.0,
+      "marcap": 4567472718750
+    },
+    {
+      "ticker": "002990",
+      "name": "금호건설",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 21.2,
+      "vcp_score": 71.7,
+      "entry_close": 9960.0,
+      "marcap": 349498556120
+    },
+    {
+      "ticker": "073240",
+      "name": "금호타이어",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.3,
+      "vcp_score": 70.5,
+      "entry_close": 5060.0,
+      "marcap": 1467900066570
+    }
+  ]
+}
