@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-11-24T08:16:48.240537",
+  "regime": {
+    "score": 23.4,
+    "mode": "defensive",
+    "label": "🛡 방어",
+    "color": "warn",
+    "components": {
+      "kospi": 1.1,
+      "kosdaq": 7.5,
+      "amount": 3.4,
+      "breadth": 11.4
+    },
+    "advice": "현금 비중 확대, 시장 대비 강한 종목만"
+  },
+  "results": [
+    {
+      "ticker": "187660",
+      "name": "페니트리움바이오",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 16.7,
+      "vcp_score": 64.4,
+      "entry_close": 7490.0,
+      "marcap": 455439721360
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 23.4,
+      "vcp_score": 61.7,
+      "entry_close": 30600.0,
+      "marcap": 22580749612200
+    },
+    {
+      "ticker": "439960",
+      "name": "코스모로보틱스",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 19.4,
+      "vcp_score": 81.7,
+      "entry_close": 4640.0,
+      "marcap": 147163588910
+    },
+    {
+      "ticker": "950160",
+      "name": "코오롱티슈진",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 15.9,
+      "vcp_score": 71.7,
+      "entry_close": 12830.0,
+      "marcap": 1073173120800
+    },
+    {
+      "ticker": "002990",
+      "name": "금호건설",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 12.7,
+      "vcp_score": 62.1,
+      "entry_close": 9390.0,
+      "marcap": 356950550920
+    },
+    {
+      "ticker": "000500",
+      "name": "가온전선",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 15.3,
+      "vcp_score": 63.0,
+      "entry_close": 219500.0,
+      "marcap": 6461740719000
+    },
+    {
+      "ticker": "032820",
+      "name": "우리기술",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 12.6,
+      "vcp_score": 75.7,
+      "entry_close": 8110.0,
+      "marcap": 1401283203320
+    }
+  ]
+}

@@ -1,10 +1,123 @@
 {
-  "generated_at": "2026-11-24T04:05:41.966925",
-  "archives_count": 247,
+  "generated_at": "2026-11-24T08:17:12.228945",
+  "archives_count": 248,
   "by_date": [
     {
       "date": "2026-11-24",
       "generated_at": "2026-11-24T04:05:12.538878",
+      "days_held": 0,
+      "regime": "🛡 방어",
+      "items": [
+        {
+          "ticker": "187660",
+          "name": "페니트리움바이오",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 16.7,
+          "vcp_score": 64.4,
+          "entry_close": 7490.0,
+          "current_close": 7490.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=187660"
+        },
+        {
+          "ticker": "316140",
+          "name": "우리금융지주",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 23.4,
+          "vcp_score": 61.7,
+          "entry_close": 30600.0,
+          "current_close": 30600.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=316140"
+        },
+        {
+          "ticker": "439960",
+          "name": "코스모로보틱스",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 19.4,
+          "vcp_score": 81.7,
+          "entry_close": 4640.0,
+          "current_close": 4640.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=439960"
+        },
+        {
+          "ticker": "950160",
+          "name": "코오롱티슈진",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 15.9,
+          "vcp_score": 71.7,
+          "entry_close": 12830.0,
+          "current_close": 12830.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=950160"
+        },
+        {
+          "ticker": "002990",
+          "name": "금호건설",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 12.7,
+          "vcp_score": 62.1,
+          "entry_close": 9390.0,
+          "current_close": 9390.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=002990"
+        },
+        {
+          "ticker": "000500",
+          "name": "가온전선",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 15.3,
+          "vcp_score": 63.0,
+          "entry_close": 219500.0,
+          "current_close": 219500.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=000500"
+        },
+        {
+          "ticker": "032820",
+          "name": "우리기술",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 12.6,
+          "vcp_score": 75.7,
+          "entry_close": 8110.0,
+          "current_close": 8110.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=032820"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "generated_at": "2026-11-24T08:16:48.240537",
       "days_held": 0,
       "regime": "🛡 방어",
       "items": [
@@ -484614,9 +484727,9 @@
       }
     },
     "🎯VCP": {
-      "count": 8083,
+      "count": 8090,
       "win_rate": 11.7,
-      "avg_ret_pct": -20.31,
+      "avg_ret_pct": -20.3,
       "by_age": {
         "30d+": {
           "count": 7594,
@@ -484644,7 +484757,7 @@
           "avg_ret_pct": 1.25
         },
         "0d": {
-          "count": 7,
+          "count": 14,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
