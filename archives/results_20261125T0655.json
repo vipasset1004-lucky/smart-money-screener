@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-11-25T06:55:08.390410",
+  "regime": {
+    "score": 27.0,
+    "mode": "defensive",
+    "label": "🛡 방어",
+    "color": "warn",
+    "components": {
+      "kospi": 1.5,
+      "kosdaq": 7.5,
+      "amount": 4.5,
+      "breadth": 13.5
+    },
+    "advice": "현금 비중 확대, 시장 대비 강한 종목만"
+  },
+  "results": [
+    {
+      "ticker": "234340",
+      "name": "헥토파이낸셜",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 20.9,
+      "vcp_score": 81.7,
+      "entry_close": 17440.0,
+      "marcap": 251052688320
+    },
+    {
+      "ticker": "004020",
+      "name": "현대제철",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.0,
+      "vcp_score": 60.0,
+      "entry_close": 26700.0,
+      "marcap": 3623053062750
+    },
+    {
+      "ticker": "090460",
+      "name": "비에이치",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 16.4,
+      "vcp_score": 67.1,
+      "entry_close": 15780.0,
+      "marcap": 555566146240
+    },
+    {
+      "ticker": "032820",
+      "name": "우리기술",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 11.6,
+      "vcp_score": 65.6,
+      "entry_close": 8450.0,
+      "marcap": 1487675509320
+    }
+  ]
+}

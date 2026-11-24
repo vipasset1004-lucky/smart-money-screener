@@ -1,10 +1,78 @@
 {
-  "generated_at": "2026-11-25T03:46:29.486053",
-  "archives_count": 249,
+  "generated_at": "2026-11-25T06:55:36.960482",
+  "archives_count": 250,
   "by_date": [
     {
       "date": "2026-11-25",
       "generated_at": "2026-11-25T03:46:06.329819",
+      "days_held": 0,
+      "regime": "🛡 방어",
+      "items": [
+        {
+          "ticker": "234340",
+          "name": "헥토파이낸셜",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 20.9,
+          "vcp_score": 81.7,
+          "entry_close": 17440.0,
+          "current_close": 17440.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=234340"
+        },
+        {
+          "ticker": "004020",
+          "name": "현대제철",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 22.0,
+          "vcp_score": 60.0,
+          "entry_close": 26700.0,
+          "current_close": 26700.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004020"
+        },
+        {
+          "ticker": "090460",
+          "name": "비에이치",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 16.4,
+          "vcp_score": 67.1,
+          "entry_close": 15780.0,
+          "current_close": 15780.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=090460"
+        },
+        {
+          "ticker": "032820",
+          "name": "우리기술",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 11.6,
+          "vcp_score": 65.6,
+          "entry_close": 8450.0,
+          "current_close": 8450.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=032820"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "generated_at": "2026-11-25T06:55:08.390410",
       "days_held": 0,
       "regime": "🛡 방어",
       "items": [
@@ -484795,9 +484863,9 @@
       }
     },
     "🎯VCP": {
-      "count": 8094,
+      "count": 8098,
       "win_rate": 14.0,
-      "avg_ret_pct": -18.76,
+      "avg_ret_pct": -18.75,
       "by_age": {
         "30d+": {
           "count": 7594,
@@ -484825,7 +484893,7 @@
           "avg_ret_pct": 2.53
         },
         "0d": {
-          "count": 4,
+          "count": 8,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
