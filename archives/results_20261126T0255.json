@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-11-26T02:55:45.852176",
+  "regime": {
+    "score": 30.9,
+    "mode": "defensive",
+    "label": "🛡 방어",
+    "color": "warn",
+    "components": {
+      "kospi": 0.9,
+      "kosdaq": 7.5,
+      "amount": 5.1,
+      "breadth": 17.4
+    },
+    "advice": "현금 비중 확대, 시장 대비 강한 종목만"
+  },
+  "results": [
+    {
+      "ticker": "377300",
+      "name": "카카오페이",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 13.4,
+      "vcp_score": 68.9,
+      "entry_close": 34400.0,
+      "marcap": 4729871748750
+    },
+    {
+      "ticker": "123330",
+      "name": "제닉",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.2,
+      "vcp_score": 81.7,
+      "entry_close": 17260.0,
+      "marcap": 134192571200
+    },
+    {
+      "ticker": "234340",
+      "name": "헥토파이낸셜",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 14.4,
+      "vcp_score": 81.7,
+      "entry_close": 17510.0,
+      "marcap": 250214448960
+    },
+    {
+      "ticker": "203650",
+      "name": "드림시큐리티",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 29.9,
+      "vcp_score": 84.2,
+      "entry_close": 2015.0,
+      "marcap": 208494192200
+    },
+    {
+      "ticker": "004020",
+      "name": "현대제철",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 22.0,
+      "vcp_score": 60.4,
+      "entry_close": 26800.0,
+      "marcap": 3616380773500
+    },
+    {
+      "ticker": "090460",
+      "name": "비에이치",
+      "labels": [
+        "🎯VCP"
+      ],
+      "score": {
+        "total": 0.0,
+        "confluence": 0.0,
+        "intensity": 0.0,
+        "persistence": 0.0,
+        "aux": 0.0
+      },
+      "ensemble": 14.2,
+      "vcp_score": 67.0,
+      "entry_close": 15020.0,
+      "marcap": 519494800580
+    }
+  ]
+}
