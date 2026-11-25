@@ -1,10 +1,108 @@
 {
-  "generated_at": "2026-11-26T02:56:13.654496",
-  "archives_count": 251,
+  "generated_at": "2026-11-26T06:02:42.722570",
+  "archives_count": 252,
   "by_date": [
     {
       "date": "2026-11-26",
       "generated_at": "2026-11-26T02:55:45.852176",
+      "days_held": 0,
+      "regime": "🛡 방어",
+      "items": [
+        {
+          "ticker": "377300",
+          "name": "카카오페이",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 13.4,
+          "vcp_score": 68.9,
+          "entry_close": 34400.0,
+          "current_close": 34400.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=377300"
+        },
+        {
+          "ticker": "123330",
+          "name": "제닉",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 22.2,
+          "vcp_score": 81.7,
+          "entry_close": 17260.0,
+          "current_close": 17260.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=123330"
+        },
+        {
+          "ticker": "234340",
+          "name": "헥토파이낸셜",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 14.4,
+          "vcp_score": 81.7,
+          "entry_close": 17510.0,
+          "current_close": 17510.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=234340"
+        },
+        {
+          "ticker": "203650",
+          "name": "드림시큐리티",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 29.9,
+          "vcp_score": 84.2,
+          "entry_close": 2015.0,
+          "current_close": 2015.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=203650"
+        },
+        {
+          "ticker": "004020",
+          "name": "현대제철",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 22.0,
+          "vcp_score": 60.4,
+          "entry_close": 26800.0,
+          "current_close": 26800.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=004020"
+        },
+        {
+          "ticker": "090460",
+          "name": "비에이치",
+          "labels": [
+            "🎯VCP"
+          ],
+          "score": 0.0,
+          "ensemble": 14.2,
+          "vcp_score": 67.0,
+          "entry_close": 15020.0,
+          "current_close": 15020.0,
+          "ret_pct": 0.0,
+          "days_held": 0,
+          "naver_url": "https://finance.naver.com/item/main.naver?code=090460"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "generated_at": "2026-11-26T06:02:09.358332",
       "days_held": 0,
       "regime": "🛡 방어",
       "items": [
@@ -484961,9 +485059,9 @@
       }
     },
     "🎯VCP": {
-      "count": 8104,
+      "count": 8110,
       "win_rate": 15.6,
-      "avg_ret_pct": -19.86,
+      "avg_ret_pct": -19.84,
       "by_age": {
         "30d+": {
           "count": 7600,
@@ -484991,7 +485089,7 @@
           "avg_ret_pct": -2.58
         },
         "0d": {
-          "count": 6,
+          "count": 12,
           "win_rate": 0.0,
           "avg_ret_pct": 0.0
         }
